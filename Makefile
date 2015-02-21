@@ -42,8 +42,3 @@ nvm:
 node: nvm
 	ruby $(DIR)/scripts/npm_bundles.rb
 
-neovim: brew
-	brew tap neovim/homebrew-neovim
-	brew install --HEAD neovim
-	pip install neovim
-
