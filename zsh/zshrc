@@ -4,11 +4,11 @@ fpath=(~/dotfiles/zsh/completion $fpath)
 autoload -U compinit
 compinit
 
-bindkey '^I' complete-word # complete on tab, leave expansion to _expand
+setopt prompt_subst
 
 source $HOME/dotfiles/zsh/aliases
 source $HOME/dotfiles/zsh/functions
-source $HOME/dotfiles/zsh/prompt
+source $HOME/dotfiles/zsh/agnoster-theme
 source $HOME/dotfiles/zsh/secret
 
 PATH="/usr/local/share/npm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
@@ -21,7 +21,6 @@ SAVEHIST=20000
 setopt HIST_IGNORE_SPACE
 HOSTNAME="`hostname`"
 PAGER='less'
-
 
 #LANGUAGE
 LC_ALL='en_US.UTF-8'
@@ -46,25 +45,25 @@ stty -ixon
 setopt auto_cd
 cdpath=($HOME/git $HOME/Dropbox $HOME/git/fyp $HOME/Dropbox/Sites)
 
-export NVM_DIR="/Users/jackfranklin/.nvm"
+# NODE
+export NVM_DIR="/Users/Isaac/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# added by travis gem
-[ -f /Users/jackfranklin/.travis/travis.sh ] && source /Users/jackfranklin/.travis/travis.sh
 
 # this has to be done after rbenv is inited
 export PATH="./.bundle/binstubs:$PATH"
 
 # probably a bit unsafe but yolo
-
 export PATH="./bin:$PATH"
 
 # for elastic search
-export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home"
+
+# for Android SDK
+export PATH="/Users/Isaac/android-sdk/tools:/Users/Isaac/android-sdk/platform-tools:$PATH"
+export ANDROID_HOME="/Users/Isaac/android-sdk"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 source `brew --prefix`/etc/profile.d/z.sh
 
-alias j="z"

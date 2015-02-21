@@ -146,9 +146,7 @@ set number
 set background=light
 colorscheme Tomorrow-Night-Eighties
 
-colorscheme solarized
-
-set colorcolumn=80
+set colorcolumn=90
 
 set list listchars=tab:»·,trail:·
 

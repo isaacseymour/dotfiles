@@ -1,7 +1,5 @@
 # lazy
 # trying it with neovim
-alias v="mvim -v"
-alias vi="echo use v!!"
 alias f="fg"
 alias l="ls"
 
@@ -18,7 +16,7 @@ alias rk="rake"
 
 # git alises
 alias ga="git add"
-alias gaa="git aa"
+alias gaa="git add . -A"
 alias gap="git add -p"
 alias gci="git ci"
 alias gcm="git ci -m"
@@ -26,40 +24,13 @@ alias gco="git co"
 alias gcob="git co -b"
 alias gd="git diff"
 alias gds="git diff --staged"
-alias ghp="git checkout gh-pages && git rebase master && git push origin gh-pages && git checkout master"
-alias gl="git log --pretty=format:\"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\" --abbrev-commit"
-alias gpo="git pull origin"
-alias gpom="git pom"
-alias gpu="git push"
-alias grm="git rm"
-alias grh="git reset HEAD"
-alias gum="gco master && gpo"
-alias gpuhe="git push heroku master"
-alias gput="git push --tags"
-alias gpuh="gpu && gput && gpuhe"
-alias gpl="git pull"
-alias gt="git tag"
-alias gnrt="git-new-remote-tracking"
-alias hpr="hub pull-request"
-alias hb="hub browse"
-alias gmbic="git-merge-branch-into-current"
-alias gmi="git-merge-into"
-alias gca="git commit --amend"
-alias gcan="git commit --amend --no-edit"
-alias gsp="git stash pop"
-
-# npm
-alias n="node"
-alias ni="npm install"
-alias nis="npm install --save"
-alias nisd="npm install --save-dev"
-alias nig="npm install -g"
-alias nl="npm link"
-alias nr="npm run"
-alias nt="npm test"
-
-# jekyll
-alias js="jekyll --server"
+alias gl="git pull"
+alias gp="git push"
+alias gca="git commit -a"
+alias grba="git rebase --abort"
+alias grbc="git rebase --continue"
+alias grb="git rebase"
+alias grbi="git rebase -i"
 
 # vagrant
 alias vup="vagrant up"
@@ -67,21 +38,16 @@ alias vhalt="vagrant halt"
 alias vssh="vagrant ssh"
 
 # dotfiles
-alias df="cd ~/dotfiles"
 alias srcz="source ~/.zshrc"
-
-# tmux
-alias tls="tmux ls"
-alias td="tmux detach"
-alias tnew="new-tmux-from-dir-name"
-alias tatt="tmux attach-session -t "
 
 # rails
 alias rup="(bundle check || bundle install) && rake db:migrate db:test:prepare"
 alias springstub="bundle exec spring binstub --all"
 
-
-
 # thanks to @phuunet for this one
 # https://twitter.com/phuunet/status/339318973634052096
 alias topcmds='cat ~/.zhistory | cut -d ";" -f 2 | sed "s, .*,," | sort | uniq -c | sort -n | tail -rn 30'
+
+# diffocop
+alias diffocop="git diff origin/dev --name-only --diff-filter=ACMRTUXB | grep '\.rb$' | tr '\n' ' ' | xargs rubocop"
+

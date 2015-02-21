@@ -1,11 +1,5 @@
 # vim: set filetype=sh:
 
-cd () {
-  builtin cd "$*"
-  ls
-}
-
-
 function ck { command mkdir $1 && cd $1 }
 
 function g {
@@ -31,44 +25,13 @@ function git-new-remote-tracking {
   git checkout -b $1 && git push -u origin $1
 }
 
-function git-nuke {
-  git branch -D $1 && git push origin :$1
-}
-
-compdef _git git-nuke=git-checkout
-
 function git_branch_name {
   val=`git branch 2>/dev/null | grep '^*' | colrm 1 2`
   echo "$val"
 }
 
-function git-merge-into {
-  branch=`git_branch_name`
-  git checkout $1
-  git pull origin $1
-  git merge $branch
-}
-
-function git-merge-branch-into-current {
-  branch=`git_branch_name`
-  git pull origin $branch
-  git checkout $1
-  git pull origin $1
-  git checkout $branch
-  git merge $1
-}
-
-function git-checkout-remote-branch {
-  git fetch
-  git checkout -b $1 "origin/$1"
-}
-
 function new-tmux-from-dir-name {
   tmux new-session -As `basename $PWD`
-}
-
-function mkv-to-mp4 {
-  ffmpeg -i $1 -c:v copy -c:a copy $2
 }
 
 function rbenv_prompt_info() {
