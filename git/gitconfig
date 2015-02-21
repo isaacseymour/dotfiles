@@ -1,6 +1,6 @@
 [user]
-	name = Jack Franklin
-	email = jack@jackfranklin.net
+	name = Isaac Seymour
+	email = i.seymour@oxon.org
 [diff]
 	tool = vimdiff
 [alias]
@@ -11,7 +11,6 @@
   amend = commit --amend
   aa = add --all
   fa = fetch --all
-  pom = push origin master
   b = branch
   ignored = !git ls-files -v | grep "^[[:lower:]]"
 [push]
@@ -21,5 +20,5 @@
 [help]
 	autocorrect = 1
 [core]
-	excludesfile = /Users/jackfranklin/.gitignore_global
+	excludesfile = /Users/Isaac/.gitignore_global
 	pager = less -r
