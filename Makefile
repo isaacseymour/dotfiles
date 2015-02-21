@@ -1,4 +1,4 @@
-DIR=$(HOME)/dotfiles
+DIR=/Users/Isaac/dotfiles
 
 all: symlinks ensure_brew brew ruby_env gems node clone_vundle
 	@echo "Reminder: Vim plugins are managed within Vim with Vundle."
