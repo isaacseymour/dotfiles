@@ -4,7 +4,6 @@ all: symlinks ensure_brew brew ruby_env gems node clone_vundle
 	@echo "Reminder: Vim plugins are managed within Vim with Vundle."
 
 symlinks:
-	@echo $(DIR)
 	@ln -nsf $(DIR)/zsh/zsh ~/.zsh
 	@ln -sf $(DIR)/zsh/zshenv ~/.zshenv
 	@ln -sf $(DIR)/zsh/zshrc ~/.zshrc
