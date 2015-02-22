@@ -6,6 +6,15 @@ compinit
 
 setopt prompt_subst
 
+# Glob-like autocomplete
+setopt glob_complete
+setopt no_case_glob
+
+# zsh history
+setopt append_history
+setopt share_history
+setopt hist_ignore_dups
+
 source $HOME/dotfiles/zsh/aliases
 source $HOME/dotfiles/zsh/functions
 source $HOME/dotfiles/zsh/agnoster-theme
