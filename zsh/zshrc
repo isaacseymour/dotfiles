@@ -74,5 +74,6 @@ export ANDROID_HOME="/Users/Isaac/android-sdk"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-source `brew --prefix`/etc/profile.d/z.sh
-
+if which brew >/dev/null; then
+  source `brew --prefix`/etc/profile.d/z.sh
+fi
