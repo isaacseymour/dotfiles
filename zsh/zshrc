@@ -4,8 +4,6 @@ fpath=(~/dotfiles/zsh/completion $fpath)
 autoload -U compinit
 compinit
 
-setopt prompt_subst
-
 # Glob-like autocomplete
 setopt glob_complete
 setopt no_case_glob

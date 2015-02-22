@@ -22,11 +22,14 @@
 # jobs are running in this shell will all be displayed automatically when
 # appropriate.
 
+setopt prompt_subst
+
 ### Segment drawing
 # A few utility functions to make it easy and re-usable to draw segmented prompts
 
 CURRENT_BG='NONE'
 SEGMENT_SEPARATOR=''
+RSEGMENT_SEPARATOR=''
 
 # Begin a segment
 # Takes two arguments, background and foreground. Both can be omitted,
@@ -41,6 +44,20 @@ prompt_segment() {
     echo -n "%{$bg%}%{$fg%} "
   fi
   CURRENT_BG=$1
+  [[ -n $3 ]] && echo -n $3
+}
+
+prompt_rsegment() {
+  local bg fg fbg
+  [[ -n $1 ]] && bg="%K{$1}" || bg="%k"
+  [[ -n $1 ]] && fbg="%F{$1}" || fbg="%f"
+  [[ -n $2 ]] && fg="%F{$2}" || fg="%f"
+  if [[ $CURRENT_FG != 'NONE' && $1 != $CURRENT_FG ]]; then
+    echo -n " %{$fbg%}$RSEGMENT_SEPARATOR%{$fg%K{$CURRENT_FG}%}%{$bg%} "
+  else
+    echo -n " %{$bg%}%{$fg%}"
+  fi
+  CURRENT_FG=$1
   [[ -n $3 ]] && echo -n $3
 }
 
@@ -61,7 +78,7 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment default default "%(!.%{%F{yellow}%}.)$USER@%m"
+    prompt_rsegment black grey "%(!.%{%F{yellow}%}.)$USER@%m"
   fi
 }
 
@@ -91,9 +108,9 @@ prompt_git() {
     dirty=$(parse_git_dirty)
     ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="➦ $(git show-ref --head -s --abbrev |head -n1 2> /dev/null)"
     if [[ -n $dirty ]]; then
-      prompt_segment yellow black
+      prompt_rsegment yellow black
     else
-      prompt_segment green black
+      prompt_rsegment green black
     fi
 
     if [[ -e "${repo_path}/BISECT_LOG" ]]; then
@@ -125,15 +142,15 @@ prompt_hg() {
     if $(hg prompt >/dev/null 2>&1); then
       if [[ $(hg prompt "{status|unknown}") = "?" ]]; then
         # if files are not added
-        prompt_segment red white
+        prompt_rsegment red white
         st='±'
       elif [[ -n $(hg prompt "{status|modified}") ]]; then
         # if any modification
-        prompt_segment yellow black
+        prompt_rsegment yellow black
         st='±'
       else
         # if working copy is clean
-        prompt_segment green black
+        prompt_rsegment green black
       fi
       echo -n $(hg prompt "☿ {rev}@{branch}") $st
     else
@@ -141,13 +158,13 @@ prompt_hg() {
       rev=$(hg id -n 2>/dev/null | sed 's/[^-0-9]//g')
       branch=$(hg id -b 2>/dev/null)
       if `hg st | grep -q "^\?"`; then
-        prompt_segment red black
+        prompt_rsegment red black
         st='±'
       elif `hg st | grep -q "^(M|A)"`; then
-        prompt_segment yellow black
+        prompt_rsegment yellow black
         st='±'
       else
-        prompt_segment green black
+        prompt_rsegment green black
       fi
       echo -n "☿ $rev@$branch" $st
     fi
@@ -163,7 +180,7 @@ prompt_dir() {
 prompt_virtualenv() {
   local virtualenv_path="$VIRTUAL_ENV"
   if [[ -n $virtualenv_path && -n $VIRTUAL_ENV_DISABLE_PROMPT ]]; then
-    prompt_segment blue black "(`basename $virtualenv_path`)"
+    prompt_rsegment blue black "(`basename $virtualenv_path`)"
   fi
 }
 
@@ -185,12 +202,52 @@ prompt_status() {
 build_prompt() {
   RETVAL=$?
   prompt_status
-  prompt_virtualenv
   prompt_dir
-  prompt_git
-  prompt_hg
   prompt_end
 }
 
+build_rprompt() {
+  RETVAL=$?
+  prompt_git
+  prompt_hg
+  prompt_virtualenv
+  prompt_context
+}
+
 PROMPT='%{%f%b%k%}$(build_prompt) '
-RPROMPT='$(prompt_context)'
+
+### Async right prompt
+RPROMPT='' # set asynchronously and dynamically
+
+ASYNC_PROC=0
+function precmd() {
+    function async() {
+        # save to temp file
+        printf "%s" "$(build_rprompt) %{%f%b%k%}" > "${HOME}/.zsh_tmp_prompt"
+
+        # signal parent
+        kill -s USR1 $$
+    }
+
+    # do not clear RPROMPT, let it persist
+
+    # kill child if necessary
+    if [[ "${ASYNC_PROC}" != 0 ]]; then
+        kill -s HUP $ASYNC_PROC >/dev/null 2>&1 || :
+    fi
+
+    # start background computation
+    async &!
+    ASYNC_PROC=$!
+}
+
+function TRAPUSR1() {
+    # read from temp file
+    RPROMPT="$(cat ${HOME}/.zsh_tmp_prompt)"
+
+    # reset proc number
+    ASYNC_PROC=0
+
+    # redisplay
+    zle && zle reset-prompt
+}
