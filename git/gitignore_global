@@ -11,3 +11,5 @@ npm-debug.log
 _site/
 .sass-cache/
 .bundle/
+.idea/
+.ruby-version
