@@ -13,6 +13,7 @@
   fa = fetch --all
   b = branch
   ignored = !git ls-files -v | grep "^[[:lower:]]"
+  prune-local = !git branch --merged | tr -d '*' | grep -v dev | xargs -n1 git branch -d
 [push]
 	default = simple
 [color]
