@@ -236,4 +236,4 @@ inoremap <C-u> <esc>mzgUiw`za
 
 " Stolen from Max
 " Use system clipboard
-set clipboard="+
+set clipboard=unnamed
