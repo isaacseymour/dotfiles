@@ -1,6 +1,8 @@
 # lazy
 alias f="fg"
 alias l="ls"
+alias :q="exit"
+alias :Q="exit"
 
 # misc
 alias slrn="slrn -n"
