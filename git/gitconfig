@@ -23,3 +23,5 @@
 [core]
 	excludesfile = /Users/Isaac/.gitignore_global
 	pager = less -r
+[branch]
+  autosetuprebase = always
