@@ -75,3 +75,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 if which brew >/dev/null; then
   source `brew --prefix`/etc/profile.d/z.sh
 fi
+
+# Base 16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/base16-flat.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL

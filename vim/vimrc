@@ -26,7 +26,9 @@ Plug 'mxw/vim-jsx'
 Plug 'flazz/vim-colorschemes'
 Plug 'john2x/flatui.vim'
 Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'chriskempson/base16-vim'
 Plug 'bling/vim-airline'
+Plug 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 
 " Actual Plugs
 Plug 'tpope/vim-endwise'
@@ -143,11 +145,12 @@ noremap \ ,
 set wildignore+=*.o,*.obj,.git,node_modules,_site,*.class,*.zip,*.aux
 
 set number
-" set relativenumber
+set relativenumber
 
 " pretty colours
-set background=light
-colorscheme Tomorrow-Night-Eighties
+set background=dark
+let base16colorspace=256
+colorscheme base16-flat
 
 set colorcolumn=90
 
@@ -181,10 +184,11 @@ nnoremap <leader>mfi :call MW_ConvertFencedToIndent()<CR>
 nnoremap <leader>my :call MW_YamlFrontMatter()<CR>
 nnoremap <leader>ml :call MW_MakeWordLink()<CR>
 map <Leader>nf :e <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>sc :setlocal spell!<CR>
+" map <leader>sc :setlocal spell!<CR>
 
 map <leader>t :CtrlP<cr>
 map <leader>v :vsplit<CR>
+map <leader>s :split<CR>
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
 map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 

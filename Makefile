@@ -17,6 +17,7 @@ symlinks:
 	@ln -sf $(DIR)/gem/gemrc ~/.gemrc
 	@ln -sf $(DIR)/task/taskrc ~/.taskrc
 	@ln -nsf $(DIR)/bundle ~/.bundle
+	@ln -sf $(DIR)/base16-shell ~/.config/base16-shell
 
 ensure_brew:
 	ruby $(DIR)/scripts/ensure_homebrew.rb
