@@ -14,6 +14,7 @@ alias ls="ls -G"
 alias be="bundle exec"
 alias bi="bundle install"
 alias rk="rake"
+alias rs="clear; spring rspec"
 
 # git alises
 alias ga="git add"
