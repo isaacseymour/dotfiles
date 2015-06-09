@@ -98,7 +98,9 @@ set autoread
 " set noesckeys
 set timeout timeoutlen=500 ttimeoutlen=100
 
-set nofoldenable
+" fold with space
+set foldmethod=syntax
+nnoremap <Space> za
 
 set history=10000
 
