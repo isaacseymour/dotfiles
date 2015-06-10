@@ -98,8 +98,9 @@ set autoread
 " set noesckeys
 set timeout timeoutlen=500 ttimeoutlen=100
 
-" fold with space
+" fold with space, but don't autofold when opening
 set foldmethod=syntax
+set foldlevelstart=999
 nnoremap <Space> za
 
 set history=10000
