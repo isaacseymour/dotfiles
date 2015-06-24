@@ -99,7 +99,7 @@ set autoread
 set timeout timeoutlen=500 ttimeoutlen=100
 
 " fold with space, but don't autofold when opening
-set foldmethod=syntax
+set foldmethod=indent
 set foldlevelstart=999
 nnoremap <Space> za
 
