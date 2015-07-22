@@ -33,7 +33,7 @@ Plug 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 " Actual Plugs
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
-Plug 'kien/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'SirVer/ultisnips'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-rbenv'
