@@ -9,9 +9,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'othree/html5.vim'
 Plug 'elixir-lang/vim-elixir'
 Plug 'rust-lang/rust.vim'
-" haml also does Sass and SCSS
-
-Plug 'tpope/vim-haml'
+Plug 'tpope/vim-haml' " haml also does Sass and SCSS
 Plug 'chrisbra/csv.vim'
 Plug 'leshill/vim-json'
 Plug 'tpope/vim-markdown'
@@ -19,60 +17,40 @@ Plug 'andersoncustodio/vim-tmux'
 Plug '1995eaton/vim-better-css-completion'
 Plug '1995eaton/vim-better-javascript-completion'
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'tpope/vim-cucumber'
 Plug 'mxw/vim-jsx'
 
 " Colour
-Plug 'flazz/vim-colorschemes'
-Plug 'john2x/flatui.vim'
-Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'chriskempson/base16-vim'
 Plug 'bling/vim-airline'
-Plug 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 
 " Actual Plugs
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-surround'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-Plug 'SirVer/ultisnips'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'tpope/vim-rbenv'
-Plug 'tpope/vim-eunuch'
-Plug 'thoughtbot/vim-rspec'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'jackfranklin/vim-markdown-writer'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-dispatch'
-Plug 'xolox/vim-misc'
-Plug 'ervandew/supertab'
-Plug 'benmills/vimux'
-Plug 'tpope/vim-projectionist'
-Plug 'tpope/vim-fugitive'
-Plug 'kana/vim-textobj-user'
-Plug 'nelstrom/vim-textobj-rubyblock'
-Plug 'mattn/emmet-vim'
-Plug 'ahw/vim-pbcopy'
-Plug 'wellle/tmux-complete.vim'
-Plug 'tpope/vim-ragtag'
-Plug 'tommcdo/vim-exchange'
-Plug 'AndrewRadev/switch.vim'
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'tpope/vim-rails'
-Plug 'wellle/targets.vim'
-Plug 'chrisbra/NrrwRgn'
-
-" Buffer Explorer
-Plug 'jlanzarotta/bufexplorer'
+Plug 'tpope/vim-endwise' " Adds ends helpfully
+Plug 'tpope/vim-surround' " Change/remove surrounding things
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' } " fuzzy finding
+Plug 'christoomey/vim-tmux-navigator' " Navigation across vim and tmux splits
+Plug 'tpope/vim-eunuch' " Vim wrappers for file changing
+Plug 'editorconfig/editorconfig-vim' " Apply .editorconfig
+Plug 'tpope/vim-commentary' " Commenting out things
+" Plug 'ervandew/supertab' " Tab completion
+Plug 'tpope/vim-fugitive' " Git things
+Plug 'kana/vim-textobj-user' " Helps with defining custom text blocks
+Plug 'nelstrom/vim-textobj-rubyblock' " Binds 'ar' to around a Ruby block, 'ir' to inside
+Plug 'wellle/targets.vim' " More text objects
+Plug 'ahw/vim-pbcopy' " Sends stuff to OS X clipboard via 'cy'
+Plug 'AndrewRadev/splitjoin.vim' " Split (gS) and join (gJ) blocks
+Plug 'tpope/vim-rails' " Rails craziness
+Plug 'thoughtbot/vim-rspec' " Run RSpec from vim
+Plug 'jlanzarotta/bufexplorer' " Buffer Explorer
+Plug 'kien/rainbow_parentheses.vim' " Colour matching parens nicely
 
 call plug#end()
 
 filetype plugin indent on
 
-
 runtime macros/matchit.vim
 
 " status bar
-set laststatus=2                                                               " Always show a statusline
+set laststatus=2                        " Always show a statusline
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
@@ -81,9 +59,6 @@ let g:airline_right_alt_sep = ''
 let g:airline_section_warning = ''
 
 let g:airline#extensions#tabline#enabled = 1
-
-"make vim-rspec play nice with tslime
-let g:rspec_command = 'call VimuxRunCommand("clear; rspec {spec}")'
 
 " vim test config
 let g:test#strategy = 'dispatch'
@@ -103,7 +78,7 @@ set foldmethod=indent
 set foldlevelstart=999
 nnoremap <Space> za
 
-set history=10000
+set history=100
 
 set textwidth=90
 set expandtab
@@ -135,7 +110,6 @@ set scrolloff=10
 set nobackup
 set nowritebackup
 set noswapfile
-
 
 set backspace=indent,eol,start
 
@@ -173,25 +147,12 @@ set lazyredraw
 "gtfo ex mode
 map Q <Nop>
 
-" vim test
-nmap <silent> <leader>n :TestNearest<CR>
-nmap <silent> <leader>e :TestFile<CR>
-nmap <silent> <leader>l :TestLast<CR>
-
-nnoremap <leader>vs :vsplit $MYVIMRC<cr>
-map <leader>gf :e Gemfile<cr>
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
-nnoremap <leader>mt :call MW_MakeTwitterReferenceLink()<CR>
-nnoremap <leader>mfi :call MW_ConvertFencedToIndent()<CR>
-nnoremap <leader>my :call MW_YamlFrontMatter()<CR>
-nnoremap <leader>ml :call MW_MakeWordLink()<CR>
 map <Leader>nf :e <C-R>=expand("%:p:h") . "/" <CR>
 " map <leader>sc :setlocal spell!<CR>
 
-map <leader>t :FZF<cr>
+map <leader>t :FZF!<cr>
 map <leader>v :vsplit<CR>
 map <leader>s :split<CR>
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
 map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 
 " map saving and tabs to Control-"
@@ -202,11 +163,6 @@ vnoremap . :norm.<CR>
 
 " Don't add the comment prefix when I hit enter or o/O on a comment line.
 autocmd FileType * setlocal formatoptions-=r formatoptions-=o
-
-let g:UltiSnipsExpandTrigger="<c-k>"
-let g:UltiSnipsJumpForwardTrigger="<c-k>"
-let g:UltiSnipsJumpBackwardTrigger="<s-c-j>"
-let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 nnoremap <CR> :noh<CR><CR>
 
@@ -236,7 +192,3 @@ vnoremap L g_
 " cursor is at the end of the word, press <c-u> to uppercase it, and then
 " continue happily on your way:
 inoremap <C-u> <esc>mzgUiw`za
-
-" Stolen from Max
-" Use system clipboard
-set clipboard=unnamed
