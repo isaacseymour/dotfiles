@@ -36,6 +36,7 @@ alias grba="git rebase --abort"
 alias grbc="git rebase --continue"
 alias grb="git rebase"
 alias grbi="git rebase -i"
+alias gorigindev="gco dev && g fetch && g reset --hard origin/dev && g prune-local"
 
 # vagrant
 alias vup="vagrant up"
