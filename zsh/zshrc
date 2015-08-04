@@ -15,7 +15,6 @@ setopt hist_ignore_dups
 
 source $HOME/dotfiles/zsh/aliases
 source $HOME/dotfiles/zsh/functions
-source $HOME/dotfiles/zsh/agnoster-theme
 source $HOME/dotfiles/zsh/secret
 
 PATH="/usr/local/share/npm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
@@ -42,18 +41,16 @@ export EDITOR='vim'
 # But still use emacs-style zsh bindings
 bindkey -e
 
-if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
-
 # this allows Vim to use C-s as a mapping
 stty -ixon
 
 # better cding
 # http://robots.thoughtbot.com/cding-to-frequently-used-directories-in-zsh
 setopt auto_cd
-cdpath=($HOME/git $HOME/Dropbox $HOME/git/fyp $HOME/Dropbox/Sites)
+cdpath=($HOME/gc $HOME/personal)
 
-# NODE
-export NVM_DIR="/Users/Isaac/.nvm"
+# Node
+export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # this has to be done after rbenv is inited
@@ -66,8 +63,8 @@ export PATH="./bin:$PATH"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home"
 
 # for Android SDK
-export PATH="/Users/Isaac/android-sdk/tools:/Users/Isaac/android-sdk/platform-tools:$PATH"
-export ANDROID_HOME="/Users/Isaac/android-sdk"
+export PATH="${HOME}/android-sdk/tools:/Users/Isaac/android-sdk/platform-tools:$PATH"
+export ANDROID_HOME="${HOME}/android-sdk"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
