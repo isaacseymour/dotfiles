@@ -19,9 +19,6 @@ symlinks:
 	@ln -nsf $(DIR)/bundle ~/.bundle
 	@ln -sf $(DIR)/base16-shell ~/.config/base16-shell
 
-ensure_brew:
-	ruby $(DIR)/scripts/ensure_homebrew.rb
-
 clone_vundle: symlinks
 	git clone git@github.com:gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -31,8 +28,8 @@ ruby_env:
 gems:
 	ruby $(DIR)/scripts/gems.rb
 
-brew: ensure_brew
-	ruby $(DIR)/scripts/install_brews.rb
+brew:
+	command -v brew >/dev/null 2>&1 && brew tap Homebrew/bundle && brew bundle
 
 nvm:
 	curl https://raw.githubusercontent.com/creationix/nvm/v0.8.0/install.sh | sh
