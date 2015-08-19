@@ -70,6 +70,9 @@ export ANDROID_HOME="${HOME}/android-sdk"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# nice diffing
+export PATH="/usr/local/share/git-core/contrib/diff-highlight:$PATH"
+
 if which brew >/dev/null; then
   source `brew --prefix`/etc/profile.d/z.sh
 fi

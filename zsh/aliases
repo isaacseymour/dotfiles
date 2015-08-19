@@ -15,7 +15,7 @@ alias be="bundle exec"
 alias bi="bundle install"
 alias rk="rake"
 alias rs="clear; spring rspec"
-alias fuckspring="ps aux | grep spring | sed '\$d' | awk '{ print \$2 }' | xargs kill"
+alias fuckspring="ps aux | egrep '[s]pring' | awk '{ print \$2 }' | xargs kill"
 
 # git alises
 alias ga="git add"
