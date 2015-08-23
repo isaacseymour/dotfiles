@@ -18,8 +18,12 @@ source $HOME/dotfiles/zsh/functions
 source $HOME/dotfiles/zsh/agnoster-theme
 source $HOME/dotfiles/zsh/secret
 
-PATH="/usr/local/share/npm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
-PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="/usr/local/share/npm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="./node_modules/.bin:$PATH"
+
+# Get FZF to ignore gitignored files
+export FZF_DEFAULT_COMMAND='ag -l -g ""'
 
 TZ="Europe/London"
 HISTFILE=$HOME/.zhistory
