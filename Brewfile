@@ -48,5 +48,6 @@ cask "iterm2"
 cask "skype"
 cask "slack"
 cask "totalspaces"
+cask "vagrant"
 cask "virtualbox"
 

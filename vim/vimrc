@@ -76,6 +76,9 @@ set foldmethod=indent
 set foldlevelstart=999
 nnoremap <Space> za
 
+" Use jj for getting out of insert mode
+inoremap jj <esc>
+
 set history=100
 
 set textwidth=90
