@@ -39,17 +39,12 @@ alias grb="git rebase"
 alias grbi="git rebase -i"
 alias gorigindev="gco dev && g fetch && g reset --hard origin/dev && g prune-local"
 
-# vagrant
-alias vup="vagrant up"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-
 # dotfiles
 alias srcz="source ~/.zshrc"
 
 # rails
-alias rup="(bundle check || bundle install) && rake db:migrate db:test:prepare"
-alias springstub="bundle exec spring binstub --all"
+alias rup="(bundle check || bi) && rake db:migrate db:test:prepare"
+alias springstub="be spring binstub --all"
 
 # thanks to @phuunet for this one
 # https://twitter.com/phuunet/status/339318973634052096
@@ -57,4 +52,7 @@ alias topcmds='cat ~/.zhistory | cut -d ";" -f 2 | sed "s, .*,," | sort | uniq -
 
 # diffocop
 alias diffocop="git diff origin/dev --name-only --diff-filter=ACMRTUXB | grep '\.rb$' | tr '\n' ' ' | xargs rubocop"
+
+# lol
+alias yolo="sudo"
 
