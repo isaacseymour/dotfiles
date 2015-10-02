@@ -3,6 +3,7 @@ brew "beanstalk" # a queue for testing ActiveJob::Retry
 brew "cabal-install" # Haskell!
 brew "clojurescript"
 brew "elasticsearch"
+brew "elixir"
 brew "fzf"
 brew "ghc"
 brew "git"
