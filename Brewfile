@@ -17,7 +17,6 @@ brew "lftp"
 brew "mercurial"
 brew "mongodb" # wah
 brew "mysql"
-brew "nvm"
 brew "openssl"
 brew "postgresql"
 brew "python"
@@ -39,7 +38,7 @@ brew "watchman"
 brew "z"
 
 # Casks
-brew "brew-cask"
+brew "caskroom/cask/brew-cask"
 cask "alfred"
 cask "bartender"
 cask "copy"
