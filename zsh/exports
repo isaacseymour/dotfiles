@@ -1,4 +1,6 @@
-export PATH="/usr/local/share/npm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+# vim: set filetype=sh:
+
+export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="./node_modules/.bin:$PATH"
 
@@ -17,10 +19,6 @@ export GIT_MERGE_AUTOEDIT=no
 export EDITOR='vim'
 export PAGER='less'
 
-# Node
-export NVM_DIR="${HOME}/.nvm"
-source ~/.nvm/nvm.sh
-
 # this has to be done after rbenv is inited
 export PATH="./.bundle/binstubs:$PATH"
 
@@ -33,3 +31,7 @@ export ANDROID_HOME="${HOME}/android-sdk"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Node
+export NVM_DIR="${HOME}/.nvm"
+. "$NVM_DIR/nvm.sh"
