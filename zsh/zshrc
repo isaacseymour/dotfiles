@@ -14,34 +14,16 @@ setopt share_history
 setopt hist_ignore_dups
 
 source $HOME/dotfiles/zsh/aliases
+source $HOME/dotfiles/zsh/exports
 source $HOME/dotfiles/zsh/functions
 source $HOME/dotfiles/zsh/agnoster-theme
 source $HOME/dotfiles/zsh/secret
 
-export PATH="/usr/local/share/npm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
-export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-export PATH="./node_modules/.bin:$PATH"
-
-# Get FZF to ignore gitignored files
-export FZF_DEFAULT_COMMAND='ag -l -g ""'
-
-TZ="Europe/London"
 HISTFILE=$HOME/.zhistory
 HISTSIZE=20000
 SAVEHIST=20000
 setopt HIST_IGNORE_SPACE
 HOSTNAME="`hostname`"
-PAGER='less'
-
-#LANGUAGE
-LC_ALL='en_US.UTF-8'
-# LC_CTYPE=C
-# DISPLAY=:0
-
-GIT_MERGE_AUTOEDIT=no
-export GIT_MERGE_AUTOEDIT
-
-export EDITOR='vim'
 
 # But still use emacs-style zsh bindings
 bindkey -e
@@ -54,25 +36,8 @@ stty -ixon
 setopt auto_cd
 cdpath=($HOME/gc $HOME/personal)
 
-# Node
-export NVM_DIR="${HOME}/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# this has to be done after rbenv is inited
-export PATH="./.bundle/binstubs:$PATH"
-
 # probably a bit unsafe but yolo
 export PATH="./bin:$PATH"
-
-# for elastic search
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home"
-
-# for Android SDK
-export PATH="${HOME}/android-sdk/tools:/Users/Isaac/android-sdk/platform-tools:$PATH"
-export ANDROID_HOME="${HOME}/android-sdk"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 # nice diffing
 export PATH="/usr/local/share/git-core/contrib/diff-highlight:$PATH"

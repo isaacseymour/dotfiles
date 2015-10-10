@@ -1,0 +1,22 @@
+-- Don't show output from these settings
+\set QUIET 1
+
+-- always pause at errors
+\set ON_ERROR_ROLLBACK interactive
+
+-- Display nulls as (null)
+\pset null '(null)'
+
+-- Always show timing
+\timing
+
+\x auto
+
+-- Autocomplete SQL as uppercase
+\set COMP_KEYWORD_CASE upper
+
+\set PROMPT1 '%[%033[1m%]%M %n@%/%R%[%033[0m%]%# '
+\set PROMPT2 '[more] %R > '
+
+-- Unsilence
+\unset QUIET

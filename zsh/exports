@@ -1,0 +1,37 @@
+export PATH="/usr/local/share/npm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="./node_modules/.bin:$PATH"
+
+# Get FZF to ignore gitignored files
+export FZF_DEFAULT_COMMAND='ag -l -g ""'
+
+TZ="Europe/London"
+
+#LANGUAGE
+LC_ALL='en_US.UTF-8'
+# LC_CTYPE=C
+# DISPLAY=:0
+
+export GIT_MERGE_AUTOEDIT=no
+
+export EDITOR='vim'
+export PAGER='less'
+
+# Node
+export NVM_DIR="${HOME}/.nvm"
+if which brew > /dev/null; then
+  source $(brew --prefix nvm)/nvm.sh
+fi
+
+# this has to be done after rbenv is inited
+export PATH="./.bundle/binstubs:$PATH"
+
+# for elastic search
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home"
+
+# for Android SDK
+export PATH="${HOME}/android-sdk/tools:/Users/Isaac/android-sdk/platform-tools:$PATH"
+export ANDROID_HOME="${HOME}/android-sdk"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
