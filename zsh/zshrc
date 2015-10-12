@@ -13,14 +13,14 @@ setopt append_history
 setopt share_history
 setopt hist_ignore_dups
 
+# El Capitan does weird things to $PATH, so we have to re-init rbenv here
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+
 source $HOME/dotfiles/zsh/aliases
 source $HOME/dotfiles/zsh/exports
 source $HOME/dotfiles/zsh/functions
 source $HOME/dotfiles/zsh/agnoster-theme
 source $HOME/dotfiles/zsh/secret
-
-# El Capitan does weird things to $PATH, so we have to re-init rbenv here
-if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 HISTFILE=$HOME/.zhistory
 HISTSIZE=20000
