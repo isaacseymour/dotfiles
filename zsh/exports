@@ -25,7 +25,7 @@ export PATH="./.bundle/binstubs:$PATH"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home"
 
 # for Android SDK
-export PATH="${HOME}/android-sdk/tools:/Users/Isaac/android-sdk/platform-tools:$PATH"
+export PATH="${HOME}/android-sdk/tools:${HOME}/android-sdk/platform-tools:$PATH"
 export ANDROID_HOME="${HOME}/android-sdk"
 
 ### Added by the Heroku Toolbelt

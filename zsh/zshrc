@@ -19,6 +19,9 @@ source $HOME/dotfiles/zsh/functions
 source $HOME/dotfiles/zsh/agnoster-theme
 source $HOME/dotfiles/zsh/secret
 
+# El Capitan does weird things to $PATH, so we have to re-init rbenv here
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+
 HISTFILE=$HOME/.zhistory
 HISTSIZE=20000
 SAVEHIST=20000

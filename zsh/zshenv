@@ -1,5 +1,5 @@
 # Get Homebrew stuff on the path
-export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
