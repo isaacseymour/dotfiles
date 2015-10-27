@@ -1,6 +1,6 @@
 DIR=$(HOME)/dotfiles
 
-all: base16_shell symlinks brew ruby nvm npm
+all: base16_shell symlinks brew ruby nvm npm tpm
 	@echo "Reminder: Vim plugins are managed within Vim with Vundle."
 
 symlinks:
@@ -45,3 +45,6 @@ npm: nvm
 	NVM_DIR=~/.nvm source ~/.nvm/nvm.sh && npm install npm --global --silent
 	NVM_DIR=~/.nvm source ~/.nvm/nvm.sh && npm install serve --global --silent
 
+tpm:
+	[ -d ~/.tmux/plugins/tpm ] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+	cd ~/.tmux/plugins/tpm && git pull
