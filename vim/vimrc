@@ -14,9 +14,6 @@ Plug 'chrisbra/csv.vim'
 Plug 'leshill/vim-json'
 Plug 'tpope/vim-markdown'
 Plug 'andersoncustodio/vim-tmux'
-Plug '1995eaton/vim-better-css-completion'
-Plug '1995eaton/vim-better-javascript-completion'
-Plug 'mustache/vim-mustache-handlebars'
 Plug 'mxw/vim-jsx'
 
 " Colour
@@ -46,6 +43,7 @@ call plug#end()
 
 filetype plugin indent on
 
+" Make the % key more powerful
 runtime macros/matchit.vim
 
 " status bar
@@ -56,7 +54,6 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 let g:airline_section_warning = ''
-
 let g:airline#extensions#tabline#enabled = 0
 
 " Assume all .js use JSX
@@ -65,6 +62,7 @@ let g:jsx_ext_required = 0
 " assume the /g flag on :s substitutions to replace all matches in a line
 set gdefault
 
+" Auto-read files when switching back into vim
 set autoread
 
 " fix slight delay after pressing ESC then O
@@ -89,6 +87,7 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 
+" Only do case-sensitive searches when search includes an uppercase letter
 set ignorecase smartcase
 
 set spelllang=en_gb
@@ -98,8 +97,6 @@ autocmd FileType markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 wrap lin
 
 " ruby syntax highlighting is slower with the newer engine
 autocmd FileType ruby setlocal regexpengine=1
-
-set laststatus=2
 
 set linebreak
 
@@ -116,18 +113,16 @@ set backspace=indent,eol,start
 
 set wildmode=full
 set wildmenu
+set wildignore+=*.o,*.obj,.git,node_modules,_site,*.class,*.zip,*.aux
 
 let mapleader=","
 noremap \ ,
-
-set wildignore+=*.o,*.obj,.git,node_modules,_site,*.class,*.zip,*.aux
 
 set number
 set relativenumber
 
 " pretty colours
 set background=dark
-let base16colorspace=256
 colorscheme base16-flat
 
 set colorcolumn=90
@@ -149,12 +144,10 @@ set lazyredraw
 map Q <Nop>
 
 map <Leader>nf :e <C-R>=expand("%:p:h") . "/" <CR>
-" map <leader>sc :setlocal spell!<CR>
 
-map <leader>t :FZF!<cr>
-map <leader>v :vsplit<CR>
-map <leader>s :split<CR>
-map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
+map <leader>t :FZF!<cr>   " ,t for FZF
+map <leader>v :vsplit<CR> " ,v for vsplit
+map <leader>s :split<CR>  " ,s for split
 
 vnoremap . :norm.<CR>
 

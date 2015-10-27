@@ -46,10 +46,8 @@ export PATH="./bin:$PATH"
 export PATH="/usr/local/share/git-core/contrib/diff-highlight:$PATH"
 
 if which brew >/dev/null; then
-  source `brew --prefix`/etc/profile.d/z.sh
+  [ -f `brew --prefix`/etc/profile/z.sh ] && source `brew --prefix`/etc/profile.d/z.sh
 fi
 
-# Base 16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/base16-flat.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+# Use fzf for shell things too
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
