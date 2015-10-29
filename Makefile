@@ -1,4 +1,4 @@
-DIR=$(HOME)/dotfiles
+DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 all: symlinks brew ruby nvm npm tpm
 	@echo "Reminder: Vim plugins are managed within Vim with Vundle."
