@@ -1,4 +1,5 @@
-fpath=(~/dotfiles/zsh/completion $fpath)
+zsh_dotfile_path=$(dirname $(readlink $HOME/.zshrc))
+fpath=($zsh_dotfile_path/zsh/completion $fpath)
 
 # get auto completes going
 autoload -U compinit
@@ -16,11 +17,11 @@ setopt hist_ignore_dups
 # El Capitan does weird things to $PATH, so we have to re-init rbenv here
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
-source $HOME/dotfiles/zsh/aliases
-source $HOME/dotfiles/zsh/exports
-source $HOME/dotfiles/zsh/functions
-source $HOME/dotfiles/zsh/agnoster-theme
-source $HOME/dotfiles/zsh/secret
+source $zsh_dotfile_path/aliases
+source $zsh_dotfile_path/exports
+source $zsh_dotfile_path/functions
+source $zsh_dotfile_path/agnoster-theme
+source $zsh_dotfile_path/secret
 
 HISTFILE=$HOME/.zhistory
 HISTSIZE=20000
