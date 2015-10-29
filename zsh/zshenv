@@ -6,7 +6,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-if command -v gpg-agent; then
+if command -v gpg-agent > /dev/null; then
   if [ -f "${HOME}/.gpg-agent-info" ]; then
     . "${HOME}/.gpg-agent-info" &> /dev/null
   fi
