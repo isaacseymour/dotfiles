@@ -38,6 +38,7 @@ Plug 'tpope/vim-rails'                                             " Rails crazi
 Plug 'jlanzarotta/bufexplorer'                                     " Buffer Explorer
 Plug 'kien/rainbow_parentheses.vim'                                " Colour matching parens nicely
 Plug 'tmux-plugins/vim-tmux-focus-events'                          " Make vim listen to tmux focus events
+Plug 'junegunn/vim-easy-align'                                     " Align things incredibly
 
 call plug#end()
 
