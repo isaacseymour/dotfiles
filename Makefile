@@ -22,7 +22,8 @@ symlinks:
 	@ln -sf $(DIR)/rbenv/default-gems ~/.rbenv/default-gems
 
 brew:
-	command -v brew >/dev/null 2>&1 && brew tap Homebrew/bundle && brew bundle
+	command -v brew > /dev/null 2>&1 || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	brew tap Homebrew/bundle && brew bundle
 
 LATEST_RUBY="2.2.3"
 ruby: brew symlinks
