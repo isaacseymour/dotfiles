@@ -43,3 +43,6 @@ npm: nvm
 tpm:
 	[ -d ~/.tmux/plugins/tpm ] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 	cd ~/.tmux/plugins/tpm && git pull
+
+screensaver:
+	[ -f ~/Library/Screen\ Savers/RealSimpleAnniversaryClock.qtz ] || curl http://wayback.archive.org/web/http://simplystated.realsimple.com/files/RealSimpleAnniversaryClock.qtz --output ~/Library/Screen\ Savers/RealSimpleAnniversaryClock.qtz
