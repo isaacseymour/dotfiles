@@ -28,13 +28,13 @@ brew:
 LATEST_RUBY="2.2.3"
 ruby: brew symlinks
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
-	[ -d ~/.rbenv/versions/2.0.0-p353 ] || rbenv install 2.0.0-p353
 	rbenv global $(LATEST_RUBY)
 
+LATEST_NODE="5"
 nvm:
 	[ -d ~/.nvm ] || git clone git@github.com:creationix/nvm ~/.nvm
 	cd ~/.nvm && git pull
-	NVM_DIR=~/.nvm source ~/.nvm/nvm.sh && nvm install 4 && nvm alias default 4
+	NVM_DIR=~/.nvm source ~/.nvm/nvm.sh && nvm install $(LATEST_NODE) && nvm alias default $(LATEST_NODE)
 
 npm: nvm
 	NVM_DIR=~/.nvm source ~/.nvm/nvm.sh && npm install npm --global --silent
