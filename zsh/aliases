@@ -5,7 +5,6 @@ alias :q="exit"
 alias :Q="exit"
 
 # misc
-alias slrn="slrn -n"
 alias man="LC_ALL=C LANG=C man"
 alias ll="ls -al"
 alias ls="ls -G"
@@ -13,17 +12,13 @@ alias ls="ls -G"
 # bundle and ruby rails stuff
 alias be="bundle exec"
 alias bi="bundle install"
-alias rk="rake"
 alias rs="clear; spring rspec"
 alias fuckspring="ps aux | egrep '[s]pring' | awk '{ print \$2 }' | xargs kill"
 
 # git alises
 alias ga="git add"
 alias gaa="git add . -A"
-alias gap="git add -p"
 alias gc="git commit"
-alias gci="git ci"
-alias gcm="git ci -m"
 alias gco="git co"
 alias gcob="git co -b"
 alias gb="git branch"
@@ -37,18 +32,14 @@ alias grba="git rebase --abort"
 alias grbc="git rebase --continue"
 alias grb="git rebase"
 alias grbi="git rebase -i"
-alias gorigindev="gco dev && g fetch && g reset --hard origin/dev && g prune-local"
+gorigin() {
+  gco $1 && g fetch && g reset --hard "origin/$1" && g prune-local
+}
+alias gorigindev="gorigin dev"
+alias goriginmaster="gorigin master"
 
 # dotfiles
 alias srcz="source ~/.zshrc"
-
-# rails
-alias rup="(bundle check || bi) && rake db:migrate db:test:prepare"
-alias springstub="be spring binstub --all"
-
-# thanks to @phuunet for this one
-# https://twitter.com/phuunet/status/339318973634052096
-alias topcmds='cat ~/.zhistory | cut -d ";" -f 2 | sed "s, .*,," | sort | uniq -c | sort -n | tail -rn 30'
 
 # diffocop
 alias diffocop="git diff origin/dev --name-only --diff-filter=ACMRTUXB | grep '\.rb$' | tr '\n' ' ' | xargs rubocop"
