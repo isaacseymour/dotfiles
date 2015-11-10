@@ -20,6 +20,7 @@ symlinks:
 	@ln -sf $(DIR)/psql/psqlrc ~/.psqlrc
 	@mkdir -p ~/.rbenv
 	@ln -sf $(DIR)/rbenv/default-gems ~/.rbenv/default-gems
+	@ln -sf $(DIR)/editorconfig ~/.editorconfig
 
 brew:
 	command -v brew > /dev/null 2>&1 || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
