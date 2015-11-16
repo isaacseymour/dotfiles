@@ -13,3 +13,4 @@ _site/
 .bundle/
 .idea/
 .ruby-version
+secret

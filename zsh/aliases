@@ -35,8 +35,8 @@ alias grbi="git rebase -i"
 gorigin() {
   gco $1 && g fetch && g reset --hard "origin/$1" && g prune-local
 }
-alias gorigindev="gorigin dev"
-alias goriginmaster="gorigin master"
+alias gdev="gorigin dev"
+alias gmaster="gorigin master"
 
 # dotfiles
 alias srcz="source ~/.zshrc"
