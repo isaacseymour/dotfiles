@@ -47,3 +47,5 @@ alias diffocop="git diff origin/dev --name-only --diff-filter=ACMRTUXB | grep '\
 # lol
 alias yolo="sudo"
 
+# neauxde
+alias ni="npm install"

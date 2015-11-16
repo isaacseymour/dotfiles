@@ -2,6 +2,9 @@ brew "ansible"
 brew "beanstalk" # a queue for testing ActiveJob::Retry
 brew "cabal-install" # Haskell!
 brew "clojurescript"
+brew "docker"
+brew "docker-machine"
+brew "docker-compose"
 brew "elasticsearch"
 brew "elixir"
 brew "fzf"
