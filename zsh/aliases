@@ -49,3 +49,5 @@ alias yolo="sudo"
 
 # neauxde
 alias ni="npm install"
+alias nt="npm test"
+alias ns="npm start"
