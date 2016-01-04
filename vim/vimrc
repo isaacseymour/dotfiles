@@ -136,6 +136,8 @@ set colorcolumn=90
 set list listchars=tab:»·,trail:·
 
 command! Q q
+command! WQ wq
+command! Wq wq
 
 set splitbelow
 set splitright
