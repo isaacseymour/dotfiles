@@ -22,25 +22,26 @@ Plug 'chriskempson/base16-vim'
 Plug 'bling/vim-airline'
 
 " Actual Plugs
-Plug 'tpope/vim-endwise'                                           " Adds ends helpfully
-Plug 'tpope/vim-surround'                                          " Change/remove surrounding things
-Plug 'tpope/vim-repeat'                                            " Make vim-surround work with .
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' } " Fuzzy finding
-Plug 'christoomey/vim-tmux-navigator'                              " Navigation across vim and tmux splits
-Plug 'tpope/vim-eunuch'                                            " Vim wrappers for file changing
-Plug 'editorconfig/editorconfig-vim'                               " Apply .editorconfig
-Plug 'tpope/vim-commentary'                                        " Commenting out things
-Plug 'tpope/vim-fugitive'                                          " Git things
-Plug 'kana/vim-textobj-user'                                       " Helps with defining custom text blocks
-Plug 'nelstrom/vim-textobj-rubyblock'                              " Binds 'ar' to around a Ruby block, 'ir' to inside
-Plug 'wellle/targets.vim'                                          " More text objects
-Plug 'ahw/vim-pbcopy'                                              " Sends stuff to OS X clipboard via 'cy'
-Plug 'AndrewRadev/splitjoin.vim'                                   " Split (gS) and join (gJ) blocks
-Plug 'tpope/vim-rails'                                             " Rails craziness
-Plug 'jlanzarotta/bufexplorer'                                     " Buffer Explorer
-Plug 'kien/rainbow_parentheses.vim'                                " Colour matching parens nicely
-Plug 'tmux-plugins/vim-tmux-focus-events'                          " Make vim listen to tmux focus events
-Plug 'junegunn/vim-easy-align'                                     " Align things incredibly
+Plug 'tpope/vim-endwise'                                          " Adds ends helpfully
+Plug 'tpope/vim-surround'                                         " Change/remove surrounding things
+Plug 'tpope/vim-repeat'                                           " Make vim-surround work with .
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Fuzzy finding
+Plug 'junegunn/fzf.vim'                                           " Fuzzy finding for things within vim
+Plug 'christoomey/vim-tmux-navigator'                             " Navigation across vim and tmux splits
+Plug 'tpope/vim-eunuch'                                           " Vim wrappers for file changing
+Plug 'editorconfig/editorconfig-vim'                              " Apply .editorconfig
+Plug 'tpope/vim-commentary'                                       " Commenting out things
+Plug 'tpope/vim-fugitive'                                         " Git things
+Plug 'kana/vim-textobj-user'                                      " Helps with defining custom text blocks
+Plug 'nelstrom/vim-textobj-rubyblock'                             " Binds 'ar' to around a Ruby block, 'ir' to inside
+Plug 'wellle/targets.vim'                                         " More text objects
+Plug 'ahw/vim-pbcopy'                                             " Sends stuff to OS X clipboard via 'cy'
+Plug 'AndrewRadev/splitjoin.vim'                                  " Split (gS) and join (gJ) blocks
+Plug 'tpope/vim-rails'                                            " Rails craziness
+Plug 'jlanzarotta/bufexplorer'                                    " Buffer Explorer
+Plug 'kien/rainbow_parentheses.vim'                               " Colour matching parens nicely
+Plug 'tmux-plugins/vim-tmux-focus-events'                         " Make vim listen to tmux focus events
+Plug 'junegunn/vim-easy-align'                                    " Align things incredibly
 
 call plug#end()
 
@@ -153,9 +154,13 @@ map Q <Nop>
 
 map <Leader>nf :e <C-R>=expand("%:p:h") . "/" <CR>
 
-map <leader>t :FZF!<cr>   " ,t for FZF
-map <leader>v :vsplit<CR> " ,v for vsplit
-map <leader>s :split<CR>  " ,s for split
+" FZF commands
+nnoremap <leader>t :Files<cr>
+nnoremap <leader>b :Buffers<cr>
+imap <C-x><C-l> <Plug>(fzf-complete-line)
+
+nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>s :split<CR>
 
 vnoremap . :norm.<CR>
 
