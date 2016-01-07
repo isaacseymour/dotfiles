@@ -38,7 +38,6 @@ Plug 'wellle/targets.vim'                                         " More text ob
 Plug 'ahw/vim-pbcopy'                                             " Sends stuff to OS X clipboard via 'cy'
 Plug 'AndrewRadev/splitjoin.vim'                                  " Split (gS) and join (gJ) blocks
 Plug 'tpope/vim-rails'                                            " Rails craziness
-Plug 'jlanzarotta/bufexplorer'                                    " Buffer Explorer
 Plug 'kien/rainbow_parentheses.vim'                               " Colour matching parens nicely
 Plug 'tmux-plugins/vim-tmux-focus-events'                         " Make vim listen to tmux focus events
 Plug 'junegunn/vim-easy-align'                                    " Align things incredibly
