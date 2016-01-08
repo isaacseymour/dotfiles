@@ -194,3 +194,11 @@ vnoremap L g_
 " cursor is at the end of the word, press <c-u> to uppercase it, and then
 " continue happily on your way:
 inoremap <C-u> <esc>mzgUiw`za
+
+"makes fzf never use tmux
+"https://github.com/junegunn/fzf.vim/issues/66#issuecomment-169362556
+let g:fzf_layout = {}
+
+" reset cursor position on files, if it's remembered
+" but don't do it for gitcommit file types
+autocmd BufReadPost * if &filetype != "gitcommit" && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
