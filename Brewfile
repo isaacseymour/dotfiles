@@ -59,4 +59,4 @@ cask "slack"
 cask "totalspaces"
 cask "vagrant"
 cask "virtualbox"
-
+cask "virtualbox-extension-pack"

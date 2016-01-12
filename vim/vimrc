@@ -16,6 +16,7 @@ Plug 'chrisbra/csv.vim'
 Plug 'leshill/vim-json'
 Plug 'tpope/vim-markdown'
 Plug 'andersoncustodio/vim-tmux'
+Plug 'fatih/vim-go'
 
 " Colour
 Plug 'chriskempson/base16-vim'
