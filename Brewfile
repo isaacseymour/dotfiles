@@ -1,53 +1,56 @@
+# Provisioning/ops
 brew "ansible"
-brew "beanstalk" # a queue for testing ActiveJob::Retry
-brew "cabal-install" # Haskell!
 brew "docker"
 brew "docker-machine"
 brew "docker-compose"
+brew "hugo"
+
+# Languages
 brew "elixir"
-brew "fzf"
-brew "ghc"
-brew "git"
-brew "gnupg"
+brew "gcc"
 brew "go"
-brew "gpg-agent"
-brew "lftp"
-brew "mercurial"
-brew "openssl"
-brew "postgresql"
 brew "python"
-brew "rabbitmq"
 brew "rbenv"
 brew "rbenv-default-gems"
 brew "reattach-to-user-namespace"
 brew "ruby-build"
-brew "sbt"
-brew "scala"
-brew "sqlite"
+
+# Productivity
+brew "fzf"
+brew "git"
+brew "mercurial"
 brew "the_silver_searcher"
 brew "tmux"
 brew "tree"
 brew "vim"
-brew "watchman"
-brew "z"
 brew "zsh"
 
-# Casks
+# Security
+brew "gnupg"
+brew "gpg-agent"
+brew "openssl"
+
+# Storage
+brew "postgresql"
+brew "rabbitmq"
+brew "sqlite"
+
+# Cask
 brew "caskroom/cask/brew-cask"
+
+# Apps
 cask "alfred"
-cask "copy"
 cask "dashlane"
-cask "dropbox"
-cask "firefox"
-cask "flash"
-cask "google-chrome"
-cask "java"
 cask "iterm2"
-cask "radiant-player"
-cask "skype"
+cask "google-chrome"
+cask "google-drive"
 cask "slack"
-cask "totalspaces"
-cask "vagrant"
+cask "tunnelblick"
+cask "vlc"
+
+# Dev stuff
+cask "java" # JDK
+cask "osxfuse" # Mounting non-Mac filesystems (e.g. ext4)
+cask "vagrant" # VMs
 cask "virtualbox"
 cask "virtualbox-extension-pack"
-cask "vlc"
