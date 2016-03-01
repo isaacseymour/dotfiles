@@ -15,8 +15,6 @@ if command -v gpg-agent > /dev/null; then
   USED_GPG_PID=`echo $GPG_AGENT_INFO | cut -d':' -f2`
 
   kill_zshenv_shared() {
-    echo "Detected outdated agent(s):"
-    echo "GPG: file says $USED_GPG_PID, but $FOUND_GPG_PIDS is running."
     killall gpg-agent
     rm "${HOME}/.gpg-agent-info" &> /dev/null
   }

@@ -37,3 +37,6 @@ export NVM_DIR="${HOME}/.nvm"
 
 # Go
 export GOPATH="${HOME}/go"
+
+# Report time of commands over 1 second
+export REPORTTIME=1
