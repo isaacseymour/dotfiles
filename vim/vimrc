@@ -87,7 +87,7 @@ inoremap jj <esc>
 
 set history=100
 
-set textwidth=90
+set textwidth=100
 set expandtab
 set tabstop=2
 set shiftwidth=2
@@ -132,7 +132,7 @@ set relativenumber
 set background=dark
 colorscheme base16-flat
 
-set colorcolumn=90
+set colorcolumn=100
 
 set list listchars=tab:»·,trail:·
 
