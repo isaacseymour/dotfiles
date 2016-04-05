@@ -1,6 +1,6 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-all: symlinks brew ruby nvm npm tpm
+all: symlinks brew ruby nvm npm tpm screensaver
 	@echo "Reminder: Vim plugins are managed within Vim with Vundle."
 
 symlinks:
@@ -47,4 +47,4 @@ tpm:
 	cd ~/.tmux/plugins/tpm && git pull
 
 screensaver:
-	[ -f ~/Library/Screen\ Savers/RealSimpleAnniversaryClock.qtz ] || curl http://wayback.archive.org/web/http://simplystated.realsimple.com/files/RealSimpleAnniversaryClock.qtz --output ~/Library/Screen\ Savers/RealSimpleAnniversaryClock.qtz
+	[ -f ~/Library/Screen\ Savers/RealSimpleAnniversaryClock.qtz ] || curl -sL http://wayback.archive.org/web/http://simplystated.realsimple.com/files/RealSimpleAnniversaryClock.qtz --output ~/Library/Screen\ Savers/RealSimpleAnniversaryClock.qtz
