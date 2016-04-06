@@ -21,7 +21,7 @@ source $zsh_dotfile_path/aliases
 source $zsh_dotfile_path/exports
 source $zsh_dotfile_path/functions
 source $zsh_dotfile_path/agnoster-theme
-source $zsh_dotfile_path/secret
+[ -f $zsh_dotfile_path/secret ] && source $zsh_dotfile_path/secret
 
 HISTFILE=$HOME/.zhistory
 HISTSIZE=20000
@@ -38,20 +38,17 @@ stty -ixon
 # better cding
 # http://robots.thoughtbot.com/cding-to-frequently-used-directories-in-zsh
 setopt auto_cd
-cdpath=($HOME/gc $HOME/personal)
-
-# probably a bit unsafe but yolo
-export PATH="./bin:$PATH"
+cdpath=($HOME/work $HOME/me)
 
 # nice diffing
 export PATH="/usr/local/share/git-core/contrib/diff-highlight:$PATH"
 
 if which brew >/dev/null; then
-  [ -f `brew --prefix`/etc/profile/z.sh ] && source `brew --prefix`/etc/profile.d/z.sh
+  [ -f `brew --prefix`/etc/profile.d/z.sh ] && source `brew --prefix`/etc/profile.d/z.sh
 fi
 
 # Use fzf for shell things too
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export NVM_DIR="/Users/isaac/.nvm"
+NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

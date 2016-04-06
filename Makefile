@@ -33,9 +33,10 @@ ruby: brew symlinks
 	rbenv global $(LATEST_RUBY)
 
 LATEST_NODE="5"
+NVM_VERSION="v0.31.0"
 nvm:
 	[ -d ~/.nvm ] || git clone git@github.com:creationix/nvm ~/.nvm
-	cd ~/.nvm && git pull
+	cd ~/.nvm && git fetch && git checkout -f $(NVM_VERSION)
 	NVM_DIR=~/.nvm source ~/.nvm/nvm.sh && nvm install $(LATEST_NODE) && nvm alias default $(LATEST_NODE)
 
 npm: nvm
