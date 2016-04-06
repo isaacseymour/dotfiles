@@ -1,10 +1,9 @@
 # lazy
 alias f="fg"
-alias l="ls"
-alias vi="vim"
 alias v="vim"
 alias :q="exit"
 alias :Q="exit"
+alias gpg="gpg2"
 
 # misc
 alias man="LC_ALL=C LANG=C man"
