@@ -29,12 +29,8 @@ brew "zsh"
 brew "gnupg21"
 brew "openssl"
 
-# Cask
-brew "caskroom/cask/brew-cask"
-
 # Apps
 cask "alfred"
-cask "cloud" # CloudApp - drop files to share them 👌
 cask "dashlane"
 cask "iterm2"
 cask "google-chrome"
