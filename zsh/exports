@@ -1,7 +1,10 @@
 # vim: set filetype=sh:
 
-export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-export PATH="./node_modules/.bin:$PATH"
+### Path:
+export PATH="/usr/local/bin:$PATH" # homebrew
+export PATH="./node_modules/.bin:$PATH" # local npm executables
+export PATH="./.bundle/binstubs:$PATH" # local bundler executables
+export PATH="/usr/local/share/git-core/contrib/diff-highlight:$PATH" # nicer git diffing
 
 # Get FZF to ignore gitignored files
 export FZF_DEFAULT_COMMAND='ag -l -g ""'
@@ -9,7 +12,7 @@ export FZF_DEFAULT_COMMAND='ag -l -g ""'
 TZ="Europe/London"
 
 #LANGUAGE
-LC_ALL='en_US.UTF-8'
+LC_ALL='en_GB.UTF-8'
 # LC_CTYPE=C
 # DISPLAY=:0
 
@@ -18,25 +21,14 @@ export GIT_MERGE_AUTOEDIT=no
 export EDITOR='vim'
 export PAGER='less'
 
-# this has to be done after rbenv is inited
-export PATH="./.bundle/binstubs:$PATH"
+# JDK location
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home"
 
-# for elastic search
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home"
-
-# for Android SDK
-export PATH="${HOME}/android-sdk/tools:${HOME}/android-sdk/platform-tools:$PATH"
-export ANDROID_HOME="${HOME}/android-sdk"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# Node
+# Set up NVM for Node
 export NVM_DIR="${HOME}/.nvm"
-[ -d $NVM_DIR ] &&. "$NVM_DIR/nvm.sh"
 
 # Go
 export GOPATH="${HOME}/go"
 
-# Report time of commands over 1 second
-export REPORTTIME=1
+# Report time of commands over 5 seconds
+export REPORTTIME=5

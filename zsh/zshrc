@@ -40,15 +40,8 @@ stty -ixon
 setopt auto_cd
 cdpath=($HOME/work $HOME/me)
 
-# nice diffing
-export PATH="/usr/local/share/git-core/contrib/diff-highlight:$PATH"
-
-if which brew >/dev/null; then
-  [ -f `brew --prefix`/etc/profile.d/z.sh ] && source `brew --prefix`/etc/profile.d/z.sh
-fi
-
 # Use fzf for shell things too
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# Load NVM
+[ -d "$NVM_DIR" ] && . "$NVM_DIR/nvm.sh"

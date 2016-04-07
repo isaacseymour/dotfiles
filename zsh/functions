@@ -1,49 +1,11 @@
 # vim: set filetype=sh:
 
-function ck { command mkdir $1 && cd $1 }
-
 function g {
   if [[ $# > 0 ]]; then
     git $@
   else
     git status -sb
   fi
-}
-
-get_suspended_jobs() {
-  # thanks to @mheap for his help
-  NUM_JOBS="`jobs | wc -l`"
-  if test $NUM_JOBS -lt 1 ; then
-    echo ""
-  else
-    echo "("`jobs | gsed -r 's/ .*suspended (\(signal\))?//' | tr -s ' ' | gsed 's/\[\([^]]*\)\]/\1:/g' | gsed 's/\: /\:/g'`")"
-  fi
-}
-
-# taken from https://github.com/r00k/dotfiles/blob/master/zsh/functions
-function git-new-remote-tracking {
-  git checkout -b $1 && git push -u origin $1
-}
-
-function git_branch_name {
-  val=`git branch 2>/dev/null | grep '^*' | colrm 1 2`
-  echo "$val"
-}
-
-function new-tmux-from-dir-name {
-  tmux new-session -As `basename $PWD`
-}
-
-function rbenv_prompt_info() {
-  local ruby_version
-  ruby_version=$(rbenv version 2> /dev/null) || return
-  echo "‹$ruby_version" | sed 's/[ \t].*$/›/'
-}
-
-function nvm_prompt_info() {
-  local node_version
-  node_version=$(nvm current 2> /dev/null) || return
-  echo "‹$node_version›"
 }
 
 # Tab complete hosts from ~/.ssh/known_hosts
