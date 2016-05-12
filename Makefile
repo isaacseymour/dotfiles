@@ -27,12 +27,12 @@ brew:
 	@brew tap Homebrew/bundle || echo ''
 	brew bundle
 
-LATEST_RUBY="2.2.3"
+LATEST_RUBY="2.3.1"
 ruby: brew symlinks
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
 
-LATEST_NODE="5"
+LATEST_NODE="6"
 NVM_VERSION="v0.31.0"
 nvm:
 	[ -d ~/.nvm ] || git clone git@github.com:creationix/nvm ~/.nvm
