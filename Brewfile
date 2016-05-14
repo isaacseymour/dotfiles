@@ -36,8 +36,8 @@ cask "iterm2"
 cask "google-chrome"
 cask "odrive" # Sync multiple Google Drives (and similar services)
 cask "slack"
-cask "tunnelblick"
 cask "vlc"
+cask "whatsapp"
 
 # Dev stuff
 cask "java" # JDK
