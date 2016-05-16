@@ -1,0 +1,64 @@
+---
+4.1.1 echoe:>= 0|checksum:Z5r8Jc3otNEOF2MRNkb9jHuhg3+06lPz4WEYcl2Narw=,rubygems:>= 1.2
+4.1.1-universal-java echoe:>= 0|checksum:Z5r8Jc3otNEOF2MRNkb9jHuhg3+06lPz4WEYcl2Narw=,rubygems:>= 1.2
+4.1.1-x86-mswin32-60 echoe:>= 0|checksum:Z5r8Jc3otNEOF2MRNkb9jHuhg3+06lPz4WEYcl2Narw=,rubygems:>= 1.2
+4.1.9 |checksum:yUF0nt9o7sWBQ+qyUVc/Oih5IYZOwtPh3ZggoCnFr08=,rubygems:>= 1.2
+4.1.9-universal-java |checksum:yUF0nt9o7sWBQ+qyUVc/Oih5IYZOwtPh3ZggoCnFr08=,rubygems:>= 1.2
+4.1.9-x86-mswin32-60 |checksum:yUF0nt9o7sWBQ+qyUVc/Oih5IYZOwtPh3ZggoCnFr08=,rubygems:>= 1.2
+4.2.0 |checksum:+vbYo/ea9I5tjIIdVsUcWFSibBLvRvDpXuDJmtaUS7I=,rubygems:>= 1.2
+4.2.0-universal-java |checksum:+vbYo/ea9I5tjIIdVsUcWFSibBLvRvDpXuDJmtaUS7I=,rubygems:>= 1.2
+4.2.0-x86-mswin32-60 |checksum:+vbYo/ea9I5tjIIdVsUcWFSibBLvRvDpXuDJmtaUS7I=,rubygems:>= 1.2
+4.0.4 |checksum:zWofmaeBiH2ITeM7rUup3RVSXvqLzCnpaZEhQ5OqLMk=
+4.0.4-x86-mswin32-60 |checksum:zWofmaeBiH2ITeM7rUup3RVSXvqLzCnpaZEhQ5OqLMk=
+4.1.0 echoe:>= 0|checksum:jpMRijzmsOatkddR4MdWpEubMYF16rYqKJSNTVT62wc=,rubygems:>= 1.2
+4.1.0-universal-java echoe:>= 0|checksum:jpMRijzmsOatkddR4MdWpEubMYF16rYqKJSNTVT62wc=,rubygems:>= 1.2
+4.1.0-x86-mswin32-60 echoe:>= 0|checksum:jpMRijzmsOatkddR4MdWpEubMYF16rYqKJSNTVT62wc=,rubygems:>= 1.2
+3.0.3 |checksum:r/Ri9mR6b8cizpBD6gLviDhcYCh0VNiUAFO5sCoO9cQ=,rubygems:
+3.0.4 |checksum:P6S8DYYwg5XTwX6a938fnr74VnWS8e3QoJ9+uQ74rbQ=,rubygems:
+4.0.0 |checksum:5ZyNwXj4THc9M/rbfhv1u/cqMevS1M9zLuOZi3OJEeg=
+4.0.0-x86-mswin32-60 |checksum:5ZyNwXj4THc9M/rbfhv1u/cqMevS1M9zLuOZi3OJEeg=
+4.0.1 |checksum:iXbLD/nP8579p9/BJsIbS+hx7fj9C8+W7Cs2Qv7vYBY=
+4.0.1-x86-mswin32-60 |checksum:iXbLD/nP8579p9/BJsIbS+hx7fj9C8+W7Cs2Qv7vYBY=
+4.0.2 |checksum:eF1ZpBok4Ze6PSMqjyUIsLm1ZmNtG0rYASLBCTttHy0=
+4.0.2-x86-mswin32-60 |checksum:eF1ZpBok4Ze6PSMqjyUIsLm1ZmNtG0rYASLBCTttHy0=
+4.0.3 |checksum:Y4CsCNHZv5mpP3OBsaOH7KLXPl4TdHbwxTnVWhfiw5A=
+4.0.3-x86-mswin32-60 |checksum:Y4CsCNHZv5mpP3OBsaOH7KLXPl4TdHbwxTnVWhfiw5A=
+3.0.0 |checksum:+vjzxVw2fgNHJ65gIBPFJymRI0HMTa7UBs21MMz+9cI=,rubygems:
+3.0.1 |checksum:xhazeVJjj2Vz5B1QG9QDDSNzHJWk+NWbFLbyDXYChnc=,rubygems:
+3.0.2 |checksum:YB7UFISKA2qWd+8UW1L7ZntDOt87rkCDJIzQxJ/a3a4=,rubygems:
+4.2.2 |checksum:7vXENR28Sx+mLwUhq75Mb0/VUa0UwjlVRYGV77t+50M=,rubygems:>= 1.2
+4.2.2-universal-java |checksum:7vXENR28Sx+mLwUhq75Mb0/VUa0UwjlVRYGV77t+50M=,rubygems:>= 1.2
+4.2.2-x86-mswin32-60 |checksum:7vXENR28Sx+mLwUhq75Mb0/VUa0UwjlVRYGV77t+50M=,rubygems:>= 1.2
+4.2.1 |checksum:fk16GKGBI6Keau6hzwHUH06x6KoM2ostjI6IF4POe6c=,rubygems:>= 1.2
+4.2.1-universal-java |checksum:fk16GKGBI6Keau6hzwHUH06x6KoM2ostjI6IF4POe6c=,rubygems:>= 1.2
+4.2.1-x86-mswin32-60 |checksum:fk16GKGBI6Keau6hzwHUH06x6KoM2ostjI6IF4POe6c=,rubygems:>= 1.2
+4.2.3 |checksum:Jy7jflTLzxFb9u/fqk2cJUZrhb4aw6H4IeV56126s4I=,rubygems:>= 1.2
+4.2.3-universal-java |checksum:Jy7jflTLzxFb9u/fqk2cJUZrhb4aw6H4IeV56126s4I=,rubygems:>= 1.2
+4.2.3-x86-mswin32-60 |checksum:Jy7jflTLzxFb9u/fqk2cJUZrhb4aw6H4IeV56126s4I=,rubygems:>= 1.2
+4.2.4.pre1 |checksum:buS5mN9kGGAC3aEgJfQSTpr01VyCFuErFOQ26x8DtJk=,rubygems:> 1.3.1
+4.2.4.pre2-java |checksum:NtP3LxmBIWShorLsCyb3Uy3AQIh2wVMXR7r+xtKN+BQ=,rubygems:> 1.3.1
+4.2.4.pre2 |checksum:NtP3LxmBIWShorLsCyb3Uy3AQIh2wVMXR7r+xtKN+BQ=,rubygems:> 1.3.1
+4.2.4.pre2-x86-mingw32 |checksum:NtP3LxmBIWShorLsCyb3Uy3AQIh2wVMXR7r+xtKN+BQ=,rubygems:> 1.3.1
+4.2.4.pre2-x86-mswin32-60 |checksum:NtP3LxmBIWShorLsCyb3Uy3AQIh2wVMXR7r+xtKN+BQ=,rubygems:> 1.3.1
+4.2.4.pre3-java |checksum:+GQQqYGOYIa2tc0J5zaAsSHEUaLJSDS1emqPmapOtjU=,rubygems:> 1.3.1
+4.2.4.pre3 |checksum:+GQQqYGOYIa2tc0J5zaAsSHEUaLJSDS1emqPmapOtjU=,rubygems:> 1.3.1
+4.2.4.pre3-x86-mingw32 |checksum:+GQQqYGOYIa2tc0J5zaAsSHEUaLJSDS1emqPmapOtjU=,rubygems:> 1.3.1
+4.2.4.pre3-x86-mswin32-60 |checksum:+GQQqYGOYIa2tc0J5zaAsSHEUaLJSDS1emqPmapOtjU=,rubygems:> 1.3.1
+4.2.4-java |checksum:unhwLOGcoOl6LI629GuNpylzgGacnEVpURLDaG0PJdM=
+4.2.4 |checksum:unhwLOGcoOl6LI629GuNpylzgGacnEVpURLDaG0PJdM=
+4.2.4-x86-mingw32 |checksum:unhwLOGcoOl6LI629GuNpylzgGacnEVpURLDaG0PJdM=
+4.2.4-x86-mswin32-60 |checksum:unhwLOGcoOl6LI629GuNpylzgGacnEVpURLDaG0PJdM=
+4.2.5-java |checksum:nqKI9FrBNcrMYYA7i03x9zckHZvQVvTarV6Nv/WnxRQ=
+4.2.5 |checksum:nqKI9FrBNcrMYYA7i03x9zckHZvQVvTarV6Nv/WnxRQ=
+4.2.5-x86-mingw32 |checksum:nqKI9FrBNcrMYYA7i03x9zckHZvQVvTarV6Nv/WnxRQ=
+4.2.5-x86-mswin32-60 |checksum:nqKI9FrBNcrMYYA7i03x9zckHZvQVvTarV6Nv/WnxRQ=
+4.2.7-java |checksum:Lg9DLqC5Yq6xi0Uhx0j29x6GT/8MEIGULuYcG8PiuVU=
+4.2.7 |checksum:Lg9DLqC5Yq6xi0Uhx0j29x6GT/8MEIGULuYcG8PiuVU=
+4.2.7-x86-mingw32 |checksum:Lg9DLqC5Yq6xi0Uhx0j29x6GT/8MEIGULuYcG8PiuVU=
+4.2.7-x86-mswin32-60 |checksum:Lg9DLqC5Yq6xi0Uhx0j29x6GT/8MEIGULuYcG8PiuVU=
+4.2.8 |checksum:PCb+6UEt8JbFQRC6defuY6SBKU+c76MUpTdo28G67mA=
+4.2.9-java |checksum:qXYa7GKghqdTKtC9drOUfvlIBCf4fPseyHIOCneSHdY=
+4.2.9 |checksum:qXYa7GKghqdTKtC9drOUfvlIBCf4fPseyHIOCneSHdY=
+4.2.9-x86-mingw32 |checksum:qXYa7GKghqdTKtC9drOUfvlIBCf4fPseyHIOCneSHdY=
+4.2.9-x86-mswin32-60 |checksum:qXYa7GKghqdTKtC9drOUfvlIBCf4fPseyHIOCneSHdY=
+4.3.0 |checksum:45a9fb947cfe781d3d5f7e5bb5920ec0ff3f1957c63de2aa60f1dd6d365c5076,ruby:>= 0,rubygems:>= 0

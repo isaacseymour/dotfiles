@@ -1,0 +1,65 @@
+---
+0.7.0 daemons:>= 1.0.9,eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:TjEHn7LBi8TL4auKYVPu5Ep7OTZL0TdqS9HNqSrVPUQ=
+0.7.0-x86-mswin32-60 eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:TjEHn7LBi8TL4auKYVPu5Ep7OTZL0TdqS9HNqSrVPUQ=
+0.7.1 daemons:>= 1.0.9,eventmachine:>= 0.10.0,rack:>= 0.2.0|checksum:Y++KpNmi6c6vpRLCZTkrbYYh6oT7pY4A6LcDGmYnU4k=
+0.7.1-x86-mswin32-60 eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:Y++KpNmi6c6vpRLCZTkrbYYh6oT7pY4A6LcDGmYnU4k=
+0.8.0 daemons:>= 1.0.9,eventmachine:>= 0.10.0,rack:>= 0.2.0|checksum:i8O0+jlmGa78mHvxUR/qcJtvHjyu1DtNkE75whDlLIM=
+0.8.1 daemons:>= 1.0.9,eventmachine:>= 0.10.0,rack:>= 0.2.0|checksum:2KWs3THn+rv3kAvxjSwbSoOMRozlxTsHUm8CtK3FpP0=
+0.8.2 daemons:>= 1.0.9,eventmachine:>= 0.12.0,rack:>= 0.3.0|checksum:C3oZWEBiOqev6RTkJsnYXWW4jys9sBlh7d0dxC5kLPQ=
+1.0.0 daemons:>= 1.0.9,eventmachine:>= 0.12.0,rack:>= 0.3.0|checksum:soLIncVIB6k5ZD1z9hGjbnEXtoVn18S4zR8S4+T6J78=
+1.2.1 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:6TdMQXvTOpE8CuwLCUZ+GK7Qhhos7p4L76EyZSmbMEQ=
+1.2.2 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:ISoznUvkHxge8vzpoCKU3m25fcdhYD2sJtFavPVWARM=
+0.6.0 daemons:>= 1.0.9,eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:QTSLwy/hAv5H6BqCsPrU39JsQBQ4Stx/wuy+/GFggXI=
+0.6.0-x86-mswin32-60 eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:QTSLwy/hAv5H6BqCsPrU39JsQBQ4Stx/wuy+/GFggXI=
+0.6.1 daemons:>= 1.0.9,eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:8eQ01UmsNG8VLrlkvhtuweMGvEL+wEg5sXF+I9uHCj0=
+0.6.1-x86-mswin32-60 eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:8eQ01UmsNG8VLrlkvhtuweMGvEL+wEg5sXF+I9uHCj0=
+0.6.2 daemons:>= 1.0.9,eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:xCklT/FgMI4V6SrJJu2WYyq3fpYEVEJhwuUHrzsHQq4=
+0.6.2-x86-mswin32-60 eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:xCklT/FgMI4V6SrJJu2WYyq3fpYEVEJhwuUHrzsHQq4=
+0.6.3 daemons:>= 1.0.9,eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:ozv+Oo4htI1dIxx0j/FC59veJGTrpjjfdoga/CkfhGA=
+0.6.3-x86-mswin32-60 eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:ozv+Oo4htI1dIxx0j/FC59veJGTrpjjfdoga/CkfhGA=
+0.6.4 daemons:>= 1.0.9,eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:hajhbz/k3eawaHkQbfP6SK109tHHrIUkmbWMV3uuQ2s=
+0.6.4-x86-mswin32-60 eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:hajhbz/k3eawaHkQbfP6SK109tHHrIUkmbWMV3uuQ2s=
+0.5.2 daemons:>= 1.0.9,eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:6ZtjhwkqiqPqSYbV1ui8m2l0Bf2R9LLCk3hPtpB/VAI=
+0.5.3 daemons:>= 1.0.9,eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:z6zJYDcKjAm2k2jy5y11ARTp7aXnRbaR84pEdjm01FA=
+0.5.3-x86-mswin32-60 eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:z6zJYDcKjAm2k2jy5y11ARTp7aXnRbaR84pEdjm01FA=
+0.5.4 daemons:>= 1.0.9,eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:rVGjn1S/hvE9PzF2c2cLCQucHKVL8rTe73axQJTqRuI=
+0.5.4-x86-mswin32-60 eventmachine:>= 0.8.1,rack:>= 0.2.0|checksum:rVGjn1S/hvE9PzF2c2cLCQucHKVL8rTe73axQJTqRuI=
+0.3.0 |checksum:aeJKmVG5TKjGlK7HRNs04Ex3zm0uyRKksSX0xmJ7aZ8=,rubygems:
+0.4.0 |checksum:3DnSdaXIxu5LWIS8/nYt2YffWDX4XyNZV76E7fdPlAE=,rubygems:
+0.4.1 |checksum:BZhpGuLinMbntktWia+eSjk/YMkAa3zZ7cyG36p7pHs=,rubygems:
+0.5.0 eventmachine:>= 0.9.0,rack:>= 0.2.0|checksum:Solbd5PZNdPRVKe1EwAWsW7aJsDChBy7N/8M7fGnoWQ=
+1.2.3 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:g1ZjDeDrG7eUjdC++XEWixSR+OfYKEWhrwfwCgUIuEI=
+1.2.3-x86-mswin32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:g1ZjDeDrG7eUjdC++XEWixSR+OfYKEWhrwfwCgUIuEI=
+1.2.4 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:L7yxT9aDuHVhe6kgjUqK0VrkC0SpxekPVpjzUvJodgI=
+1.2.4-x86-mswin32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:L7yxT9aDuHVhe6kgjUqK0VrkC0SpxekPVpjzUvJodgI=
+1.2.5 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:h/RmHJz+e0GlnmEUSHp8lZ9VqkMJTFFcJXbncKmrdJM=
+1.2.6 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:6TAz9eCMlq60usa545Rb2IRI4k2yhIxbWY3odEv0eQ0=
+1.2.6-x86-mingw32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:6TAz9eCMlq60usa545Rb2IRI4k2yhIxbWY3odEv0eQ0=
+1.2.6-x86-mswin32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:6TAz9eCMlq60usa545Rb2IRI4k2yhIxbWY3odEv0eQ0=
+1.2.7 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:u3dZKDR4r7wXIOl8CRx7/qt3aOWhvI1LXU/+rUf85UU=
+1.2.7-x86-mingw32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:u3dZKDR4r7wXIOl8CRx7/qt3aOWhvI1LXU/+rUf85UU=
+1.2.7-x86-mswin32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:u3dZKDR4r7wXIOl8CRx7/qt3aOWhvI1LXU/+rUf85UU=
+1.2.8 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:4zbU7DCQ6yVLlXOMYHs6/lzX6ro8bHZ3nVShUbh60jk=
+1.2.8-x86-mingw32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:4zbU7DCQ6yVLlXOMYHs6/lzX6ro8bHZ3nVShUbh60jk=
+1.2.8-x86-mswin32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:4zbU7DCQ6yVLlXOMYHs6/lzX6ro8bHZ3nVShUbh60jk=
+1.2.9 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:CAq08ayrs86BVPlm2uH+qkDvTV1Rof3CFJrpmUxbbF0=
+1.2.9-x86-mingw32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:CAq08ayrs86BVPlm2uH+qkDvTV1Rof3CFJrpmUxbbF0=
+1.2.9-x86-mswin32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:CAq08ayrs86BVPlm2uH+qkDvTV1Rof3CFJrpmUxbbF0=
+1.2.10 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:Zrym/rVmOK96TmXpBfy6csQseDwZT1xJE37fTPzuFl0=
+1.2.10-x86-mingw32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:Zrym/rVmOK96TmXpBfy6csQseDwZT1xJE37fTPzuFl0=
+1.2.10-x86-mswin32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:Zrym/rVmOK96TmXpBfy6csQseDwZT1xJE37fTPzuFl0=
+1.2.11 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:79ttgNYTvDu9a2WJas0HKCXpz6mbGFuHX0uhn85DqGE=
+1.2.11-x86-mingw32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:79ttgNYTvDu9a2WJas0HKCXpz6mbGFuHX0uhn85DqGE=
+1.2.11-x86-mswin32 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:79ttgNYTvDu9a2WJas0HKCXpz6mbGFuHX0uhn85DqGE=
+1.3.0 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:gBeKSya2QdWnEYZxcs79zzkz6UJSUAvTujEShP8booo=
+1.3.1 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:KDwBv30V2LPMpH6uS6AyVqOMCnsPDGi5UkANq4oZtfM=
+1.4.0 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:604i45TAVCQ1S/kWZay4xZJP1TO4YG+otzl4iLhAitc=
+1.4.1 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:OJxhgvxpXRqguZ/huKTr7/w61fE3JsSVoTfs3Qh8I14=
+2.0.0.pre eventmachine-le:~> 1.1.0,http_parser.rb:~> 0.5.3,preforker:~> 0.1.1,rack:~> 1.4|checksum:L9dqTaUK3aQyQANdWWF8zTTTrYvNILwLXNy71cZhgPY=,rubygems:> 1.3.1
+1.5.0 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:AW+eyYSzk9mQS7bWzh3RaNbgBqxDnG0+AsGbuRYWTZM=
+1.5.1 daemons:>= 1.0.9,eventmachine:>= 0.12.6,rack:>= 1.0.0|checksum:6oXEx9WxvSnEmSdXzPi+Dd7p1AMPQo2zR/WaBUdNOEM=
+1.6.0 daemons:>= 1.0.9,eventmachine:>= 1.0.0,rack:>= 1.5.0|checksum:miGCsIUcd8FdZmqe0pdmYEdbl3+rZq1Y6gDxjnX+UhM=
+1.6.1 daemons:>= 1.0.9,eventmachine:>= 1.0.0,rack:>= 1.0.0|checksum:oLgOFjLTUppcS4fgfZqxRuDd5eUGwg86dA/os2TVvRg=
+1.6.2 daemons:>= 1.0.9,eventmachine:>= 1.0.0,rack:>= 1.0.0|checksum:uO7uDJvZk5eB5iRWK2ENsQrJlUqyNwEYIEyjqKzNIG0=
+1.6.3 daemons:>= 1.0.9&~> 1.0,eventmachine:~> 1.0,rack:~> 1.0|checksum:kUgquFbq7wArZUObt8CcKxYLH7L2CT0uswjmAp9XptQ=,ruby:>= 1.8.5
+1.6.4 daemons:>= 1.0.9&~> 1.0,eventmachine:>= 1.0.4&~> 1.0,rack:~> 1.0|checksum:

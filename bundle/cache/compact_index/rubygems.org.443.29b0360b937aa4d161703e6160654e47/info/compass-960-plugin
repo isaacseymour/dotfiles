@@ -1,0 +1,10 @@
+---
+0.9.11 compass:>= 0|checksum:GhHYsGXoXEI43Vx3uR7hobVN5Ht7rcfB4vI9Wjxh5Kg=,rubygems:>= 1.2
+0.9.12 compass:>= 0.10.0.rc3|checksum:llIlCt0QfoD5B3HIBBlC+L9RO0CMYAgeRPKNFDZVT9E=,rubygems:>= 1.3.6
+0.9.13 compass:>= 0.10.0.rc3|checksum:kfvBP1BiQ8b+injYQKyZcuZBuDxiuixq00ZLZ0YpNy8=,rubygems:>= 1.3.6
+0.10.0.beta.0 compass:>= 0.10.0|checksum:c05JLBf/OiWhheUVkz2SKHWwwyUpYwWvGfzm4oOqJbA=,rubygems:>= 1.3.6
+0.10.0 compass:>= 0.10.0|checksum:FA57+4UKxCcoJyzrfKu5Kn4KkJ2ferhJG/lM46ff0CY=,rubygems:>= 1.3.5
+0.10.1 compass:>= 0.10.0|checksum:39KplY2NBmuAmUD2hweahqDsQM19qsDKuSkWcGfm0Uw=,rubygems:>= 1.3.5
+0.10.2 compass:>= 0.10.0|checksum:cgisHj+ngpDW1CCi2disfc6xUzHqfiV7uGcWgMi86Z8=,rubygems:>= 1.3.5
+0.10.3 compass:>= 0.10.0|checksum:+kVcUCkupX5AreV0NheT7Ydi0pF7T6u1JiSc8w0zxWM=,rubygems:>= 1.3.5
+0.10.4 compass:>= 0.10.0|checksum:BXw7A2Rcz6u/Ugopv7T1PdKMLnCyDB+zh/T+eF5aG/s=,rubygems:>= 1.3.5

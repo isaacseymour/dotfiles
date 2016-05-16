@@ -1,0 +1,60 @@
+---
+0.0.1 |checksum:jkkg6H7ZAFw19FLu4iSuYBuGMJvXnZW2QJR/l7IMs/s=
+0.0.2 |checksum:dibIWvpG+JqTtuxjYAN5ivSnjyOzEPieB9+I8mIhDv4=
+0.1.0 |checksum:YzdeRj+bX9hM+KX1ET1BOwtnfHiyePH6OEgdWQJC84w=
+0.1.1 |checksum:QcnJ7Ass/l2m+9ULDJ3ZPdg6pXiPrZEB+U9PCuoEUYA=
+0.1.2 |checksum:ZoyN6fqIiItpul9bMpT24iwmBtxvvuAXuNnnUaEp/q4=
+0.2.0 addressable:>= 0,rack:>= 0|checksum:v5EaF1yAn/u8cZuRYsCmmFthEIDnemk7cqCDMUxDWuM=
+0.2.1 addressable:>= 0,rack:>= 0|checksum:vIRPndIEGT9IoufwUhzb8+50BpcmhpwK9z+k+FY+vqc=
+0.2.2 addressable:>= 0,rack:>= 0|checksum:7ZggiUsaoD9h2VujVxsf+PSKMGjLI1/KVTj2VOD0Ofo=
+0.2.3 addressable:>= 0,rack:>= 0|checksum:aHboPUQGz8OmPyXvKGbhhCWZ3UXh0vwoPDCYGesoghg=
+0.2.4 addressable:>= 0,rack:>= 0|checksum:TVrkk4wokOtnjNsnif0uLbaJe0YXDqaErLgo0CsU3IQ=
+0.3.0 addressable:>= 0,rack:>= 0|checksum:9nlWSkiw6TlKom5eu1XP7AHhxvHuDiLh7qpA7BueYQk=
+0.3.1 addressable:>= 0,rack:>= 0|checksum:vAa7VOPy3APMvOhoDoEbI06ZYKj68dlJlPxPwA1Wf6E=
+0.4.0 addressable:>= 0,rack:>= 0|checksum:EWQyrnd2xQsdE6/cN7PMer/2c6eQlVTbzHX2+1BdXck=
+0.4.1 addressable:>= 0,rack:>= 0|checksum:WZDsQRyd+iVo3riXgAx+9RngTXD0MYhoiL8gM7B4yLU=
+0.4.2 addressable:= 2.1.1,rack:~> 1.1.0|checksum:Ktlb3iOjwt5FkH9lP+/vBgLVoCSHR74mhc46JE8SCPo=
+0.4.3 addressable:= 2.1.1,rack:~> 1.1.0|checksum:h+nQ4Ca1h9CTZOD2PP19zc27wShA6OezzyRQgqECOvM=
+0.4.4 addressable:= 2.1.1,rack:>= 1.0.1|checksum:YkT65XgVfgVf2U4IAMCqhWgDgLJc2JEzizPc/qOXoks=
+0.4.5 addressable:>= 2.1.1,rack:>= 1.0.1|checksum:NnTzQS2sTRB3tae0wcJFz1rp5wtK4+BdXHs2b6krR5s=
+0.4.6 addressable:>= 2.1.1,rack:>= 1.0.1|checksum:AvVNQAdE4cwXmTh0gADfIqD2W2mHQ3fzRiGF0rzmXow=
+0.5.0 addressable:~> 2.1.1,multipart-post:~> 1.0.1,rack:~> 1.2.1|checksum:IZ0l0ovwlhzpiCB1fi3wNZXdnuSAcsDxY/rACyhSO5k=
+0.5.1 addressable:~> 2.2.2,multipart-post:~> 1.0.1,rack:~> 1.2.1|checksum:fzKgpQ6Nnpi7xOzyXwIxcN5RgZms4f5KONRXzbWQmNI=,rubygems:>= 1.3.6
+0.5.2 addressable:~> 2.2.2,multipart-post:~> 1.0.1,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:4UxaCp9oIXT/Fg5lvX8Y0Bk3F+qPkmcM+nVWCFRuem0=,rubygems:>= 1.3.6
+0.5.3 addressable:~> 2.2.2,multipart-post:~> 1.0.1,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:hIdcnTN1av5dwJ44BFusHOFq1u1EY2xfOjOoJpcg6ao=,rubygems:>= 1.3.6
+0.5.4 addressable:~> 2.2.2,multipart-post:~> 1.1.0,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:ZoRzU7gs3G0tIuTjRQSKEIM8bxHbZTxaUzEFJSzG1As=,rubygems:>= 1.3.6
+0.5.5 addressable:~> 2.2.4,multipart-post:~> 1.1.0,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:byXAOTZFoyVir33bMyG7Dy+rZo1N+KgXZA1cm3E/GCg=,rubygems:>= 1.3.5
+0.5.6.pre addressable:~> 2.2.4,multipart-post:~> 1.1.0,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:CDjjjLs1VgTzP+n0gwNAhVZkA2TAkwzOq1EztEu2l0Y=,rubygems:> 1.3.1
+0.5.6 addressable:~> 2.2.4,multipart-post:~> 1.1.0,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:6Pnc/0q44kT9KPEOAvRPylKd7QmKS3y16Swz2tWzCl0=,rubygems:>= 1.3.5
+0.5.7 addressable:~> 2.2.4,multipart-post:~> 1.1.0,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:3U2a5aOwUhggfyRlL8179+tSkxCrkaWFJz8iWP/fLkI=,rubygems:>= 1.3.5
+0.6.0 addressable:~> 2.2.4,multipart-post:~> 1.1.0,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:KAAFG1Kf3dnXMyMraoDvjkAY9OpKMOYOSLvPCS2klg0=,rubygems:>= 1.3.5
+0.6.1 addressable:~> 2.2.4,multipart-post:~> 1.1.0,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:F9SYMCSpwC7IS8L/PNaWP3/wQnW46UHR0d+PhzasPOU=,rubygems:>= 1.3.5
+0.7.0 addressable:~> 2.2.4,multipart-post:~> 1.1.0,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:N1rbzqHudu4f171/W3IWYu/4ePFkV0AQ8H+cwPYe01Y=,rubygems:>= 1.3.5
+0.7.1 addressable:~> 2.2.6,multipart-post:~> 1.1.0,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:4ltKXANEqkXj4elQhguXw2dDANRKnUXOXuRehtOM5FE=,rubygems:>= 1.3.5
+0.7.2 addressable:~> 2.2.6,multipart-post:~> 1.1.0,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:QIQWVZgTfH51UyZeJMje9bx1Ca8qcGJ3Mxj88XOI1mI=,rubygems:>= 1.3.5
+0.7.3 addressable:~> 2.2.6,multipart-post:~> 1.1.0,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:yRjlTvxvrDYj5s7zLPC6OqGGnxelCcIIzvFUbLVtIPY=,rubygems:>= 1.3.5
+0.7.4 addressable:~> 2.2.6,multipart-post:~> 1.1.0,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:W74lO9c/ennd0wYDi6j/ZI6qePnXMWVnvF/EjRS6HQI=,rubygems:>= 1.3.5
+0.7.5 addressable:~> 2.2.6,multipart-post:~> 1.1.3,rack:< 2&>= 1.1.0,rack:< 2&>= 1.1.0|checksum:Kf7nrjyxaSlJuItvxyw9p1c4R0NrmpVuAs8NeqHEO+w=,rubygems:>= 1.3.5
+0.7.6 addressable:~> 2.2,multipart-post:~> 1.1,rack:~> 1.1|checksum:vTKRpv5FRbrVZmEOXB0MZx6xgqqNl3LoYKhdssPDzxk=,rubygems:>= 1.3.5
+0.8.0.rc2 multipart-post:~> 1.1|checksum:LAya6hXwTIlc/FtF7mGgkfw/DFy7ms4+hrNA4d++mK4=,rubygems:> 1.3.1
+0.8.0 multipart-post:~> 1.1|checksum:X4hecdAcWBgAnDkon9Ui6yLUeLqRVc3CgZVVfeTOseI=,rubygems:>= 1.3.5
+0.8.1 multipart-post:~> 1.1|checksum:dMe4RB1fwYU6HrbWwViuxH548YW9UwRK6Jc1Hk7OQfY=,rubygems:>= 1.3.5
+0.8.2 multipart-post:~> 1.1|checksum:Izc9Dve8MlZzA60BubIFnEEAs/4lfUhUtETMR78GQS4=,rubygems:>= 1.3.5
+0.8.4 multipart-post:~> 1.1|checksum:pdlnFL1hVDd78qVbCm9aaOl0WBRbkcZ9UW69nxXMNl4=,rubygems:>= 1.3.5
+0.8.5 multipart-post:~> 1.1|checksum:GaKSxzD2YTRIiLsHu0d+wHmFJOkA3jj5nYTl2x5tZj4=,rubygems:>= 1.3.6
+0.8.6 multipart-post:~> 1.1|checksum:XhbfGO1tV2Jwh/eZK7hwlaEqpdeKWoQ22QVmh+0DTZo=,rubygems:>= 1.3.6
+0.8.7 multipart-post:~> 1.1|checksum:sTVTcGk+tIy4GrKmbwL3kRd+9TyD05aZoFb1OFpNyqA=,rubygems:>= 1.3.6
+0.9.0.rc1 multipart-post:~> 1.1|checksum:R6gYelJGaL3L74zArZzCraAGRCYYdZgYNfBb09PUS/8=,rubygems:> 1.3.1
+0.9.0.rc2 multipart-post:~> 1.1|checksum:dM0zdbiZpujwv0oDkfkC5aaichKIz4QUS5F/cPVWrzY=,rubygems:> 1.3.1
+0.9.0.rc3 multipart-post:~> 1.1|checksum:U36ORoUC/SsP7xH1VdvDFdLWYoO8yqbF5LXV7ADa++A=,rubygems:> 1.3.1
+0.9.0.rc4 multipart-post:~> 1.1|checksum:uHazaIHKyBsoyn6AJvR8EvngTXdugRyFRvKuGjCwoXU=,rubygems:> 1.3.1
+0.9.0.rc5 multipart-post:~> 1.1|checksum:kY4dmVAIsz4bh12E7cnlSNmzPbqzPEurQ32CS/6rgno=,rubygems:> 1.3.1
+0.8.8 multipart-post:~> 1.2.0|checksum:JDIuFhjHBtEUGQJB+91kM8LjqiqKBkA3N9vmq2SR3rI=,rubygems:>= 1.3.6
+0.9.0.rc6 multipart-post:~> 1.2.0|checksum:T2GWM/OaaanoZ930+nwDS0Hs+zcy+IR3rW8Jr75UVBg=,rubygems:> 1.3.1
+0.8.9 multipart-post:~> 1.2.0|checksum:KJw7W1eCG1KYi9tReNPhFJdB8rrl++4qgLyD/rRLp50=,rubygems:>= 1.3.6
+0.9.0.rc7 multipart-post:< 3&>= 1.2|checksum:tfJI84Eg1MR4IL7UY6rMPFic/a6CYKXy8soE97BuCjs=,rubygems:> 1.3.1
+0.9.0 multipart-post:< 3&>= 1.2|checksum:hkCdMp3vpLOztXdPzAv5sTXvQMYPFH2/ruBWI49HkY8=,rubygems:>= 1.3.5
+0.9.1 multipart-post:< 3&>= 1.2|checksum:Vnc1CAjK4dfuUm/o94OBwTQZMXMpIoHvY/r276z9Y8A=,ruby:>= 0,rubygems:>= 1.3.5
+0.8.10 multipart-post:~> 1.2.0|checksum:
+0.9.2 multipart-post:< 3&>= 1.2|checksum:
+0.8.11 multipart-post:~> 1.2.0|checksum:

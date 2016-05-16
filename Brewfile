@@ -3,6 +3,7 @@ brew "ansible"
 brew "docker"
 brew "docker-machine"
 brew "docker-compose"
+brew "heroku"
 
 # Languages
 brew "elixir"

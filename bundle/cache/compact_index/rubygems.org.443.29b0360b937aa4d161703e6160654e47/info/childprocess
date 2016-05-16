@@ -1,0 +1,56 @@
+---
+0.0.1 ffi:~> 0.6.3|checksum:9fOLMJmoZP9/MyaPk65JNh/ltDHAnHyPUIzyJoKt8Z0=
+0.0.2 ffi:~> 0.6.3|checksum:NhXxu7DYSQ0xgkdTF3rbn/Pet+53utJKKgUC0ly+SfM=
+0.0.3 ffi:~> 0.6.3|checksum:0ZZCHKMm36/MpALFjLuA41a949tSFeaBgYwA/fyO4fI=
+0.0.4 ffi:~> 0.6.3|checksum:RRoty7tgmOU68L0NTrbSIQerpiZdbpiPFt+pw2irJmY=
+0.0.5 ffi:~> 0.6.3|checksum:ZwLSG2bK15iskInPTfeqUkHtX+0fPcmQLiUlNzOGVyo=
+0.0.6 ffi:~> 0.6.3|checksum:1tk9jiHapDQdM2wtuROVQoM1vNDphIXjJrf9NYlxwG4=
+0.0.7 ffi:~> 0.6.3|checksum:D2NMj3TERsJCt0Mpi0GUx8SylpS3bnLOmwW+6YacRlc=
+0.0.9 ffi:~> 0.6.3|checksum:fN18uQ4ZJsEbJoo8XvD9s3xb+/25oqCsqXi7Z6lYgeU=
+0.1.0 ffi:~> 0.6.3|checksum:lZXvBLtpYg2zpClLEAud5kw3Md5XQDjBUP8aFnepyEo=
+0.1.1 ffi:~> 0.6.3|checksum:s9flVs9+zrJihpcLts35o6AVmzCC5l1tH+YfbSAr6Rc=
+0.1.2 ffi:~> 0.6.3|checksum:LP2v8ezF7+gzT+GPCfvywUe8DCkLPODR5g6etMApFvw=
+0.1.3 ffi:~> 0.6.3|checksum:AfPKZSTGQ05SokNhP9C0m3XDpYlh74VzBuNkyG85D1E=
+0.1.4 ffi:~> 0.6.3|checksum:4LHp7oKEgj3IrjEz+2SiX+DdeSitIXmnwU6YEwtJl2U=
+0.1.5 ffi:~> 0.6.3|checksum:IsglnYB7LMj2avLJSyN7XEq9OIKsCu+X1EYpNm9Ye2s=
+0.1.6 ffi:~> 0.6.3|checksum:gESYXHZQDSuaPUqJuEpwfk9MQ3OXwJ+s8d9v42BeGe8=
+0.1.7 ffi:~> 0.6.3|checksum:rJJBLflLo3V+ht8LfE/6ou3H1S79TMAdWNbYGzbjalQ=
+0.1.8.pre ffi:~> 1.0.6|checksum:hrCNUZaLzSVc0PyDJuAx56AyisThamxoDQdman3cS54=,rubygems:> 1.3.1
+0.1.8 ffi:~> 1.0.6|checksum:9cheYvA1dyN6LZjH5uIuZ42VPBWPogmBQHQo2lz6QGk=
+0.1.9 ffi:~> 1.0.6|checksum:OImLsY1ZTAMFflz6eoKg4mu2HoyU8B1Fr8duLz5c/HE=
+0.2.0 ffi:~> 1.0.6|checksum:pBTz+1KuQ+H+al6yYyqhUJXLN/THmgnxE0mI8UJi8i4=
+0.2.1 ffi:~> 1.0.6|checksum:89pChJgSBjgaou7BfQd5ux4yKPIE9IYwo85YF1uBN74=
+0.2.2 ffi:~> 1.0.6|checksum:eLKfXB+upsplpiZimbc/1SxHfz9UqdB1NghGqu4LEPQ=
+0.2.3 ffi:~> 1.0.6|checksum:ZKtIOSIPuYVEff4G6N7ObzdEZ9JD20Md4zteKDB2dPY=
+0.2.4 ffi:~> 1.0.6|checksum:DI4yyTFcsLLA5KAbggRfoK28tIUh2YfqScgChmQGAVk=
+0.2.5 ffi:~> 1.0.6|checksum:gwrMl9wleOGP3iZ7wNL8FVPJ8hTfA1zYRSDsfA1C/NY=
+0.2.6 ffi:~> 1.0.6|checksum:7DdksjalHsqJg67QG6HUn2Hnw8FGmdNxAel4xOkRrmE=
+0.2.7 ffi:~> 1.0.6|checksum:HAANV9mpJML4qdwbt8GPIwE56I80dEq6Zn0wvRVsjhw=
+0.2.8 ffi:~> 1.0.6|checksum:sRXJl3qhKnNEFp5/PG2Zz3Xp2kq17KjrrtuUeNyNFTw=
+0.2.9 ffi:~> 1.0.6|checksum:i13pfpo+A4rIl5TKwoypNKH+W9UVTGfTJa6o8u8FJXQ=
+0.3.0 ffi:~> 1.0.6|checksum:ZHl5wDhD5CDhOJJfQFFioWS5Qx8kzeWl5ETUwKY1fa8=
+0.3.1 ffi:~> 1.0.6|checksum:tPClZ5DhpqQdJMbxLOwkZ7h7F45TiUbiehOhz3e/E14=
+0.3.2 ffi:~> 1.0.6|checksum:eNRxrCNsMxa1WyPdNJ961HI1gsVWPDsfzQfN6AMo0gA=
+0.3.3 ffi:~> 1.0.6|checksum:IEs3+Pz+9P0A/+h2zFS97QYW5/c4HN4DtPQIwmxfFHs=
+0.3.4 ffi:>= 1.0.6&~> 1.0|checksum:IfJTH5Dj0SArSWLLaaYrBOqQfXJpDZ7bO7i4zIw6tec=
+0.3.5 ffi:>= 1.0.6&~> 1.0|checksum:XRol47XjFqDvPl2hxYcUhnLrQLPCklFBsYHQpz2IfL8=
+0.3.6 ffi:>= 1.0.6&~> 1.0|checksum:Lb16GwJbLKT1e4fq3sep7Sw2Q9S7A8cVU4jz+rT2Ts8=
+0.3.7 ffi:>= 1.0.6&~> 1.0|checksum:BDG9wd5eFM/mrBSjQhQvjCVePLJw2YFq37G5VKX/B7c=
+0.3.8 ffi:>= 1.0.11&~> 1.0|checksum:BFOLDNZ1VKAX8Mw3QJVI7wpMmw2FExiPKcA8wPMkNyM=
+0.3.9 ffi:>= 1.0.11&~> 1.0|checksum:7cBLa/GKMdwejw8RPlUhzSOJeMIM0hMO8jk5d3oUf0k=
+0.4.0 ffi:>= 1.0.11&~> 1.0|checksum:8ACYYn2VR82EXKguWf+GMnbuf+L54+HdfMckdVhXuDM=
+0.4.1.rc1 ffi:>= 1.0.11&~> 1.0|checksum:YwlEvHwYXfn8NfI1YRPCqfqHvSDptP9J6evPsfb9VMw=,rubygems:> 1.3.1
+0.4.1.rc2 ffi:>= 1.0.11&~> 1.0|checksum:5lavmHYKvR6g+NGvAnBKSuDq2jYR9/3SmxsGl35eqWk=,rubygems:> 1.3.1
+0.4.1.rc3 ffi:>= 1.0.11&~> 1.0|checksum:uRp7ZbQGXgmGO2mAb+WPje4WicRfXuQ8imVXaooFzKc=,rubygems:> 1.3.1
+0.4.1 ffi:>= 1.0.11&~> 1.0|checksum:CLbAEkan7NkaEFWIKsHPcMjWW5dD08+ToZxHD7jJ8A4=
+0.4.2 ffi:>= 1.0.11&~> 1.0|checksum:Z159MbFy813FPMkNHvmgH+gFd5G2xQwVi+bngyJIxl8=
+0.5.0 ffi:>= 1.0.11&~> 1.0|checksum:O2GRjYK5zQ7ExAqFHHB9TTLtUSWDsAM6LYWg27vBE44=
+0.5.1 ffi:>= 1.0.11&~> 1.0|checksum:/ZeMi91SjTRNX+PIX62NVWaxUIm+U5/BB4bd+PvnoDM=
+0.5.2 ffi:>= 1.0.11&~> 1.0|checksum:9O2t5Mv4jE4Ky0WBrk0U72xlI3ejcx45JiOtlMkIuFM=,ruby:>= 0
+0.5.3 ffi:>= 1.0.11&~> 1.0|checksum:nOvtG9aPe6DetUaDpcBajD55A39oK10Kbs0dRHK7sok=,ruby:>= 0
+0.5.4 ffi:>= 1.0.11&~> 1.0|checksum:3tFIl0j51FRnxyLd5uF5rd1FnOQrE4hyXkGWhcI9OEI=,ruby:>= 0
+0.5.5 ffi:>= 1.0.11&~> 1.0|checksum:m1gylaEZMtLu/6Ho9bj7L7AGSi8BEa2Yw7dSuU+AvzM=,ruby:>= 0
+0.5.6 ffi:>= 1.0.11&~> 1.0|checksum:mZkzIxtGmwlbHUsky+PqFZ8hV3FlD/R/d+RlQBkuvUg=,ruby:>= 0
+0.5.7 ffi:>= 1.0.11&~> 1.0|checksum:
+0.5.8 ffi:>= 1.0.11&~> 1.0|checksum:
+0.5.9 ffi:>= 1.0.11&~> 1.0|checksum:221f98abeacce606ab3940785217c2d4a58ddbb7d267678b185acc54f92842c7,ruby:>= 0,rubygems:>= 0

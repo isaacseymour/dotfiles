@@ -1,0 +1,8 @@
+---
+0.0.1 backports:>= 3.1.1&~> 3.1,descendants_tracker:~> 0.0.1,ice_nine:~> 0.7.0|checksum:WzjkUHIcRmXKmQq/wD+Woyf2LCV9WLN5jrhlBF7BpDk=
+0.0.2 backports:>= 3.3.2&~> 3.3,descendants_tracker:~> 0.0.1,ice_nine:~> 0.8.0|checksum:DjeGj+C3vfvh7x7J7lemLmfaI/bNid5+QLoCYAerk3Y=
+0.0.3 descendants_tracker:~> 0.0.1,ice_nine:~> 0.9|checksum:zpQ7wLzA+8CXlh4NkJMzBfBsMmVtoaiKETi1Qd2E/8w=
+0.0.4 descendants_tracker:~> 0.0.1,ice_nine:~> 0.9|checksum:zViAHf4tKAMIbOZtnjkCyu52qXgQ14j6b0hV+o5zRMY=
+0.0.5 descendants_tracker:~> 0.0.1,ice_nine:~> 0.9|checksum:9nuH6dcnb3jL7o8J+b1HTWPXs1fSccY7+sUJK0Zw1Uw=
+0.1.0 descendants_tracker:~> 0.0.3,ice_nine:~> 0.11.0,thread_safe:~> 0.1.3|checksum:n/iIhNSYdCwvUg5yOPg/56aDDPqblFuddk/BCGlsL0o=
+0.1.1 descendants_tracker:~> 0.0.4,ice_nine:~> 0.11.0,thread_safe:>= 0.3.1&~> 0.3|checksum:wf8RPz3lFvoZWy234KmpX9GwhHWlAv9mDQRQegmYA4M=,ruby:>= 1.9.3

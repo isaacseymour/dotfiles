@@ -1,0 +1,9 @@
+---
+0.0.4 |checksum:8kJl8qWVDJaHhEnKGpnYJ2d7ewxHBT5ZVP5ZE3NDkto=
+0.0.6 |checksum:KaLog5Ln1SrcK2vg03tZRPh2C7o3Xk8uLfHZW8FPFdo=
+0.0.9 |checksum:/lEijZvjL2yGBuMIJcXehHiW0L+gL6TXaaOl/kbFJC8=,ruby:>= 0
+0.1.1 activesupport:>= 0|checksum:
+0.2.0 activesupport:>= 0|checksum:
+0.2.1 activesupport:>= 0|checksum:
+0.2.2 activesupport:>= 0|checksum:d5681b31844888b3ebefee5b763bfee91dfc951694513a0f5ba6d9c809353278,ruby:>= 0,rubygems:>= 0
+0.2.3 activesupport:>= 0|checksum:1c74bb08995b1e5b8e890dccc68c3dde8ef072c3c0b9f9b13afe32dc860f6770,ruby:>= 0,rubygems:>= 0

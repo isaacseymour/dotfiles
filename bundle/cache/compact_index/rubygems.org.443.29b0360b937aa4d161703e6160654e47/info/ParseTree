@@ -1,0 +1,43 @@
+---
+3.0.1 hoe:>= 1.8.0,RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:RK17ABNVQ0bUIQD7B9pWG8gwdGduo/qtTXavlt9e0gw=
+3.0.1-x86-mingw32 hoe:>= 1.8.2,RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:RK17ABNVQ0bUIQD7B9pWG8gwdGduo/qtTXavlt9e0gw=
+3.0.1-x86-mswin32-60 hoe:>= 1.8.2,RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:RK17ABNVQ0bUIQD7B9pWG8gwdGduo/qtTXavlt9e0gw=
+3.0.2 hoe:>= 1.8.0,RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:tbtqv1jvQJbxul2xhbbHpm4QguOBJlnBJgK3FEpZY0w=
+3.0.2-x86-mingw32 hoe:>= 1.8.2,RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:tbtqv1jvQJbxul2xhbbHpm4QguOBJlnBJgK3FEpZY0w=
+3.0.2-x86-mswin32-60 hoe:>= 1.8.2,RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:tbtqv1jvQJbxul2xhbbHpm4QguOBJlnBJgK3FEpZY0w=
+3.0.3 hoe:>= 1.8.2,RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:G5OGbQQcLMa9XfX5fbhlaARWgV5XqLE/puspVc+Ntfk=
+3.0.3-x86-mingw32 hoe:>= 1.8.2,RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:G5OGbQQcLMa9XfX5fbhlaARWgV5XqLE/puspVc+Ntfk=
+3.0.3-x86-mswin32-60 hoe:>= 1.8.3,RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:G5OGbQQcLMa9XfX5fbhlaARWgV5XqLE/puspVc+Ntfk=
+2.2.0 hoe:>= 1.5.3,RubyInline:>= 3.6.0|checksum:wQlgwU6xz+qI1D7F+xOCNyic+GyZSONdbtLTYLaQxp8=
+3.0.0 hoe:>= 1.8.0,RubyInline:>= 3.7.0,SexpProcessor:>= 3.0.0|checksum:p/b3+mMUYGZ1+4qPyKeL5mtf9NOZjw1cthJXxbvqJfM=
+1.7.1 hoe:>= 1.2.1,RubyInline:>= 3.2.0|checksum:yhBzX//t+UpVLiqnY1+UD00SuRbZn6MZlePo9Zo1VSE=,rubygems:
+2.0.0 hoe:>= 1.2.2,RubyInline:>= 3.6.0|checksum:GQsSFg0NbG6aayptIV0RrBstTM+JOAwNlvvEpYT3TD0=,rubygems:
+2.0.1 hoe:>= 1.3.0,RubyInline:>= 3.6.0|checksum:uB1XcF4vzrzMtLQXHt5TzCfN0cam3VBCw5VgcIOOGMc=,rubygems:
+2.0.2 hoe:>= 1.3.0,RubyInline:>= 3.6.0|checksum:y9zDrG7S2XE/RquBsTzccEiF1/GlMpzGTNlElUcSeJw=,rubygems:
+2.1.0 hoe:>= 1.4.0,RubyInline:>= 3.6.0|checksum:pjYjivLFV98u5FC/aLrtpZYKP5MprrnclvDItelqsQk=
+2.1.1 hoe:>= 1.4.0,RubyInline:>= 3.6.0|checksum:MsKyvHhDo8RZ04AKNi3YdgJ3SuTJi95/i5qVJl7jmKc=
+1.3.7 RubyInline:>= 3.2.0|checksum:i4/LrrGZvGiZUxyc3H7GbdD9ccaAw4nW+eoJxSlg0qk=,rubygems:
+1.4.0 RubyInline:>= 3.2.0|checksum:gzjWqwwhxtvC5lCaI8fgoTELkoXP55xoSZNsv15KqUc=,rubygems:
+1.4.1 RubyInline:>= 3.2.0|checksum:sA9rffgxoX6J4fUYx54WvwDDMLSqSJwTvQfnCRkopjI=,rubygems:
+1.5.0 hoe:> 0.0.0,RubyInline:>= 3.2.0|checksum:q5on59e9YwoEHWlSGRw8GPr8yAjGYUde3UU1J5YoJuY=,rubygems:
+1.6.0 hoe:>= 1.1.1,RubyInline:>= 3.2.0|checksum:dnBcApMVdruIbZvXFgwrpYSJzK0N1sHBAVWKGNHGCms=,rubygems:
+1.6.1 hoe:>= 1.1.3,RubyInline:>= 3.2.0|checksum:eQhh67fNBXUvI8GzbaCT2Osa/MVqlQbEbR70UlEbKPs=,rubygems:
+1.6.2 hoe:>= 1.1.4,RubyInline:>= 3.2.0|checksum:lw08mt5yVuhHWRc2Ot/RNNmIe9wAxC3FAC7YMRSlsK8=,rubygems:
+1.6.3 hoe:>= 1.1.4,RubyInline:>= 3.2.0|checksum:uKOOHf7PCdJmKlGvAy0g9J0ReFCfxfGfElFPHgkjXBo=,rubygems:
+1.6.4 hoe:>= 1.1.7,RubyInline:>= 3.2.0|checksum:CYDnYMo8sF93Ju51NXzo5cif2/5OZ77IQ9MbbbcZRLs=,rubygems:
+1.7.0 hoe:>= 1.2.0,RubyInline:>= 3.2.0|checksum:Jd1ho4pETAegZEt1AGuusOsMYtn3ESmuGrXfP9VjIHw=,rubygems:
+1.1.0 |checksum:VeyObUKvJysub++YkcViH/uTYs4DwBimdKTn70z9aZg=,rubygems:
+1.1.1 |checksum:PbC9YVH666TR++T24lqUdntIWo/aNyMTEYvEoLpxgoY=,rubygems:
+1.2.0 |checksum:JMC2gBcIYTivq3GcJrBXJODQkyW953xhcQL6kiqmUKc=,rubygems:
+1.3.0 |checksum:4YZSz4K7vcI3++Akxio+YXu8DC/A5tHiVmsICMGsf0Q=,rubygems:
+1.3.2 |checksum:Z0KGGqHpTLa+W5vzsafSpE9jQP26tdkJeaV2x6Ay6zA=,rubygems:
+1.3.3 |checksum:eEmtFTGhtQe0cUriaXVTeXv5WdyIcLIM+WRfrXyE9fw=,rubygems:
+1.3.4 |checksum:BQMU3i8w3rDnqLjlNPtDEyWw4DC7jKyMfH5NbJ/CyLY=,rubygems:
+1.3.5 RubyInline:>= 3.2.0|checksum:GKSk9wIshnqb5IBWQtJy/9FWNPKYH5lCuumZc5og95A=,rubygems:
+1.3.6 RubyInline:>= 3.2.0|checksum:QAI8LPr16H6jN60mfC2hPMLjKTc0crUupwKML2nGGOY=,rubygems:
+3.0.4 hoe:>= 2.3.0,RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:hVhVUll4BVpnR6uF3j0mMaUX1udgImKTzz0W2LmC9NY=
+3.0.5 RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:CEtnhJgM67ictAip4bPN3WdmlctfiuYnhW6Fyxrap9A=
+3.0.6 RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:Wbo+tu3cpk8meofvhmcGMpHLiV+WmxFabKZ1qyIM3Co=
+3.0.7 RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:4sbbxrayGHKQr5yiUGh1ZyRQ4/vx3dfsOlqNsg957go=
+3.0.8 RubyInline:>= 3.7.0,sexp_processor:>= 3.0.0|checksum:AXLqS5SpOrW0dcAj8c5rVkYA/kk2QOiGzRyhLakDk5k=
+3.0.9 RubyInline:~> 3.9.0,sexp_processor:~> 3.2.0|checksum:q5q9zhS3djKrrEfQZqImPebjTLKAJnr+wzATr3yeSzU=

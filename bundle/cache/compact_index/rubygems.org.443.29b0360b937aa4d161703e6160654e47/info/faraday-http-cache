@@ -1,0 +1,17 @@
+---
+0.0.1.dev activesupport:~> 3.0,faraday:~> 0.8,multi_json:~> 1.3|checksum:kdIbssU02cSQBwoCDKld7cMv4MW575Ay+sY3Crzwk4w=,rubygems:> 1.3.1
+0.1.0 activesupport:~> 3.0,faraday:~> 0.8,multi_json:~> 1.3|checksum:hy2f5z5zb3mvLw9SpM6X/q6AVmmNLvoZ2Qqhm9vXTZk=
+0.1.1 activesupport:~> 3.0,faraday:~> 0.8,multi_json:~> 1.3|checksum:3N7Qhf7Y46TzaqkgnE7+Hs/obmwRvG3q7EpkHZCbcB4=
+0.2.0 activesupport:>= 3.0,faraday:~> 0.8,multi_json:~> 1.3|checksum:0CitnJGs2gpAImLaWnnK4yhow088HUsF/L4LE208P/8=
+0.2.1 activesupport:>= 3.0,faraday:~> 0.8,multi_json:~> 1.3|checksum:FeGH4j8IYgGGJz/JYjilNpjbKfmflXgrMXVqJm9yC1c=
+0.3.0 activesupport:>= 3.0,faraday:~> 0.8,multi_json:~> 1.3|checksum:Jda8vFW1t/RgTvwmvYyzUAA2l43SybHEc80OBeqvlBU=
+0.4.0 faraday:~> 0.8|checksum:XzepMU4Upx0cEulDvHlFnGyR/zvJJJVwYkMe02tcsUU=
+0.4.1 faraday:~> 0.8|checksum:LUhTxz+dcz3y8t3rmrdSPp7qlVudj3Hl3mDZourr7g4=,ruby:>= 0
+0.4.2 faraday:~> 0.8|checksum:bnG3wBafwA9HxkFWJinY6lIy4YQtzAW1qm3Yd8vMycM=,ruby:>= 0
+1.0.0 faraday:~> 0.8|checksum:5pnuwrIL4nJd3SDmy3sk4RF52r2Xz6tJa4bnN0OPXd8=,ruby:>= 0
+1.0.1 faraday:~> 0.8|checksum:ytqaAsBRIEJ0RfQ8f+fWN07xPaCzO2sYq/LE2ZqByk0=,ruby:>= 0
+1.1.0 faraday:~> 0.8|checksum:yUHULD0+xU7E8qXyq9RFMzTAtIER6srzElEj9SIzCS8=,ruby:>= 0
+1.1.1 faraday:~> 0.8|checksum:WtGivbBJGI+5OQ53jvDIvHTGq5LrNKnoB9IcZ6+u+NE=,ruby:>= 0
+1.2.0 faraday:~> 0.8|checksum:
+1.2.2 faraday:~> 0.8|checksum:
+1.3.0 faraday:~> 0.8|checksum:124914e91b4310824d485b05bf52ba80ac91dd951b5dcdee1988d7255cb72f2a,ruby:>= 0,rubygems:>= 0

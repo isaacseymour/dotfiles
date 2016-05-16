@@ -1,0 +1,28 @@
+---
+1.2.4 actionpack:= 1.13.4,activerecord:= 1.15.4|checksum:F3CcNC7DIerLgoi+tdbxGKWdZcCSnrtseoDUIN74lKA=,rubygems:
+1.2.5 actionpack:= 1.13.5,activerecord:= 1.15.5|checksum:Hg5NKCT8cZd1R/IMbWHL1D3kGmDb5s79rPWiIycz+aQ=,rubygems:
+1.2.6 actionpack:= 1.13.6,activerecord:= 1.15.6|checksum:OUHK65sVZv5uuiQ7C4j6XaclKpZRDO8KpS/F37+VXJo=,rubygems:
+1.1.2 actionpack:= 1.12.1,activerecord:= 1.14.2|checksum:frUwS2E/4MKknKN/jAXjr2xaPx++pwJw5hK0lXPsh54=,rubygems:
+1.1.3 actionpack:= 1.12.2,activerecord:= 1.14.3|checksum:EzBedoLRS+7jBDbQg5Hcx7CbL/69B1fLdRzRNjSfpls=,rubygems:
+1.1.4 actionpack:= 1.12.3,activerecord:= 1.14.3|checksum:nhCDvNP2HrC6bwSfaVSbkWqrGl0j02D+eYbDCQ4SmPE=,rubygems:
+1.1.5 actionpack:= 1.12.4,activerecord:= 1.14.4|checksum:5MgjXZWZExYbZk+S8wPQeGmv4CeSTmDsBBZkS4P01Ww=,rubygems:
+1.1.6 actionpack:= 1.12.5,activerecord:= 1.14.4|checksum:4JNYnMO94zdcT+70uCzb3j6movvrQQPLre0t3l7B+KE=,rubygems:
+1.2.0 actionpack:= 1.13.0,activerecord:= 1.15.0|checksum:mQoteKq21wyYBDxxrxUiZDHGiWv9Po2TOkoA7/HynuI=,rubygems:
+1.2.1 actionpack:= 1.13.1,activerecord:= 1.15.1|checksum:Jua0/HmXfY/ypJyn7D/WhRaYEJ9UiXO0GIkfcAL9UgA=,rubygems:
+1.2.2 actionpack:= 1.13.2,activerecord:= 1.15.2|checksum:l6MMWuXwdf8SCUvA8+e1JLdyPVg8sc8drlU/fT13dHk=,rubygems:
+1.2.3 actionpack:= 1.13.3,activerecord:= 1.15.3|checksum:HPasYMWefrcoaviBxIoCQ+Exj+/kF40HQrjEgIUq6q0=,rubygems:
+0.8.0 actionpack:= 1.9.0,activerecord:= 1.11.0,activesupport:= 1.1.0|checksum:Y1SOK158zyjZfqaFV7JIO++x6Bbc3/B5+56Dd4hoheo=,rubygems:
+0.8.1 actionpack:= 1.9.1,activerecord:= 1.11.1,activesupport:= 1.1.1|checksum:DizILRamG72gLE041bs0XCKoi4QucL2YEG64WcZzr/I=,rubygems:
+0.9.1 actionpack:= 1.10.1,activerecord:= 1.12.1,activesupport:= 1.2.1|checksum:3PaY41MINp7SbhLDvIdRC8s18CLz5gvNPnmXIOeeJWw=,rubygems:
+0.9.2 actionpack:= 1.10.2,activerecord:= 1.12.2|checksum:Kn0edL6t8MkylCLRhwlLWpgrQGgyW9JiVhtfqMYp+ag=,rubygems:
+0.9.3 actionpack:= 1.11.0,activerecord:= 1.13.0|checksum:7MDRTsB+xJR3hB+vA7Q6nF7ST8KRx2RMybUTMWa9OXA=,rubygems:
+0.9.4 actionpack:= 1.11.1,activerecord:= 1.13.1|checksum:E8wzI1yEA+vlZDQ7QwE5+FXAcg/Dguzuik6VhItwgS8=,rubygems:
+1.0.0 actionpack:= 1.11.2,activerecord:= 1.13.2|checksum:OL8wphREoR6uc+TvNX1T+DJEuVHXuhucI4fmljXcLrU=,rubygems:
+1.1.0 actionpack:= 1.12.0,activerecord:= 1.14.0|checksum:4yRNYSNdP/a1sXi2xh0ctddzJmT89ihe0d6x85RAPOI=,rubygems:
+1.1.1 actionpack:= 1.12.1,activerecord:= 1.14.1|checksum:+cXsi5UtXnenk1l5sMCntYshrTXvrJydwMONYLASt2Q=,rubygems:
+0.7.0 actionpack:= 1.8.0,activerecord:= 1.10.0,activesupport:= 1.0.4|checksum:H7Yw2rvDsDOWZnT332NV6+JHMSU1eHqASFB1Vo71pzw=,rubygems:
+0.7.1 actionpack:= 1.8.1,activerecord:= 1.10.1,activesupport:= 1.0.4|checksum:DZubmpDnt8BTnNbXBTSvC5XW8aDUXSQNr2eWDQqww8c=,rubygems:
+0.5.0 actionpack:= 1.5.0,activerecord:= 1.7.0,activesupport:= 1.0.0|checksum:1zufN6ABQqEIu9cyI0/H0Lj00UExovbPcRSDSPkXgIM=,rubygems:
+0.6.0 actionpack:>= 1.5.1,activerecord:>= 1.8.0,activesupport:>= 1.0.1|checksum:1sLfahX0OgeKSvzZi3Q9AJvCrAKp/Tq2SMWPrH8b5ZU=,rubygems:
+0.6.1 actionpack:= 1.6.0,activerecord:= 1.9.0,activesupport:= 1.0.2|checksum:dnZfkCCF8xIR8tdLnZ1O5+2GnY2nzH5qGrQyiW8NRWQ=,rubygems:
+0.6.2 actionpack:= 1.7.0,activerecord:= 1.9.1,activesupport:= 1.0.3|checksum:BXkfjEQbv/OIhaX9TjxX8A4JpoeQ0S2fz3Sjx+GzQzA=,rubygems:

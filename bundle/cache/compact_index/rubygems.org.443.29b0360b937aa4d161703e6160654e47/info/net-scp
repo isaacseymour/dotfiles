@@ -1,0 +1,11 @@
+---
+1.0.0 net-ssh:>= 1.99.1|checksum:EVi7eAp4QHB7YboGP7uP9mqPJAWI/mi0eSVUm16EQWU=
+1.0.1 net-ssh:>= 1.99.1|checksum:c1TyFXsh02+llM/CS2rXp6E+8oKkeHnaAxXj2erWKAI=
+1.0.2 net-ssh:>= 1.99.1|checksum:Y/c0YwMYyQu0ch4dWe1yRnTh/WDKLJgSm9SX9gijbn4=,rubygems:>= 1.2
+1.0.3 net-ssh:>= 1.99.1|checksum:1gQAYc4vXlHP9GRJEEJgog+Wvw3k6BxXTOsSMRrl6uM=,rubygems:>= 1.2
+1.0.4 net-ssh:>= 1.99.1|checksum:VISU4kUkTXvcBgFbYMpx6Mk1dNUREg5n6yYRVIKDHzY=,rubygems:>= 1.2
+1.1.0 net-ssh:>= 2.6.5|checksum:RPOKeEAfYM+glP/0PCMB9IwVttbwiqGt/NdmJ8NU7wo=
+1.1.1 net-ssh:>= 2.6.5|checksum:vvQRdnLfMAm2u02jAtK0n1GF/E8xt40zAAVe6ycXcOo=
+1.1.2 net-ssh:>= 2.6.5|checksum:89iEj2P5t2cOV68uLDCOm9b923xUQKNuiSR4oeYrWXc=
+1.2.0 net-ssh:>= 2.6.5|checksum:lC04xVaGoPtp7oDX0Ab//88i1oQUb08HYWyxXdMmN3o=,ruby:>= 0
+1.2.1 net-ssh:>= 2.6.5|checksum:koygRiRr2/4wQxPJA7q5XntxGTjO/0osiWuRq1nGEiw=,ruby:>= 0

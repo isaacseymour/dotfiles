@@ -1,0 +1,49 @@
+---
+0.1.0 |checksum:Ug/CN81+tb2EDkV3UqdZfumVmJQtTyzNpAWFnGNpDns=
+0.1.1 |checksum:hXKlCHznVTud5gHoomASn49oLRbD3et0jQp199eq+go=
+0.2.0 |checksum:cxEDrnMfL/49d/in0oA3sVE1atEpeZqUt+quhcsovcI=
+0.2.1 |checksum:m27JYnJaf8kW4SN+bHJs6JbZ/XemoMnYyiUvCKhOb+w=
+0.2.2 |checksum:2GS77ZNDNIm5uTuPijuvFi2DoE9mMuS8L3Dft/mjB0w=
+0.3.0 |checksum:QHysWIVTnulgkpeEZ5cxCP2bgRPHXmadgkNAp/9o4LU=
+1.0.0 |checksum:xDV6C1nQhLK4/wxAK+uGJCU+mAmafjF9RQMiRmkdvco=
+1.1.0 actionpack:>= 2.3.0|checksum:dqAKldpP0c2P2n1ux67TkcgKiZ2qCFQZyqn3s4VyXMA=
+1.1.1 actionpack:>= 2.3.0|checksum:O4LfyzCrQWdD5QtrihuFk1mjSCOFEeIXvVkXT7wLtgU=
+1.1.2 actionpack:>= 2.3.0|checksum:bu2Qb/W38Ys987x8c3EoZVMW5TKRlweT62iDnKrTeFc=
+1.1.3 actionpack:>= 2.3.0|checksum:CvRn/y7uCAI7HwButmX4eBno1+bTza+bYnvLrGpqOXU=
+2.0.0 actionpack:>= 2.3.0,json:>= 0,rabl:>= 0|checksum:IoGaamKxCJ0dZBAyjaoIvrt0WpO6u0yXfmlQ0Ad3Dsg=
+2.0.1 actionpack:>= 2.3.0,json:>= 0,rabl:>= 0|checksum:brbZ+cZn8YBGxMn88zI37z2ivN+SU4WZwyJI/6MQgAY=
+2.0.2 actionpack:>= 2.3.0,json:>= 0,rabl:>= 0|checksum:Veslokk91Zm9+7SXn58YYEWKKCROFS25H1lrADQcX1w=
+2.0.3 actionpack:>= 2.3.0,json:>= 0,rabl:>= 0|checksum:B+NqO22W7n8Z8yugN2UXzP/6BHc0wYyT2gOawO5WuSQ=
+2.0.4 actionpack:>= 2.3.0,jbuilder:>= 0,json:>= 0,rabl:>= 0|checksum:yB7yoTggurUVROkSPL0pbUYasKw0Sc0Lyf+x2T1S8Qs=
+2.0.5 actionpack:>= 2.3.0,json:>= 0,rabl:>= 0|checksum:69Uf1eG1QKzA7Qc5nTmMCzY8YnxlvlGXtBOUfXMIwOI=
+2.0.6 actionpack:>= 2.3.0,json:>= 0,rabl:>= 0|checksum:hkDO39cp4M4wOmMBUlPlWtY5p3tTAe2nlbVtOTZJyIs=
+2.1.0 actionpack:>= 2.3.0,json:>= 0|checksum:bHmAWAWFpAHTdgw9Q84rt90AGBXk/r8Nx71YNCNZ2yY=
+2.1.2 actionpack:>= 2.3.0,json:>= 0|checksum:3E5u+oBWh92tjvN4ZiV5TEB7wnoMCeb7iE++nuTco+E=
+2.2.0 actionpack:>= 2.3.0,json:>= 0|checksum:CvGe1rc2XBdb+5E25scjWbOWrYs2FTwotLcuKEpsG3s=
+2.2.2 actionpack:>= 2.3.0,json:>= 0|checksum:xowBchiPVyoh4dTuxcu+IgNRLzsIAX6iUYtQh5iDUFw=
+2.3.0 actionpack:>= 2.3.0,json:>= 0|checksum:SKFtYN4OfvsTaFFxesRhTAINzXTQXnd+712IOAaT5Uc=
+3.0.0 actionpack:>= 2.3.0,json:>= 0|checksum:rPPw0upEiPN2rZwQHiSuJzFZ46EjRtvsx7wsPaA07/w=
+3.0.2 actionpack:>= 2.3.0,json:>= 0|checksum:wadmXR693DYwqECMTOxk6Gp7RXMjy0JCWLm0u1zjAIw=
+3.0.3 actionpack:>= 2.3.0,json:>= 0|checksum:w+jDAtUms4AKrrxGeR6aYtu/4/QTLGDrw2Tk232p/Y8=
+3.0.4 actionpack:>= 2.3.0,json:>= 0|checksum:p9EsltfbNBPDvkz0APo4dH+3BXkvG0JzqdtfABmndgc=
+3.0.5 actionpack:>= 2.3.0,json:>= 0|checksum:9VUm+Zr9FoqrUYFeanfmMTRb/6OB0pGB/5aWD52RBi8=
+4.0.0 actionpack:>= 2.3.0,json:>= 0|checksum:THV4RDSqMnqqxXg/92OGE3jjJxVyZ3wPgC+FCUpd/14=
+4.0.1 actionpack:>= 2.3.0,json:>= 0|checksum:GuqJ2X53JuPPvmo8Zb4MvmTUkIatOff4kAPWLXA8lVM=
+4.0.2 actionpack:>= 2.3.0,json:>= 0|checksum:jyBYXoddJJ5mnKKTXrOlHzmBh48cjHPsMkTL+bJe1IY=
+4.0.3 actionpack:>= 2.3.0,json:>= 0|checksum:sT0vFxig6VaJiqQxxS7HscDUGPriAZmN9q45ttRc0tU=
+4.1.0 actionpack:>= 2.3.0,json:>= 0|checksum:9OIpq7+Bnn3P9qYe/D2SUlwEE1fUWFIAV8aFSXq6vT8=
+4.1.1 actionpack:>= 2.3.0,json:>= 0|checksum:wGS1FYwv9Y5G2Jdc7Q20DeKubR4qHWE3mPsky40nT4w=
+5.0.0 actionpack:>= 2.3.0,json:>= 0|checksum:e1uxNmSzWLlTDeDKd4fROXZSwUNLGyz0I76Vi2nD2HA=
+5.0.1 actionpack:>= 2.3.0,json:>= 0|checksum:9ZPRW6hhagyUgrUxE+A7yKac0DkuIfAYmyqWM4g36qU=
+5.0.2 actionpack:>= 2.3.0&~> 2.3.0,json:~> 0|checksum:1WS+PciMf9NUQ5wuwzNpeLo0Rmjj+AQCz3uR2SQdmts=
+5.0.3 actionpack:>= 2.3.0,json:>= 0|checksum:wxDccVB1rztIWIwNivz96+GkYI4h9xf2qPnWIeMg4Dk=
+5.0.4 actionpack:>= 2.3.0,json:>= 0|checksum:OREQXY6JM5Ck2937mfIyFHARlJMTgMrrUBXNIuE3tD0=
+5.1.0 actionpack:>= 2.3.0,json:>= 0,oj:>= 0,request_store:>= 1.0.5|checksum:ZJMGtl2AgGQ9ylkGugZSx0MgtibLcWcvfpan6bkbIAM=,ruby:>= 0
+5.1.1 actionpack:>= 2.3.0,json:>= 0,multi_json:>= 0,request_store:>= 1.0.5|checksum:6A7ZE98OCvwyPCHQ7D2hAhleCEJh5nOGuK9llNHbqmM=,ruby:>= 0
+5.1.2 actionpack:>= 2.3.0,json:>= 0,multi_json:>= 0,request_store:>= 1.0.5|checksum:s+YZutS7RTmvmVStL4q2Aqj2782QLaWoATD4jVNYwDE=,ruby:>= 0
+5.2.0 actionpack:>= 2.3.0,json:>= 0,multi_json:>= 0,request_store:>= 1.0.5|checksum:7Ii+ACJDIys/Dl0IJC47XpCzQEgdxGAyny2rSqQgOFk=,ruby:>= 0
+5.2.1 actionpack:>= 2.3.0,json:>= 0,multi_json:>= 0,request_store:>= 1.0.5|checksum:1ey/vGijVnjU5ebf/mlfhpkDFuHbKQla/aQJJ4eDHzU=,ruby:>= 0
+5.2.2 actionpack:>= 2.3.0,json:>= 0,multi_json:>= 0,request_store:>= 1.0.5|checksum:r+uFatCYG5czCznyqFQD7ZBvie+fNYkiwWzqyf2qgL4=,ruby:>= 0
+5.2.3 actionpack:>= 2.3.0,json:>= 0,multi_json:>= 0,request_store:>= 1.0.5|checksum:k05ESnb8JpfupjZi3H4lZYlMzeA1eXfoZyW0aMe6G7M=,ruby:>= 0
+6.0.0 actionpack:~> 2.3,json:~> 0,multi_json:~> 0,request_store:~> 1.0|checksum:
+6.0.1 actionpack:>= 3.0,json:>= 0,multi_json:>= 0,request_store:>= 1.0|checksum:

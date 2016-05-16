@@ -1,0 +1,4 @@
+---
+0.0.1 faraday:>= 0|checksum:AUznLuBnwoHNcyQHtHrVtH5gtiDC3QMq+L1F6MRdihU=,ruby:>= 0
+0.0.2 faraday:>= 0|checksum:0791655cc934a7fc85c0533fe6c4461607c49d3098d99daed2c7bc8dce36c323,ruby:>= 0,rubygems:>= 0
+0.0.3 faraday:>= 0|checksum:fa07f074edf569a3e6df9f843c0e3d737d4966b40ab17cc62de24703e5963cb4,ruby:>= 0,rubygems:>= 0

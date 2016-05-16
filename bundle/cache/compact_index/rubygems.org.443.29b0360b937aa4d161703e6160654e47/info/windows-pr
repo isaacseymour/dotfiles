@@ -1,0 +1,59 @@
+---
+1.0.5 win32-api:>= 1.4.0,windows-api:>= 0.3.0|checksum:CK+Lihux8fUiFldsOdkXXNQLLAYJs7ktjs+V9iS7QmA=
+0.9.0 win32-api:>= 1.2.0,windows-api:>= 0.2.4|checksum:RirS4SzBu5RPBvllb+Pe5H9c25zNwopGlIye3bLZcS4=
+0.9.1 win32-api:>= 1.2.0,windows-api:>= 0.2.4|checksum:flHLfCUGeIFRyur+nmMjB8NyEcHUykj5PWZABn4ctfo=
+0.9.2 win32-api:>= 1.2.0,windows-api:>= 0.2.4|checksum:pj3qW5t537RmBcOhPDWm+3QfB1/aa8hADvkh4vrH4GU=
+0.9.3 win32-api:>= 1.2.0,windows-api:>= 0.2.4|checksum:wbvvle2RYErazVE4bFddVckoqh6RZbPPJ50+JmeaFC0=
+0.9.4 win32-api:>= 1.2.0,windows-api:>= 0.2.4|checksum:0HUxe9yjFPdho68o22Uy2zwAkb7ng6YRLbbnYxelpgQ=
+0.9.5 win32-api:>= 1.2.0,windows-api:>= 0.2.4|checksum:m/BRXEHXKfE632u8aPgE7LOLP0iYJpgvrf+MKio1mOM=
+0.9.6 win32-api:>= 1.2.1,windows-api:>= 0.2.4|checksum:A34f+MgGXEa3SSfQD68TyKlb8KGTH/0VplQtiGDI1IY=
+0.9.7 win32-api:>= 1.2.2,windows-api:>= 0.2.4|checksum:V3LYcF3MA7HATb2wPH6GTh0IOQ3WW3n3fjQedg6nNxU=
+0.9.8 win32-api:>= 1.2.2,windows-api:>= 0.2.4|checksum:9TgFpoCWyZD3Fx7100OZ+KvtYowfXIvt2ZSM1MGx+h0=
+0.9.9 win32-api:>= 1.3.0,windows-api:>= 0.3.0|checksum:UiJ/rs7O3CMFmXXzbMuQPWtWjsYD1A5YtcJqfhLkPwk=
+1.0.0 win32-api:>= 1.3.0,windows-api:>= 0.3.0|checksum:UbCOf+tLQmZpI1XecA/yMimyqAXyQ+c8q/kflFyclRQ=
+1.0.1 win32-api:>= 1.3.0,windows-api:>= 0.3.0|checksum:i83I8fo7O2yTf1SbCWGZ5FH1RHxCQgGKtzzCCE72mzE=
+1.0.2 win32-api:>= 1.4.0,windows-api:>= 0.3.0|checksum:JSLRaIH6ULBrVNjsf4CtpBf/HxWaLXPoORjsp5/9IFg=
+1.0.3 win32-api:>= 1.4.0,windows-api:>= 0.3.0|checksum:472CUTLnOok6jT4LQiwjQ/HzYKOj31E+dyfwb6vOigs=
+1.0.4 win32-api:>= 1.4.0,windows-api:>= 0.3.0|checksum:7WSqpFXlOUMbNsN4rw8gfeS9E6Yn71f4kC7r1vekbEo=
+0.5.4 |checksum:OFOfMpVRBR2tSMG15IKBCp9gnclKkgd8QWQKOyz730c=,rubygems:
+0.5.5 |checksum:aemljbIGZKPRA5R7mtu3Zq9UD2irb0cajsQDCld5s6Q=,rubygems:
+0.6.0 |checksum:+RNVf4eXy5Jo3FFms8HHp1SH0yBGKk7F87lm21Q/oGI=,rubygems:
+0.6.2 |checksum:7wACFTipyVRQ8ivb0/8GDRp1hWJYzzmXZz3g8XPqiwc=,rubygems:
+0.6.3 |checksum:IpRlN0CiJUm9a1dwiarg79L+VFbyqxgML0N3DBvtDt8=,rubygems:
+0.6.4 |checksum:medxOAzNEnxlhDgRzN1c8o4unLtzYqQ7adh4ZRvtSgQ=,rubygems:
+0.6.5 |checksum:3jg31vh/MdtdD8FLL5hjyNm/1KibBxvLB490hW3pi8c=,rubygems:
+0.6.6 |checksum:4Y6CMKR0wsdPnNY/ptlR9Iac4xSVsBh6Eddb1I69mhk=,rubygems:
+0.7.0 windows-api:>= 0.1.1|checksum:9eOtFE42r6rzZ7pmmDXni/hHUEWVFAlv5zdRjQ6LWWg=,rubygems:
+0.7.1 windows-api:>= 0.2.0|checksum:WjsVcFJnm2zO62+OWK4OavtFNbcboc8A+MgL7vrKNpo=,rubygems:
+0.7.2 windows-api:>= 0.2.0|checksum:v9jpIj5UnThNYZtk/VaS8EUtJtbQfcoEe+L54bmADSE=
+0.7.3 windows-api:>= 0.2.0|checksum:PVJsIp2CVUCBjA1e0UqtBUTe+WqBtJZahlsphZAiDAQ=
+0.7.4 windows-api:>= 0.2.0|checksum:MblVdTg79oti2cOnAgnpZsaVoLHcT6DOBk697beRGTA=
+0.8.0 windows-api:>= 0.2.0|checksum:1DEXObjKINJHTC3SIqGvdFFwIALmbKoRT/KBIqZGCD0=
+0.8.1 windows-api:>= 0.2.0|checksum:k26R/N0N5btfaF14kSceVZ0F6+a0dsalVPEReBdrb5Q=
+0.8.2 windows-api:>= 0.2.2|checksum:QRUarLS6s1MOzpHPjrFT0B/OsfAdWDH1Pl220diQ/zQ=
+0.8.3 windows-api:>= 0.2.3|checksum:XHe31pQvUWBPD80kXQVB8NSpXYn7MLOC12Z6oZeElwQ=
+0.8.4 windows-api:>= 0.2.3|checksum:d/jKQv5IfBfMUN4goxAzOHy1wtO9lZsYN51spbM17oQ=
+0.8.5 windows-api:>= 0.2.3|checksum:amoAWioigp3R6qvntIlrtU/+S6OSOT40G1LJB/Ye+wI=,rubygems:
+0.8.6 windows-api:>= 0.2.3|checksum:peNp32GMR/kvPcYy5MHNKFmpnTlajRrPLIUTAfTeqfA=
+0.8.7 windows-api:>= 0.2.3|checksum:xzEETQc0kK/+uKc/08TsLD/e8/y7WncOnhzFtNb5iIo=
+0.1.0 |checksum:F/YFQxo/m4kZZZH24yylsQXn+B+yg1j45deEhUx8+Zo=,rubygems:
+0.2.0 |checksum:Lua541mH1udP2nlj5UTIdc/TCKiHq7qAqXuiPYWUXhU=,rubygems:
+0.5.3 |checksum:GA5u3iwTY7nsLjZflEznve0XkilttuA+vqCk5NKq650=,rubygems:
+1.0.6 win32-api:>= 1.4.0,windows-api:>= 0.3.0|checksum:gkwSLhEn2EbqD/5ZXlu36+x8hR1lUIafS/g8n0gNrzQ=
+1.0.7 win32-api:>= 1.4.4,windows-api:>= 0.3.0|checksum:08uXilAIPbrjCarXsQIyfm+XHY9+UhlCc7koTxmpiAw=
+0.3.0-mswin32 |checksum:CJn/fq5oeXbzJJwsVwjactscwBxy1OLeyG0/qpSeNHQ=
+0.4.0-mswin32 |checksum:7E53QzaNer96acYNGUqx9c7Rg9IrmpByx9HruVZV9C8=
+0.5.0-mswin32 |checksum:8zPasN4bQIVToOQEZNew1fXIg3ojam9tDivRVgt86Jk=
+0.5.1-mswin32 |checksum:EotvI4c7RZTFsg3HxLAMv6Ptj6PxNp7H/4j2faYuOz4=
+0.5.2-mswin32 |checksum:7MdoExfcndtifeUocqYLh0NNqzIpjRIUF7r/emgvVyA=
+1.0.8 win32-api:>= 1.4.5,windows-api:>= 0.3.0|checksum:xVtmeNX1eyNzt60p/hC+1ODBlYRpuwqQoIZcBcfj0kw=
+1.0.9 win32-api:>= 1.4.5,windows-api:>= 0.3.0|checksum:H2YZjwARBdknXzRs3CqRXaPcgkXxzrNbNgZ7P2+kLr8=
+1.1.0 win32-api:>= 1.4.5,windows-api:>= 0.3.0|checksum:mPZaiedfW9smR2cQ9IJzJGE6UbcQ0dwdgeXgvUkJEv4=
+1.1.1 win32-api:>= 1.4.5,windows-api:>= 0.3.0|checksum:H8kFqHShTJzv4yHGjiJmMaZ4CzhdYFhrzsEfDj6J1ek=
+1.1.2 win32-api:>= 1.4.5,windows-api:>= 0.3.0|checksum:iCtyUFzRESchJRVrEhXzner9g0oRfspCJ21ZrXsmtZM=
+1.1.3 win32-api:>= 1.4.5,windows-api:>= 0.3.0|checksum:+L6sSavSd7Xil9xFXD5cweYcHD0nxe62PmGousKAgJo=
+1.2.0 win32-api:>= 1.4.5,windows-api:>= 0.3.0|checksum:yEyH4sCFT3CbDMQ2a3UcsAkICyDUjVcw0iLCIoTvQlU=
+1.2.1 win32-api:>= 1.4.5,windows-api:>= 0.3.0|checksum:MvTbkZYihCSfrel9w3RI+dium3JM1sPNgM9ALLBxpno=
+1.2.2 win32-api:>= 1.4.5,windows-api:>= 0.3.0|checksum:ONtOhBm1mfnP/foxXaN8ASQfIHx+70Aw/9wa5qXqdsI=
+1.2.3 win32-api:>= 1.4.5,windows-api:>= 0.4.0|checksum:9HA6AB8acH+DjQU1eN79XN48VUOw2zBJAy3akTOpFk0=
+1.2.4 win32-api:>= 1.4.5,windows-api:>= 0.4.0|checksum:NIuULNUmDQ5n0UR6IjBJUGCDoATe0GfdTpNOEZ92UNw=,ruby:>= 0

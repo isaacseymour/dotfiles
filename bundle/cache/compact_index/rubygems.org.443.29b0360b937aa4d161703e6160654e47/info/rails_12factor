@@ -1,0 +1,4 @@
+---
+0.0.1 rails_serve_static_assets:>= 0,rails_stdout_logging:>= 0|checksum:wr/y3Ztn2vKFiGm1SrnePmpZJ+/5dUq4JlyTXv8pN5g=
+0.0.2 rails_serve_static_assets:>= 0,rails_stdout_logging:>= 0|checksum:kGZQS2E8nZ6++aPEPr2ckdpSx9FNkSXo7GhIC9iv9fs=
+0.0.3 rails_serve_static_assets:>= 0,rails_stdout_logging:>= 0|checksum:7puI05lmJiEJ+gF9uqxVC4DOIkpyZjdtQkcNORqQD/U=,ruby:>= 0

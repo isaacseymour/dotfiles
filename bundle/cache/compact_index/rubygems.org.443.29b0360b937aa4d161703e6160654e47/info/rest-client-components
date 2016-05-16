@@ -1,0 +1,9 @@
+---
+0.2.1 rack:>= 1.0.1,rest-client:>= 1.2.0|checksum:zjgEFVbwAhUHWh5ik8hkSGCDGU05zoom3CCfDRwasAs=
+0.2.2 rack:>= 1.0.1,rest-client:>= 1.2.0|checksum:GlRXwdWHiNmYenGl0hiLULVDGkgf7exO3aPmPfyqqmU=
+1.0.0 rack:>= 1.0.1,rest-client:>= 1.3.1|checksum:vu3P4JIEgL5xTwaK6UAk4W4suyfOmlq8YKDjTwkUr3U=
+1.1.0 rack:>= 1.0.1,rest-client:>= 1.4.1|checksum:lhwQtT0J52HMPs6Au+utGtF745g38zSInLebImj+bAU=
+1.1.1 rack:>= 1.0.1,rest-client:>= 1.5.0|checksum:9exYDPjZROmudwaxXjvxPzYQWj1r2sD9TAutHGghV7I=
+1.2.0 rack:>= 1.0.1,rest-client:< 1.7.0&>= 1.6.0,rest-client:< 1.7.0&>= 1.6.0|checksum:1qbVlTOTvBnliC9bhLCSXsNhKcFqdr/87v+uqtU38cA=
+1.3.0 rack:>= 1.0.1,rest-client:>= 1.6.0|checksum:PEzg/Y18FyuinBWLIkrQQbTB8csdoHQT+h66raJ8sWw=,ruby:>= 0
+1.4.0 rack:>= 1.0.1,rest-client:>= 1.6.0|checksum:eEBeknuFDqNPAmp9df1Vkz+S+jykTCuGjpifqNRXkI0=,ruby:>= 0

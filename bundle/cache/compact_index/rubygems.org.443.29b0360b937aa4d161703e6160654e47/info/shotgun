@@ -1,0 +1,11 @@
+---
+0.1 rack:< 1.0&>= 0.9.1,rack:< 1.0&>= 0.9.1|checksum:8M6noXau4Y9z7E0e/qT4mR+jD6EFmGLQXlcK6wqFFDQ=
+0.2 launchy:< 1.0&>= 0.3.3,launchy:< 1.0&>= 0.3.3,rack:< 1.0&>= 0.9.1,rack:< 1.0&>= 0.9.1|checksum:lt+sRaOOQtxV7G30csBpldm+9/xP2SRYBgw8ibXwOM8=
+0.3 launchy:< 1.0&>= 0.3.3,launchy:< 1.0&>= 0.3.3,rack:>= 0.9.1|checksum:1XyM0gLY356NewETlJ2YMvJgXd0f7GmM69DNQyHsyco=
+0.4 launchy:< 1.0&>= 0.3.3,launchy:< 1.0&>= 0.3.3,rack:>= 0.9.1|checksum:VWnE0yVcYd74jE6nd8TPKkIeV5m0aYfgOyZxkWOOENY=
+0.5 launchy:< 1.0&>= 0.3.3,launchy:< 1.0&>= 0.3.3,rack:>= 0.9.1|checksum:ezDjMRxLIQ85IQ7oycNwW1kc2EW/jpx3uPQNxJT9lP0=
+0.6 rack:>= 0.9.1|checksum:buGv36pkjzJvXg2hY+Tnbt/jd1gfXbwMCMScJkvVEos=
+0.7 rack:>= 1.0|checksum:LFhIYNpjvZACpMn33WhD8AbO0gNad9mvOR6D/3gZQCE=
+0.8 rack:>= 1.0|checksum:jwQze7QYE0IYjf5XVwvsuILQGX4aGK8EeCBWi7M5/FQ=
+0.9 rack:>= 1.0|checksum:VRgoX/lJSjaEE0WYWFf7hIrquZgbwsDZZPCMEDFQRaU=
+0.9.1 rack:>= 1.0|checksum:5CbkVX3dOppwFbBpNKow3JA4+vBL/1xenNk6WZxzro0=,ruby:>= 0

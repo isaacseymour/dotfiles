@@ -1,0 +1,26 @@
+---
+1.0.0.rc.1 compass:~> 0.12.rc.0,rails:>= 0|checksum:MD+b9gc72FHsNnZI1LCWgKH403m3uMLkXF38gvR2OFU=,rubygems:> 1.3.1
+1.0.0.rc.2 compass:~> 0.12.rc.0|checksum:AAmmCAtJXq6lGbp7Be2MmF6bCQDyPlsu4wCekCjlnJQ=,rubygems:> 1.3.1
+1.0.0.rc.3 compass:~> 0.12.rc.0|checksum:OLdium6fjetI/48mB6H3W4wZmyynzeJhNS4ghga5rRc=,rubygems:> 1.3.1
+1.0.0.rc.4 compass:~> 0.12.rc.0|checksum:FSVLTsE43Yl3+PpSw5wVYdcirr344gPJ7UJC0GSJSZ8=,rubygems:> 1.3.1
+1.0.0 compass:~> 0.12.0|checksum:L0Pnlgyxvz3vzw719Exfhi+5/VqYzpqn7T/0xHQsHAg=
+1.0.1 compass:~> 0.12.0|checksum:Xi+UyH505kCJPbJC+STB0e3Y3QjvkQC0PFSCKJM1glI=
+1.0.2 compass:< 0.14&>= 0.12.0|checksum:W9q6oC4pCjSV0TEH/acA/hsfiNnGutL7Sb0AK9kqVsI=
+1.0.3 compass:< 0.14&>= 0.12.2|checksum:sE9AaOOpkAyA34KGifbq9iHum0Aq+UO80amZXFAn2j0=
+1.1.0.pre compass:< 0.14&>= 0.12.2|checksum:GfA0xY/3NjiwpylDB/eKUlZbMnE6v6jq5mjUgzJntwE=,rubygems:> 1.3.1
+1.1.0 compass:< 0.14&>= 0.12.2|checksum:isKC3Tt4jS8e7QY880BaheMxL9WyXeBGuqKLzXtVg4Q=
+1.1.1 compass:>= 0.12.2|checksum:j8HLOwH3EnZyLJNmr2RtjUI6P7VEGeBxhvtN7g/Rpbo=
+1.1.2 compass:>= 0.12.2|checksum:ak4xbj4YGVdo1CUqyke/CNPu3ItpiLF3S2WcsQxIf2M=
+1.1.3 compass:>= 0.12.2|checksum:j9LNK2HMXcZKYUsz33+UoP1Zpsuor0LxdddPUcB57jQ=
+1.1.5 compass:>= 0.12.2|checksum:OWOVMXnhchyHIYiuJegJIulpR267LxEHWIQKwTGZx4o=
+1.1.6 compass:>= 0.12.2|checksum:931aCC1/qDaaKwmlIpE90dGJzuimKh8dozq45a5BMK8=
+1.1.7 compass:>= 0.12.2,sprockets:<= 2.11.0|checksum:SsZAVu1yOdKf93rJxs3bCZCk8s8jLKLA9KFlvVy2DS0=
+2.0.0 compass:>= 0.12.2|checksum:KuZLRMqwp+cxQ9Esu8+bA3BRgu08v+8bztE5K8zKms4=,ruby:>= 0
+2.0.1 compass:~> 1.0.0|checksum:L3jbMGZUKQzUv7Ga7E0BPn4Li+MprXTR3ueBdqkqCZk=,ruby:>= 0
+2.0.2 compass:~> 1.0.0,sass-rails:<= 5.0.1,sprockets:< 2.13|checksum:FE//aK6DvORxk6vZvBr+aD0f8du5UtbNJcol/TV8zds=,ruby:>= 0
+2.0.3 compass:~> 1.0.0,sass-rails:<= 5.0.1,sprockets:< 2.13|checksum:wIzQEsjZnoRbV/QnAx7mBuC1npevkOw/nkqYN5Dfo+g=,ruby:>= 0
+2.0.4 compass:~> 1.0.0,sass-rails:<= 5.0.1,sprockets:< 2.13|checksum:hDM5KZ/1gS20ZhH5aO9gGTZ0r1Vej7TdmyklLCYFYY4=,ruby:>= 0
+2.0.5 compass:~> 1.0.0,sass-rails:< 5.1,sprockets:< 2.13|checksum:
+3.0.0 compass:~> 1.0.0,sass-rails:< 5.1,sprockets:< 4.0|checksum:1706a68e1cf2dd5024b9f4e097679844b5d992fc28052290c918cd8d3d5762a7,ruby:>= 0,rubygems:>= 0
+3.0.1 compass:~> 1.0.0,sass-rails:< 5.1,sprockets:< 4.0|checksum:88767c11c481e1be1e49990be36ddb73632245e9f322a9cafd67b4e528a088b1,ruby:>= 0,rubygems:>= 0
+3.0.2 compass:~> 1.0.0,sass-rails:< 5.1,sprockets:< 4.0|checksum:ab9c12eee40bf99e74a933bf15ea646c3c9d5053d8b65691afc4d9b28a5a697d,ruby:>= 0,rubygems:>= 0

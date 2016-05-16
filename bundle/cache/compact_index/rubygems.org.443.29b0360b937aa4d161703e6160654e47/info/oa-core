@@ -1,0 +1,28 @@
+---
+0.0.1 rack:>= 0|checksum:viRPSUioAuxWJx/AExFfivOwDF7/uQjGtH70cXCZu2I=
+0.0.2 rack:>= 0|checksum:kdsJ3oTZ2yW+lm4ohWlPAREJsATCUchVmyi2KRcjVxA=
+0.0.3 rack:>= 0|checksum:ADEDVauHi9iLh/0w0fGrRpBcHTEEuMxE8b1fmhHdQU8=
+0.0.4 rack:~> 1.1|checksum:N9UrTGIyjNLzGRp0riEOi25FL40PrfKsO8GxyQDh0qA=
+0.0.5 rack:~> 1.1|checksum:DntP+IUX5KywNvTw01xbYmYJqwmAoc5p2rb/3ASfjqo=
+0.1.0 rack:~> 1.1|checksum:GH1VqbJPnkF7DW4iNKngiTiGHlYpSQZICxoCDFwW8HI=
+0.1.1 rack:~> 1.1|checksum:/HEwTYOUeG+eCAUbcHcYIIbx8TPcybukpCbxbpYFPrs=
+0.1.2 rack:~> 1.1|checksum:X8jwrGTFkoF54WgbxLfDwhCasMDl6SjVdzdXb+hmlsc=
+0.1.3 rack:~> 1.1|checksum:EhwqhyncYNax6an37rcfeIghO5NsfsoxLA/oSrcLm+w=
+0.1.4 rack:~> 1.1|checksum:JkaClJNZDMDhpvblGZWxigy8ou2CCUFyj05X0SqCk2Y=
+0.1.5 rack:~> 1.1|checksum:nQrM46Peri+j8Zksq7BKtuCKCOdPgls2721ksX7nk44=
+0.1.6 rack:~> 1.1|checksum:Qe8AR3inbQUraqshWcGeMpqdfL39KkkYH7GZ4fsWh+8=
+0.2.0.beta1 rack:~> 1.1|checksum:Aa81DyGfzwZ8VAS+0uKGa+/3JvpdaFzWhZzLVbGOFxA=,rubygems:> 1.3.1
+0.2.0.beta2 rack:~> 1.1|checksum:IJGZGQrmgV728/ivp/wWnGIRIds32cAWToYP8mlxXco=,rubygems:> 1.3.1
+0.2.0.beta3 rack:~> 1.1|checksum:CW+VtUUGTcARxEANKqVh36zsVg/3yUz86vz3SFQXoo0=,rubygems:> 1.3.1
+0.2.0.beta4 rack:~> 1.1|checksum:kU6yQx6xevrdPQT7CArx0/OgsoaNUwwO9UVhTefw5BM=,rubygems:> 1.3.1
+0.2.0.beta5 rack:~> 1.1|checksum:uKwl6bzTZlPvAcwoEEX7QTEyPHIApQt464KCjL/HJiI=,rubygems:> 1.3.1
+0.2.0 rack:~> 1.1|checksum:cG48GSakkT7iZnoQoEINhSTH7M1hBhLDQpoYPfF1WSA=
+0.2.1 rack:~> 1.1|checksum:0vu1Ym/0BstTeh5RL0zHyfwjMrEUo56pDGZn2S9GqZQ=
+0.2.2 rack:~> 1.1|checksum:p0UKgaYxXGkcgro1IhTc1dOgLb29t99/JPZ6jfIk1Ew=
+0.2.3 rack:~> 1.1|checksum:17vle0w+cfYHHY4zZFYR84kHjTedBjFdKrb9tMOH5lQ=
+0.2.4 |checksum:XHVqidnAnwQCvPNHIUgf0BnQiFkE1gLNduzLHkjS/ZA=,rubygems:>= 1.3.6
+0.2.5 |checksum:sUPwAdBcI5Jp1wS1iTTimnrbRJKf2K/Iru6idMuXq3s=,rubygems:>= 1.3.6
+0.2.6 |checksum:sky0CHTzvA/G2g/2+nWLdmAwBvDoB4BriveVwwBSX5o=,rubygems:>= 1.3.6
+0.3.0.rc3 |checksum:iGo6paMkijFNJ7l+Mj15P2CHwr+UPBTg69s7c1HDgug=,rubygems:> 1.3.1
+0.3.0 |checksum:IWYzWjbX7S6jKnABXlSpXXCmeSyo7F+bwsvlw/n81fA=,rubygems:>= 1.3.6
+0.3.2 |checksum:AJwR3uyMCHZUdK2YUEuALYoGhQXaVX1jlRX5h+F+foU=,rubygems:>= 1.3.6

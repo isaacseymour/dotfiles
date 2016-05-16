@@ -1,0 +1,37 @@
+---
+0.1.0 eventmachine:>= 0.12.0,thin:~> 1.2|checksum:hazJpuur3ryaPe9XDey7zlQw+i/+7ukSCSaTRioRBak=
+0.1.1 eventmachine:>= 0.12.0,thin:~> 1.2|checksum:4vg8HpcQh6eWV4eQn+ifNHpE+VDAaiJLiPLusjVhnOs=
+0.1.2 eventmachine:>= 0.12.0,thin:~> 1.2|checksum:tXLb+9zVotepf/eFnjWxNtlOL9AMqwJxdRQDpFTT408=
+0.2.0 eventmachine:>= 0.12.0,thin:~> 1.2|checksum:NK1yU7h8XsN7dfGYwkdZuBrdv0JU9u/41sk1r9sbCWg=
+0.3.0 eventmachine:>= 0.12.0|checksum:ZJLVHoIGJObYksJntfMGHoYJktrgxBzgfXAcyV9O2Xc=
+0.4.0 eventmachine:>= 0.12.0|checksum:29eiCQVQ6on6bzbnYaDtYIrJFTwoky5xzRRZlToN/us=
+0.4.1 eventmachine:>= 0.12.0|checksum:i+e3crvQUqF300IraHdxAxOk8RlrLCnXQe5qyEwVYmM=
+0.4.2 eventmachine:>= 0.12.0|checksum:Mc/QFHF84drwbOm88dbAfihuB/8yYvQB9LetA7v5y3g=
+0.4.3 eventmachine:>= 0.12.0|checksum:Tzag0FjJ4RnNVAQHhJSLHUUxYP7RFrZFTz6blLqiOf0=
+0.4.4-java eventmachine:>= 0.12.0|checksum:FmBxpl9NsvVSIopXxTLBmDYjtDVL2uXdNlR+CjYbaDU=
+0.4.4 eventmachine:>= 0.12.0|checksum:FmBxpl9NsvVSIopXxTLBmDYjtDVL2uXdNlR+CjYbaDU=
+0.4.5-java eventmachine:>= 0.12.0|checksum:YRelFw1dJMZsoOqxkGBG4sU8ERdR+zAvuiFFotR4940=
+0.4.5 eventmachine:>= 0.12.0|checksum:YRelFw1dJMZsoOqxkGBG4sU8ERdR+zAvuiFFotR4940=
+0.4.6-java eventmachine:>= 0.12.0|checksum:Zu3pvwffPjVB33Er9bxzCwHdbVB8hKzzBdn0QX5zIZ8=
+0.4.6 eventmachine:>= 0.12.0|checksum:Zu3pvwffPjVB33Er9bxzCwHdbVB8hKzzBdn0QX5zIZ8=
+0.4.7-java eventmachine:>= 0.12.0|checksum:6DESdzns+MrSyt6W2AIsk4R5zIl6ctYkbzg0+SfiZPA=
+0.4.7 eventmachine:>= 0.12.0|checksum:6DESdzns+MrSyt6W2AIsk4R5zIl6ctYkbzg0+SfiZPA=
+0.5.0 eventmachine:>= 0.12.0,websocket-driver:>= 0|checksum:MKbLsi5G9+wiIzrryEKyJfkFq9tb4BF6WiiaegEcxbA=
+0.6.0 eventmachine:>= 0.12.0,websocket-driver:>= 0.2.0|checksum:8BSNm21Ic2GSXsPTbQZVCowMqwIPG+dmUT8sCJDF8ao=
+0.6.1 eventmachine:>= 0.12.0,websocket-driver:>= 0.2.0|checksum:X1jYG/ZIpr0dAU3gM1KwwwAC3aRsp+qntDnrMqS6jGk=
+0.6.2 eventmachine:>= 0.12.0,websocket-driver:>= 0.2.0|checksum:NXqlZc70QpJumSAb20LZsK1NAGn6cK8bIJDSPshs21Q=
+0.6.3 eventmachine:>= 0.12.0,websocket-driver:>= 0.2.0|checksum:7+c3Nod+7/94xipkA3v/TjZ2U1Bc+PwAkpqwYP0Uwuw=
+0.7.0 eventmachine:>= 0.12.0,websocket-driver:>= 0.3.0|checksum:Ax/YWc9e77LQGsqzUXsYBIro4QZT4oJs0pH23FbOPG0=
+0.7.1 eventmachine:>= 0.12.0,websocket-driver:>= 0.3.1|checksum:dRHa0VM4sI1oKJDeD5G0mvbiJpPMOijo7mjExnOHqwo=
+0.7.2 eventmachine:>= 0.12.0,websocket-driver:>= 0.3.1|checksum:hvk25bI0KqgCA7zFd6a0sBgyumh9AcyNy8Nso94eonc=
+0.7.3 eventmachine:>= 0.12.0,websocket-driver:>= 0.3.1|checksum:Tq30chTaRTgCcISIqWYQ7KmajKzOSyMsMaEvMLf7k9k=,ruby:>= 0
+0.7.4 eventmachine:>= 0.12.0,websocket-driver:>= 0.3.1|checksum:jBmqsv5GoGTS3+oYVn8O0KDHXRNq7TYd9InMqNj34lo=,ruby:>= 0
+0.7.5 eventmachine:>= 0.12.0,websocket-driver:>= 0.3.5|checksum:RjVyIpKOyvuJNhtF9YzVB7np2Ck1CfJ20Ke60DuvQB8=,ruby:>= 0
+0.8.0 eventmachine:>= 0.12.0,websocket-driver:>= 0.4.0|checksum:LL0dkaec8twodjSpiBsg6eSl9nzhtnTQGNpYysB6nV0=,ruby:>= 0
+0.9.0 eventmachine:>= 0.12.0,websocket-driver:>= 0.5.0|checksum:ArwdwjntFFb+H6nVHi2YYRJrCqFfiIvmBUUHocuwtis=,ruby:>= 0
+0.9.1 eventmachine:>= 0.12.0,websocket-driver:>= 0.5.1|checksum:TGWA5a0s000wJeLaurlwvMFpYOKx61+Bd9mLyIohzxs=,ruby:>= 0
+0.9.2 eventmachine:>= 0.12.0,websocket-driver:>= 0.5.1|checksum:aDUFN/zPPPIZ5CdzJG43egISJKz+hBXyvXitY26cxJM=,ruby:>= 0
+0.10.0 eventmachine:>= 0.12.0,websocket-driver:>= 0.5.1|checksum:/6lwjB21s3LLjH5jDB+RmVBc8PHX2jzeiykO8KP0HlU=,ruby:>= 0
+0.10.1 eventmachine:>= 0.12.0,websocket-driver:>= 0.5.1|checksum:
+0.10.2 eventmachine:>= 0.12.0,websocket-driver:>= 0.5.1|checksum:
+0.10.3 eventmachine:>= 0.12.0,websocket-driver:>= 0.5.1|checksum:fbaacc7e4712e15443fea6c7adfbda65f9159c868c10fe5ea489f4c1202a191e,ruby:>= 0,rubygems:>= 0

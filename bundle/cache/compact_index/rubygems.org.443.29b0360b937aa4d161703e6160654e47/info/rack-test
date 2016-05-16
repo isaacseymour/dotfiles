@@ -1,0 +1,19 @@
+---
+0.1.0 |checksum:T6qJC05bvUTLEZIRevlCtGrKcT56hg/HdXODXgq+JwY=
+0.2.0 |checksum:tGK6pmnjNBtS33Dezo2V2bz7/1gucTkRivmEdEO+NmQ=
+0.3.0 |checksum:r+8MFY/MbqlhuTvEG7WFkyxRD9JE3BCgwREqDS8MhKE=
+0.4.0 |checksum:TIQ/q8Spp6/tQgYETmlBaNMtdD45x9cdT3RXmj9tp9w=
+0.4.1 |checksum:MV8Z1S29Lecb3lJ4CIEMDijvD50REBxfv8X2/AYkRyY=
+0.4.2 |checksum:tfQnO52Z37hROxxlQg0WjOS8hlhGKUOf8fWClbu0rL8=
+0.5.0 |checksum:vhAR6g6iDPDgMKHUvOdFl5J6ZU/w1RhEvg6EDi4F/H8=
+0.5.1 rack:>= 1.0|checksum:cR7GF7rQBE9xBgo0vm825W5PXpkbm2dEwEFPU2pgIuQ=
+0.5.2 rack:>= 1.0|checksum:XzGFOQfgur7fNt5Ukjw1Vxh1aA/yDta7J5rcB13UatU=
+0.5.3 rack:>= 1.0|checksum:XMRDScaMVRLUvrBV+A2FRVCu+66LYAgxtX12P71hOyE=
+0.5.4 rack:>= 1.0|checksum:/ddm9sFaldn0se8FP8kyQlpnMomupTm8kMHsQrDc0yk=
+0.5.5 rack:>= 1.0|checksum:3ZIZtcoonIOOGMwvrPPYKZcHdE0w9UDFkmEM6jEyMyY=
+0.5.6 rack:>= 1.0|checksum:yofOTRvPVRqyNGRjuj2GmDuyLE1bM0eLKsM54LrZv8g=
+0.5.7 rack:>= 1.0|checksum:CdDr1M4972WTS0j8u8snA0dtN57kh7XPCFaWNj9efog=
+0.6.0 rack:>= 1.0|checksum:c9smXezUId+rSsAkQ+L/iq+GoQ4oyMuzaxMr3TGl4bc=
+0.6.1 rack:>= 1.0|checksum:QHMQePVwxh1fxaV93DUmrAjwg6BgHpn/12ctKB3CBUM=
+0.6.2 rack:>= 1.0|checksum:fpILaqyIjko4RuWZf7HL9Fa9tYRjIrWNwxaXpUo4swY=
+0.6.3 rack:>= 1.0|checksum:/2CxIuKUDjLpSi5KYbzrjZyZqXwYF+zEflNVIrAs3UA=,ruby:>= 0

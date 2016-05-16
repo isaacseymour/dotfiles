@@ -1,0 +1,95 @@
+---
+0.1.0 |checksum:9fNLN60yu6HPcyEVSt5xztjOKAF/gIGfeMpNcn7IeK4=,rubygems:>= 1.3.6
+0.2.0 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.0,rb-inotify:~> 0.8.8|checksum:GSLUqUnhm7IYkwq0kvKNoMHiPJzdmWQmONflV4+g4Dw=,rubygems:>= 1.3.6
+0.3.0 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.0,rb-inotify:~> 0.8.8|checksum:+pdulIaRczNOto/U15qTv7Pleh90/of59up46EVkQqc=,rubygems:>= 1.3.6
+0.3.1 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.0,rb-inotify:~> 0.8.8|checksum:7xMLx0wsrsNPpI2Apt3gxJUabQEdTVZaUbFcb+H6XnM=,rubygems:>= 1.3.6
+0.3.2 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.0,rb-inotify:~> 0.8.8|checksum:/YPw5lchwopBEW8LJcZfNCDYhrpmjTXDEshrDXtoidA=,rubygems:>= 1.3.6
+0.3.3 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.0,rb-inotify:~> 0.8.8|checksum:NJv0GTHhgKUrYxDzZaYc+7gWIkCMFoho2J6j9YoMjcM=,rubygems:>= 1.3.6
+0.4.0 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.1,rb-inotify:~> 0.8.8|checksum:e4O4De1vTeqPe7BcFep4My19t7/fM50D5E0Zzr/jp7E=,rubygems:>= 1.3.6
+0.4.1 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.1,rb-inotify:~> 0.8.8|checksum:nQ2Z2NE2mEc0H5hKv382XuUmg4KbtsyT6/vpFv4NlSo=,rubygems:>= 1.3.6
+0.4.2 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.1,rb-inotify:~> 0.8.8|checksum:kKcGskVNT16r8hYyP2hhYAkfmq1sUBdxg+LQLLgDP8s=,rubygems:>= 1.3.6
+0.4.3 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.1,rb-inotify:~> 0.8.8|checksum:c0Vx1P3jTEPlQTndl02KQAVpAluzIuVxWgpTX/7+oO4=,rubygems:>= 1.3.6
+0.4.4 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.1,rb-inotify:~> 0.8.8|checksum:QDfgvGXdCSyA+RL7Sg3Fd4ys9loKETLcTSBAGbIuSeg=,rubygems:>= 1.3.6
+0.4.5 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.1,rb-inotify:~> 0.8.8|checksum:Dvo95T3p5GvSlBZXExfIZcg3Kbij58C1PCfn7iiJvp4=,rubygems:>= 1.3.6
+0.4.6 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.1,rb-inotify:~> 0.8.8|checksum:bzNUdf/G/QROUYpMILwmnH5BshYKFpyFF4cCNoKiLAo=,rubygems:>= 1.3.6
+0.4.7 rb-fchange:~> 0.0.5,rb-fsevent:~> 0.9.1,rb-inotify:~> 0.8.8|checksum:3/DluF83KKjAY1uUbsthA9f8g4qQl3bMFUtMtYV56Sk=,rubygems:>= 1.3.6
+0.5.0 |checksum:DxFOwSVVdMwQ+KVXox8rj6FfiD9+e3hdrr3H9EFwHkc=,rubygems:>= 1.3.6
+0.5.1 |checksum:yGQjwNgyoieL69yeDXXJu9Ug80EBDTqimZcHVRQziFE=,rubygems:>= 1.3.6
+0.5.2 |checksum:L6HSByuOhC3OOIyiuDsZ7AGnCPNTT8a7xPe8eaDPB24=,rubygems:>= 1.3.6
+0.5.3 |checksum:tM/t51hnR59jcNmtjPxarVQJf0zwoCw3OCGYHvfh1EY=,rubygems:>= 1.3.6
+0.6.0 |checksum:YGfolxlepV0riNlI1DuZuyOOQDdRtDAeNd9nRUs946g=,rubygems:>= 1.3.6
+0.7.0 |checksum:lh9Bx05BegtZB7EsUr2c5Yj98ejjlkcOp1N+YEiJKpk=,rubygems:>= 1.3.6
+0.7.1 |checksum:pR5wNwQzgJVAUQemDwpDPg1UHMUlAOqSjrIxaK/rrZ4=,rubygems:>= 1.3.6
+0.7.2 |checksum:neCX0Ba3jqkdbw52bqOgsdx7fVXeqb557IizvPrmwRk=,rubygems:>= 1.3.6
+0.7.3 |checksum:i83wfpFD+8q5PLfWQGfFMjK+QCx2A9/FAGEdcipiP2E=,rubygems:>= 1.3.6
+1.0.0 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:CJF4cZD6UsF9/tVhL2ffzelJWe6Oby1ao3EH8tlv9uY=,rubygems:>= 1.3.6
+1.0.1 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:oFltsU/qaJCyo+oUxsSd/4xEZRXmnu1mG7Hzs7okd7I=,rubygems:>= 1.3.6
+1.0.2 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:MntuG7R85rRAfsli4WHjIce/IgMEmQG6Lm13NdYfros=,rubygems:>= 1.3.6
+1.0.3 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:zg5PyA23xC+5NAyOoXmms51ShZNkFIMMDDdOGBfM0lw=,rubygems:>= 1.3.6
+1.1.0 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:TV4RVbFlmLKcsrq8PAbRTGEkKc/1ou1H9ATipR6LtAk=,rubygems:>= 1.3.6
+1.1.1 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:7RfnP7rnAwA6drronR0fO4q9gPL3F7L8L+EHKxxVv3Q=,rubygems:>= 1.3.6
+1.1.2 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:lMP06IEK5eixoJAIUNf3xs3Vhf3YfT7xxc9KU6Gi718=,rubygems:>= 1.3.6
+1.1.3 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:Rr7+vSdVd2LjvokhtBkwCLtVryPVe7bBGcWUA0LHbhc=,rubygems:>= 1.3.6
+1.1.4 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:3TnsqnIuE6qSlLyPVWmSWr7Yx7BkGKuE4oDlznWfLQI=,rubygems:>= 1.3.6
+1.1.5 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:yYA4dk8CuPJ5oCLU7c62O55DgleR2LTeFZI9BLCGhAs=,rubygems:>= 1.3.6
+1.1.6 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:URwZ6IEffxPvLWHRkVJqipT7l509JOdWVhuGqYsPxmw=,rubygems:>= 1.3.6
+1.2.0 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:ufeUpUWfrJy8ABim+D6AOgaOrPzd7yuTRHNlcT1MM44=,rubygems:>= 1.3.6
+1.2.1 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:wR16fESQN1n46vrzim4sMQXcL87XEPSODFiTnCJvm7g=,rubygems:>= 1.3.6
+1.2.2 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:wUL8uimTKWaXNERV75upFdkAuKBUkL75mFIyY43hRuY=,rubygems:>= 1.3.6
+1.2.3 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:Cr0SMYGF/igZF2I5FWZxfwNIw9y2oJx6mlbN8/N8x3s=,rubygems:>= 1.3.6
+1.3.0 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:PktiiVUc+OG68HYJoC+Nq8Xq6Do8a1wL/wTh4j80Gvc=,rubygems:>= 1.3.6
+1.3.1 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9,rb-kqueue:>= 0.2|checksum:ev2lPgsSKzW/ObtHrtKe/I61BNZ3eAjYd6D3aMTHOdw=,rubygems:>= 1.3.6
+2.0.0.beta.1 celluloid:>= 0.15.1,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:GpYo1t/YntpQak4/lbUXKd8OasXsE+yiJ15FjRAkqZk=,rubygems:>= 1.3.6
+2.0.0.beta.2 celluloid:>= 0.15.1,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:7oOhbMj9MR7ewIDc2DYzSdwgjBT+C8NTuanuWXxTtR4=,rubygems:>= 1.3.6
+2.0.0.pre.1 celluloid:>= 0.15.1,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:C4swREGv2+XyixLBxUkx9clU92SL0PpYzwz7uZguhvs=,rubygems:>= 1.3.6
+2.0.0 celluloid:>= 0.15.1,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:iNBiSOuL7dBwV7dlKtFntFAYGh6ouOlTzDIRTpUY6HA=,rubygems:>= 1.3.6
+2.0.1 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:WZ+vApiGQhcwn4kRYBKk3pjPDfGIaXzSiz+WLtVQ+Tk=
+2.0.2 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:S2Cvt8CXGekToBKPybdHiebRQmcigxSJ3Mw10IQUKDo=
+2.0.3 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:WeahJ0nvLc0DdHzS7anrBQgI8DimpJKBhGre97COIjE=
+2.0.4 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:poTUYvL6CZmlBE8QNYkFl+WrRcAqEgzfZ5N82JFZ268=
+2.1.0 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:X4tyECucHNIWviAdfYDe0VmJeO53RQiS880gtx0YxA0=
+2.1.1 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:MJWzshiuesfnzjEkze3pkS+/suRa+x0k74x07WIqC2I=
+2.1.2 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:5+yPOSrAv37ayLLf4H44EC1N/h3Aj1iDf0DUC5eDdtg=
+2.2.0 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:rGxNkl7vNxvg//j7krPMhTFxRyUANdAaL2110splpro=
+2.3.1 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:VUm2BzN6lbsySKl2YMyqDD7uxw4B5huKCNSmw23ZNyA=
+2.4.0 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:FXR26Xhv3AWkLHIk5OQokPUFWDMYOdKHKkpgidXqcFY=
+2.4.1 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:3C5j+9NKtn2+vtF1l/JDW0Cvz8TJv2GyOoYUoQLuTMc=
+2.5.0 celluloid:>= 0.15.2,celluloid-io:>= 0.15.0,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:flVRBwYzcz4lvYfYsKzeA123uQ76rBkhod7TjXqTTvo=
+2.6.0 celluloid:>= 0.15.2,celluloid-io:>= 0.15.0,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:pE3SbroV2W97YF+Sb4CoomkReWgjdsLOlUfR8ktkrrQ=
+2.6.1 celluloid:>= 0.15.2,celluloid-io:>= 0.15.0,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:/4U4J0afbaQ3A6HP4EE5sPU0VfDxfeWT+E56WoO555A=
+2.6.2 celluloid:>= 0.15.2,celluloid-io:>= 0.15.0,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:aL/6jH3FtbNl0tilg65IiPni+Orim0wfjYsoRZrviLE=
+2.7.0 celluloid:>= 0.15.2,celluloid-io:>= 0.15.0,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:Dp5wIRI9y/IoujY6W8Of83ytbGmG6cu3y0BsgKCwuq0=
+2.7.1 celluloid:>= 0.15.2,celluloid-io:>= 0.15.0,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:ccT3e/AzDzbDH7xEGQjyUXDYL9HkkkhbpmkocubnZ5w=
+2.7.2 celluloid:>= 0.15.2,celluloid-io:>= 0.15.0,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:RWQFTYQIgZ0ZTOOYn7LV44XLUULumvrmwVkS9ZRD0eA=,ruby:>= 1.9.3
+2.7.3 celluloid:>= 0.15.2,celluloid-io:>= 0.15.0,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:gBoAwFMzhgCFuyGpfvE5vABfmzD8leSpw82usP5Zweg=,ruby:>= 1.9.3
+2.7.4 celluloid:>= 0.15.2,celluloid-io:>= 0.15.0,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:EJboX+0yk8r2HpHzGhL7zD4QpKunVsSXeVdtvUCGaQM=,ruby:>= 1.9.3
+2.7.5 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:JyI2h2x4LLO4pv+NobrHfkSw9Z27eRo3lmXPvnj2JR4=,ruby:>= 1.9.3
+2.7.6 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:WToXEnuzx52GAJ6GH4E/Sc4ZcAewea+Vuk94T9Pu/Ys=,ruby:>= 1.9.3
+2.7.7 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:J7rS4sKJB6ETg0y9c6aQudBDeGTWrW8CoFn3ZlesCIs=,ruby:>= 1.9.3
+2.7.8 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:xvQlRpYO0XIaRPMpEOg2GFXQJrJgTzZySAq/0HyHweo=,ruby:>= 1.9.3
+2.7.9 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:jlJ0DGl3xP2mfiiTiERwjdCFFxgkbdfl5XAiHphDNcU=,ruby:>= 1.9.3
+2.7.11 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:mbhdUJvfF5bhUGlJGR30YGqI+FUWyZyQtA6ayXiDpZM=,ruby:>= 1.9.3
+2.7.12 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:XPApCp2UIC1b3CjxLfcMexKlpz6fTt+WxnoDsmsUSmY=,ruby:>= 1.9.3
+2.8.0 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:jJNwMPH0yfmY7M/TMJ86BW2/Ksnf2BGS97qMwSxqBPg=,ruby:>= 1.9.3
+2.8.1 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:IeNQIuZk158enGUft8zbpkZlG70Ta1xOdJDtVCvM3ug=,ruby:>= 1.9.3
+2.8.2 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:gaNsp700v0mJeRQzRAjhYKBf1vAl+7Oued/N+dHws7Q=,ruby:>= 1.9.3
+2.8.3 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:/K0uQ0JxP9Eurf8GUKDX2aiqiOiMUzHUMP/gaS7KdrM=,ruby:>= 1.9.3
+2.8.4 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:qiPneyu0/P5c9RkbN8ekik9h0M+KjrwqvsgN9KavxuQ=,ruby:>= 1.9.3
+2.8.5 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:7Chwh9jqwGegZteF0ZwIkAxksnp6LWrGN/vAbwm0CF4=,ruby:>= 1.9.3
+2.8.6 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:c/cbK5i/jrpL+Dwxz0j2xNg8/ZPY54OTCoUscXckiZg=,ruby:>= 1.9.3
+2.9.0 celluloid:>= 0.15.2,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:qEVBGOKqPC9Wb9H5VnKoWufTC9h/8W446nhD5ngk3kU=,ruby:>= 1.9.3
+2.10.0 celluloid:~> 0.16.0,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:UbwNZDn/FTZgoKyjcogIsXzXQLxcnDvdFJZivUp8N4w=,ruby:>= 1.9.3
+2.10.1 celluloid:~> 0.16.0,rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:D8c2bgNFFbJHE8vFKd3fPVpTo+x6rjZVP9EG0ZeN6sY=,ruby:>= 1.9.3
+3.0.0 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:p11lUMwcNnuei2UjEwdSRMw1UGzbjvWO1Py4TgWVQYc=,ruby:>= 1.9.3
+3.0.1 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:ayZZiTJfvmjGZZkzAqehaxlUkpQ/CygGeh02CFYONWM=,ruby:>= 1.9.3
+3.0.2 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:daDGhXYDB7k8791HjhKbkDL8C1CbkC+//SIZdHuQh+o=,ruby:>= 1.9.3
+3.0.3 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:
+3.0.4 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:
+3.0.5 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9|checksum:
+3.0.6 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9.7|checksum:eba4df6615b63079930caa5dd9b5f8684a6e08b3feecee6371d5723b6ccb687f,ruby:>= 1.9.3,rubygems:>= 0
+3.1.0 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9.7|checksum:e788cbc373aa40f42597e1ce47793acbe9ad5d59a91e121db657138ac5b959bf,ruby:~> 2.2,rubygems:>= 0
+3.1.1 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9.7|checksum:ea9a01b38e403cb8d62c7cb772ab83ea1185a0bfdf1d40869c1b150bdfb2b2d7,ruby:~> 2.2,rubygems:>= 0
+3.0.7 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9.7|checksum:e68f1640789b249e6c72c035353d3993fc2a45ec533c86779328339d25ae7b4d,ruby:>= 1.9.3,rubygems:>= 0
+3.1.2 rb-fsevent:>= 0.9.3,rb-inotify:>= 0.9.7,ruby_dep:~> 1.1|checksum:47bfd912f1d92ba8e4d644d3acfd82caa67dd11d7910dabeeb10cbbc5f273079,ruby:>= 2.2.4, ~> 2.2,rubygems:>= 0
+3.1.3 rb-fsevent:>= 0.9.7&~> 0.9,rb-inotify:>= 0.9.7&~> 0.9,ruby_dep:~> 1.2|checksum:3b5b519287bc13eb2029526117efd9a5df17645a3848253d78484e53595c98ec,ruby:>= 2.2.3, ~> 2.2,rubygems:>= 0
+3.1.4 rb-fsevent:>= 0.9.4&~> 0.9,rb-inotify:>= 0.9.7&~> 0.9,ruby_dep:~> 1.2|checksum:60db47e233f7e082e72eafd3696f06143b29ecdcb53a78dd2b0b35411df90f96,ruby:>= 2.2.3, ~> 2.2,rubygems:>= 0

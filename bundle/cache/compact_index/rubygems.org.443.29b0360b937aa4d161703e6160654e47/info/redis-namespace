@@ -1,0 +1,37 @@
+---
+0.1.0 |checksum:pMJSQ5NdTrR9Y0+WygMzVnEFZeW9fHc1Z+djr+LvihQ=
+0.1.1 |checksum:18wnMXUvleMyRklC4lMWlsBEM20oRLkpesDgkduezmA=
+0.2.0 |checksum:/dHiNbXqyVh6+e1zIr+rkxW6JX5uVXjgnFAxW5Jo9pE=
+0.2.1 redis:>= 0|checksum:qQP3sOY97VrCxj/PfXW+C52H6HilVQUZqYlewuRSj3g=
+0.3.0 redis:>= 0|checksum:evMx2fmTupnk6FWKjQHdh4/93WmLKXwYrdXPBQQU+ZE=
+0.4.0 redis:>= 0|checksum:2Cp6kcFXL/jLXoWWoFE/bpU/8tcs6+OGUN+9Zl1mTj8=
+0.4.1 redis:>= 0|checksum:VDH+WI/i++r/ul121K9d+9r58E528Sg3jfs+qXWdrDo=
+0.4.2 redis:>= 0|checksum:njhu3t/BhmMTFyKmzTGDUW5NVZGi5lChgsSts39iN6Y=
+0.4.3 |checksum:J6K9BDjpHYSHxgChhFbyn1BaVEE5xLMtmSlddWMe0mk=
+0.4.4 redis:~> 1.0.0|checksum:f422jV3PWuCUmbnmIlMQItd1fz32SNNT9bflmYk04PQ=
+0.5.0 redis:< 3.0.0|checksum:d9i3q25PTgGwaWGo5DjsZKE/Bx5rMINGF6vG90uh2IY=
+0.5.1 redis:< 3.0.0|checksum:+iEShPnnhmslalfuGcEwmBocbAi/agtsJU5rUpBKpiE=
+0.6.0 redis:< 3.0.0|checksum:nkKtH4tty4jvqjpK4E96TnmBG2SgAxnjLAj/QoUNyDo=
+0.7.0 redis:< 3.0.0|checksum:HQLmKd7U1jxWVVF+DYEwTlsj37hpfByShhxy/rZAJ04=
+0.8.0 redis:< 3.0.0|checksum:5uEktN5KUQAlVBIb8t9tmSpblHPSakPLHV9Nu58Z140=
+0.9.0 redis:< 3.0.0|checksum:VeECG4HHI75K1/LyqCvX4EjoP8xVaogLRrKQPuN0K2M=
+0.10.0 redis:< 3.0.0|checksum:QB8uv2YTlE9h7+FW1sYPCX/uYo3rkXtq7MZIERsBoFo=
+1.0 redis:< 3.0.0|checksum:q5u15HmQb9xjJYEAbUnMcHVUR4OwnSUVNcqjinM36pw=
+1.0.1 redis:< 3.0.0|checksum:Q3aGEkKwg2WgiRJ1I5cpcmowJ5t6L/0i+PTXzyksk50=
+1.0.2 redis:< 3.0.0|checksum:1LKcEqdqmhk2Sy8F3LIAaMGul7847rVwWlmSzkVuNNc=
+1.0.3 redis:< 3.0.0|checksum:2qLyj/TGEnfFMhv+lR8B8lYS1Apx0qGoFrUQqtDLQCE=
+1.1.0 redis:< 3.0.0|checksum:Y8t/g9htKVxwsIICn9/OUXCuUG0LuzKuLi/dKqf3ZuA=
+1.2.0 redis:~> 3.0.0|checksum:IzFmHkgsCrKssvMUPyPxfpX45ZGrjHW90DD18PuVtqI=
+1.2.1 redis:~> 3.0.0|checksum:TjUbFgSxbrFyGVjRml0Q3GO56EMdDMM4oZISSUmbZEo=
+1.3.0 redis:~> 3.0.0|checksum:hsIN3Qi6HGoc8igISwMAA3kA/2NvEKiGTjboma5FL7E=
+1.3.1 redis:~> 3.0.0|checksum:hUfyokZjWYFtr0cqgMK1jIRLAbx6v1VNvCXaBD4xytA=
+1.1.1 redis:< 3.0.0|checksum:2pOVdjAF3P41P+7A+AO8L+zGFeWKShUWCAjYOFK3Xag=
+1.2.2 redis:~> 3.0.0|checksum:5dLVRsrJmK5n8kmEoXfrzAXukX6hYsAZRtYHj18xeZE=
+1.0.4 redis:< 3.0.0|checksum:2eQZtkFZz0OcI0EtOrIbQ2qeokROcKPPioLsesqusbA=
+1.3.2 redis:~> 3.0.4|checksum:D6Vep0IHQMUYP6GEomIjmfj48BGe5qIW9pL5QcvCZOY=
+1.4.0.rc.0 redis:~> 3.0.4|checksum:+clLSvUQs1nBj/GDnIwJSNvvGUYKwI5p48sVQJ1/WOM=,rubygems:> 1.3.1
+1.4.0 redis:~> 3.0.4|checksum:LmVYjEtFguguowpbvL8dK2y3qQ5x9QwZIHUA3JX8OXE=
+1.4.1 redis:~> 3.0.4|checksum:x8EZwKjDh2t9fw3Ari4zQzUvHfxtl4yXEbY7WFGKZjk=
+1.5.0 redis:>= 3.0.4&~> 3.0|checksum:hLVVrCZTKbvytMa+rQodsMPGwaqMV2TW7gVna0sZJ8M=,ruby:>= 0
+1.5.1 redis:>= 3.0.4&~> 3.0|checksum:pBz5QIFzAQ/jPrUCNJ2YM9d9YJy5Tl9X4C6M2jFg+fk=,ruby:>= 0
+1.5.2 redis:>= 3.0.4&~> 3.0|checksum:RbwkoS/akP62uRbmSRmAU1Irw5nmJJ1m/7g7+6d76GY=,ruby:>= 0

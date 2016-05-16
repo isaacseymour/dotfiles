@@ -1,0 +1,43 @@
+---
+0.1.0-java |checksum:3Tn+L+lMie8GBtKv/drjcTuzT5yQpzyqpSrGwNpONMA=
+0.1.0 |checksum:3Tn+L+lMie8GBtKv/drjcTuzT5yQpzyqpSrGwNpONMA=
+0.2.0-java |checksum:jrck3VcKUw4/Sv+rGoxTaXSkHudyxMH8PrF8D4VTIEY=
+0.2.0 |checksum:jrck3VcKUw4/Sv+rGoxTaXSkHudyxMH8PrF8D4VTIEY=
+0.2.1-java |checksum:QNTxcrn1t3HGYHIGp9lhk01lZCoYowVYCiYhjSd48Uo=
+0.2.1 |checksum:QNTxcrn1t3HGYHIGp9lhk01lZCoYowVYCiYhjSd48Uo=
+0.2.2-java |checksum:iZlAnsAd560pVTyuJ29wnsZfSYxaOqgBOIjKPLrfsRg=
+0.2.2 |checksum:iZlAnsAd560pVTyuJ29wnsZfSYxaOqgBOIjKPLrfsRg=
+0.2.3-java |checksum:vON5S2Wt0Oh1mS3Y8aw1QbFl9zEnpOV5yvBd4H7gSi0=
+0.2.3 |checksum:vON5S2Wt0Oh1mS3Y8aw1QbFl9zEnpOV5yvBd4H7gSi0=
+0.3.0-java |checksum:klNvsQ8FZpxwW+izwS+WTBPFZm+e8EqOrzdWIb5iEls=
+0.3.0 |checksum:klNvsQ8FZpxwW+izwS+WTBPFZm+e8EqOrzdWIb5iEls=
+0.3.1-java |checksum:z3zRW/Sg6y/csZKWncPXkuivppcgYidS+TDhZnnTDZ8=
+0.3.1 |checksum:z3zRW/Sg6y/csZKWncPXkuivppcgYidS+TDhZnnTDZ8=
+0.3.2-java |checksum:Ty4sq85BKrvup7Q/Z+0DrGjCDAYX7wj0TSGrSmoMNBk=
+0.3.2 |checksum:Ty4sq85BKrvup7Q/Z+0DrGjCDAYX7wj0TSGrSmoMNBk=
+0.3.3-java |checksum:BL8tQ+omVPg1MVwO17KoxkaW/PBa72c8k7Gkdjg4rFs=,ruby:>= 0
+0.3.3 |checksum:BL8tQ+omVPg1MVwO17KoxkaW/PBa72c8k7Gkdjg4rFs=,ruby:>= 0
+0.3.4-java |checksum:nWsX64KG3lGGdtqEZtIRO8CghV8frE6b0vPMQcYKgCc=,ruby:>= 0
+0.3.4 |checksum:nWsX64KG3lGGdtqEZtIRO8CghV8frE6b0vPMQcYKgCc=,ruby:>= 0
+0.3.5-java |checksum:hUgsYO/Na+z0ly597rG8CTWFahE1+EGD5llt2mexLdc=,ruby:>= 0
+0.3.5 |checksum:hUgsYO/Na+z0ly597rG8CTWFahE1+EGD5llt2mexLdc=,ruby:>= 0
+0.4.0-java |checksum:zagHxheUw002ke9G4f1OSOmmLmeEDhBNRHoxiA5rauA=,ruby:>= 0
+0.4.0 |checksum:zagHxheUw002ke9G4f1OSOmmLmeEDhBNRHoxiA5rauA=,ruby:>= 0
+0.5.0-java websocket-extensions:>= 0.1.0|checksum:uD+VR587Xr1NUsoei3CkhBk6j017r3Wt9+oaijrj+fY=,ruby:>= 0
+0.5.0 websocket-extensions:>= 0.1.0|checksum:uD+VR587Xr1NUsoei3CkhBk6j017r3Wt9+oaijrj+fY=,ruby:>= 0
+0.5.1-java websocket-extensions:>= 0.1.0|checksum:uThTZygaW0rHqXeAEYt/fnte9Mk4Wb7Ue1CLD0WNLRw=,ruby:>= 0
+0.5.1 websocket-extensions:>= 0.1.0|checksum:uThTZygaW0rHqXeAEYt/fnte9Mk4Wb7Ue1CLD0WNLRw=,ruby:>= 0
+0.5.2-java websocket-extensions:>= 0.1.0|checksum:D6I7Kj3rGRGxMsCen4xZpt/sYL1wGsFqart7qpkRgys=,ruby:>= 0
+0.5.2 websocket-extensions:>= 0.1.0|checksum:D6I7Kj3rGRGxMsCen4xZpt/sYL1wGsFqart7qpkRgys=,ruby:>= 0
+0.5.3-java websocket-extensions:>= 0.1.0|checksum:p3/6Hpe96K7r4KhRFAZ+S30VmhWXbnd1iW00xcUgAyI=,ruby:>= 0
+0.5.3 websocket-extensions:>= 0.1.0|checksum:p3/6Hpe96K7r4KhRFAZ+S30VmhWXbnd1iW00xcUgAyI=,ruby:>= 0
+0.5.4-java websocket-extensions:>= 0.1.0|checksum:pvIggnlCQAqagpIHz/AmcT2bdM8kqd/gvqxvygryyC8=,ruby:>= 0
+0.5.4 websocket-extensions:>= 0.1.0|checksum:pvIggnlCQAqagpIHz/AmcT2bdM8kqd/gvqxvygryyC8=,ruby:>= 0
+0.6.0-java websocket-extensions:>= 0.1.0|checksum:Mh8xgyTcqKLK5EmY8+rG052dI526AaJY5l+i8XDowKM=,ruby:>= 0
+0.6.0 websocket-extensions:>= 0.1.0|checksum:Mh8xgyTcqKLK5EmY8+rG052dI526AaJY5l+i8XDowKM=,ruby:>= 0
+0.6.1-java websocket-extensions:>= 0.1.0|checksum:bqx4uAE54NVP497lvAR/x0mg33B+/Z7fy+I7IFbM32I=,ruby:>= 0
+0.6.1 websocket-extensions:>= 0.1.0|checksum:bqx4uAE54NVP497lvAR/x0mg33B+/Z7fy+I7IFbM32I=,ruby:>= 0
+0.6.2-java websocket-extensions:>= 0.1.0|checksum:oCBN4nZdlnd/8dayii3+mIwl8s+ewbCo2fM2RWx7FEo=,ruby:>= 0
+0.6.2 websocket-extensions:>= 0.1.0|checksum:oCBN4nZdlnd/8dayii3+mIwl8s+ewbCo2fM2RWx7FEo=,ruby:>= 0
+0.6.3-java websocket-extensions:>= 0.1.0|checksum:
+0.6.3 websocket-extensions:>= 0.1.0|checksum:

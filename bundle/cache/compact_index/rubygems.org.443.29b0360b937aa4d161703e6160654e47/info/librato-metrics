@@ -1,0 +1,40 @@
+---
+0.1.0 excon:~> 0.7.12|checksum:IO3R4tCE161VLMram5AGBP61cBO2uvCLYp8cIWC4tnI=
+0.2.0 excon:~> 0.7.12|checksum:AuaRKJSzLK+aylCt3K/OK1k75i1+45hgtMMXYYnxPGo=
+0.2.1 excon:~> 0.7.12|checksum:2nKFzt+R27rdENe9vEN6zhavz/zGGWjRcRRZFDzP0w0=
+0.2.2 excon:~> 0.7.12|checksum:nbAjhmfoBNpzEhw235SzMb1cZwXNfnoQ3JYkfC1LRyo=
+0.2.3 excon:~> 0.7.12|checksum:KF/CuKsxeyMpO0TgQBcq8NNZci4WsYy9TaNsmZmc3nI=
+0.3.0 excon:~> 0.7.12,multi_json:>= 0|checksum:HTaGwnyK/mTeTXAW4DAwkXdIc31hXhp9b1hXr4TJy+s=
+0.3.1 excon:~> 0.9.5,multi_json:>= 0|checksum:QXflmZD0vP44AdA6/zYNMSDfJULhrzX8s+ROm6JuINI=
+0.4.0 excon:~> 0.9.5,multi_json:>= 0|checksum:YA0D8lzGfq2ICLEgjhFC2j8stTq60fL7KYXugsMmOfU=
+0.4.1 excon:~> 0.9.5,multi_json:>= 0|checksum:EHXIWyKm0lHPQY90MMFh+Njwzrj2T4XYc6hNwWVgUDI=
+0.4.2 excon:~> 0.9.5,multi_json:>= 0|checksum:qh0eVHDEjODUqqeVYmVASiOQtoYePBpKIzd9gjObrds=
+0.4.3 excon:~> 0.13.0,multi_json:>= 0|checksum:6SdNiH15jCEds9dsNGREVIih/pEiUPu8zwR746hjOKo=
+0.5.0.pre1 faraday:~> 0.7.6,multi_json:>= 0|checksum:vWPeLx/4OtEmd2g54RA1vdByFATVbxkM6o3jgXPWq0k=,rubygems:> 1.3.1
+0.5.0 faraday:~> 0.7.6,multi_json:>= 0|checksum:FImn8zMysKh0x80TkvuBiVNQREJoGePvPqGer5FnHJ0=
+0.6.0.pre2 faraday:~> 0.7.6,multi_json:>= 0|checksum:otaJQm6EIRDX8viHJBmCbB1f3WE11Ada2Syn0lIQv+g=,rubygems:> 1.3.1
+0.6.0.pre3 aggregate:~> 0.2.2,faraday:~> 0.7.6,multi_json:~> 1.3.1|checksum:NHq1TghzultdAkKxHtbZfhLEVwP8C2ukFYGnbNewnUc=,rubygems:> 1.3.1
+0.6.0 aggregate:~> 0.2.2,faraday:~> 0.7.6,multi_json:~> 1.3.1|checksum:L0AMvS1++L0Rxhd0mDcwOF5C85TB/4G0UMK1gSJO5po=
+0.6.1 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:~> 1.3|checksum:oAkTXk7OpENnNB47jVWZVSgletNOouz4hnIffVwi4wE=
+0.7.0 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:~> 1.3|checksum:7xT7zQ8SXldeeGq7eaHkoKSS8yhzop3iaO4EWgdwHtc=
+0.7.1 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:~> 1.3|checksum:sJaufUC1U2DGQFRaB6mklQCw8jaievny7DcUmPcHm+M=
+0.7.2 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:~> 1.3|checksum:7H+oyq9hbm2QT+sc5+QFgcx/ISETUxLGDZk2uzPAGGY=
+0.7.3 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:~> 1.3|checksum:t4IEqhu5DlKVS3pge9ZUwdkWsesTHbm8IlPtTj47XBY=
+0.7.4 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:VHtAWsJDkAEudbp2tAfCqSDHSNLgWnVfpKJ15TWwWAw=
+0.7.5 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:05wCBwx2dAtsAGcGZhab3OfjyOxqV3oq2/j2916maZ4=
+1.0.0 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:fvjb5srCWvT3l/CdUYSId/kg0qdI1DVexV4SmYFcRJc=
+1.0.1 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:XZmn19kL4TJb45lwno4AYB7Kx8X+VdfpIvVDeFsTY+g=
+1.0.2 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:m8rZwprvNwYWVzf0pEQBo+SiuacyXZd+ISJwsObdOf4=
+1.0.3 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:gJ3B8RseaYtguOzIzzRcBuGdVJ2pvWLOdoMPoJ9EDQc=
+1.0.4 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:XgNLPYPU8Mq5v8ckstAOHQjXz6rvcPsSIX1IDiQeTo8=
+1.1.0 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:1SRxmX8LR6On2RA+cYeI2Np3Anzfq5lkhRERKRgUAFA=
+1.1.1 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:IAsealCNny34eoi7mlKGY3qGY3EK4xDloPlsM1nI5js=
+1.2.0 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:uPT/1OFxSQQe11mDZBhpxKs/QNh+OOIYxCBc2CXbg1o=
+1.3.0 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:P5+xE2RVygLikIej+J+3CAs21tKO6QXG+OXomBpUNHg=
+1.3.1 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:w9dhSjLjsHy19Cq3PmxZavzQYrShLkO7spv23xvRjxY=,ruby:>= 0
+1.3.2 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:jrCEMhDfaHH6KNk+IVQrYEO8/l1WY3EEzHHCkRXBxF4=,ruby:>= 0
+1.4.0 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:EUc+Ikbih4SCrkFtPRoj8Y6tZOoNJv3ZZMeWTtf5dPk=,ruby:>= 0
+1.5.0 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:MT5PQ2d2kA/kIvKy/KxEPfLX/pueo0W7H3PoS+6Vl4E=,ruby:>= 0
+1.5.1 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:XVz3QUkEOOm5ANkYRdKQyWbro1VCQoPxwZxdW+cMGLs=,ruby:>= 0
+1.6.0 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:
+1.6.1 aggregate:~> 0.2.2,faraday:~> 0.7,multi_json:>= 0|checksum:ae92c8dd2baf19df1e4b9787ba94a976194b04a2b94eb2ccd2bcfa41a22de7fa,ruby:>= 0,rubygems:>= 0

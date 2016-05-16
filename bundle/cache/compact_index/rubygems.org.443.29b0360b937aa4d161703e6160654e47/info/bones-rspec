@@ -1,0 +1,6 @@
+---
+1.0.0 bones:>= 3.5.0|checksum:IZkVPOZIuiRb36AjzmjGgmWOozo/BmqXzieh7NH9+lU=
+1.0.1 bones:>= 3.5.0,rspec:~> 1|checksum:jB9PkaBQqvGLS01ms1CcujpYzB9MutEFqJyeUNQnFcQ=
+1.1.0 bones:>= 3.5.0,rspec:~> 1|checksum:DJq32bPL2k9UTqZuWN9Cumo/xCbJCjXGWsGYUiOpWiM=
+2.0.0 bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,bones:= 3.6.3,rspec:= 1.3.1|checksum:OfUN9eHN7ByQek0/jQH6h/603MYF/z4HZryE/LHPUyI=
+2.0.1 bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,bones:>= 3.6,rspec:>= 1.3|checksum:rWtu+fZ7Z6cNPFxJXHLlxFs/1aGBHbqQAdjHiftDoKU=

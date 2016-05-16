@@ -1,0 +1,29 @@
+---
+0.1.0 httpadapter:~> 0.2.0|checksum:cu/EMfQnjYpgEKOW+1yJCp1atWe7oA2WdOMia5tVfvk=
+0.1.1 addressable:~> 2.2.1,httpadapter:~> 0.2.0|checksum:eM6m+pyTTx9RedmD3IQ1AcG5qg4qvaOHuQLa+/OyPE4=
+0.1.2 addressable:~> 2.2.1,httpadapter:~> 0.2.0|checksum:4GzqsTiKNwLdp0249Tzf6GfjH5e0lc6o4ip+mnyQbXw=
+0.1.3 addressable:~> 2.2.1,httpadapter:~> 0.2.0|checksum:f833UW53pZAw8wfLAplYUviQfW7EbNqn044yF5087PE=
+0.1.4 addressable:~> 2.2.1,httpadapter:~> 0.2.0|checksum:qU+fDTAGoRi0j1x1JHVa/LGnE84FeFgUGi88r2OKigY=
+0.2.0 addressable:~> 2.2.1,httpadapter:~> 0.2.0,json:~> 1.5.0|checksum:O9kO0Q6ADWRtipwBXuWb93d3wC7rQA173xjiSVXDP1k=
+0.2.1 addressable:~> 2.2.1,httpadapter:~> 1.0.0,json:~> 1.5.0|checksum:fugqm2SVcBaZ/Jk9rJk2JhcLmhK0P9OYcsdxK9DBhDE=
+0.2.2 addressable:~> 2.2.1,httpadapter:~> 1.0.0,json:>= 1.4.6|checksum:sJ1+vPxrxgA2amhBBb9nR7xd8rBEXrJLnpcQkqVcrgY=
+0.2.3 addressable:~> 2.2.1,httpadapter:~> 1.0.0,json:>= 1.4.6,jwt:>= 0.1.4|checksum:TLt/DebAejZ8UDdor5RxZzwisWfQUTFoHbPJym/qszY=
+0.2.4 addressable:~> 2.2.1,httpadapter:~> 1.0.0,json:>= 1.4.6,jwt:>= 0.1.4|checksum:D8YnLEgmmvmD6BUY1cmlxO0TSG902R9JC7oDAgw8q/Y=
+0.3.0 addressable:~> 2.2.1,faraday:~> 0.7.0,jwt:>= 0.1.4,multi_json:>= 1.0.0|checksum:/SNM9cg9R2YfpIaQ9eLOhBBv3mASym3/icDTIjuU9J8=
+0.3.1 addressable:~> 2.2.3,faraday:~> 0.7.0,jwt:>= 0.1.4,multi_json:>= 1.0.0|checksum:CFAdboPtuunzb0NExIjTyzBREGgGqMa6zKGRmxZKSrs=
+0.3.2 addressable:~> 2.2.3,faraday:~> 0.7.0,jwt:>= 0.1.4,multi_json:>= 1.0.0|checksum:3ECoGHBRNuzWXr0Q3KX5Gw46Hz7WWPa3+V+sLgwVFRQ=
+0.3.3 addressable:~> 2.2.3,faraday:~> 0.7.0,jwt:>= 0.1.4,multi_json:>= 1.0.0|checksum:nVvvN/hBcLSGx2CGfENzPaHBjzsQJATbIgNaa1qik1g=
+0.3.4 addressable:~> 2.2.3,faraday:~> 0.7.0,jwt:>= 0.1.4,multi_json:>= 1.0.0|checksum:pI4E012V1dPf/bxmZivM4OwcZRm2Ro4nijbVAW1QxhA=
+0.4.0 addressable:>= 2.2.3,faraday:~> 0.8.1,jwt:>= 0.1.5,multi_json:>= 1.0.0|checksum:DHZllZOOUwQj7cXEtNDGYO1ayiiBrs93u/BJdRMTs8s=
+0.4.1 addressable:>= 2.2.3,faraday:~> 0.8.1,jwt:>= 0.1.5,multi_json:>= 1.0.0|checksum:llB5JqNcp5tt0bwVgZYhawIVVbiOc768mA44kA0wW4o=
+0.4.2 addressable:>= 2.2.3,faraday:~> 0.8.1,jwt:>= 0.1.5,multi_json:>= 1.0.0|checksum:b67k9r1Uz9L1Ai1h/ANcTV/YL5aKnUYcaV90fnS7AUk=
+0.4.3 addressable:>= 2.2.3,faraday:~> 0.8.1,jwt:>= 0.1.5,multi_json:>= 1.0.0|checksum:+7Xeha/MVj4naYuH6faDEKTMFSz8dGfS4It+8EHP4BU=
+0.4.4 addressable:>= 2.2.3,faraday:~> 0.8.1,jwt:>= 0.1.5,multi_json:>= 1.0.0|checksum:isNoL92IJ8VuZezjq3Rn0ERKtTGC4j4JsNJ7oQRTLtA=
+0.4.5 addressable:>= 2.2.3,faraday:~> 0.8.1,jwt:>= 0.1.5,multi_json:>= 1.0.0|checksum:8AwLinc89ub2H9VEqvTktrgmC6yVFgQDDlpIEIOcoak=
+0.5.0 addressable:>= 2.2.3,faraday:>= 0.9.0.rc5,jwt:>= 0.1.5,multi_json:>= 1.0.0|checksum:to9Sq0NUjIWZ3YgnvNLMhX+E5FfguuoehuRio35VJkk=
+0.5.1 addressable:>= 2.2.3,faraday:>= 0.9.0.rc5,jwt:>= 0.1.5,multi_json:>= 1.0.0|checksum:q7klOVlHZ0DJ6obUTeSv6d5VhckvyY5M/zDw1EMp/WA=,ruby:>= 0
+0.6.0 addressable:~> 2.3,extlib:~> 0.9,faraday:~> 0.9,jwt:~> 1.0,multi_json:~> 1.10|checksum:ggMxBlPF96cwLioyP3NyRJNpi+w4NWZ8NhLGI9+MYjo=,ruby:>= 0,rubygems:>= 1.3.5
+0.6.1 addressable:~> 2.3,extlib:~> 0.9,faraday:~> 0.9,jwt:~> 1.5,multi_json:~> 1.10|checksum:ljvDk7Dcm7XyU1H+RlYkAxmKnTVjVh6amWaHVkLkYx0=,ruby:>= 0,rubygems:>= 1.3.5
+0.7.0 addressable:~> 2.3,faraday:~> 0.9,jwt:~> 1.5,multi_json:~> 1.10|checksum:
+0.7.1 addressable:~> 2.3,faraday:~> 0.9,jwt:~> 1.5,multi_json:~> 1.10|checksum:
+0.7.2 addressable:~> 2.3,faraday:~> 0.9,jwt:~> 1.5,multi_json:~> 1.10|checksum:

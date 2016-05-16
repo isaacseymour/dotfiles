@@ -1,0 +1,6 @@
+---
+0.0.1 backports:~> 2.6,descendants_tracker:~> 0.0.1|checksum:i4SRnOZkK6YFvcM27zKzaNBvYhPc3zifQCdhO+ER0MY=
+0.0.2 backports:~> 2.8,descendants_tracker:~> 0.0.1|checksum:641clJXnsFGjLS5cdsmqrgI1J//5JwTin2CUzon1n3E=
+0.1.0 backports:~> 2.8,descendants_tracker:~> 0.0.1|checksum:yt/1ZLG00R5aeOUDauPEl22wdfIwD+YRoDd9uRuDIL8=
+0.2.0 backports:>= 3.1.0&~> 3.0,descendants_tracker:~> 0.0.1|checksum:mpcEwLCs2vKn8X2NUNacqsShGuv2ploLiIlWl4/KoRc=
+1.0.0 descendants_tracker:~> 0.0.1|checksum:UIGtJDUsyENc5UcrwvqjAmDH6n8hAsxqnxZ8TZv/qtw=

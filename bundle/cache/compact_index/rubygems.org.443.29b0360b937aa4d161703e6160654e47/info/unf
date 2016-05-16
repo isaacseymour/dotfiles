@@ -1,0 +1,16 @@
+---
+0.0.3 unf_ext:>= 0|checksum:d6kSYSUtXJi3TuX/SAGDeDvqcf7Xd+hifzzlBjGtm1k=
+0.0.4 unf_ext:>= 0|checksum:JeifDY6xBngeHW6CbozdvzTqlD401t2HifX5+85fje4=
+0.0.5-jruby |checksum:T2Amon8TTMh9X5ngNIV6Ujudi/OrjEix9L0fqnPkUEA=
+0.0.5 unf_ext:>= 0|checksum:T2Amon8TTMh9X5ngNIV6Ujudi/OrjEix9L0fqnPkUEA=
+0.1.0 unf_ext:>= 0|checksum:hH5J47LVp5g9gmTpixRoYwBLE9IcZarvZ5RpVdzsHpA=
+0.1.1-jruby |checksum:WrYXaBKpcy3L3c/HmA1Iq5Aw42e5kjs7PlZot3+2POw=
+0.1.1 unf_ext:>= 0|checksum:WrYXaBKpcy3L3c/HmA1Iq5Aw42e5kjs7PlZot3+2POw=
+0.1.2-jruby |checksum:BMSQdF6wf0uCkQH4d65JoEAWs//VCW8WqgE6hnkkMII=
+0.1.2 unf_ext:>= 0|checksum:BMSQdF6wf0uCkQH4d65JoEAWs//VCW8WqgE6hnkkMII=
+0.1.3-jruby |checksum:bjYWHCFa9cmP1znBYSpi/lgauyIh40TgL3Ld85VVmyE=
+0.1.3 unf_ext:>= 0|checksum:bjYWHCFa9cmP1znBYSpi/lgauyIh40TgL3Ld85VVmyE=
+0.1.4-java |checksum:SaWXLsCz0JHTsLLgARPy80K5shLw24Veswpiljf20wI=,ruby:>= 0
+0.1.4 unf_ext:>= 0|checksum:SaWXLsCz0JHTsLLgARPy80K5shLw24Veswpiljf20wI=,ruby:>= 0
+0.2.0.beta1 |checksum:jtBRMBtb1AWP2GFwTfBqh64Xy6iQGE3ypWyF5FRW2cc=,ruby:>= 1.9.3,rubygems:> 1.3.1
+0.2.0.beta2 |checksum:deGDnFyMQP9muzCFnNBae0EIsWdlMunpVsZbx1Tojag=,ruby:>= 1.9.3,rubygems:> 1.3.1

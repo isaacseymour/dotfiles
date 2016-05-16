@@ -1,0 +1,41 @@
+---
+0.8.pre-java |checksum:pvYHeRpz0IA9beacCbIhI7+oZhOkFyRZjfAGGRWRFQ0=
+0.8.pre.1-java |checksum:vC2m5Oi226yuXm+Kwdowprk3c+t0di38qGcm/866WNQ=
+0.8.pre.2-java |checksum:aLvHgxSm16VPcU2YrFiehPHfLkly0/OwS/FFHFhlp4o=
+0.8.pre.3-java |checksum:L17a9kcaG5rrdVDBzijVLWZG3CLFi3HAmzHbqsGwyF8=
+0.8.3.0.2-java |checksum:XqfEP05ciizpNPrnQ9labnWZO5mCUSwsmn4XHQpRyKU=
+0.8.3.0.2.0.26.0-java |checksum:tuvVsnhKssVywttiVYXy4wjj2vBnHRoQCxkeScL5nXY=
+0.8.3.0.3.0.28.1-java |checksum:13verV9qpCTQ3Cr/zgB8twOjA5+X3skLjUdUT5hUpPs=
+0.8.3.0.3.0.28.3-java |checksum:jxMgEag0nlBdka4rc7kfIsVMHDWcEJ5ak/VlJ+qXhbc=
+3.0.3.0.28.4 thor:~> 0.14.6|checksum:OWhqSr2E/vlFQrG2xXwe6x2OgXVDY18kHgBYeGoQLcw=,rubygems:> 1.3.1
+3.0.3.0.28.4.1 thor:~> 0.14.6|checksum:hsUXJCxAS0FXi9P4hQYxiLPxslkFLYbx7ppc+jS9dnY=,rubygems:> 1.3.1
+3.0.3.0.28.5 thor:~> 0.14.6|checksum:/1YsUGFA4Ykjq1h/z1VxtpJJ//y12SG482mKIyoS3kc=,rubygems:> 1.3.1
+3.0.3.0.29.0.pre thor:~> 0.14.6|checksum:pmCNYw1/PqeZxNyQguqfPT1M6FsNzkZf6jBBYYbPuAY=,rubygems:> 1.3.1
+3.0.4.0.29.0 maven-tools:~> 0.29.1,thor:~> 0.14.6|checksum:4Uy+N1EXeCV41/mxJynpT/sG2SgRIgIO9McifzSJ65g=,rubygems:> 1.3.1
+3.0.4.1 maven-tools:~> 0.29.1,thor:< 2.0&>= 0.14.6|checksum:pOE+rCmeV80Y2eEvAAkPVdZxEZ77DvZfg0kLqvJ6zvY=
+3.0.4.1.1 maven-tools:~> 0.29,thor:< 2.0&>= 0.14.6|checksum:1YgmfplaWeQe6YVzsi0V2imVba06LqWLxQwGJ4Mo5ww=
+3.0.4.1.2 maven-tools:~> 0.32,thor:< 2.0&>= 0.14.6|checksum:ft0YYnjLite4wdnqs6w2v/hOxXr1xlw5m3duxbpRKG4=
+3.0.4.1.3 maven-tools:~> 0.32.1,thor:< 2.0&>= 0.14.6|checksum:/zDL74XU842wuFUbxONcgK5qE1e4OmQcjXftwKtmfmg=
+3.0.4.1.4 maven-tools:~> 0.32.3,thor:< 2.0&>= 0.14.6|checksum:LMwYtXA4OmZ2/8d82NtAqAEhnE4wldc3sxAMQL/DY2M=
+3.1.0.0 maven-tools:~> 0.33,ruby-maven-libs:= 3.1.0|checksum:dXXrJPp4KAEcWcN/WgsrNE/BMYGNp3oURp7Dpt314ks=
+3.1.0.0.1 maven-tools:~> 0.33,ruby-maven-libs:= 3.1.0|checksum:WIetUmNdSMj0bfJZPjZCHFvHEqhmTsUoSKpYhlSomQ0=
+3.1.1.0.0 maven-tools:~> 0.33,ruby-maven-libs:= 3.1.1|checksum:Xe11uiIBVpicNIfkzig/tCV8DScHXZkUPO+cgnJ9cuU=
+3.1.1.0.1 maven-tools:~> 0.33,ruby-maven-libs:= 3.1.1|checksum:zdnk/98JQ+Tsc6FJvETz6EE+IHJ/lpXxCtTf0FlIB7I=
+3.1.1.0.2 maven-tools:~> 0.33,ruby-maven-libs:= 3.1.1|checksum:4QyYJ+rS5GtUGgClMJaMW9ISfkacQ2ZG6Lu/Z0lS5/o=
+3.1.1.0.3.dev maven-tools:~> 0.33,ruby-maven-libs:= 3.1.1|checksum:SYk/GWM9KPG2bxBS5hCyg/DPNkToyZMPqorE+Gh6Mqw=,rubygems:> 1.3.1
+3.1.1.0.4 maven-tools:~> 1.0.0.rc4,ruby-maven-libs:= 3.1.1|checksum:4aXc6vP6Hm6Pk0dtNfwzFoAM1Oev0A5mkLZBVQKKdi8=,ruby:>= 0
+3.1.1.0.5 maven-tools:~> 1.0.0.rc4,ruby-maven-libs:= 3.1.1|checksum:/23FmHsqUPkf3c0a297794bfrvLoMygHv0az4+vsOWA=,ruby:>= 0
+3.1.1.0.6 maven-tools:~> 1.0.0,ruby-maven-libs:= 3.1.1|checksum:w2BXwLcPr/YogwlgVK5Wp/30HeVPeTaVJQIQV/s3L9g=,ruby:>= 0
+3.1.1.0.7 maven-tools:~> 1.0.1,ruby-maven-libs:= 3.1.1|checksum:z/LYjjSrONLEFV1gTqS0DEqwS5r0+lM3G9YZ0f2lmLk=,ruby:>= 0
+3.1.1.0.8 maven-tools:~> 1.0.1,ruby-maven-libs:= 3.1.1|checksum:rhjqrRK+4ciOhTmd4qtXZ/TyjQWFYCAtgr9sWdpD8bk=,ruby:>= 0
+3.1.1.0.9 maven-tools:~> 1.0.7,ruby-maven-libs:= 3.1.1|checksum:7ocdXcWa7Z+DXpIXY6YxtRY6iohrxxyx9Em5OiaQTA4=,ruby:>= 0
+3.1.1.0.11 maven-tools:~> 1.0.8,ruby-maven-libs:= 3.1.1|checksum:9jlhklUBu0owBgaDiILpHuwIhWdiBr4QShoYdaXbkaQ=,ruby:>= 0
+3.3.0.dev |checksum:79zmmriTVzGsYq2MPKyEDV7UyQ8pxRqBpvYrgRL194g=,ruby:>= 0,rubygems:> 1.3.1
+3.3.2 ruby-maven-libs:~> 3.3.1|checksum:pruAD4N2N+8FlLSm2rqD0lAFbnRxKZfp+OlBcwvI2fQ=,ruby:>= 0
+3.3.3 ruby-maven-libs:~> 3.3.1|checksum:iRz1k1jwTiuTLx60ixjapHprbqYmf/2sSfKT3ArGJO0=,ruby:>= 0
+3.3.5 ruby-maven-libs:~> 3.3.1|checksum:
+3.3.7 ruby-maven-libs:~> 3.3.1|checksum:
+3.3.8 ruby-maven-libs:~> 3.3.1|checksum:
+3.3.9 ruby-maven-libs:~> 3.3.1|checksum:295ddf87f1a05740b37dd8c30bff6edf98e299be97a0e29781df6bd662b4dc60,ruby:>= 0,rubygems:>= 0
+3.3.10 ruby-maven-libs:~> 3.3.1|checksum:33f0a485902d49bb112df24b23a8254bdfb43db9c28f08f57c6fc41f4e4eca35,ruby:>= 0,rubygems:>= 0
+3.3.11 ruby-maven-libs:~> 3.3.9|checksum:11d41bfa7d95acd15a94d92e42a9c2d1b1aaa4141dcebe5d4a7e3445eed2329d,ruby:>= 0,rubygems:>= 0

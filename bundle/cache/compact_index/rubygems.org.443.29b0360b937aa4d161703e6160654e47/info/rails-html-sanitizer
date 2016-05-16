@@ -1,0 +1,5 @@
+---
+1.0.0 loofah:~> 2.0|checksum:Ekh7rHORLG7mVDbuPo27clnhFz8KedMef1LknukITys=,ruby:>= 0
+1.0.1 loofah:~> 2.0|checksum:+MCHFsMKCH1lX/mSSajK/UJjRNyW1mR+6QFeTQagje4=,ruby:>= 0
+1.0.2 loofah:~> 2.0|checksum:JIHPtgxKA5QUia9ckhZcbdFplm8LhJ0m2FfKtURLRno=,ruby:>= 0
+1.0.3 loofah:~> 2.0|checksum:a7da8eb4ce2e673ba909d36a94a9e06f196e88a92e76d01dfee3803d0d6a0e8d,ruby:>= 0,rubygems:>= 0

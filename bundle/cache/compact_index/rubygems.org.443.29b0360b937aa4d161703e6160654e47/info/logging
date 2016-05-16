@@ -1,0 +1,55 @@
+---
+0.9.8 bones:>= 2.5.0,flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:OgaoU5CZ2Ec0rb5uYCgTItC53+j8yDDN9do32BYAIFU=
+1.0.0 bones:>= 2.5.0,flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:ldanXoxGoMye30LLjB5nYu5TXPNlhxBP4PdZy10+ZTw=
+1.1.0 bones:>= 2.5.0,flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:L4RIcQ3j1Az4d4520QCOb1ukQKAMAUXhxu+qbEXtwsM=
+1.1.1 bones:>= 2.5.0,flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:7ETqoQhe4YI/QN57tpy7XSyTzr3Z+OaJ8VUMAjHvpQc=
+1.1.2 bones:>= 2.5.0,flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:t/3Joh4Oi30UE4OOp84CBDG550eiKxx8iWwdPnbK7GI=
+1.1.3 bones:>= 2.5.0,flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:fjMvqGLGU6+VpeakVsmBXUZLuwhfrFo2gsmdicwTq1M=
+1.1.4 bones:>= 2.5.0,flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:w9JaAL4lSkTBm2PruDBHwCEeLUJz6yqnCE01K4+Ua4Y=
+0.7.1 flexmock:>= 0.8.0|checksum:c1hupYgv93IaME/bPraHqMwAz10bxIb2q3IwmJC/CW4=
+0.8.0 flexmock:>= 0.8.0,lockfile:>= 1.4.3|checksum:ZNNaVKiR6AY52cmj+hd3qhI1fvl181ljH0aTj2xoPjk=
+0.9.0 flexmock:>= 0.8.0,lockfile:>= 1.4.3|checksum:KvgAltGT8KWSlzb6oMXVXUoDAHfwUA/CDQtmEDmMqns=
+0.9.1 flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:nqcuo5Inh94r/G0JlXEfN7CyYysUv3oAxs6xiGCauKI=
+0.9.2 flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:mqBYGhqDJb/cFh+y1uC71zu97c/QDIuA5ac2LGZh3Oc=
+0.9.3 flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:kPAb6ohZXhdeVSN4d8dKnGEimbQ6MsVC+bdCFRVgFmg=
+0.9.4 flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:7Y98cKNSpri+MI7borqHcza3CqsUyJ3YXfwsdc9S4Iw=
+0.9.5 bones:>= 2.3.0,flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:kZ0bn/23dSUv9ke8svPLVY8qTr3ygUAthdynUH84FKE=
+0.9.6 bones:>= 2.4.0,flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:9u/6YrxNPD77tNbusiIX65/rLWcY81IA8RoWZk+Gxmg=
+0.9.7 bones:>= 2.4.2,flexmock:>= 0.8.2,lockfile:>= 1.4.3|checksum:cpkrn0rDE1wZ03pXalLE1G0UjYAAfvz95N0roYcVrwY=
+0.5.3 rake:>= 0.7.3|checksum:5UEWUtNtmHryuNB1+by5nEIFN5QgHNEod0cPCe7FSx0=,rubygems:
+0.6.0 flexmock:>= 0.8.0,lockfile:>= 1.4.3,rake:>= 0.8.1|checksum:5hcrx4Nlj33hl2c58GTjndRmlbrVAu9XScQIPZmOnvo=
+0.6.1 flexmock:>= 0.8.0,lockfile:>= 1.4.3|checksum:kFYgoLK8pgYQWbZMIr2GtbZG4kScTrqQ4lTiaJAck6A=
+0.6.2 flexmock:>= 0.8.0,lockfile:>= 1.4.3|checksum:YeJUq7FpBJUt/E+gJti3J9JDkgf2W02qhtv9lCMmb9Q=
+0.6.3 flexmock:>= 0.8.0,lockfile:>= 1.4.3|checksum:IcOowN+/R0yktgCPk1Hvg7lsI3w6RlBd+sq9BlmCZWs=
+0.7.0 flexmock:>= 0.8.0,lockfile:>= 1.4.3|checksum:04K0vTmTzQ5fT3bo2z2RQBz6+M5uT52JBnUKQZHtxxA=
+0.1.0 |checksum:rUMSrNspU9z8BFhis8yQtepGf5/0ni1fCAGdC3WzBIs=,rubygems:
+0.2.0 |checksum:yJ+3QSeb7vwiCxwyMasLWgqB5St09odOoyBmvpzTc84=,rubygems:
+0.3.0 |checksum:FmuklTK8n910Fq46mTzppCGN8TlKNV7wQF7uHz0Tfww=,rubygems:
+0.3.1 |checksum:mUkTI17Og5cCgci1JD/8Co6nNYzbHQuxn8Qv3Fb/7gw=,rubygems:
+0.4.0 |checksum:ovslybb71s24TXmiI0ptI486n4OjXmfSgM5ClaTH5ms=,rubygems:
+0.5.0 rake:>= 0.7.3|checksum:Fl1vVso8FVdQNUYzUUv6q/OgOePHnooLVVtxJYqtqN0=,rubygems:
+0.5.1 rake:>= 0.7.3|checksum:KHg97RsfAU83VN8CDQR+IshRZPKONodZSQ7ACTdai/4=,rubygems:
+0.5.2 rake:>= 0.7.3|checksum:IzAxVBY5mrZIOzq5fShQrtE1jd8mxMR336FDTwdCubU=,rubygems:
+1.2.1 bones:>= 2.5.0,flexmock:>= 0.8.2,little-plugger:>= 1.0.1,lockfile:>= 1.4.3|checksum:0GDmO/GPuPDwphZ1lI5y5rFbPLlYgHfK1CC+EaycrzA=
+1.2.0 bones:>= 2.5.0,flexmock:>= 0.8.2,little-plugger:>= 1.0.0,lockfile:>= 1.4.3|checksum:PC/a5IEyAcUOuRqlfxh9PEWh4GM4OKeCw+Sd26BcU8w=
+1.2.2 bones:>= 2.5.0,flexmock:>= 0.8.2,little-plugger:>= 1.0.1,lockfile:>= 1.4.3|checksum:06tV65VuCVo02QnWx7MkuE2xGGE5C5AjSGHPZujq9fs=
+1.2.3 little-plugger:>= 1.1.1,lockfile:>= 1.4.3|checksum:FvvnkJ9HGyndMYZDBkcdZmvR/2qqMXiCQ38/IQPEvoM=
+1.3.0 little-plugger:>= 1.1.1|checksum:6l76KfCuEYWfqGJui1lGfFfhWWfPrFCnvDpnFPq6+6M=
+1.4.0 little-plugger:>= 1.1.2|checksum:16FU1oIv02XeSoyqvUFNhTT+amX4ieDzYhz2+vqazdY=
+1.4.1 little-plugger:>= 1.1.2|checksum:+wXcN/hGiJq3LjGQMVznl+yv8TgOPSrU3KXG+LXksNs=
+1.4.2 little-plugger:>= 1.1.2|checksum:QQvdRq3xwyMUcZu6WpShj9bJQY3AiMKiHRdyWsIi0Ek=
+1.4.3 little-plugger:>= 1.1.2|checksum:c1KX8ZmdTfsdyNrVxRqwX9vq+mYQVLczin4L3c/xeNw=
+1.5.0 little-plugger:>= 1.1.2|checksum:kFnb0bDjopQN3af+YXeRYwyPWpTzpsrRgFW93xt6Hqo=
+1.5.1 little-plugger:>= 1.1.2|checksum:X6TOoeBWWpkWHQtfJo8jl8JHkLQM/pMrwy7z9D6MIJI=
+1.5.2 little-plugger:>= 1.1.2|checksum:/fY8IXgt7/cxFR3X5rXF7o9mR8E2T1hn8iM164uQ4JI=
+1.6.0 little-plugger:>= 1.1.2|checksum:FtuqmOex1C/UoxgigP+wx8BWHYW3xXFr2AKwLSeTWmo=
+1.6.1 little-plugger:>= 1.1.2|checksum:hPjpLIfjyXaicdp/NsHOlgnyLfCLatliKW520wmtoc0=
+1.6.2 little-plugger:>= 1.1.3|checksum:qirGHb3vyD5/cXtbPaUYeTVanUVVnQJBAQiGX7pDZtc=
+1.7.0 little-plugger:>= 1.1.3|checksum:BusQXYCcLbBDVKAmWpjKFBypCBtyopQcRNVU0q2HcTI=
+1.7.1 little-plugger:>= 1.1.3|checksum:+GgCtNFZk1B3iVZ9WJDE2kSzGneIt/vAsh09pRj0f8s=
+1.7.2 little-plugger:>= 1.1.3|checksum:apUZRe4Xn/0TcbC8gYG2lAo+Uo/NbwrggvKUEwfLonM=
+1.8.0 little-plugger:>= 1.1.3,multi_json:>= 1.3.6|checksum:sfFOdaA+cvTwggbbbAVqEnWOkL5c+RR/WvCgiommJZ8=
+1.8.1 little-plugger:>= 1.1.3,multi_json:>= 1.3.6|checksum:syuPenTtIyt0GrfRlawxdwvSvY9Lt8NHY4T/DkSGb2Q=
+1.8.2 little-plugger:>= 1.1.3,multi_json:>= 1.8.4|checksum:1yBLXrrN9EdWwTWLJKx42jn2P15r/gtv+tA5PeadjG0=
+2.0.0 little-plugger:~> 1.1,multi_json:~> 1.10|checksum:a+Oqo1ZnOKEvLDqmvKqLM0jPOpdojJ+yP1ywjRHCRU0=,ruby:>= 0
+2.1.0 little-plugger:~> 1.1,multi_json:~> 1.10|checksum:34a0c16415a587c434e1f0d7ac5de9805d33de6e2636d5edc5c0765a7603f3a9,ruby:>= 0,rubygems:>= 0

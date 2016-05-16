@@ -1,0 +1,26 @@
+---
+0.1.0 capybara:~> 1.1.0,em-websocket:~> 0.3.1,json:~> 1.6|checksum:IZdvleN1cfN3/Zm/KphiCco8aynjU2+BdPpokLluufQ=
+0.2.0 capybara:~> 1.0,em-websocket:~> 0.3.1,json:~> 1.6,sfl:~> 2.0|checksum:7szE5SElNQmlQfIYznArbck0jRipbG/n+bKrP/hXlFE=
+0.3.0 capybara:~> 1.0,faye-websocket:~> 0.2.0,http_parser.rb:~> 0.5.3,json:~> 1.6,sfl:~> 2.0|checksum:zUUVh4G703PILWOzLPi9our/oRxc9dOaNBeLm9pF4vk=
+0.4.0 capybara:~> 1.0,faye-websocket:~> 0.2.0,http_parser.rb:~> 0.5.3,json:~> 1.6,sfl:~> 2.0|checksum:TJ7/7911k5rLSxaN6Euux79tQ+BnBERxik10Gf/sgnI=
+0.5.0 capybara:~> 1.0,childprocess:~> 0.3,faye-websocket:>= 0.4.4&~> 0.4,http_parser.rb:~> 0.5.3,multi_json:~> 1.0|checksum:jwT4025T/wGWUoZaVjpR8zsg5XM4Uo4wYNH6DqlMa0k=
+0.6.0 capybara:~> 1.0,childprocess:~> 0.3,faye-websocket:>= 0.4.4&~> 0.4,http_parser.rb:~> 0.5.3,multi_json:~> 1.0|checksum:TJzsajf1ZVSPgEHhcYHujI4yjqbRGV7N7yccpBO52V4=
+0.7.0 capybara:~> 1.1,childprocess:~> 0.3,faye-websocket:>= 0.4.4&~> 0.4,http_parser.rb:~> 0.5.3,multi_json:~> 1.0|checksum:MGA21gRH9BlbmkMT0NxEbdslEj0K4hGdAZZoMaFSIBo=
+1.0.0 capybara:~> 1.1,childprocess:~> 0.3,faye-websocket:>= 0.4.4&~> 0.4,http_parser.rb:~> 0.5.3,multi_json:~> 1.0|checksum:uiH83S6SJ0CsvbIFh//aaVMRhmPho4OgCOIwxIqMDas=
+1.0.1 capybara:~> 1.1,childprocess:~> 0.3,faye-websocket:>= 0.4.4&~> 0.4,http_parser.rb:~> 0.5.3,multi_json:~> 1.0|checksum:2ZJispy4YqoB9UMMUyqhdSsdRfJPKZuV/vcPXjnz9/M=
+1.0.2 capybara:~> 1.1,childprocess:~> 0.3,faye-websocket:>= 0.4.4&~> 0.4,http_parser.rb:~> 0.5.3,multi_json:~> 1.0|checksum:1fUnUxGMn6jvRtFaNYXBJBD1gWJbOEyyuR0wcFd99fk=
+1.1.0 capybara:>= 2.0.1&~> 2.0,faye-websocket:>= 0.4.4&~> 0.4,http_parser.rb:~> 0.5.3|checksum:YhCjV67QBe5K+UIYsXh4cqJ5XCY7Zz5sPd7D4ePNaTs=
+1.2.0 capybara:~> 2.1.0,faye-websocket:>= 0.4.4&~> 0.4,http_parser.rb:~> 0.5.3|checksum:fTUByM2nTJcXr32CzJkJaBObxq8Dg5bLUdSJv1GxNIY=
+1.1.1 capybara:~> 2.0.1,faye-websocket:>= 0.4.4&~> 0.4,http_parser.rb:~> 0.5.3|checksum:gk8zOujSTGoEwsob9spIJCAJrMOZdYMfSzWWAIbKEhE=
+1.3.0 capybara:~> 2.1.0,faye-websocket:< 0.5.0&>= 0.4.4,http_parser.rb:~> 0.5.3|checksum:23jCfdGZcgUtSypkAf+t2t7hLk1B3TJUElGnRIOlI+I=
+1.0.3 capybara:~> 1.1,childprocess:~> 0.3,faye-websocket:~> 0.4.4,http_parser.rb:~> 0.5.3,multi_json:~> 1.0|checksum:9yCK1k1wOL1ZOu44S3QpSF5NhC7LFN/fasR5xgehq9Y=
+1.1.2 capybara:~> 2.0.1,faye-websocket:~> 0.4.4,http_parser.rb:~> 0.5.3|checksum:55r37M8u7EQ3AFCDrZmqr5L0FJiTDwBQaqkM2/wzdJI=
+1.4.0 capybara:~> 2.1.0,cliver:~> 0.2.1,multi_json:~> 1.0,websocket-driver:>= 0.2.0|checksum:Q9IVUQqZ4nqZYZ6/dh7uA2fkug1X7dJTYG7qZ/60ZmE=
+1.4.1 capybara:~> 2.1.0,cliver:~> 0.2.1,multi_json:~> 1.0,websocket-driver:>= 0.2.0|checksum:NFzROLS3NXFvtgNTFjQKnCcIkIibaLtKhMXEm1uoe/4=
+1.5.0 capybara:~> 2.1,cliver:~> 0.3.1,multi_json:~> 1.0,websocket-driver:>= 0.2.0|checksum:o/WwL7ygsFqzfWF2wNs3s03PugrmNcfbF/MojXzqq38=
+1.5.1 capybara:~> 2.1,cliver:~> 0.3.1,multi_json:~> 1.0,websocket-driver:>= 0.2.0|checksum:20WAwBl3KbHn0syHKrPRxdmLdZrGdyDAunf7yHUqaiM=,ruby:>= 1.9.3
+1.6.0 capybara:~> 2.1,cliver:~> 0.3.1,multi_json:~> 1.0,websocket-driver:>= 0.2.0|checksum:LZBniJMNui8y3OwWOZveG51hpBCeI4iOFhUuYKEX/lY=,ruby:>= 1.9.3
+1.7.0 capybara:~> 2.1,cliver:~> 0.3.1,multi_json:~> 1.0,websocket-driver:>= 0.2.0|checksum:
+1.8.0 capybara:~> 2.1,cliver:~> 0.3.1,multi_json:~> 1.0,websocket-driver:>= 0.2.0|checksum:
+1.8.1 capybara:~> 2.1,cliver:~> 0.3.1,multi_json:~> 1.0,websocket-driver:>= 0.2.0|checksum:
+1.9.0 capybara:~> 2.1,cliver:~> 0.3.1,multi_json:~> 1.0,websocket-driver:>= 0.2.0|checksum:80f18cce5b280a8c0340975f94b355cbfa5d586932e9d95871360c3d83a7d3ba,ruby:>= 1.9.3,rubygems:>= 0

@@ -1,0 +1,25 @@
+---
+0.0.4 nokogiri:~> 1.4.2,oa-core:= 0.0.4|checksum:iuJsUnBQeGrSsJjzuUD3Ig4x2SSDdXehMclV1KBUV44=
+0.0.5 nokogiri:~> 1.4.2,oa-core:= 0.0.5|checksum:ik3AWq/xwfuogmhX1PaQWCsvsAktvC5UUCAb0LpaZUQ=
+0.1.0 nokogiri:~> 1.4.2,oa-core:= 0.1.0|checksum:6pqkp5inNCNBkSw2eUpcyx1KaOSGXx68o5zfyYOq0f8=
+0.1.1 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.1.1,rubyntlm:~> 0.1.1|checksum:d/DVJHi1lSPoDlN9CENdzw/DITb/p9nv1o2gVKJ2Ggs=
+0.1.2 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.1.2,rubyntlm:~> 0.1.1|checksum:noP0HuistV+bsmiJecuj+N/OPy/2JHqsJKPNLDOzzAo=
+0.1.3 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.1.3,rubyntlm:~> 0.1.1|checksum:rn1kaQRe8AaFhJc755qeeFl3iqFk8C4aVa6049lsmAE=
+0.1.4 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.1.4,rubyntlm:~> 0.1.1|checksum:/yX/S/g/uXpxax8GgPasl6OuZ30nBvwf2lG1w/nkAfw=
+0.1.5 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.1.5,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:h1vmg2Q/Yt995G6VANqfG0pX3cOqWKAjuJtaYpegg5U=
+0.1.6 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.1.6,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:oRX8J77J2uuiGMk4fLmk6t70yT8zKUTRx8VbUOJnJyk=
+0.2.0.beta1 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.2.0.beta1,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:8n4fgNGQdIUCRyc1iy3S0nmiNy/dp9o86C97V9xnVMw=,rubygems:> 1.3.1
+0.2.0.beta2 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.2.0.beta2,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:FehvESoRJpMhykXrigLxOA/6dQv46NyiNAQJsZbfdAk=,rubygems:> 1.3.1
+0.2.0.beta3 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.2.0.beta3,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:GRyFCK0iiwOE5FCBGtqDgJ90BzrCJ3bXR6Bw4qW50zk=,rubygems:> 1.3.1
+0.2.0.beta4 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.2.0.beta4,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:6WJLHL786t16PCfaBgbUkmKEo4FtZFLLjzuUSPHanRg=,rubygems:> 1.3.1
+0.2.0.beta5 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.2.0.beta5,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:PYpc1qJLlK6LZrVkyMm2Sj1WExPsfkW8duq/yjW6cZk=,rubygems:> 1.3.1
+0.2.0 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.2.0,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:iXG/m+RgB592HYbuj95AolJ2cZXC4F8bJgrX0qKISnc=
+0.2.1 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.2.1,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:kWpIKXEuxSF1q7KNiRhfZt8fzgIf2rv64ZJevATgxoM=
+0.2.2 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.2.2,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:U2TcP+xB/sQuqMi60qw2PEa+mHc/VqvOoRMQGXvNlwM=
+0.2.3 net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.2.3,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:akOobRuRJUHFBxkBmG+vDUDofZUppZ1oBKzSDwmhbOA=
+0.2.4 addressable:= 2.2.4,net-ldap:~> 0.1.1,nokogiri:~> 1.4.2,oa-core:= 0.2.4,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:zrm4g+UOrjvYM37iX9A4SV30EpBYIPsKVYZejgAYLVM=,rubygems:>= 1.3.6
+0.2.5 addressable:= 2.2.4,net-ldap:~> 0.2.2,nokogiri:~> 1.4.2,oa-core:= 0.2.5,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:4tT1IMxmZyWtMtFhtpjwJRghdgy2kfR9NTJG9ZYVES4=,rubygems:>= 1.3.6
+0.2.6 addressable:= 2.2.4,net-ldap:~> 0.2.2,nokogiri:~> 1.4.2,oa-core:= 0.2.6,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1|checksum:btBNBN3Q5gp+kocWtq6nS9058FECCx76T/kGh1lVne4=,rubygems:>= 1.3.6
+0.3.0.rc3 addressable:~> 2.2.6,net-ldap:~> 0.2.2,nokogiri:~> 1.5.0,oa-core:= 0.3.0.rc3,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1,uuid:>= 0,XMLCanonicalizer:~> 1.0.1|checksum:2AGda/cxB0ZbP+yqwcBzAIBm2rL1rM4qCtcU4L+PaiA=,rubygems:> 1.3.1
+0.3.0 addressable:~> 2.2.6,net-ldap:~> 0.2.2,nokogiri:~> 1.5.0,oa-core:= 0.3.0,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1,uuid:>= 0,XMLCanonicalizer:~> 1.0.1|checksum:6z4rAme7X71SaDtt1pcHTW+OFQldTJMrFgaW04gDbzQ=,rubygems:>= 1.3.6
+0.3.2 addressable:~> 2.2.6,net-ldap:~> 0.2.2,nokogiri:~> 1.5.0,oa-core:= 0.3.2,pyu-ruby-sasl:~> 0.0.3.1,rubyntlm:~> 0.1.1,uuid:>= 0,XMLCanonicalizer:~> 1.0.1|checksum:coe4GdEUuvceh1GMdjNAr9ZJjwFPFXFsIVizl8J1yaU=,rubygems:>= 1.3.6

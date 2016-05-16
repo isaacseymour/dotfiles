@@ -1,0 +1,11 @@
+---
+0.0.1 adamantium:~> 0.0.3,backports:~> 2.6.4|checksum:BIponCklP76mSYpBgYe7BuYEfCzpAoTJR3BBlRdcUbI=
+0.0.2 adamantium:~> 0.0.3,backports:~> 2.6.4|checksum:e8dEMV5NeUi4zHwadWChE0rmXRtyv8EOiHJTWqoZRwk=
+0.0.3 adamantium:~> 0.0.5,backports:~> 2.7.0|checksum:shVGe3hc956nyCqO04BBBhFJCWs+TD305W1HFuDAn1E=
+0.0.4 adamantium:~> 0.0.6,backports:~> 2.8.2|checksum:N7PJyXkDB7huPcXkef1ftJOthEob3ZK5/GAj1Dej4Jg=
+0.0.5 adamantium:~> 0.0.6,backports:>= 3.0.3&~> 3.0|checksum:2/+gQjJjT1uZIEDCfBHc6Hv7tME5+36fDGidlzb5sww=
+0.0.7 |checksum:hKVsf7FFVGBcLkiDDn3Wg9d8pjxyp9jBZ/3z0Bk3XyA=
+0.0.8 |checksum:1m0C7OaTXCF+OoGy4zSHglYz/SAxROSVtuKfByeJCdo=
+0.0.9 |checksum:mStY3IiSr8PAvehs0ANJsj8B+3AsKVxG3Tv7TwV028Q=
+0.0.10 |checksum:oc/8UPx0SKCxbGbkFHxJc8UwhY7FMrSCRDSfrJngB4Y=,ruby:>= 1.8.7
+0.0.11 |checksum:ROW8RvSYg+g9FZ7psfcyC0roKDu2Mp5dlxb1593oVc4=,ruby:>= 1.8.7

@@ -1,0 +1,14 @@
+---
+0.0.1 backports:~> 2.6.1,ice_nine:~> 0.4.0|checksum:a158dUgCImlSn9qXNtEV6nFbUhmTkHKRMdxXmZFpKqM=
+0.0.2 backports:~> 2.6.4,ice_nine:~> 0.5.0|checksum:nl73zE2c1iv8g0DKCLrEUPo9Dw7UCzK5PVuPZ3Q/6+8=
+0.0.3 backports:~> 2.6.4,ice_nine:~> 0.5.0|checksum:y6U86h1FmFpfJzQ0LImltxtUqNJtCuIR68t2aZjDhio=
+0.0.4 backports:~> 2.6.4,ice_nine:~> 0.6.0|checksum:0MXsrNeTgFS5bVWTdoJD206McSpDhajQP/QDcO/Qn/A=
+0.0.5 backports:~> 2.7.0,ice_nine:~> 0.6.0|checksum:M9C9eOf3oxZAwBl0TLWZyCqZE+qqy+wD5CkzqRvGVyQ=
+0.0.6 backports:~> 2.8.2,ice_nine:~> 0.7.0|checksum:f1kd6/T2Y1CMPxNWzCTWsemhDAFeF0Sqfj65ur9T1qI=
+0.0.7 backports:>= 3.0.3&~> 3.0,ice_nine:~> 0.7.0|checksum:obDDwjPr8OiZlc5Sie9UwDoPbq6PYISJ1hr6snbetnU=
+0.0.8 ice_nine:~> 0.8.0|checksum:HXGvrtN/5aDop8JOd854a+n8PSVn8kJGPylnZiVviF4=
+0.0.9 ice_nine:~> 0.8.0|checksum:spEnHTNlpZQX90BilrGVregaxlqGVl0KR6ALZlHSAD8=
+0.0.10 ice_nine:~> 0.8.0|checksum:FOryCIg78CjdqfoVCn+BrWOIBPz/jqvJZ9Hv0ohIbNY=
+0.0.11 ice_nine:~> 0.8.0|checksum:hhopdEOb4f4UT2p+mVrWqvjXjLnwleDBgQNKCEO+Trg=
+0.1.0 ice_nine:~> 0.9,thread_safe:~> 0.1.2|checksum:QQKzSH8ZfUTy6k9PuKtEDBf/o1aqWG0gFKtlYFlBrPY=
+0.2.0 ice_nine:~> 0.11.0,memoizable:~> 0.4.0|checksum:U3ncEJDsbOEV6u1CcaIFbzty7pTR/4ZqFpu7N6PIxQQ=

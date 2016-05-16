@@ -1,0 +1,98 @@
+---
+0.7.0 |checksum:V1PinP8Mzsfap2TlMZQHdtBQzvQsNaX46+m2owU6MGo=
+0.7.1 |checksum:VOuM2jsJFff9oeXmFoSiDa0DV89mXmSRHqXAPnniBec=
+0.7.2 addressable:>= 2.1.1|checksum:2wbSqZrj8irTG5OHc1AuNotlzzQBXUfu9XQROH5BF4M=
+0.7.3 addressable:>= 2.1.1|checksum:FxBwpNzAWej5oP7ELviWrPxFLGIwx+EJ/J4gvaGZozI=
+0.8.0 addressable:>= 2.1.1|checksum:sJN4z2/7pSJ41SDBAuMgwpYOGaNY4e4p4DePUa1N+3M=
+0.8.1 addressable:>= 2.1.1|checksum:8quuiurLyCv7eUI6e4nHb8GLppaZPx8sTQEyWSPtCLQ=
+0.8.2 addressable:>= 2.1.1|checksum:zZjDdd4gqIXSV6SMbNGw8+RktMbY3F9TTyUz+b6y4rQ=
+0.9.0 addressable:>= 2.1.1|checksum:ghKv0qts8vrGhujLcPmzxgNlEZRY/ldKEM6tjaRk/uI=
+0.9.1 addressable:>= 2.1.1|checksum:okX+FiE7SH6lsXGIwxLdJ0sWaTWO5OdrDmaJowetZUA=
+1.0.0 addressable:>= 2.1.1|checksum:ZEVHu7yHOvy54ouaTtSA7s4irv9Pe4UUarDympWSnx4=
+1.1.0 addressable:>= 2.1.1|checksum:Q1FiQK+QNrYxZExK1yTQ94rpKFkbMjUUb0ju/vmBqJ0=
+1.2.0 addressable:>= 2.1.1|checksum:H4uJ6VAWll3halX2ev8gbTHbDJp2o7L0OYigHYIBCio=
+1.2.1 addressable:>= 2.1.1|checksum:0a9MnK4RlYEFMTw539wjBoxMKH/MhT3dG5R1lo72a48=
+1.2.2 addressable:>= 2.1.1|checksum:s2DPR5SvoBthpdt1NuY6/g5RDo2Usnt8/TVpVTyPLaw=
+1.3.0 addressable:>= 2.1.1,crack:>= 0.1.7|checksum:g2DJB9WC5RQQKyN4rTQK9PxRQenonQ3luri54G6QVGw=
+1.3.1 addressable:>= 2.1.1,crack:>= 0.1.7|checksum:wyVzKEDUfiwywjAzhwxmb9gUSc1S0gu/yxQCjtcCJp4=
+1.3.2 addressable:>= 2.1.1,crack:>= 0.1.7|checksum:2Yga9OLi36Vy6IzsmZj5MrJjT/6WdYULE6MrG4wzwvs=
+1.3.3 addressable:>= 2.1.1,crack:>= 0.1.7|checksum:8O5W3pQEKAAtymI4R6JaaRcEd+Vq7BflxfDLKFFiR7o=
+1.3.4 addressable:>= 2.1.1,crack:>= 0.1.7|checksum:o/V7rA49UA1illct2hFJCuNmiFbKwcW8vEmUday0vs8=
+1.3.5 addressable:>= 2.1.1,crack:>= 0.1.7|checksum:BXNudnIhXDcHMdsYylau2kOcaO9QMRtIrY0r2UvWKyU=
+1.4.0 addressable:>= 2.2.2,crack:>= 0.1.7|checksum:Lt/Ppkz+CqL4SxM+LiVzK1i1yMsaFdpcIVTrmjAfUwU=
+1.5.0 addressable:>= 2.2.2,crack:>= 0.1.7|checksum:O0PH7ue5CXnxQkksAU+QixKpQoiWOCDmMJJQ+LCdBvg=
+1.6.0 addressable:>= 2.2.2,crack:>= 0.1.7|checksum:GWjysS+DOrb21k1pAmEeVUiCQYnbHYfZ/o1cXUw5Bb8=
+1.6.1 addressable:>= 2.2.2,crack:>= 0.1.7|checksum:KiuOqbSEVXqNeIY+grY8FsyMIRJvJ2KoyszM/K49bxc=
+1.6.2 addressable:>= 2.2.2,crack:>= 0.1.7|checksum:BpJdrgRJIBHCllmXhG3HkSIIUm7QLe0k8+Mo6qOoMRU=
+1.6.4 addressable:> 2.2.5&~> 2.2,addressable:> 2.2.5&~> 2.2,crack:>= 0.1.7|checksum:ejVtFMxAxp80zruEIyZ2zyrTOO4JSdf9Rdl/eLJF1Vw=
+1.7.0 addressable:> 2.2.5&~> 2.2,addressable:> 2.2.5&~> 2.2,crack:>= 0.1.7|checksum:2Ph5aCTEqlt6cd11F6YbDNZMwHThnpehreHl086J3WA=
+1.7.1 addressable:> 2.2.5&~> 2.2,addressable:> 2.2.5&~> 2.2,crack:>= 0.1.7|checksum:+m7CkpYuwfOi5GsZYnu+k1/V5w/DBVjmWegpwgjcueQ=
+1.7.2 addressable:> 2.2.5&~> 2.2,addressable:> 2.2.5&~> 2.2,crack:>= 0.1.7|checksum:CJNb3dcs0zCTVhWKN9ZguUeut82+tiRRwfIdQbctuXY=
+1.7.3 addressable:> 2.2.5&~> 2.2,addressable:> 2.2.5&~> 2.2,crack:>= 0.1.7|checksum:qrp2X8SRQMEZLeoqo9HE/8DkI+OyP7ISloCNEGwKioI=
+1.7.4 addressable:> 2.2.5&~> 2.2,addressable:> 2.2.5&~> 2.2,crack:>= 0.1.7|checksum:kdc3dXggJOwUON9macm1NACdbRQDEkPJZ0dkymWYqss=
+1.7.5 addressable:> 2.2.5&~> 2.2,addressable:> 2.2.5&~> 2.2,crack:>= 0.1.7|checksum:QGOqWb8wJNKbOEeCutLHej4a5s1ebn+dIL6EEB2RsOY=
+1.7.6 addressable:> 2.2.5&~> 2.2,addressable:> 2.2.5&~> 2.2,crack:>= 0.1.7|checksum:ur68DCV7LtrrG/2YDTFZK1r9Y8BAIOYQnIZCBevesTQ=
+1.7.7 addressable:> 2.2.5&~> 2.2,addressable:> 2.2.5&~> 2.2,crack:>= 0.1.7|checksum:RDo1kttzRllwuCzfP8QnCVgZT8J3Q1drH7/EWDP0pZY=
+1.7.8 addressable:> 2.2.5&~> 2.2,addressable:> 2.2.5&~> 2.2,crack:>= 0.1.7|checksum:x2KGjWRwAycCluKZovFKT8PhcN02IsCLIfyK1K0ZB20=
+1.7.10 addressable:> 2.2.5&~> 2.2,crack:>= 0.1.7|checksum:Hb2LXDqB0b6uUexZNkwKyHNbMcn/HJyw3PfyHgQv68c=
+1.8.0 addressable:>= 2.2.7,crack:>= 0.1.7|checksum:KUh4GGB5Kjq4eAAVSPCepgWJJx21LZ1v6/Khf2tjNw4=
+1.8.1 addressable:>= 2.2.7,crack:>= 0.1.7|checksum:OdBe0SC9/2bfUYzy7P3Q+vka/zyoPmgO54YgiQ2WtYI=
+1.8.2 addressable:>= 2.2.7,crack:>= 0.1.7|checksum:HP627bu71U3Aq0a09tizdFM9JuTsSRsiw+hXv57/3xs=
+1.8.3 addressable:>= 2.2.7,crack:>= 0.1.7|checksum:M5YQKwPLT2jqJbQRLY5SHt6JfrM3anzGLtwEgz41wZc=
+1.8.4 addressable:>= 2.2.7,crack:>= 0.1.7|checksum:+bAaKWOGwJcTXgtCfiXIJFz7i6K4CLli7TSxyVydtJs=
+1.8.5 addressable:>= 2.2.7,crack:>= 0.1.7|checksum:CKeNoWLYZ4t6SImuq+DfBRU4sHIrJeFPXlHzX/PN/m4=
+1.8.6 addressable:>= 2.2.7,crack:>= 0.1.7|checksum:hsr/ADnsFmqRF0iSqkXXEAhaPyCi80tJ2OrQFdXKsIo=
+1.8.7 addressable:>= 2.2.7,crack:>= 0.1.7|checksum:L9l7tPWOPjmCDXKtIZ3HFp0YdYjyD4JUU9n6NmhJq50=
+1.8.8 addressable:~> 2.2.8,crack:>= 0.1.7|checksum:TNG1W0gL6wyJHHratwgoKEunm6L7RcDX8RBFLfB7Z1M=
+1.8.9 addressable:>= 2.2.7,crack:>= 0.1.7|checksum:O4TMsoUkK2ETTg1Jdv6mSv77HlYIw3gouw4Jgw71vtA=
+1.8.10 addressable:>= 2.2.7,crack:>= 0.1.7|checksum:GYKYD8hZNyY1px11nYXJMPY5N4uzZFhaYd0HPLl1m4o=
+1.8.11 addressable:>= 2.2.7,crack:>= 0.1.7|checksum:/8NGIODa3IXGN/KgNS0cGv1+yx4VHekdLTNxAeBUwM0=
+1.9.0 addressable:>= 2.2.7,crack:>= 0.1.7|checksum:8QnaV0bvaYbCdt4DVFt/O50KRLM9fatgJAuEIMNbwtk=
+1.9.1 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:KPB7o/RrTt5d8Z0YTlDhlNEI6ZB9HqKyErRhnCwnMOA=
+1.9.2 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:aRWU9LRirn6OgJoVVNjTf2eVa78KXIJ4sIxnfRpR5qw=
+1.9.3 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:GoEX307OsV5QQsiyiFdprajNV83z818SAdbIDGN0CQY=
+1.10.0 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:7oAdUrPHOw9/3jEebFYsevmN7Ic2oTg2GaQ2oP1t2jc=
+1.10.1 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:1yGVJRxafMZ0xfkUyLnWrN1Ajzga6Sz5lcp7E5J8B+o=
+1.10.2 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:1veOXQdpENBbEAkVjhykFYVaSF4yDn0hJxFryLz/Km8=
+1.11.0 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:QGvwb1S/pT79AZDvrRUdYut1d2GY+ThFVdAzaTHwd8k=
+1.12.0 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:OKIb9EzHJi3NCJacH/XMbi6OCe8ODpbmZ1U+vAxg4/Y=
+1.12.1 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:5RV+zYARGR5QWL8VT79/xeLX2nGivuRs6FECGnaw72E=
+1.12.2 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:+ZRikOKJHzLbXAU870662pjQQ1mr6gl6FSyqBjMX8MQ=
+1.12.3 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:v1sJBSM5IbxMI0Cpcik63SP6js3rVSfe8gXWXgQHqis=
+1.13.0 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:3HTWy/LjPIDZ6Td486smOP+4JQtwIIHwitCWcDTpoUk=
+1.14.0 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:5bttEdMsXN0gJd3G1cBNaBBDaMs2diHzdcKafoEyhXs=
+1.15.0 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:FLV54uRtBiB5pafuasTOxvQ5jxri9rOGtq3M44bDkV8=
+1.15.2 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:PvquVGH23N5nqqLvSS108KBrNVnJABH17x9KvV6aJnU=
+1.16.0 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:iejO0KWLz2i+yBj5Ac6Wa0+JON0gsQEES9ZAhYmpV/g=
+1.16.1 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:j+guai5pBhfQYHH46Qkg5h36lbahN5elZg5fA8ATuU8=
+1.17.0 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:SgzF+IBT29BjygsDbPlKoVJWHNkPWxyOwCqCSbHxJY0=
+1.17.1 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:vCLoQQ3u3H+lY7r6ipuUCcNs6GqRdjm2OdgmNOhleEw=
+1.17.2 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:fkp9/vNVCurAlDpXwnkhDzBIBQ2kzIAN1yGp2pjRcX4=
+1.17.3 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:zQTYFBpIVgRQguMNhVcPn8pTHJVtApaMmYWPLUhnmPg=
+1.17.4 addressable:>= 2.2.7,crack:>= 0.3.2|checksum:kA+kPaKRlYNgH8d2hA4so3Zw9ydRBFR+fr3vhYCqYUg=
+1.18.0 addressable:>= 2.3.6,crack:>= 0.3.2|checksum:A2BIVlHf6UZ1o29UY2fiuwdVcKuHn9sxG0vSdjpRQeQ=,ruby:>= 0
+1.19.0 addressable:>= 2.3.6,crack:>= 0.3.2|checksum:r3gVXUbP4pOwUtCEA5MtmU02aFenlJCORiaD44eDCYg=,ruby:>= 0
+1.20.0 addressable:>= 2.3.6,crack:>= 0.3.2|checksum:1USDCrIgPieWq1X77mhZ2OJIx+be6ttPp0RI9jvYhS4=,ruby:>= 0
+1.20.1 addressable:>= 2.3.6,crack:>= 0.3.2|checksum:ytd+Kc3WpfnDKZIuBivOOYXRw+d6x0Ls3OXQAxa4h9o=,ruby:>= 0
+1.20.2 addressable:>= 2.3.6,crack:>= 0.3.2|checksum:ll8jjwgVC9aYnbZKLOnLdWZ3Abu1iO4c6trNq3Td4xo=,ruby:>= 0
+1.20.3 addressable:>= 2.3.6,crack:>= 0.3.2|checksum:wBaSGQr0pfJvN2v1Z4rx6661rG1vQ9ejiMhPE9HwECU=,ruby:>= 0
+1.20.4 addressable:>= 2.3.6,crack:>= 0.3.2|checksum:uVfyi7ikqBqAviN1etkXFeWYLtiOrSDonXutvvwInwU=,ruby:>= 0
+1.21.0 addressable:>= 2.3.6,crack:>= 0.3.2|checksum:Y8drWLbBfN8gtxkllQPo2C7oAkGd3VQu76mMMnvD8Nw=,ruby:>= 0
+1.22.1 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:
+1.22.2 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:
+1.22.3 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:
+1.22.5 addressable:< 2.4.0,crack:>= 0.3.2,hashdiff:>= 0|checksum:76539e2697146ce7b188244d233b11818a05a6bec1d72702f740c638a9195658,ruby:>= 0,rubygems:>= 0
+1.22.6 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:a4ba0124c5e1890a1d9e4a47f44493f14abb2fe3415e82b64bc677670792debf,ruby:>= 0,rubygems:>= 0
+1.23.0 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:a039108bf60644141d6fe5e76bf2f5e13716d6ba6c9213f81816736161274385,ruby:>= 0,rubygems:>= 0
+1.24.0 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:e77bd55ed23763c21728a907d1bba79d6579a1ff0dceb9aba10f40df151ca443,ruby:>= 0,rubygems:>= 0
+1.24.1 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:028b83161035744e37738e8f832da8737b3a314e4153d5c5168ee20a4c6d8a7b,ruby:>= 0,rubygems:>= 0
+1.24.2 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:254b75209e182e6afbf8cf6bb5844724a50c5857d1a476cdc18053437654caf7,ruby:>= 0,rubygems:>= 0
+1.24.3 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:508b0b32a39cb404fffd3c5e81c842a86ca6979ad1ae1a26a9b8327cb4444fef,ruby:>= 0,rubygems:>= 0
+2.0.0.beta1 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:cff347432a731b1f286aecfc83ed9a16a21d4389f14c3c40ca5f1547aaf5ca38,ruby:>= 1.9.3,rubygems:> 1.3.1
+1.24.4 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:48263faa318392168d9051f49ea15f2fa6eca626bf518138437c71526d1132fb,ruby:>= 0,rubygems:>= 0
+1.24.5 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:46f2faa7ab67847a57631b30abe90baa44e17bbbc437a893a06b3251a13f0621,ruby:>= 0,rubygems:>= 0
+1.24.6 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:c516e1b309697af303e647dc2f3c7222b13ef70c1c4c5afb61e64bd595c9740f,ruby:>= 0,rubygems:>= 0
+2.0.0.beta2 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:286e310d20d7598e2deff08f105e508c68d90d1be5671996fd0ab36bc8509c6e,ruby:>= 1.9.3,rubygems:> 1.3.1
+2.0.0 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:94f198f278e04d5744ef0e69b15a9b12df43aead4bc6786e6b42d70d2d556d8b,ruby:>= 1.9.3,rubygems:>= 0
+2.0.1 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:c7aee588a0a19001106f634bd7dbed001685db864edc91368503b3cb40536a22,ruby:>= 1.9.3,rubygems:>= 0
+2.0.2 addressable:>= 2.3.6,crack:>= 0.3.2,hashdiff:>= 0|checksum:23252f5d60225abe81e5254292384f1a709fb699cd13ca887083e1438803f01e,ruby:>= 1.9.3,rubygems:>= 0

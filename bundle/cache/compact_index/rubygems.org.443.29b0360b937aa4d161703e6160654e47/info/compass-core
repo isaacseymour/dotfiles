@@ -1,0 +1,18 @@
+---
+1.0.0.alpha.13 multi_json:~> 1.0,sass:>= 3.3.rc.1|checksum:2uWiex6zcvmjdOXAwBpATSER5AuG8RRm11eUs4lzevI=,rubygems:> 1.3.1
+1.0.0.alpha.14 multi_json:~> 1.0,sass:>= 3.3.rc.1|checksum:TEvHWhyCPo5v38111gsab8e5J7Osvk+KjVhBol9/asY=,rubygems:> 1.3.1
+1.0.0.alpha.15 multi_json:~> 1.0,sass:>= 3.3.rc.1|checksum:uijJwiBG9UzhkbDrAw0vxXcODQBlmoJOrC4T/h79z14=,rubygems:> 1.3.1
+1.0.0.alpha.16 multi_json:~> 1.0,sass:>= 3.3.rc.1|checksum:eFBqiFCJm7E8Yc6VDuHJKZvGpPRQCvvb9VtOMeTQy0Q=,rubygems:> 1.3.1
+1.0.0.alpha.17 multi_json:~> 1.0,sass:>= 3.3.rc.3|checksum:1vIlmI/owOY51HVypnF6oA2+iMg8LMVjhai4VJsPtX0=,rubygems:> 1.3.1
+1.0.0.alpha.19 multi_json:~> 1.0,sass:< 3.5&>= 3.3.0|checksum:LJnZDGYNvEvtAFar0ZN4dKZASnhKXGgOIO+d7al8NK8=,rubygems:> 1.3.1
+1.0.0.alpha.20 multi_json:~> 1.0,sass:< 3.5&>= 3.3.0|checksum:p5/CDL/wSGNoJFtCcXnaTvaBbH0PPNxCDpxqirwHLMU=,ruby:>= 0,rubygems:> 1.3.1
+1.0.0.alpha.21 multi_json:~> 1.0,sass:< 3.5&>= 3.3.0|checksum:lQbqoAnCAZkaqskAoInEFzt2JDgNpcKzmspJhc1f0XY=,ruby:>= 0,rubygems:> 1.3.1
+1.0.0.rc.0 multi_json:~> 1.0,sass:< 3.5&>= 3.3.0|checksum:ah5WqcBOLZTXP56gxWYD2AMahkCdUeuVVUd1sEzWUSE=,ruby:>= 0,rubygems:> 1.3.1
+1.0.0.rc.1 multi_json:~> 1.0,sass:< 3.5&>= 3.3.0|checksum:d4GvLRtTMzzh3/3XwAoz4GrRBVr+J1/Xs41EKbgq998=,ruby:>= 0,rubygems:> 1.3.1
+1.0.0 multi_json:~> 1.0,sass:< 3.5&>= 3.3.0|checksum:VW87az8zIjI0O4sKXwVE1beVK5e8rrr/Vjezmqkx7Nk=,ruby:>= 0
+1.0.1 multi_json:~> 1.0,sass:< 3.5&>= 3.3.0|checksum:/Qfqc05WETZw/Y7M6sFDsJogNNrgs9EbFjJpg+WrC34=,ruby:>= 0
+1.1.0.alpha.0 multi_json:~> 1.0,sass:< 3.5&>= 3.3.0|checksum:xowyvWb+9r6M3AEWGPzTKiuJj+dMsbpeAVZZCXlHA5I=,ruby:>= 0,rubygems:> 1.3.1
+1.1.0.alpha.1 multi_json:~> 1.0,sass:< 3.5&>= 3.3.0|checksum:lnGCVuQ9Orgjuc8F5m65VwvF8NNZsNiYA0ZR8CcRA4w=,ruby:>= 0,rubygems:> 1.3.1
+1.1.0.alpha.2 multi_json:~> 1.0,sass:< 3.5&>= 3.3.0|checksum:59R9xRQqmrwx51JXRhov94b77aYnlPRj/qWkOGYke6c=,ruby:>= 0,rubygems:> 1.3.1
+1.1.0.alpha.3 multi_json:~> 1.0,sass:< 3.5&>= 3.3.0|checksum:j7/oV/A8dVHRI6h+bSKbfC6VguJNrDPsyA7/ixZ1zJc=,ruby:>= 0,rubygems:> 1.3.1
+1.0.3 multi_json:~> 1.0,sass:< 3.5&>= 3.3.0|checksum:asi7TKu1v4DRp/67rP01waqD6Rp6URY3Zo3/2ji+Wnk=,ruby:>= 0
