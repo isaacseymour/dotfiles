@@ -1,9 +1,0 @@
----
-0.1.0 addressable:~> 2.2.2,extlib:>= 0.9.15,json:>= 1.4.6|checksum:49KFbXS+iGUMKCL7sXYUN0vXBCU67qWmwjszOyULTHw=
-0.2.0 addressable:~> 2.2.2,extlib:>= 0.9.15,json:>= 1.4.6|checksum:4CONyOeRZpkfSMXN8LyO9HXLx5OAemyy9MGIIA7Hm90=
-0.2.1 addressable:~> 2.2.2,extlib:>= 0.9.15,json:>= 1.4.6|checksum:AwEE4hl7UKqe8P6Ga+h6W6iRv2EecDWxaRwCRtXEIjA=
-0.2.3 addressable:~> 2.2.2,extlib:>= 0.9.15,json:>= 1.4.6|checksum:MsCjM40iuFpJN3LwAs/cgW4S6Dunelp5NGhbvsQWRCo=
-0.3.0 addressable:~> 2.2.2,extlib:>= 0.9.15,json:>= 1.4.6|checksum:MztQVfxZmyO3QGm46LAc+Yz1YSozbjo9lbrDW+dp4Vo=
-0.3.1 addressable:~> 2.2.3,extlib:>= 0.9.15,multi_json:>= 1.0.0|checksum:VTfUXTdjnOaEJKH787366zncgn7TYGLHmdI2Dn+U6rc=
-0.3.2 addressable:>= 2.3.1,extlib:>= 0.9.15,multi_json:>= 1.0.0|checksum:4o77n4J8uCAFHm/d8Lb6BhIOCdhjCPjIXVgip1ks5wg=
-0.3.3 addressable:>= 2.3.1,extlib:>= 0.9.15,multi_json:>= 1.0.0|checksum:ZlG6qgH45biY5wLjhybKs6y+0SJqueTzq5MJ9lCbvOA=

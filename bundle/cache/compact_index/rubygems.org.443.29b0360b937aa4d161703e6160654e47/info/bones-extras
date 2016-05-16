@@ -1,9 +1,0 @@
----
-1.0.0 bones:>= 3.0.0|checksum:uuB0dFKg6oKaVQp9lqiHSMcY4pHTAcqqtL1/8UuGix4=
-1.0.1 bones:>= 3.0.0|checksum:J3RPWIYVrhc8jzojcH15M/79WVbTmPcHL2de069WUy8=
-1.1.0 bones:>= 3.0.1|checksum:f0q+4RIQQwaVFhfWiZ4fhuRirm/Gwnts5BOxEhQ1BJg=
-1.2.1 bones:>= 3.1.0|checksum:m/d+css1lnV1GAZQcLagcesb/wRhAKVVbq1XUPqK1Zg=
-1.2.2 bones:>= 3.1.2|checksum:Ci5B8KiopLpxnXbfbI8uNHs0qCr7AOurI9bmQ9w8ajg=
-1.2.3 bones:>= 3.4.2|checksum:bN8Dgr3gMlLfveoxMnVyrtqzI7aZ1azl3byBwhH2GyQ=
-1.2.4 bones:>= 3.4.3|checksum:TXT9iGGY1T16YCA0vqL2/jagbyWjlrKhWT1C+h4VL6w=
-1.3.0 bones:>= 3.5.0,bones-rcov:>= 0,bones-rspec:>= 1.0.1,bones-rubyforge:>= 0,bones-zentest:>= 0|checksum:ErFVC00lBM8SiEkwnu8RDoWiYJR64SZhVHouAu9jFhc=

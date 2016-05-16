@@ -1,8 +1,0 @@
----
-0.1.0 |checksum:weDvX8IqR5SgS3ezu1ZtgOCinhLcmYxLg4qexTQhoZ0=
-0.2.0 thread_safe:~> 0.1.3|checksum:TKSFdHp5JSjRk3NZPKMiUaqPevJK+XvNbEKzovCwwdw=
-0.3.0 thread_safe:~> 0.1.3|checksum:zk8C5lPHZFMIJRZpvvC10sHlt+5aaanDicO5K50Fa7c=
-0.3.1 thread_safe:~> 0.1.3|checksum:Etp12Z+mJ0ZQI6TjfNOHGiTZVFUOTFjMY4/pxF7oBw0=
-0.4.0 thread_safe:~> 0.1.3|checksum:meGjQfAgi9OCJWV0Gj3NZnZrNRB7ohkuLsMTjhNDD3Y=
-0.4.1 thread_safe:~> 0.2.0|checksum:FkNvvpCettlOtqZdzyshtYD5N0wptjHqElfy19R1gUk=
-0.4.2 thread_safe:>= 0.3.1&~> 0.3|checksum:rPTSKA/qAZMY5hz8XmkHfcs8ISaBfuWW/9dtDd9egmw=,ruby:>= 0

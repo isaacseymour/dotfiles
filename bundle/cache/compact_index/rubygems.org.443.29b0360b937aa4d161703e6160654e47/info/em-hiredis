@@ -1,8 +1,0 @@
----
-0.0.1 hiredis:~> 0.2.0|checksum:WtPa93gsKvKBWkm58Wnx6GGY5D1+PMd666xOGGayQuA=
-0.1.0 hiredis:~> 0.3.0|checksum:/l1KMHihTPHmv2/1kH8eyfTn3OLUim+yr8z/a5ie7U8=
-0.1.1 hiredis:~> 0.4.0|checksum:6aDpSISPpp9Y7M8ky1+oEpQb69Rt6bO3PphzRa77lEY=
-0.2.0 hiredis:~> 0.4.0|checksum:zmeDHVloJQ0oUWIhSFgNPDsz+AumUg1C3ZpsngNQBAw=
-0.2.1 hiredis:~> 0.4.0|checksum:b6gkJlMn4OwojbiKzwdVYaPBf8U9q3N4eJPUKjzsqVw=
-0.3.0 eventmachine:~> 1.0,hiredis:~> 0.5.0|checksum:FY+LfHqwtIvg2xS695sAvpS59gaXTqZXqFyp/3znJP8=,ruby:>= 0
-0.3.1 eventmachine:~> 1.0,hiredis:~> 0.6.0|checksum:df4cf8ae922844649287ecac3692f6b4551b23dbffbb727c4ff8596eba390252,ruby:>= 0,rubygems:>= 0

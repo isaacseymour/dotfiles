@@ -1,7 +1,0 @@
----
-1.0.0 ruby_core_source:>= 0.1.5|checksum:DuqGkPQ7lm53lC5OFxs3VN00Hz/9/mGsOlqff0Lq1UA=,rubygems:>= 1.3.6
-1.0.1 debugger-ruby_core_source:>= 0|checksum:v2ig6U8ngq1ssEglw3hvGS/fdZIYKNSKWljHQx8alZs=,rubygems:>= 1.3.6
-1.1.0 debugger-ruby_core_source:>= 0|checksum:nfuhLEUXWIMKp72SPSwzbfwXd3FHJws61vrQIBUiy9s=,rubygems:>= 1.3.6
-1.1.1 debugger-ruby_core_source:>= 1.1.1|checksum:IwSsAuZSL273IbVHLIX9DB026W6yKHrvnb4lIrM2Ke0=,rubygems:>= 1.3.6
-1.1.2 debugger-ruby_core_source:>= 1.1.1|checksum:bgw1UAekFSRKMmB9qynrPOUbptNWqH0HdMrQ/DTxFzI=,rubygems:>= 1.3.6
-1.2.0 |checksum:v103GilXJ8ExYY480iPGk5xRx7so/xckd7s0B1Lonkc=,rubygems:>= 1.3.6
