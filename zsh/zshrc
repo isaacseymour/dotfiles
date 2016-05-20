@@ -1,5 +1,12 @@
-zsh_dotfile_path=$(dirname $(readlink -f $HOME/.zshrc))
+if [ "$(uname)" = "Darwin" ]; then
+  zsh_dotfile_path=$(dirname $(readlink $HOME/.zshrc))
+else
+  zsh_dotfile_path=$(dirname $(readlink -f $HOME/.zshrc))
+fi
 fpath=($zsh_dotfile_path/zsh/completion $fpath)
+
+autoload compinit
+compinit -u
 
 # Glob-like autocomplete
 setopt glob_complete
