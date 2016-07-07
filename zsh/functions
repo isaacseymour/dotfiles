@@ -14,3 +14,12 @@ zstyle -e ':completion::*:hosts' hosts 'reply=($(sed -e "/^#/d" -e "s/ .*\$//" -
 function tnw() {
   tmux new-window -n $2 -c ~/$1/$2
 }
+
+function tnwp() {
+  tmux new-window -n $1 -c /projects/carwow/$1
+}
+
+function re-ssh-agent() {
+  export SSH_AUTH_SOCK=/tmp/ssh-*/agent.*
+  ssh-add -l
+}

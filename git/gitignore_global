@@ -14,3 +14,4 @@ _site/
 .idea/
 .ruby-version
 secret
+*.log

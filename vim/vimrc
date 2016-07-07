@@ -61,8 +61,8 @@ let g:airline_right_alt_sep = ''
 let g:airline_section_warning = ''
 let g:airline#extensions#tabline#enabled = 0
 
-" Syntax highlighting for React, lodash
-let g:used_javascript_libs = 'react,lodash'
+" Syntax highlighting for React
+let g:used_javascript_libs = 'react'
 
 " Assume all .js files use JSX
 let g:jsx_ext_required = 0
