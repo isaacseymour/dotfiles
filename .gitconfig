@@ -17,3 +17,6 @@
   editor = vim
 [merge]
   ff = only
+[user]
+	email = i.seymour@oxon.org
+	name = Isaac Seymour

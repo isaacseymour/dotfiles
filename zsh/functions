@@ -20,6 +20,7 @@ function tnwp() {
 }
 
 function re-ssh-agent() {
-  export SSH_AUTH_SOCK=/tmp/ssh-*/agent.*
+  SSH_AUTH_SOCK='/tmp/ssh-*/agent.*'
+  export SSH_AUTH_SOCK=$(eval echo -n $SSH_AUTH_SOCK)
   ssh-add -l
 }
