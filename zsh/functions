@@ -16,7 +16,7 @@ function tnw() {
 }
 
 function tnwp() {
-  tmux new-window -n $1 -c /projects/carwow/$1
+  tmux new-window -n $1 -c ~/projects/carwow/$1
 }
 
 function re-ssh-agent() {
