@@ -21,14 +21,15 @@ function tnwp() {
 
 function tmux-re-ssh-agent () {
   for pane in $(tmux list-panes -a -F '#S:#W.#P'); do
-    tmux send-keys -t ${pane} C-z C-e C-u
-    tmux send-keys -l -t ${pane} "re-ssh-agent"
-    tmux send-keys -t ${pane} Enter
+    tmux send-keys -t ${pane} C-z C-e C-u "srcz;re-ssh-agent;try-fg" Enter
   done
 }
 
 function re-ssh-agent() {
   SSH_AUTH_SOCK='/tmp/ssh-*/agent.*'
   export SSH_AUTH_SOCK=$(eval echo -n $SSH_AUTH_SOCK)
-  [[ "$(jobs | wc -l)" -ne 0 ]] && fg || true
+}
+
+function try-fg() {
+  [[ "$(jobs | wc -l)" -ne 0 ]] && fg || clear
 }
