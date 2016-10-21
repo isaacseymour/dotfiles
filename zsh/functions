@@ -21,7 +21,11 @@ function tnwp() {
 
 function tmux-re-ssh-agent () {
   for pane in $(tmux list-panes -a -F '#S:#W.#P'); do
-    tmux send-keys -t ${pane} C-z C-e C-u "srcz;re-ssh-agent;try-fg" Enter
+    tmux send-keys -t ${pane} C-z
+    tmux send-keys -t ${pane} C-e
+    tmux send-keys -t ${pane} C-u
+    tmux send-keys -l -t ${pane} 'srcz;re-ssh-agent;try-fg'
+    tmux send-keys -t ${pane} Enter
   done
 }
 
