@@ -30,7 +30,11 @@ function tmux-re-ssh-agent () {
 }
 
 function re-ssh-agent() {
-  SSH_AUTH_SOCK='/tmp/ssh-*/agent.*'
+  if [ $(uname) = 'Darwin' ]; then
+    SSH_AUTH_SOCK='/private/tmp/com.apple.launchd.*/Listeners'
+  else
+    SSH_AUTH_SOCK='/tmp/ssh-*/agent.*'
+  fi
   export SSH_AUTH_SOCK=$(eval echo -n $SSH_AUTH_SOCK)
 }
 
