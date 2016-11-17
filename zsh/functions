@@ -41,3 +41,16 @@ function re-ssh-agent() {
 function try-fg() {
   [[ "$(jobs | wc -l)" -ne 0 ]] && fg || clear
 }
+
+function pumaise() {
+  for site in "$@"
+  do
+    (cd ~/projects/carwow/$site && bundle exec puma --daemon --pidfile tmp/puma.pid) &
+  done
+}
+function depumaise() {
+  pkill -f puma
+}
+function depuma() {
+  pumactl --pidfile tmp/puma.pid stop
+}
