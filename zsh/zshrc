@@ -24,7 +24,9 @@ source $zsh_dotfile_path/aliases
 source $zsh_dotfile_path/exports
 source $zsh_dotfile_path/functions
 source $zsh_dotfile_path/agnoster-theme
-([ -f $zsh_dotfile_path/secret ] && source $zsh_dotfile_path/secret) || true
+if [ -f $zsh_dotfile_path/secret ]; then
+  source $zsh_dotfile_path/secret
+fi
 
 HISTFILE=$HOME/.zhistory
 HISTSIZE=20000

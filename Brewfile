@@ -1,8 +1,6 @@
 # Provisioning/ops
 brew "ansible"
 brew "docker"
-brew "docker-machine"
-brew "docker-compose"
 brew "heroku"
 
 # Languages
@@ -32,16 +30,16 @@ brew "openssl"
 
 # Apps
 cask "alfred"
+cask "ccmenu"
 cask "dashlane"
 cask "iterm2"
 cask "google-chrome"
 cask "odrive" # Sync multiple Google Drives (and similar services)
 cask "slack"
+cask "spotify"
 cask "vlc"
 cask "whatsapp"
 
 # Dev stuff
 cask "java" # JDK
-cask "osxfuse" # Mounting non-Mac filesystems (e.g. ext4)
-cask "vagrant" # VMs
-cask "virtualbox"
+cask "docker"

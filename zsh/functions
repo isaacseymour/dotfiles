@@ -42,13 +42,35 @@ function try-fg() {
   [[ "$(jobs | wc -l)" -ne 0 ]] && fg || clear
 }
 
-function pumaise() {
-  for site in "$@"
-  do
-    (cd ~/projects/carwow/$site && bundle exec puma --daemon --pidfile tmp/puma.pid) &
+function carwow() {
+  for site in $CARWOW_SITES[@]; do
+    (cd ~/projects/carwow/$site && __carwow_start_site &)
   done
 }
-function depumaise() {
+
+function __carwow_start_site() {
+  git diff-index --quiet HEAD
+  if [ $? -eq 0 ]; then
+    git checkout master
+    git pull origin master
+  else
+    echo "WARNING: could not reset `basename $(pwd)` to origin master - uncommitted changes"
+  fi
+
+  bundle check || bundle install > /dev/null
+  bundle exec rake db:migrate > /dev/null
+  start-puma
+}
+
+function start-puma() {
+  bundle exec puma --daemon --pidfile tmp/puma.pid > /dev/null
+}
+
+function puma-fg() {
+  depuma && be puma; start-puma
+}
+
+function uncarwow() {
   pkill -f puma
 }
 function depuma() {

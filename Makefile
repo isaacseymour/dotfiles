@@ -1,7 +1,6 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 all: symlinks brew ruby nvm npm vim-plug tpm screensaver
-	@echo "Reminder: Vim plugins are managed within Vim with vim-plug."
 
 symlinks:
 	@ln -nsf $(DIR)/zsh/zsh ~/.zsh
@@ -27,13 +26,13 @@ brew:
 	@brew tap Homebrew/bundle || echo ''
 	brew bundle
 
-LATEST_RUBY="2.3.1"
+LATEST_RUBY="2.3.3"
 ruby: brew symlinks
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
 
 LATEST_NODE="6"
-NVM_VERSION="v0.31.0"
+NVM_VERSION="v0.33.0"
 nvm:
 	[ -d ~/.nvm ] || git clone git@github.com:creationix/nvm ~/.nvm
 	cd ~/.nvm && git fetch && git checkout -f $(NVM_VERSION)
