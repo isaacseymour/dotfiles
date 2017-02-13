@@ -44,6 +44,7 @@ Plug 'kien/rainbow_parentheses.vim'                               " Colour match
 Plug 'tmux-plugins/vim-tmux-focus-events'                         " Make vim listen to tmux focus events
 Plug 'junegunn/vim-easy-align'                                    " Align things incredibly
 Plug 'roxma/vim-tmux-clipboard'                                   " Copy/paste across tmux splits
+Plug 'airblade/vim-rooter'
 
 call plug#end()
 

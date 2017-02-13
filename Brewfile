@@ -38,7 +38,6 @@ cask "vlc"
 cask "whatsapp"
 
 # Dev stuff
-brew "docker"
 cask "docker"
 cask "java" # JDK
 brew "libav" # For avconv
