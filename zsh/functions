@@ -57,8 +57,8 @@ function __carwow_start_site() {
     echo "WARNING: could not reset `basename $(pwd)` to origin master - uncommitted changes"
   fi
 
-  bundle check || bundle install > /dev/null
-  bundle exec rake db:migrate > /dev/null
+  bundle check || bundle install 2>&1 > /dev/null
+  bundle exec rake db:migrate 2>&1 > /dev/null
   start-puma
 }
 
