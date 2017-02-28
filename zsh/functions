@@ -58,8 +58,9 @@ function __carwow_start_site() {
   fi
 
   bundle check || bundle install 2>&1 > /dev/null
-  bundle exec rake db:migrate 2>&1 > /dev/null
   start-puma
+
+  bundle exec rake db:migrate 2>&1 > /dev/null
 }
 
 function start-puma() {
