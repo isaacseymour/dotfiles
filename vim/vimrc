@@ -18,6 +18,7 @@ Plug 'leshill/vim-json'
 Plug 'tpope/vim-markdown'
 Plug 'andersoncustodio/vim-tmux'
 Plug 'fatih/vim-go'
+Plug 'lambdatoast/elm.vim'
 
 " Colour
 Plug 'chriskempson/base16-vim'
