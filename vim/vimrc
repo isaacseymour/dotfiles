@@ -18,7 +18,7 @@ Plug 'leshill/vim-json'
 Plug 'tpope/vim-markdown'
 Plug 'andersoncustodio/vim-tmux'
 Plug 'fatih/vim-go'
-Plug 'lambdatoast/elm.vim'
+Plug 'ElmCast/elm-vim'
 
 " Colour
 Plug 'chriskempson/base16-vim'
@@ -69,6 +69,10 @@ let g:used_javascript_libs = 'react'
 
 " Assume all .js files use JSX
 let g:jsx_ext_required = 0
+
+" Format Elm files on save, but don't show errors
+let g:elm_format_autosave = 1
+let g:elm_format_fail_silently = 0
 
 " assume the /g flag on :s substitutions to replace all matches in a line
 set gdefault
