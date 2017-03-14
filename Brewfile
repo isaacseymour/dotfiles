@@ -1,6 +1,7 @@
 # Languages
 brew "elixir"
 brew "elm"
+brew "elm-format"
 brew "erlang"
 brew "go"
 brew "python"
@@ -41,6 +42,7 @@ cask "whatsapp"
 cask "docker"
 cask "java" # JDK
 brew "libav" # For avconv
+brew "postgresql"
 
 # Carwow
 brew "ansible"
