@@ -16,7 +16,7 @@ function tnw() {
 }
 
 function tnwp() {
-  tmux new-window -n $1 -c ~/projects/carwow/$1
+  tnw carwow $1
 }
 
 function tmux-re-ssh-agent () {
@@ -44,7 +44,7 @@ function try-fg() {
 
 function carwow() {
   for site in $CARWOW_SITES[@]; do
-    (cd ~/projects/carwow/$site && __carwow_start_site &)
+    (cd ~/carwow/$site && __carwow_start_site &)
   done
 }
 

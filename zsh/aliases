@@ -13,7 +13,7 @@ alias ls="ls -G"
 # bundle and ruby rails stuff
 alias be="bundle exec"
 alias bi="bundle install"
-alias rs="clear; spring rspec"
+alias rs="clear; be rspec"
 alias fuckspring="ps aux | egrep '[s]pring' | awk '{ print \$2 }' | xargs kill"
 
 # git alises

@@ -17,6 +17,8 @@ symlinks:
 	@ln -nsf $(DIR)/bundle ~/.bundle
 	@ln -sf $(DIR)/pry/pryrc ~/.pryrc
 	@ln -sf $(DIR)/psql/psqlrc ~/.psqlrc
+	@mkdir -p ~/.ssh
+	@ln -sf $(DIR)/ssh/config ~/.ssh/config
 	@mkdir -p ~/.rbenv
 	@ln -sf $(DIR)/rbenv/default-gems ~/.rbenv/default-gems
 	@ln -sf $(DIR)/editorconfig ~/.editorconfig
