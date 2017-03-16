@@ -51,14 +51,14 @@ function carwow() {
 function __carwow_start_site() {
   git diff-index --quiet HEAD
   if [ $? -eq 0 ]; then
-    git checkout master
-    git pull origin master
+    git checkout --quiet master
+    git pull origin --quiet master
   else
     echo "WARNING: could not reset `basename $(pwd)` to origin master - uncommitted changes"
   fi
 
   bundle check || bundle install 2>&1 > /dev/null
-  start-puma
+  start-puma 2>&1 > /dev/null
 
   bundle exec rake db:migrate 2>&1 > /dev/null
 }
