@@ -77,3 +77,7 @@ function uncarwow() {
 function depuma() {
   pumactl --pidfile tmp/puma.pid stop
 }
+
+function plist() {
+  pgrep -f "$1" | xargs ps
+}
