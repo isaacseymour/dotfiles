@@ -27,6 +27,7 @@ brew:
 	command -v brew > /dev/null 2>&1 || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	@brew tap Homebrew/bundle || echo ''
 	brew bundle
+	@ln -sf /usr/local/bin/elm-format-0.18 /usr/local/bin/elm-format
 
 LATEST_RUBY="2.3.3"
 ruby: brew symlinks

@@ -81,3 +81,7 @@ function depuma() {
 function plist() {
   pgrep -f "$1" | xargs ps
 }
+
+function site-psql() {
+  psql -d "carwow_$(basename `pwd`)_development"
+}
