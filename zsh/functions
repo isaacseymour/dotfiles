@@ -61,6 +61,8 @@ function __carwow_start_site() {
   start-puma 2>&1 > /dev/null
 
   bundle exec rake db:migrate 2>&1 > /dev/null
+
+  git remote prune origin > /dev/null
 }
 
 function start-puma() {
