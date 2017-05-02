@@ -28,6 +28,7 @@ brew:
 	@brew tap Homebrew/bundle || echo ''
 	brew bundle
 	@ln -sf /usr/local/bin/elm-format-0.18 /usr/local/bin/elm-format
+	brew unlink ruby # vim 8 depends on ruby, but we want to manage Ruby with rbenv
 
 LATEST_RUBY="2.3.3"
 ruby: brew symlinks

@@ -12,6 +12,7 @@ brew "ruby-build"
 
 # Productivity
 brew "bash" # The default on macOS is old
+brew "fish"
 brew "fzf"
 brew "git"
 brew "htop"
@@ -24,7 +25,7 @@ brew "watch"
 brew "zsh"
 
 # Security
-brew "gnupg21"
+brew "gnupg"
 brew "openssl"
 
 # Apps
@@ -45,6 +46,7 @@ brew "libav" # For avconv
 brew "postgresql"
 
 # Carwow
+brew "awscli"
 brew "ansible"
 cask "ccmenu"
 brew "heroku"
