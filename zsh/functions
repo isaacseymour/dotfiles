@@ -43,6 +43,11 @@ function try-fg() {
 }
 
 function carwow() {
+  until docker ps 2>&1; do
+    echo "waiting for docker..."
+    sleep 1
+  done
+
   for site in $CARWOW_SITES[@]; do
     (cd ~/carwow/$site && __carwow_start_site &)
   done
