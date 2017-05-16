@@ -33,7 +33,6 @@ cask "alfred"
 cask "dashlane"
 cask "google-chrome"
 cask "iterm2"
-cask "odrive" # Sync multiple Google Drives (and similar services)
 cask "slack"
 cask "spotify"
 cask "vlc"
