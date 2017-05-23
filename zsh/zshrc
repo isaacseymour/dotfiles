@@ -18,7 +18,9 @@ setopt share_history
 setopt hist_ignore_dups
 
 # El Capitan does weird things to $PATH, so we have to re-init rbenv here
-if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+if which rbenv > /dev/null; then
+  eval "$(rbenv init - zsh)"
+fi
 
 source $zsh_dotfile_path/aliases
 source $zsh_dotfile_path/exports

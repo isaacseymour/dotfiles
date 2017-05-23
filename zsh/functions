@@ -92,3 +92,9 @@ function plist() {
 function site-psql() {
   psql -d "carwow_$(basename `pwd`)_development"
 }
+
+function wait-for-psql() {
+  until psql -c 'select 1;' > /dev/null 2>&1; do
+    sleep 0.2
+  done
+}
