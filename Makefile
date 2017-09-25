@@ -1,6 +1,6 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-all: symlinks brew ruby nvm npm vim-plug tpm screensaver
+all: symlinks brew-bundle ruby nvm npm vim-plug tpm screensaver
 
 symlinks:
 	@ln -nsf $(DIR)/zsh/zsh ~/.zsh
@@ -24,21 +24,23 @@ symlinks:
 	@ln -sf $(DIR)/editorconfig ~/.editorconfig
 
 brew:
-	command -v brew > /dev/null 2>&1 || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	command -v brew || /bin/bash -c '/usr/bin/ruby -e "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install`"'
+
+brew-bundle: brew
 	@brew tap Homebrew/bundle || echo ''
 	brew bundle
 	@ln -sf /usr/local/bin/elm-format-0.18 /usr/local/bin/elm-format
 	brew unlink ruby # vim 8 depends on ruby, but we want to manage Ruby with rbenv
 
 LATEST_RUBY="2.3.4"
-ruby: brew symlinks
+ruby: brew-bundle symlinks
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
 
 LATEST_NODE="6"
 NVM_VERSION="v0.33.0"
 nvm:
-	[ -d ~/.nvm ] || git clone git@github.com:creationix/nvm ~/.nvm
+	[ -d ~/.nvm ] || git clone https://github.com/creationix/nvm.git ~/.nvm
 	cd ~/.nvm && git fetch && git checkout -f $(NVM_VERSION)
 	NVM_DIR=~/.nvm source ~/.nvm/nvm.sh && nvm install $(LATEST_NODE) && nvm alias default $(LATEST_NODE)
 
