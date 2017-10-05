@@ -71,6 +71,7 @@ function __carwow_start_site() {
 }
 
 function start-puma() {
+  mkdir -p tmp
   bundle exec puma --daemon --pidfile tmp/puma.pid > /dev/null
 }
 
