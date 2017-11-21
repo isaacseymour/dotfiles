@@ -19,38 +19,18 @@ function tnwp() {
   tnw carwow $1
 }
 
-function tmux-re-ssh-agent () {
-  for pane in $(tmux list-panes -a -F '#S:#W.#P'); do
-    tmux send-keys -t ${pane} C-z
-    tmux send-keys -t ${pane} C-e
-    tmux send-keys -t ${pane} C-u
-    tmux send-keys -l -t ${pane} 'srcz;re-ssh-agent;try-fg'
-    tmux send-keys -t ${pane} Enter
-  done
-}
-
-function re-ssh-agent() {
-  if [ $(uname) = 'Darwin' ]; then
-    SSH_AUTH_SOCK='/private/tmp/com.apple.launchd.*/Listeners'
-  else
-    SSH_AUTH_SOCK='/tmp/ssh-*/agent.*'
-  fi
-  export SSH_AUTH_SOCK=$(eval echo -n $SSH_AUTH_SOCK)
-}
-
 function try-fg() {
   [[ "$(jobs | wc -l)" -ne 0 ]] && fg || clear
 }
 
 function carwow() {
-  until docker ps 2>&1; do
-    echo "waiting for docker..."
-    sleep 1
-  done
+  wait-for-docker
 
   for site in $CARWOW_SITES[@]; do
-    (cd ~/carwow/$site && __carwow_start_site &)
+    (cd ~/carwow/$site && __carwow_start_site) &
   done
+
+  wait
 }
 
 function __carwow_start_site() {
@@ -62,17 +42,18 @@ function __carwow_start_site() {
     echo "WARNING: could not reset `basename $(pwd)` to origin master - uncommitted changes"
   fi
 
-  bundle check || bundle install 2>&1 > /dev/null
-  start-puma 2>&1 > /dev/null
+  [[ -f yarn.lock ]] && yarn 2>&1 > /dev/null || true
+  [[ -f Gemfile ]] && { bundle check || bundle install } 2>&1 > /dev/null || true
+  [[ -f config/puma.rb ]] && start-puma 2>&1 > /dev/null || true
 
-  bundle exec rake db:migrate 2>&1 > /dev/null
+  [[ -d db ]] && [[ -f Gemfile ]] && bundle exec rake db:migrate 2>&1 > /dev/null || true
 
   git remote prune origin > /dev/null
 }
 
 function start-puma() {
   mkdir -p tmp
-  bundle exec puma --daemon --pidfile tmp/puma.pid > /dev/null
+  bundle exec puma --daemon --pidfile tmp/puma.pid 2>&1 > /dev/null
 }
 
 function puma-fg() {
@@ -96,6 +77,12 @@ function site-psql() {
 
 function wait-for-psql() {
   until psql -c 'select 1;' > /dev/null 2>&1; do
+    sleep 0.2
+  done
+}
+
+function wait-for-docker() {
+  until docker ps > /dev/null 2>&1; do
     sleep 0.2
   done
 }
