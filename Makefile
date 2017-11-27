@@ -37,7 +37,7 @@ ruby: brew-bundle symlinks
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
 
-LATEST_NODE="6"
+LATEST_NODE="8"
 NVM_VERSION="v0.33.0"
 nvm:
 	[ -d ~/.nvm ] || git clone https://github.com/creationix/nvm.git ~/.nvm
