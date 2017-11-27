@@ -32,3 +32,6 @@ export GOPATH="${HOME}/go"
 
 # Report time of commands over 5 seconds
 export REPORTTIME=5
+
+# Disable forking safety on High Sierra (there's issues with daemonizing Puma)
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
