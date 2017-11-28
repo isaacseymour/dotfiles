@@ -16,7 +16,6 @@ brew "fish"
 brew "fzf"
 brew "git"
 brew "htop"
-brew "mercurial"
 brew "the_silver_searcher"
 brew "tmux"
 brew "tree"
@@ -25,7 +24,6 @@ brew "watch"
 brew "zsh"
 
 # Security
-brew "gnupg"
 brew "openssl"
 
 # Apps
@@ -35,21 +33,10 @@ cask "google-chrome"
 cask "iterm2"
 cask "postico"
 cask "slack"
-cask "spotify"
-cask "vlc"
 cask "whatsapp"
 
 # Dev stuff
+brew "awscli"
 cask "docker"
 cask "java" # JDK
-brew "libav" # For avconv
 brew "postgresql"
-
-# Carwow
-brew "awscli"
-brew "ansible"
-cask "ccmenu"
-brew "heroku"
-brew "imagemagick@6"
-brew "packer"
-brew "phantomjs"
