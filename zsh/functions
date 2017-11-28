@@ -76,13 +76,19 @@ function site-psql() {
 }
 
 function wait-for-psql() {
+  echo -n 'Waiting for Postgres'
   until psql -c 'select 1;' > /dev/null 2>&1; do
+    echo -n '.'
     sleep 0.2
   done
+  echo
 }
 
 function wait-for-docker() {
+  echo -n 'Waiting for Docker'
   until docker ps > /dev/null 2>&1; do
+    echo -n '.'
     sleep 0.2
   done
+  echo
 }
