@@ -40,3 +40,4 @@ brew "awscli"
 cask "docker"
 cask "java" # JDK
 brew "postgresql"
+brew "pspg" # nice pager for psql

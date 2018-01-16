@@ -20,3 +20,9 @@
 
 -- Unsilence
 \unset QUIET
+
+-- pspg settings
+\pset linestyle unicode
+\pset border 2
+\set x '\\setenv PAGER less'
+\set xx '\\setenv PAGER \'pspg --no-mouse --no-sound -b -F\''
