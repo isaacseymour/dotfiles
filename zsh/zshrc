@@ -17,11 +17,6 @@ setopt append_history
 setopt share_history
 setopt hist_ignore_dups
 
-# El Capitan does weird things to $PATH, so we have to re-init rbenv here
-if which rbenv > /dev/null; then
-  eval "$(rbenv init - zsh)"
-fi
-
 source $zsh_dotfile_path/aliases
 source $zsh_dotfile_path/exports
 source $zsh_dotfile_path/functions
@@ -52,3 +47,8 @@ cdpath=($HOME/work $HOME/me)
 
 # Load NVM
 [ -d "$NVM_DIR" ] && . "$NVM_DIR/nvm.sh"
+
+# El Capitan does weird things to $PATH, so we have to re-init rbenv here
+if which rbenv > /dev/null; then
+  eval "$(rbenv init - zsh)"
+fi
