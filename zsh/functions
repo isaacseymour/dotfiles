@@ -92,3 +92,17 @@ function wait-for-docker() {
   done
   echo
 }
+
+# carwow aliases
+function huk() {
+  heroku "$@" --remote uk
+}
+function hde() {
+  heroku "$@" --remote de
+}
+function hfr() {
+  heroku "$@" --remote fr
+}
+function hes() {
+  heroku "$@" --remote es
+}
