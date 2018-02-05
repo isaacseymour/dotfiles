@@ -53,3 +53,9 @@ alias ni="npm install"
 alias nt="npm test"
 alias ns="npm start"
 alias nsb="ns | bunyan"
+
+# carwow
+alias huk="heroku -r uk"
+alias hde="heroku -r de"
+alias hfr="heroku -r fr"
+alias hes="heroku -r es"
