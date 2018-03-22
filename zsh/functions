@@ -56,6 +56,10 @@ function start-puma() {
   bundle exec puma --daemon --pidfile tmp/puma.pid 2>&1 > /dev/null
 }
 
+function restart-puma() {
+  depuma && start-puma && say "restarted $(basename $(pwd))"
+}
+
 function puma-fg() {
   depuma && be puma; start-puma
 }
