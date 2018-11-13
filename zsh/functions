@@ -47,6 +47,7 @@ function __carwow_start_site() {
   [[ -f config/puma.rb ]] && start-puma 2>&1 > /dev/null || true
 
   [[ -d db ]] && [[ -f Gemfile ]] && bundle exec rake db:migrate 2>&1 > /dev/null || true
+  git checkout db > /dev/null
 
   git remote prune origin > /dev/null
 }
