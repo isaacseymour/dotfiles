@@ -31,7 +31,6 @@ cask "alfred"
 cask "dashlane"
 cask "google-chrome"
 cask "iterm2"
-cask "postico"
 cask "slack"
 cask "whatsapp"
 
