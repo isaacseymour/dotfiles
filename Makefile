@@ -32,13 +32,13 @@ brew-bundle: brew
 	@ln -sf /usr/local/bin/elm-format-0.18 /usr/local/bin/elm-format
 	brew unlink ruby # vim 8 depends on ruby, but we want to manage Ruby with rbenv
 
-LATEST_RUBY="2.3.4"
+LATEST_RUBY="2.5.3"
 ruby: brew-bundle symlinks
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
 
 LATEST_NODE="9"
-NVM_VERSION="v0.33.0"
+NVM_VERSION="v0.33.11"
 nvm:
 	[ -d ~/.nvm ] || git clone https://github.com/creationix/nvm.git ~/.nvm
 	cd ~/.nvm && git fetch && git checkout -f $(NVM_VERSION)
