@@ -4,21 +4,17 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-git'
 Plug 'vim-ruby/vim-ruby'
 Plug 'othree/yajs.vim' " Javascript
-Plug 'othree/javascript-libraries-syntax.vim' " JS library syntax
-Plug 'mxw/vim-jsx'
-Plug 'moll/vim-node'
-Plug 'pangloss/vim-javascript'
 Plug 'othree/html5.vim'
 Plug 'elixir-lang/vim-elixir'
-Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-haml' " haml also does Sass and SCSS
-Plug 'briancollins/vim-jst'
 Plug 'chrisbra/csv.vim'
 Plug 'leshill/vim-json'
 Plug 'tpope/vim-markdown'
 Plug 'andersoncustodio/vim-tmux'
 Plug 'fatih/vim-go'
 Plug 'ElmCast/elm-vim'
+Plug 'tpope/vim-classpath'
+Plug 'tpope/vim-fireplace'
 
 " Colour
 Plug 'chriskempson/base16-vim'
@@ -46,6 +42,7 @@ Plug 'tmux-plugins/vim-tmux-focus-events'                         " Make vim lis
 Plug 'junegunn/vim-easy-align'                                    " Align things incredibly
 Plug 'roxma/vim-tmux-clipboard'                                   " Copy/paste across tmux splits
 Plug 'airblade/vim-rooter'
+Plug 'kien/rainbow_parentheses.vim'
 
 call plug#end()
 
@@ -64,15 +61,16 @@ let g:airline_right_alt_sep = ''
 let g:airline_section_warning = ''
 let g:airline#extensions#tabline#enabled = 0
 
-" Syntax highlighting for React
-let g:used_javascript_libs = 'react'
-
-" Assume all .js files use JSX
-let g:jsx_ext_required = 0
-
-" Format Elm files on save, but don't show errors
+" Elm setup
+let g:elm_jump_to_error = 0
+let g:elm_make_output_file = "/dev/null"
+let g:elm_make_show_warnings = 0
+let g:elm_syntastic_show_warnings = 0
+let g:elm_browser_command = ""
+let g:elm_detailed_complete = 0
 let g:elm_format_autosave = 1
 let g:elm_format_fail_silently = 0
+let g:elm_setup_keybindings = 1
 
 " assume the /g flag on :s substitutions to replace all matches in a line
 set gdefault
@@ -211,3 +209,8 @@ let g:fzf_layout = {}
 " reset cursor position on files, if it's remembered
 " but don't do it for gitcommit file types
 autocmd BufReadPost * if &filetype != "gitcommit" && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" rainbow parens
+autocmd FileType clojure RainbowParenthesesToggle
+autocmd FileType clojure RainbowParenthesesLoadRound
+
