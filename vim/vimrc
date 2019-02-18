@@ -164,6 +164,7 @@ map <Leader>nf :e <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <leader>t :Files<cr>
 nnoremap <leader>b :Buffers<cr>
 imap <C-x><C-l> <Plug>(fzf-complete-line)
+nmap <leader>d :call fzf#run({'source': 'find . -type d \| sed "s\|^\./\|\|"', 'sink': 'e', 'down': '30%', 'options': '--preview "ls {}"', 'window': '10split enew'})<CR>
 
 nnoremap <leader>v :vsplit<CR>
 nnoremap <leader>s :split<CR>
