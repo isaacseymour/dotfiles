@@ -1,6 +1,6 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-all: base16-shell symlinks brew-bundle ruby nvm npm vim-plug tpm screensaver
+all: base16 symlinks brew-bundle ruby nvm npm vim-plug tpm screensaver
 
 symlinks:
 	@ln -nsf $(DIR)/zsh/zsh ~/.zsh
@@ -56,6 +56,9 @@ tpm:
 screensaver:
 	[ -f ~/Library/Screen\ Savers/RealSimpleAnniversaryClock.qtz ] || curl -sL http://wayback.archive.org/web/http://simplystated.realsimple.com/files/RealSimpleAnniversaryClock.qtz --output ~/Library/Screen\ Savers/RealSimpleAnniversaryClock.qtz
 
-base16-shell:
+base16:
 	[ -d ~/.config/base16-shell ] || git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 	(cd ~/.config/base16-shell && git pull)
+	[ -d ~/.config/base16-iterm2 ] || git clone https://github.com/martinlindhe/base16-iterm2.git ~/.config/base16-iterm2
+	(cd ~/.config/base16-iterm2 && git pull)
+	open ~/.config/base16-iterm2/itermcolors/base16-material-darker.itermcolors
