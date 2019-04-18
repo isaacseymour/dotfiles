@@ -1,5 +1,4 @@
 # Languages
-brew "elixir"
 brew "elm"
 brew "elm-format"
 brew "erlang"
@@ -16,6 +15,7 @@ brew "fish"
 brew "fzf"
 brew "git"
 brew "htop"
+brew "ripgrep"
 brew "the_silver_searcher"
 brew "tmux"
 brew "tree"
@@ -28,7 +28,7 @@ brew "openssl"
 
 # Apps
 cask "alfred"
-cask "dashlane"
+# cask "dashlane" - currently borked
 cask "google-chrome"
 cask "iterm2"
 cask "slack"
@@ -38,6 +38,8 @@ cask "whatsapp"
 brew "awscli"
 cask "docker"
 cask "java" # JDK
+brew "kafka"
 brew "jq"
 brew "postgresql"
 brew "pspg" # nice pager for psql
+brew "zookeeper"

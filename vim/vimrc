@@ -17,7 +17,7 @@ Plug 'tpope/vim-classpath'
 Plug 'tpope/vim-fireplace'
 
 " Colour
-Plug 'chriskempson/base16-vim'
+Plug 'danielwe/base16-vim'
 Plug 'bling/vim-airline'
 
 " Actual Plugs
@@ -36,20 +36,13 @@ Plug 'nelstrom/vim-textobj-rubyblock'                             " Binds 'ar' t
 Plug 'wellle/targets.vim'                                         " More text objects
 Plug 'ahw/vim-pbcopy'                                             " Sends stuff to OS X clipboard via 'cy'
 Plug 'AndrewRadev/splitjoin.vim'                                  " Split (gS) and join (gJ) blocks
-Plug 'tpope/vim-rails'                                            " Rails craziness
-Plug 'kien/rainbow_parentheses.vim'                               " Colour matching parens nicely
 Plug 'tmux-plugins/vim-tmux-focus-events'                         " Make vim listen to tmux focus events
 Plug 'junegunn/vim-easy-align'                                    " Align things incredibly
-Plug 'roxma/vim-tmux-clipboard'                                   " Copy/paste across tmux splits
 Plug 'airblade/vim-rooter'
-Plug 'kien/rainbow_parentheses.vim'
 
 call plug#end()
 
 filetype plugin indent on
-
-" Make the % key more powerful
-runtime macros/matchit.vim
 
 " status bar
 set laststatus=2                        " Always show a statusline
@@ -135,8 +128,10 @@ set number
 set relativenumber
 
 " pretty colours
-set background=dark
-colorscheme base16-flat
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 set colorcolumn=100
 
@@ -210,8 +205,3 @@ let g:fzf_layout = {}
 " reset cursor position on files, if it's remembered
 " but don't do it for gitcommit file types
 autocmd BufReadPost * if &filetype != "gitcommit" && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-
-" rainbow parens
-autocmd FileType clojure RainbowParenthesesToggle
-autocmd FileType clojure RainbowParenthesesLoadRound
-

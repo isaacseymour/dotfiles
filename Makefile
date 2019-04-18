@@ -1,13 +1,11 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-all: symlinks brew-bundle ruby nvm npm vim-plug tpm screensaver
+all: base16-shell symlinks brew-bundle ruby nvm npm vim-plug tpm screensaver
 
 symlinks:
 	@ln -nsf $(DIR)/zsh/zsh ~/.zsh
 	@ln -sf $(DIR)/zsh/zshenv ~/.zshenv
 	@ln -sf $(DIR)/zsh/zshrc ~/.zshrc
-	@[ -d ~/.vim ] || mkdir ~/.vim
-	@ln -sf $(DIR)/vim/colors ~/.vim/colors
 	@ln -sf $(DIR)/vim/vimrc ~/.vimrc
 	@ln -sf $(DIR)/tmux/tmux.conf ~/.tmux.conf
 	@ln -sf $(DIR)/git/gitconfig ~/.gitconfig
@@ -29,15 +27,14 @@ brew:
 brew-bundle: brew
 	@brew tap Homebrew/bundle || echo ''
 	brew bundle
-	@ln -sf /usr/local/bin/elm-format-0.18 /usr/local/bin/elm-format
 	brew unlink ruby # vim 8 depends on ruby, but we want to manage Ruby with rbenv
 
-LATEST_RUBY="2.5.3"
+LATEST_RUBY="2.6.2"
 ruby: brew-bundle symlinks
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
 
-LATEST_NODE="9"
+LATEST_NODE="10"
 NVM_VERSION="v0.33.11"
 nvm:
 	[ -d ~/.nvm ] || git clone https://github.com/creationix/nvm.git ~/.nvm
@@ -58,3 +55,7 @@ tpm:
 
 screensaver:
 	[ -f ~/Library/Screen\ Savers/RealSimpleAnniversaryClock.qtz ] || curl -sL http://wayback.archive.org/web/http://simplystated.realsimple.com/files/RealSimpleAnniversaryClock.qtz --output ~/Library/Screen\ Savers/RealSimpleAnniversaryClock.qtz
+
+base16-shell:
+	[ -d ~/.config/base16-shell ] || git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+	(cd ~/.config/base16-shell && git pull)
