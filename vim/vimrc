@@ -12,7 +12,7 @@ Plug 'leshill/vim-json'
 Plug 'tpope/vim-markdown'
 Plug 'andersoncustodio/vim-tmux'
 Plug 'fatih/vim-go'
-Plug 'ElmCast/elm-vim'
+Plug 'Zaptic/elm-vim'
 Plug 'tpope/vim-classpath'
 Plug 'tpope/vim-fireplace'
 
