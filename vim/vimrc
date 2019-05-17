@@ -15,6 +15,7 @@ Plug 'fatih/vim-go'
 Plug 'Zaptic/elm-vim'
 Plug 'tpope/vim-classpath'
 Plug 'tpope/vim-fireplace'
+Plug 'venantius/vim-cljfmt'
 
 " Colour
 Plug 'danielwe/base16-vim'
