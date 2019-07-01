@@ -29,7 +29,7 @@ brew-bundle: brew
 	brew bundle
 	brew unlink ruby # vim 8 depends on ruby, but we want to manage Ruby with rbenv
 
-LATEST_RUBY="2.6.2"
+LATEST_RUBY="2.6.3"
 ruby: brew-bundle symlinks
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
