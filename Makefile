@@ -56,7 +56,7 @@ tpm:
 screensaver:
 	[ -f ~/Library/Screen\ Savers/RealSimpleAnniversaryClock.qtz ] || curl -sL http://wayback.archive.org/web/http://simplystated.realsimple.com/files/RealSimpleAnniversaryClock.qtz --output ~/Library/Screen\ Savers/RealSimpleAnniversaryClock.qtz
 
-base16:
+base16: brew-bundle
 	[ -d ~/.config/base16-shell ] || git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 	(cd ~/.config/base16-shell && git pull)
 	[ -d ~/.config/base16-iterm2 ] || git clone https://github.com/martinlindhe/base16-iterm2.git ~/.config/base16-iterm2
