@@ -1,6 +1,6 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-all: base16 symlinks brew-bundle ruby nvm npm vim-plug tpm screensaver
+all: base16 symlinks brew-bundle ruby nvm npm vim-plug tpm screensaver powerline-fonts
 
 symlinks:
 	@ln -nsf $(DIR)/zsh/zsh ~/.zsh
@@ -62,3 +62,7 @@ base16: brew-bundle
 	[ -d ~/.config/base16-iterm2 ] || git clone https://github.com/martinlindhe/base16-iterm2.git ~/.config/base16-iterm2
 	(cd ~/.config/base16-iterm2 && git pull)
 	open ~/.config/base16-iterm2/itermcolors/base16-material-darker.itermcolors
+
+powerline-fonts:
+	[ -d ~/.config/powerline ] || git clone https://github.com/powerline/fonts.git ~/.config/powerline
+	(cd ~/.config/powerline && git pull && ./install.sh)
