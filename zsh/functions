@@ -16,40 +16,11 @@ function tnw() {
 }
 
 function tnwp() {
-  tnw carwow $1
+  tnw work $1
 }
 
 function try-fg() {
   [[ "$(jobs | wc -l)" -ne 0 ]] && fg || clear
-}
-
-function carwow() {
-  wait-for-docker
-
-  for site in $CARWOW_SITES[@]; do
-    (cd ~/carwow/$site && __carwow_start_site) &
-  done
-
-  wait
-}
-
-function __carwow_start_site() {
-  git diff-index --quiet HEAD
-  if [ $? -eq 0 ]; then
-    git checkout --quiet master
-    git pull origin --quiet master
-  else
-    echo "WARNING: could not reset `basename $(pwd)` to origin master - uncommitted changes"
-  fi
-
-  [[ -f yarn.lock ]] && yarn 2>&1 > /dev/null || true
-  [[ -f Gemfile ]] && { bundle check || bundle install } 2>&1 > /dev/null || true
-  [[ -f config/puma.rb ]] && start-puma 2>&1 > /dev/null || true
-
-  [[ -d db ]] && [[ -f Gemfile ]] && bundle exec rake db:migrate 2>&1 > /dev/null || true
-  git checkout db > /dev/null
-
-  git remote prune origin > /dev/null
 }
 
 function start-puma() {
@@ -65,19 +36,12 @@ function puma-fg() {
   depuma && be puma; start-puma
 }
 
-function uncarwow() {
-  pkill -f puma
-}
 function depuma() {
   pumactl --pidfile tmp/puma.pid stop
 }
 
 function plist() {
   pgrep -f "$1" | xargs ps
-}
-
-function site-psql() {
-  psql -d "carwow_$(basename `pwd`)_development"
 }
 
 function wait-for-psql() {
@@ -87,27 +51,4 @@ function wait-for-psql() {
     sleep 0.2
   done
   echo
-}
-
-function wait-for-docker() {
-  echo -n 'Waiting for Docker'
-  until docker ps > /dev/null 2>&1; do
-    echo -n '.'
-    sleep 0.2
-  done
-  echo
-}
-
-# carwow aliases
-function huk() {
-  heroku "$@" --remote uk
-}
-function hde() {
-  heroku "$@" --remote de
-}
-function hfr() {
-  heroku "$@" --remote fr
-}
-function hes() {
-  heroku "$@" --remote es
 }
