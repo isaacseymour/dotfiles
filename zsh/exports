@@ -26,3 +26,8 @@ export NVM_DIR="${HOME}/.nvm"
 
 # Report time of commands over 5 seconds
 export REPORTTIME=5
+
+# Homebrew security options
+export HOMEBREW_NO_INSECURE_REDIRECT=1
+export HOMEBREW_CASK_OPTS=--require-sha
+export HOMEBREW_NO_ANALYTICS=1
