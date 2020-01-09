@@ -33,3 +33,6 @@ brew "awscli"
 brew "jq"
 brew "postgresql"
 brew "pspg" # nice pager for psql
+
+# Screensaver
+cask "aerial"
