@@ -16,6 +16,7 @@ Plug 'Zaptic/elm-vim'
 Plug 'tpope/vim-classpath'
 Plug 'tpope/vim-fireplace'
 Plug 'venantius/vim-cljfmt'
+Plug 'google/vim-jsonnet'
 
 " Colour
 Plug 'danielwe/base16-vim'
