@@ -17,6 +17,7 @@ Plug 'tpope/vim-classpath'
 Plug 'tpope/vim-fireplace'
 Plug 'venantius/vim-cljfmt'
 Plug 'google/vim-jsonnet'
+Plug 'thalesmello/lkml.vim'
 
 " Colour
 Plug 'danielwe/base16-vim'
