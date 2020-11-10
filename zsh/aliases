@@ -1,4 +1,5 @@
 # lazy
+alias c="clear"
 alias f="fg"
 alias v="vim"
 alias :q="exit"
