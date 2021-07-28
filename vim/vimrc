@@ -27,7 +27,7 @@ Plug 'bling/vim-airline'
 Plug 'tpope/vim-endwise'                                          " Adds ends helpfully
 Plug 'tpope/vim-surround'                                         " Change/remove surrounding things
 Plug 'tpope/vim-repeat'                                           " Make vim-surround work with .
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Fuzzy finding
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }               " Fuzzy finding
 Plug 'junegunn/fzf.vim'                                           " Fuzzy finding for things within vim
 Plug 'christoomey/vim-tmux-navigator'                             " Navigation across vim and tmux splits
 Plug 'tpope/vim-eunuch'                                           " Vim wrappers for file changing
