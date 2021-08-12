@@ -6,6 +6,7 @@ symlinks:
 	@ln -nsf $(DIR)/zsh/zsh ~/.zsh
 	@ln -sf $(DIR)/zsh/zshenv ~/.zshenv
 	@ln -sf $(DIR)/zsh/zshrc ~/.zshrc
+	@ln -sf $(DIR)/zsh/profile ~/.zprofile
 	@ln -sf $(DIR)/vim/vimrc ~/.vimrc
 	@ln -sf $(DIR)/tmux/tmux.conf ~/.tmux.conf
 	@ln -sf $(DIR)/git/gitconfig ~/.gitconfig
@@ -29,13 +30,13 @@ brew-bundle: brew
 	brew bundle
 	brew unlink ruby # vim 8 depends on ruby, but we want to manage Ruby with rbenv
 
-LATEST_RUBY="2.6.3"
+LATEST_RUBY="2.7.4"
 ruby: brew-bundle symlinks
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
 
 LATEST_NODE="10"
-NVM_VERSION="v0.33.11"
+NVM_VERSION="v0.38.0"
 nvm:
 	[ -d ~/.nvm ] || git clone https://github.com/creationix/nvm.git ~/.nvm
 	cd ~/.nvm && git fetch && git checkout -f $(NVM_VERSION)
