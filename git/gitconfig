@@ -29,5 +29,3 @@
   log = (type diff-highlight > /dev/null 2>&1 && diff-highlight | less -r) || less -r
   show = (type diff-highlight > /dev/null 2>&1 && diff-highlight | less -r) || less -r
   diff = (type diff-highlight > /dev/null 2>&1 && diff-highlight | less -r) || less -r
-[url "git@github.com:"]
-	insteadOf = https://github.com/
