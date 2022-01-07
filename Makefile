@@ -1,6 +1,6 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-all: base16 symlinks brew-bundle ruby nvm npm vim-plug tpm powerline-fonts
+all: base16 symlinks brew-bundle ruby nvm npm vim-plug tpm powerline-fonts gpg
 
 symlinks:
 	@ln -nsf $(DIR)/zsh/zsh ~/.zsh
@@ -21,6 +21,9 @@ symlinks:
 	@mkdir -p ~/.rbenv
 	@ln -sf $(DIR)/rbenv/default-gems ~/.rbenv/default-gems
 	@ln -sf $(DIR)/editorconfig ~/.editorconfig
+	@mkdir -p ~/.gnupg
+	@chmod 700 ~/.gnupg
+	@ln -sf $(DIR)/gpg/gpg.conf ~/.gnupg/gpg.conf
 
 brew:
 	command -v brew || /bin/bash -c '/usr/bin/ruby -e "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install`"'
@@ -67,3 +70,6 @@ base16: brew-bundle
 powerline-fonts:
 	[ -d ~/.config/powerline ] || git clone https://github.com/powerline/fonts.git ~/.config/powerline
 	(cd ~/.config/powerline && git pull && ./install.sh)
+
+gpg: brew-bundle symlinks
+	gpg --import $(DIR)/gpg/pubkey.gpg

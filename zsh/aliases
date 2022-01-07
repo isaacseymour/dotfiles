@@ -4,7 +4,6 @@ alias f="fg"
 alias v="vim"
 alias :q="exit"
 alias :Q="exit"
-alias gpg="gpg2"
 
 # misc
 alias man="LC_ALL=C LANG=C man"

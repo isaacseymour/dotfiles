@@ -1,8 +1,11 @@
 [user]
 	name = Isaac Seymour
 	email = isaacseymour@users.noreply.github.com
+  signingkey = 5D18EDB8080CF576089FF13271E55778F1E239EB
+
 [diff]
 	tool = vimdiff
+
 [alias]
   st = status
   ci = commit -v
@@ -14,18 +17,27 @@
   b = branch
   ignored = !git ls-files -v | grep "^[[:lower:]]"
   prune-local = !git branch --merged | tr -d '*' | grep -v master | xargs -n1 git branch -d
+
 [push]
 	default = simple
+
 [color]
 	ui = true
+
 [help]
 	autocorrect = 1
+
 [core]
-	excludesfile = /Users/isaac/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	pager = less -r
+
 [branch]
   autosetuprebase = always
+
 [pager]
   log = (type diff-highlight > /dev/null 2>&1 && diff-highlight | less -r) || less -r
   show = (type diff-highlight > /dev/null 2>&1 && diff-highlight | less -r) || less -r
   diff = (type diff-highlight > /dev/null 2>&1 && diff-highlight | less -r) || less -r
+
+[gpg]
+  program = !which gpg
