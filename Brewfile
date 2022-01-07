@@ -37,3 +37,10 @@ brew "pspg" # nice pager for psql
 
 # Screensaver
 cask "aerial"
+
+# Yubikey security
+brew "gnupg"
+brew "yubikey-personalization"
+brew "hopenpgp-tools"
+brew "ykman"
+brew "pinentry-mac"
