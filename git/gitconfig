@@ -40,4 +40,7 @@
   diff = (type diff-highlight > /dev/null 2>&1 && diff-highlight | less -r) || less -r
 
 [gpg]
-  program = !which gpg
+  program = /opt/homebrew/bin/gpg
+
+[commit]
+  gpgsign = true
