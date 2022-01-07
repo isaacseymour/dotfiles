@@ -3,6 +3,7 @@ brew "rbenv"
 brew "rbenv-default-gems"
 brew "reattach-to-user-namespace"
 brew "ruby-build"
+brew "go"
 
 # Productivity
 brew "bash" # The default on macOS is old
@@ -23,9 +24,9 @@ brew "openssl"
 # Apps
 cask "alfred"
 cask "dashlane"
-# cask "google-chrome"
+cask "google-chrome"
 cask "iterm2"
-# cask "slack"
+cask "slack"
 cask "whatsapp"
 
 # Dev stuff

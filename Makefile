@@ -25,18 +25,20 @@ symlinks:
 brew:
 	command -v brew || /bin/bash -c '/usr/bin/ruby -e "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install`"'
 
-brew-bundle: brew
+brew-bundle: symlinks brew
+	# Chrome updates too frequently to have SHAsums
+	HOMEBREW_CASK_OPTS="" brew install google-chrome
 	@brew tap Homebrew/bundle || echo ''
 	brew bundle
 	brew unlink ruby # vim 8 depends on ruby, but we want to manage Ruby with rbenv
 
-LATEST_RUBY="2.7.4"
+LATEST_RUBY="3.1.0"
 ruby: brew-bundle symlinks
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
 
-LATEST_NODE="10"
-NVM_VERSION="v0.38.0"
+LATEST_NODE="17"
+NVM_VERSION="v0.39.1"
 nvm:
 	[ -d ~/.nvm ] || git clone https://github.com/creationix/nvm.git ~/.nvm
 	cd ~/.nvm && git fetch && git checkout -f $(NVM_VERSION)
@@ -49,6 +51,7 @@ npm: nvm
 vim-plug:
 	[ -f ~/.vim/autoload/plug.vim ] || curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 		    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	vim +PlugInstall +qall
 
 tpm:
 	[ -d ~/.tmux/plugins/tpm ] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
