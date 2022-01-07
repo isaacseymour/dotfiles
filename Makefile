@@ -24,6 +24,7 @@ symlinks:
 	@mkdir -p ~/.gnupg
 	@chmod 700 ~/.gnupg
 	@ln -sf $(DIR)/gpg/gpg.conf ~/.gnupg/gpg.conf
+	@ln -sf $(DIR)/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 
 brew:
 	command -v brew || /bin/bash -c '/usr/bin/ruby -e "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install`"'
@@ -73,3 +74,7 @@ powerline-fonts:
 
 gpg: brew-bundle symlinks
 	gpg --import $(DIR)/gpg/pubkey.gpg
+	gpgconf --launch gpg-agent
+	gpg-agent
+	ssh-add -L | grep cardno > ~/.ssh/id_rsa_yubikey.pub
+	@echo "NOTE: SSH public key is available in ~/.ssh/id_rsa_yubikey.pub!"
