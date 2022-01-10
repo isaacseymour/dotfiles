@@ -77,4 +77,5 @@ gpg: brew-bundle symlinks
 	gpgconf --launch gpg-agent
 	gpg-agent
 	ssh-add -L | grep cardno > ~/.ssh/id_rsa_yubikey.pub
+	chmod 0700 ~/.ssh/id_rsa_yubikey.pub
 	@echo "NOTE: SSH public key is available in ~/.ssh/id_rsa_yubikey.pub!"
