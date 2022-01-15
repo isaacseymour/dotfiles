@@ -60,5 +60,8 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
         eval "$("$BASE16_SHELL/profile_helper.sh")"
 base16_materia
 
+# Hook in to direnv
+eval "$(direnv hook zsh)"
+
 # Launch the GPG agent
 gpgconf --launch gpg-agent

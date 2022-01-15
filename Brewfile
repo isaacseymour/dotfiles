@@ -7,6 +7,7 @@ brew "go"
 
 # Productivity
 brew "bash" # The default on macOS is old
+brew "direnv"
 brew "fzf"
 brew "git"
 brew "htop"
