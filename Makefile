@@ -1,13 +1,16 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-all: base16 symlinks brew-bundle ruby nvm npm vim-plug tpm powerline-fonts gpg
+all: base16 symlinks brew-bundle ruby nvm npm tpm powerline-fonts gpg
 
 symlinks:
+	@mkdir -p ~/.config
 	@ln -nsf $(DIR)/zsh/zsh ~/.zsh
 	@ln -sf $(DIR)/zsh/zshenv ~/.zshenv
 	@ln -sf $(DIR)/zsh/zshrc ~/.zshrc
 	@ln -sf $(DIR)/zsh/profile ~/.zprofile
 	@ln -sf $(DIR)/vim/vimrc ~/.vimrc
+	@ln -shf $(DIR)/vim ~/.config/nvim
+	@ln -sf $(DIR)/vim ~/.vim
 	@ln -sf $(DIR)/tmux/tmux.conf ~/.tmux.conf
 	@ln -sf $(DIR)/git/gitconfig ~/.gitconfig
 	@ln -sf $(DIR)/git/gitignore_global ~/.gitignore_global
@@ -51,11 +54,6 @@ nvm:
 npm: nvm
 	NVM_DIR=~/.nvm source ~/.nvm/nvm.sh && npm install npm --global --silent
 	NVM_DIR=~/.nvm source ~/.nvm/nvm.sh && npm install serve --global --silent
-
-vim-plug:
-	[ -f ~/.vim/autoload/plug.vim ] || curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-		    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	vim +PlugInstall +qall
 
 tpm:
 	[ -d ~/.tmux/plugins/tpm ] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

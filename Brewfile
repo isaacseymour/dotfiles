@@ -14,7 +14,7 @@ brew "ripgrep"
 brew "the_silver_searcher"
 brew "tmux"
 brew "tree"
-brew "vim"
+brew "nvim"
 brew "watch"
 brew "zsh"
 
