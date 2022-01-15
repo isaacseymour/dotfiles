@@ -15,11 +15,9 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
-
 Plug 'tpope/vim-haml' " haml also does Sass and SCSS
 
 Plug 'chrisbra/csv.vim'
-
 Plug 'leshill/vim-json'
 
 Plug 'tpope/vim-markdown'
@@ -27,12 +25,16 @@ Plug 'tpope/vim-markdown'
 Plug 'andersoncustodio/vim-tmux'
 
 Plug 'fatih/vim-go'
+
 Plug 'Zaptic/elm-vim'
+
+" JVM things
 Plug 'tpope/vim-classpath'
 Plug 'tpope/vim-fireplace'
 Plug 'venantius/vim-cljfmt'
+
+" Config management
 Plug 'google/vim-jsonnet'
-Plug 'thalesmello/lkml.vim'
 Plug 'cespare/vim-toml'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'hashivim/vim-terraform'
@@ -47,7 +49,7 @@ Plug 'ap/vim-css-color' " show css colours in the editor
 " Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" Actual Plugs
+" Utilities
 Plug 'tpope/vim-endwise'                                          " Adds ends helpfully
 Plug 'tpope/vim-surround'                                         " Change/remove surrounding things
 Plug 'tpope/vim-repeat'                                           " Make vim-surround work with .
@@ -70,7 +72,9 @@ Plug 'airblade/vim-rooter'
 
 call plug#end()
 
+syntax on
 filetype plugin indent on
+set re=1 " Use a newer regexp engine
 
 " status bar
 set laststatus=2                        " Always show a statusline
@@ -114,28 +118,34 @@ inoremap jj <esc>
 
 set history=100
 
-set textwidth=100
+set textwidth=80
 set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set autoindent
+set autoindent " Copy indent from current line when starting a new one
 
-" Only do case-sensitive searches when search includes an uppercase letter
-set ignorecase smartcase
 
 set spelllang=en_gb
 syntax spell toplevel
 
+" Markdown settings
+autocmd BufRead,BufNewFile *.md set ft=markdown
 autocmd FileType markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 wrap linebreak nolist wrap lbr colorcolumn=0
 
-" ruby syntax highlighting is slower with the newer engine
+" Ruby syntax highlighting is slower with the newer engine
+autocmd BufRead,BufNewFile Gemfile set ft=ruby
 autocmd FileType ruby setlocal regexpengine=1
+
+" Don't expand tabs in Go or Make
+autocmd FileType make,go set noexpandtab
+autocmd BufRead,BufNewFile Make.*,Makefile,makefile set ft=make
 
 set linebreak
 
-set incsearch
-set hlsearch
+set incsearch " Show where the pattern, while typying a search command
+set hlsearch  " Highlight all matches of a search pattern
+set ignorecase smartcase " Only do case-sensitive searches when search includes an uppercase letter
 
 set scrolloff=10
 
@@ -152,6 +162,7 @@ set wildignore+=*.o,*.obj,.git,node_modules,_site,*.class,*.zip,*.aux
 let mapleader=","
 noremap \ ,
 
+" Show line numbers, and make them relative to the current cursor
 set number
 set relativenumber
 
@@ -172,7 +183,7 @@ command! Wq wq
 set splitbelow
 set splitright
 
-set tags=./.tags;
+autocmd BufRead * set tags=./tags,tags;$HOME " Look for tags when opening a file
 
 set lazyredraw
 
@@ -189,10 +200,18 @@ nnoremap <leader>b :Buffers<cr>
 imap <C-x><C-l> <Plug>(fzf-complete-line)
 nmap <leader>d :call fzf#run({'source': 'find . -type d \| sed "s\|^\./\|\|"', 'sink': 'e', 'down': '30%', 'options': '--preview "ls {}"', 'window': '10split enew'})<CR>
 
+" Splits
 nnoremap <leader>v :vsplit<CR>
 nnoremap <leader>s :split<CR>
 
 vnoremap . :norm.<CR>
+
+" Paste from system clipboard
+nmap <leader>P :read !pbpaste <CR>
+
+" Search using silversurfer (ag) for word under cursor
+nnoremap <Leader>a :Ag <C-r><C-w><CR>
+
 
 " Don't add the comment prefix when I hit enter or o/O on a comment line.
 autocmd FileType * setlocal formatoptions-=r formatoptions-=o
@@ -233,3 +252,57 @@ let g:fzf_layout = {}
 " reset cursor position on files, if it's remembered
 " but don't do it for gitcommit file types
 autocmd BufReadPost * if &filetype != "gitcommit" && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" --------------- Neomake (nvim Syntastic) Config -----------------------------
+
+autocmd! BufWritePost * Neomake
+
+" Disable extended unicode symbols as the error message, as this plays badly
+" with kitty
+" let g:neomake_warning_sign={'text': 'x'}
+" let g:neomake_error_sign={'text': 'x'}
+
+let g:terraform_fmt_on_save = 1
+let g:neomake_sh_enabled_makers = ['shellcheck']
+let g:neomake_zsh_enabled_makers = []
+let g:neomake_rust_enabled_makers = ['rustc']
+let g:neomake_go_enabled_makers = ['go']
+let g:neomake_ruby_enabled_makers = ['bundle', 'mri']
+let g:neomake_ruby_bundle_maker = {
+    \ 'args': ['--format', 'emacs'],
+    \ 'errorformat': '%f:%l:%c: %t: %m',
+    \ 'postprocess': function('neomake#makers#ft#ruby#RubocopEntryProcess')
+    \ }
+
+" Prevent save from lagging with default syntastic+vim-go combinations
+let g:syntastic_go_checkers = ['golint', 'govet']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+
+" --------------- coc.nvim ----------------------------------------------------
+
+" Coc configuration, install if not there:
+let g:coc_global_extensions = [
+      \'coc-eslint',
+      \'coc-go',
+      \'coc-json',
+      \'coc-prettier',
+      \'coc-tsserver',
+      \]
+
+" Alias commands. Probably won't use this, but useful as an example:
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+command! -nargs=0 ESlint :CocCommand eslint.formatFile
+
+" ---------------coc.nvim -----------------------------------------------------
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" --------------- Golang Preferences ------------------------------------------
+
+" This used to be goimports, but that became really slow for a save hook
+" Re-enabling now I've cleaned up my gopath. Uncomment if things get slow again.
+" let g:go_fmt_command = "goimports"
+let g:go_list_type = "quickfix"
