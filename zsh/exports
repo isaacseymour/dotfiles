@@ -33,5 +33,5 @@ export HOMEBREW_NO_ANALYTICS=1
 
 # GnuPG stuff
 export KEYID=5D18EDB8080CF576089FF13271E55778F1E239EB
-export GPG_TTY=$(tty)
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"

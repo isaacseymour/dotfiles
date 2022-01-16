@@ -1,8 +1,8 @@
 # vim: set filetype=sh:
 
 function g {
-  if [[ $# > 0 ]]; then
-    git $@
+  if [[ $# -gt 0 ]]; then
+    git "$@"
   else
     git status -sb
   fi
@@ -12,43 +12,13 @@ function g {
 zstyle -e ':completion::*:hosts' hosts 'reply=($(sed -e "/^#/d" -e "s/ .*\$//" -e "s/,/ /g" /etc/ssh_known_hosts(N) ~/.ssh/known_hosts(N) 2>/dev/null | xargs) $(grep \^Host ~/.ssh/config(N) | cut -f2 -d\  2>/dev/null | xargs))'
 
 function tnw() {
-  tmux new-window -n $2 -c ~/$1/$2
+  tmux new-window -n "$2" -c "$HOME/$1/$2"
 }
 
 function tnwp() {
-  tnw work $1
-}
-
-function try-fg() {
-  [[ "$(jobs | wc -l)" -ne 0 ]] && fg || clear
-}
-
-function start-puma() {
-  mkdir -p tmp
-  bundle exec puma --daemon --pidfile tmp/puma.pid 2>&1 > /dev/null
-}
-
-function restart-puma() {
-  depuma && start-puma && say "restarted $(basename $(pwd))"
-}
-
-function puma-fg() {
-  depuma && be puma; start-puma
-}
-
-function depuma() {
-  pumactl --pidfile tmp/puma.pid stop
+  tnw work "$1"
 }
 
 function plist() {
   pgrep -f "$1" | xargs ps
-}
-
-function wait-for-psql() {
-  echo -n 'Waiting for Postgres'
-  until psql -c 'select 1;' > /dev/null 2>&1; do
-    echo -n '.'
-    sleep 0.2
-  done
-  echo
 }

@@ -1,10 +1,3 @@
-if [ "$(uname)" = "Darwin" ]; then
-  zsh_dotfile_path=$(dirname $(readlink $HOME/.zshrc))
-else
-  zsh_dotfile_path=$(dirname $(readlink -f $HOME/.zshrc))
-fi
-fpath=($zsh_dotfile_path/zsh/completion $fpath)
-
 autoload compinit
 compinit -u
 
@@ -17,19 +10,18 @@ setopt append_history
 setopt share_history
 setopt hist_ignore_dups
 
-source $zsh_dotfile_path/aliases
-source $zsh_dotfile_path/exports
-source $zsh_dotfile_path/functions
-source $zsh_dotfile_path/agnoster-theme
-if [ -f $zsh_dotfile_path/secret ]; then
-  source $zsh_dotfile_path/secret
+source "$HOME/.zsh/aliases"
+source "$HOME/.zsh/exports"
+source "$HOME/.zsh/functions"
+source "$HOME/.zsh/agnoster-theme"
+if [ -f "$HOME/.zsh/secret" ]; then
+  source "$HOME/.zsh/secret"
 fi
 
-HISTFILE=$HOME/.zhistory
+HISTFILE="$HOME/.zhistory"
 HISTSIZE=20000
 SAVEHIST=20000
 setopt HIST_IGNORE_SPACE
-HOSTNAME="`hostname`"
 
 # But still use emacs-style zsh bindings
 bindkey -e
@@ -42,15 +34,12 @@ stty -ixon
 setopt auto_cd
 cdpath=($HOME/work $HOME/me)
 
-# Use fzf for shell things too
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # Load Fast Node Manager
 eval "$(fnm env)"
 
 # El Capitan does weird things to $PATH, so we have to re-init rbenv here
 if which rbenv > /dev/null; then
-eval "$(rbenv init -)"
+  eval "$(rbenv init -)"
 fi
 
 # Base16 Shell
