@@ -34,8 +34,9 @@ stty -ixon
 setopt auto_cd
 cdpath=($HOME/work $HOME/me)
 
-# Load Fast Node Manager
-eval "$(fnm env)"
+# Load Fast Node Manager (and have it auto-install when it sees a
+# `.node-version` file)
+eval "$(fnm env --use-on-cd)"
 
 # El Capitan does weird things to $PATH, so we have to re-init rbenv here
 if which rbenv > /dev/null; then
