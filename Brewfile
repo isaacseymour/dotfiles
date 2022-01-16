@@ -5,6 +5,7 @@ brew "reattach-to-user-namespace"
 brew "ruby-build"
 brew "go"
 brew "fnm" # faster node manager
+brew "shellcheck" # shell script linter
 
 # Productivity
 brew "bash" # The default on macOS is old
