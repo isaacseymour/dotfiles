@@ -87,3 +87,8 @@ mac-settings: brew-bundle
 	@defaults -currentHost write -globalDomain com.apple.trackpad.threeFingerDragGesture -int 1
 	@echo "reducing motion"
 	@defaults write com.apple.Accessibility ReduceMotionEnabled 1
+	@echo "configuring mission control"
+	@defaults write com.apple.dock showDesktopGestureEnabled -int 0
+	@defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
+	@defaults write com.apple.dock showMissionControlGestureEnabled -int 0
+	@defaults write com.apple.dock mru-spaces -int 0
