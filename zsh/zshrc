@@ -45,8 +45,8 @@ cdpath=($HOME/work $HOME/me)
 # Use fzf for shell things too
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Load NVM
-[ -d "$NVM_DIR" ] && . "$NVM_DIR/nvm.sh"
+# Load Fast Node Manager
+eval "$(fnm env)"
 
 # El Capitan does weird things to $PATH, so we have to re-init rbenv here
 if which rbenv > /dev/null; then

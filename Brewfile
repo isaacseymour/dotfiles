@@ -4,6 +4,7 @@ brew "rbenv-default-gems"
 brew "reattach-to-user-namespace"
 brew "ruby-build"
 brew "go"
+brew "fnm" # faster node manager
 
 # Productivity
 brew "bash" # The default on macOS is old

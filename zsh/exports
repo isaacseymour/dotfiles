@@ -26,9 +26,6 @@ export GIT_MERGE_AUTOEDIT=no
 export EDITOR='vim'
 export PAGER='less'
 
-# Set up NVM for Node
-export NVM_DIR="${HOME}/.nvm"
-
 # Report time of commands over 5 seconds
 export REPORTTIME=5
 

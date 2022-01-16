@@ -1,6 +1,6 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-all: base16 symlinks brew-bundle ruby nvm npm tpm powerline-fonts gpg
+all: base16 symlinks brew-bundle ruby npm tpm powerline-fonts gpg
 
 symlinks:
 	@mkdir -p ~/.config
@@ -44,16 +44,12 @@ ruby: brew-bundle symlinks
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
 
-LATEST_NODE="17"
-NVM_VERSION="v0.39.1"
-nvm:
-	[ -d ~/.nvm ] || git clone https://github.com/creationix/nvm.git ~/.nvm
-	cd ~/.nvm && git fetch && git checkout -f $(NVM_VERSION)
-	NVM_DIR=~/.nvm source ~/.nvm/nvm.sh && nvm install $(LATEST_NODE) && nvm alias default $(LATEST_NODE)
 
-npm: nvm
-	NVM_DIR=~/.nvm source ~/.nvm/nvm.sh && npm install npm --global --silent
-	NVM_DIR=~/.nvm source ~/.nvm/nvm.sh && npm install serve --global --silent
+npm: brew-bundle
+	fnm install
+	zsh -c 'eval "$(fnm env)" && \
+		npm install npm --global --silent && \
+		npm install serve --global --silent'
 
 tpm:
 	[ -d ~/.tmux/plugins/tpm ] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
