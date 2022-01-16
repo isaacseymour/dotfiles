@@ -28,7 +28,7 @@ brew "openssl"
 cask "alfred"
 cask "dashlane"
 cask "google-chrome"
-cask "iterm2"
+cask "kitty"
 cask "slack"
 cask "whatsapp"
 

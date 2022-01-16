@@ -5,7 +5,6 @@ all: base16 symlinks brew-bundle vim ruby npm tpm powerline-fonts gpg
 symlinks:
 	@mkdir -p ~/.config
 	@ln -nsf $(DIR)/zsh ~/.zsh
-	@ln -sf $(DIR)/zsh/zshenv ~/.zshenv
 	@ln -sf $(DIR)/zsh/zshrc ~/.zshrc
 	@ln -sf $(DIR)/zsh/profile ~/.zprofile
 	@ln -sf $(DIR)/vim/vimrc ~/.vimrc
@@ -28,6 +27,7 @@ symlinks:
 	@chmod 700 ~/.gnupg
 	@ln -sf $(DIR)/gpg/gpg.conf ~/.gnupg/gpg.conf
 	@ln -sf $(DIR)/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+	@rm -rf ~/.config/kitty && ln -shf $(DIR)/kitty ~/.config/kitty
 
 brew:
 	command -v brew || /bin/bash -c '/usr/bin/ruby -e "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install`"'
@@ -58,9 +58,8 @@ tpm:
 base16: brew-bundle
 	[ -d ~/.config/base16-shell ] || git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 	(cd ~/.config/base16-shell && git pull)
-	[ -d ~/.config/base16-iterm2 ] || git clone https://github.com/martinlindhe/base16-iterm2.git ~/.config/base16-iterm2
-	(cd ~/.config/base16-iterm2 && git pull)
-	open ~/.config/base16-iterm2/itermcolors/base16-material-darker.itermcolors
+	[ -d ~/.config/base16-kitty ] || git clone https://github.com/kdrag0n/base16-kitty.git ~/.config/base16-kitty
+	(cd ~/.config/base16-kitty && git pull)
 
 powerline-fonts:
 	[ -d ~/.config/powerline ] || git clone https://github.com/powerline/fonts.git ~/.config/powerline
