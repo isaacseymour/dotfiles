@@ -1,7 +1,7 @@
 # vim: set filetype=sh:
 
 ### Path:
-export PATH="/usr/local/bin:$PATH" # homebrew
+export PATH="/usr/local/bin:$PATH" # homebrew on Intel
 export PATH="/opt/homebrew/bin:$PATH" # homebrew on M1
 export PATH="./node_modules/.bin:$PATH" # local npm executables
 export PATH="./.bundle/binstubs:$PATH" # local bundler executables

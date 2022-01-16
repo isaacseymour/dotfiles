@@ -1,6 +1,6 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-all: base16 symlinks brew-bundle ruby npm tpm powerline-fonts gpg
+all: base16 symlinks brew-bundle vim ruby npm tpm powerline-fonts gpg
 
 symlinks:
 	@mkdir -p ~/.config
@@ -73,3 +73,6 @@ gpg: brew-bundle symlinks
 	ssh-add -L | grep cardno > ~/.ssh/id_rsa_yubikey.pub
 	chmod 0700 ~/.ssh/id_rsa_yubikey.pub
 	@echo "NOTE: SSH public key is available in ~/.ssh/id_rsa_yubikey.pub!"
+
+vim: symlinks brew-bundle npm
+	nvim +PlugInstall +CocInstall +qall
