@@ -1,6 +1,6 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-all: base16 symlinks brew-bundle vim ruby npm tpm powerline-fonts gpg
+all: base16 symlinks brew-bundle vim ruby npm tpm powerline-fonts gpg mac-settings
 
 symlinks:
 	@mkdir -p ~/.config
@@ -75,3 +75,15 @@ gpg: brew-bundle symlinks
 
 vim: symlinks brew-bundle npm
 	nvim +PlugInstall +CocInstall +qall
+
+mac-settings: brew-bundle
+	@echo 'setting up screensaver'
+	@defaults -currentHost write com.apple.screensaver idleTime 300
+	@defaults -currentHost write com.apple.screensaver moduleDict -dict \
+		moduleName Aerial \
+		path '$(HOME)/Library/Screen Savers/Aerial.saver' \
+		type 0
+	@echo 'enabling three finger drag'
+	@defaults -currentHost write -globalDomain com.apple.trackpad.threeFingerDragGesture -int 1
+	@echo "reducing motion"
+	@defaults write com.apple.Accessibility ReduceMotionEnabled 1
