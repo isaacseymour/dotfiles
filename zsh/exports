@@ -6,9 +6,6 @@ export PATH="/opt/homebrew/bin:$PATH" # homebrew on M1
 export PATH="./node_modules/.bin:$PATH" # local npm executables
 export PATH="./.bundle/binstubs:$PATH" # local bundler executables
 export PATH="$HOME/go/bin:$PATH" # go installed stuff
-if command -v pyenv > /dev/null; then
-  eval "$(pyenv init -)"
-fi
 export PATH="/usr/local/share/git-core/contrib/diff-highlight:$PATH" # nicer git diffing
 
 # Get FZF to ignore gitignored files
