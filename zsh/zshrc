@@ -55,3 +55,6 @@ eval "$(direnv hook zsh)"
 
 # Launch the GPG agent
 gpgconf --launch gpg-agent
+
+# Make forward-delete work
+bindkey "^[[3~" delete-char
