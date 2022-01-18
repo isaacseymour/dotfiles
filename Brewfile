@@ -34,9 +34,13 @@ cask "whatsapp"
 
 # Dev stuff
 brew "awscli"
+cask "google-cloud-sdk"
 brew "jq"
 brew "postgresql"
 brew "pspg" # nice pager for psql
+
+tap "dbt-labs/dbt"
+brew "dbt-bigquery"
 
 # Screensaver
 cask "aerial"
