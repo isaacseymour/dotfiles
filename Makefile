@@ -1,6 +1,6 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-all: base16 symlinks brew-bundle vim ruby npm tpm powerline-fonts gpg mac-settings
+all: base16 symlinks brew-bundle vim ruby npm tpm powerline-fonts pinentry gpg mac-settings
 
 symlinks:
 	@mkdir -p ~/.config
@@ -35,6 +35,7 @@ brew:
 brew-bundle: symlinks brew
 	# Chrome updates too frequently to have SHAsums
 	HOMEBREW_CASK_OPTS="" brew install google-chrome
+	HOMEBREW_CASK_OPTS="" brew install google-cloud-sdk --cask
 	@brew tap Homebrew/bundle || echo ''
 	brew bundle
 	brew unlink ruby # vim 8 depends on ruby, but we want to manage Ruby with rbenv
@@ -65,7 +66,10 @@ powerline-fonts:
 	[ -d ~/.config/powerline ] || git clone https://github.com/powerline/fonts.git ~/.config/powerline
 	(cd ~/.config/powerline && git pull && ./install.sh)
 
-gpg: brew-bundle symlinks
+pinentry: brew-bundle
+	$(shell brew --prefix)/bin/pinentry-touchid -fix
+
+gpg: brew-bundle symlinks pinentry
 	gpg --import $(DIR)/gpg/pubkey.gpg
 	gpgconf --launch gpg-agent
 	gpg-agent
