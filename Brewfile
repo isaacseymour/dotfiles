@@ -53,3 +53,6 @@ brew "ykman"
 brew "pinentry-mac"
 tap "isaacseymour/tap"
 brew "pinentry-touchid"
+
+# Fun things
+cask "gifox"
