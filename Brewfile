@@ -31,6 +31,7 @@ cask "google-chrome"
 cask "kitty"
 cask "slack"
 cask "whatsapp"
+cask "rectangle"
 
 # Dev stuff
 brew "awscli"
