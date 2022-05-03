@@ -300,6 +300,10 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+" Make enter actively confirm the autocomplete, which means coc-tsserver will do
+" the autoimport
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
 " --------------- Golang Preferences ------------------------------------------
 
 " This used to be goimports, but that became really slow for a save hook
