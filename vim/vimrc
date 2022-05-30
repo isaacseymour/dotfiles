@@ -70,7 +70,19 @@ Plug 'tmux-plugins/vim-tmux-focus-events'                         " Make vim lis
 Plug 'junegunn/vim-easy-align'                                    " Align things incredibly
 Plug 'airblade/vim-rooter'
 
+" Typescript autoimport magic
+Plug 'neovim/nvim-lspconfig'
+Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
+Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'nvim-lua/plenary.nvim'
+
 call plug#end()
+
+" Lua script for Typescript autoimporting
+" Import lua configuration for LSP
+lua require("lsp-config")
+" Add missing imports with leader + i
+nnoremap <Leader>i :TSLspImportAll <cr>
 
 syntax on
 filetype plugin indent on
