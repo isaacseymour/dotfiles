@@ -9,7 +9,8 @@ symlinks:
 	@ln -sf $(DIR)/zsh/profile ~/.zprofile
 	@ln -sf $(DIR)/vim/vimrc ~/.vimrc
 	@ln -shf $(DIR)/vim ~/.config/nvim
-	@ln -sf $(DIR)/vim ~/.vim
+	@mkdir -p ~/.vim
+	@ln -sf $(DIR)/vim/lua ~/.vim/lua
 	@ln -sf $(DIR)/tmux/tmux.conf ~/.tmux.conf
 	@ln -sf $(DIR)/git/gitconfig ~/.gitconfig
 	@ln -sf $(DIR)/git/gitignore_global ~/.gitignore_global
