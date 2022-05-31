@@ -52,7 +52,7 @@ npm: brew-bundle
 	zsh -c 'eval "$(fnm env)" && \
 		npm install npm --location=global --silent && \
 		npm install serve --location=global --silent && \
-		npm install --location=global typescript typescript-language-server eslint prettier'
+		npm install --location=global typescript typescript-language-server eslint eslint_d prettier'
 
 tpm:
 	[ -d ~/.tmux/plugins/tpm ] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
