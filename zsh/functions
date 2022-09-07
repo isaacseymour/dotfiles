@@ -22,3 +22,22 @@ function tnwp() {
 function plist() {
   pgrep -f "$1" | xargs ps
 }
+
+function gcob () {
+  if [ $# -eq 0 ]; then
+    # No args supplied - see if there's something on the clipboard
+    local branch
+    branch=$(pbpaste)
+    if [[ $branch == isaac/* ]]; then
+      gcob "$branch"
+    else
+      echo "Found '$branch' on clipboard, which doesn't look like a Linear branch name"
+    fi
+  else
+    branch="$1"
+    # Trim anything up to and including a /
+    # e.g. isaac/eng-123-blah -> eng-123-blah
+    branch=$(echo "$branch" | sed -e 's/[^\/]*\///')
+    git checkout -b "$branch"
+  fi
+}
