@@ -1,3 +1,4 @@
 Host *
-  IdentitiesOnly yes
-  IdentityFile ~/.ssh/id_rsa_yubikey.pub
+  UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa
