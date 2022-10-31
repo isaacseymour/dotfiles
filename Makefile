@@ -58,7 +58,7 @@ tpm:
 	[ -d ~/.tmux/plugins/tpm ] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 	cd ~/.tmux/plugins/tpm && git pull
 
-base16: brew-bundle
+base16:
 	[ -d ~/.config/base16-shell ] || git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 	(cd ~/.config/base16-shell && git pull)
 	[ -d ~/.config/base16-kitty ] || git clone https://github.com/kdrag0n/base16-kitty.git ~/.config/base16-kitty
