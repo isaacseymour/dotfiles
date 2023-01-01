@@ -31,7 +31,13 @@ symlinks:
 	@rm -rf ~/.config/kitty && ln -shf $(DIR)/kitty ~/.config/kitty
 
 brew:
-	command -v brew || /bin/bash -c '/usr/bin/ruby -e "`curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install`"'
+	which brew || make install-brew
+
+install-brew:
+	mkdir -p tmp
+	curl -fsSL -o tmp/install-brew.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+	/bin/bash tmp/install-brew.sh
+	rm tmp/install-brew.sh
 
 brew-bundle: symlinks brew
 	# Chrome updates too frequently to have SHAsums

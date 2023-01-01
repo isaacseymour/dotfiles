@@ -9,3 +9,4 @@ zsh/secret
 bundle/cache
 bundle/bin
 Brewfile.lock.json
+/tmp
