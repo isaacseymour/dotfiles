@@ -45,9 +45,8 @@ brew-bundle: symlinks brew
 	HOMEBREW_CASK_OPTS="" brew install google-cloud-sdk --cask
 	@brew tap Homebrew/bundle || echo ''
 	brew bundle
-	brew unlink ruby # vim 8 depends on ruby, but we want to manage Ruby with rbenv
 
-LATEST_RUBY="3.1.0"
+LATEST_RUBY="3.2.0"
 ruby: brew-bundle symlinks
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
@@ -55,9 +54,8 @@ ruby: brew-bundle symlinks
 
 npm: brew-bundle
 	fnm install
-	zsh -c 'eval "$(fnm env)" && \
-		npm install npm --location=global --silent && \
-		npm install serve --location=global --silent && \
+	zsh -c 'npm install npm --location=global && \
+		npm install serve --location=global && \
 		npm install --location=global typescript typescript-language-server eslint eslint_d prettier'
 
 tpm:
