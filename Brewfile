@@ -26,7 +26,6 @@ brew "openssl"
 
 # Apps
 cask "alfred"
-cask "dashlane"
 cask "google-chrome"
 cask "kitty"
 cask "slack"
