@@ -31,6 +31,7 @@ cask "kitty"
 cask "slack"
 cask "whatsapp"
 cask "rectangle"
+cask "visual-studio-code"
 
 # Dev stuff
 brew "awscli"
