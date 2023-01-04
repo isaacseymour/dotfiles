@@ -1,6 +1,6 @@
 [user]
 	name = Isaac Seymour
-	email = isaac@incident.io
+	email = i.seymour@oxon.org
   signingkey = 5D18EDB8080CF576089FF13271E55778F1E239EB
 
 [diff]
@@ -46,6 +46,3 @@
 
 [commit]
   gpgsign = true
-
-[includeIf "gitdir:~/work"]
-  path = ~/work/.gitconfig
