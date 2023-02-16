@@ -58,3 +58,5 @@ gpgconf --launch gpg-agent
 
 # Make forward-delete work
 bindkey "^[[3~" delete-char
+
+source /Users/isaac/.docker/init-zsh.sh || true # Added by Docker Desktop

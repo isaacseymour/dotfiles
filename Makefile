@@ -4,6 +4,7 @@ all: base16 symlinks brew-bundle vim ruby npm tpm powerline-fonts pinentry gpg m
 
 symlinks:
 	@mkdir -p ~/.config
+	@ln -sf $(DIR)/bin ~/.bin
 	@ln -nsf $(DIR)/zsh ~/.zsh
 	@ln -sf $(DIR)/zsh/zshrc ~/.zshrc
 	@ln -sf $(DIR)/zsh/profile ~/.zprofile
