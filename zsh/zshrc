@@ -26,6 +26,9 @@ setopt HIST_IGNORE_SPACE
 # But still use emacs-style zsh bindings
 bindkey -e
 
+# Unbind ctrl-L, so that it can switch tmux panes
+bindkey -r "^L"
+
 # this allows Vim to use C-s as a mapping
 stty -ixon
 
