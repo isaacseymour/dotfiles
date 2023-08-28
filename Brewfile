@@ -6,6 +6,7 @@ brew "ruby-build"
 brew "go"
 brew "fnm" # faster node manager
 brew "shellcheck" # shell script linter
+brew "jsonnet"
 
 # Productivity
 brew "bash" # The default on macOS is old
