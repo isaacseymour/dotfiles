@@ -76,6 +76,9 @@ Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
 Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'nvim-lua/plenary.nvim'
 
+" Copilot
+Plug 'github/copilot.vim'
+
 call plug#end()
 
 " Lua script for Typescript autoimporting
