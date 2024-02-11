@@ -8,6 +8,7 @@ export PATH="./.bundle/binstubs:$PATH" # local bundler executables
 export PATH="$HOME/go/bin:$PATH" # go installed stuff
 export PATH="$HOME/.bin:$PATH" # Custom scripts for meeee
 export PATH="/usr/local/share/git-core/contrib/diff-highlight:$PATH" # nicer git diffing
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH" # openjdk for real java
 
 # Get FZF to ignore gitignored files
 export FZF_DEFAULT_COMMAND='ag -l -g ""'
