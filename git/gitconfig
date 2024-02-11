@@ -1,7 +1,7 @@
 [user]
 	name = Isaac Seymour
 	email = i.seymour@oxon.org
-  signingkey = C693B4EC27BC1D81
+  signingkey = 71E55778F1E239EB
 
 [diff]
 	tool = vimdiff

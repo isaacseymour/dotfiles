@@ -14,6 +14,7 @@ brew "direnv"
 brew "fzf"
 brew "git"
 brew "htop"
+cask "raycast"
 brew "ripgrep"
 brew "the_silver_searcher"
 brew "tmux"
@@ -26,9 +27,9 @@ brew "zsh"
 brew "openssl"
 
 # Apps
-cask "alfred"
 cask "google-chrome"
 cask "kitty"
+cask "notion"
 cask "slack"
 cask "whatsapp"
 cask "rectangle"
@@ -44,15 +45,9 @@ brew "pspg" # nice pager for psql
 tap "dbt-labs/dbt"
 brew "dbt-bigquery"
 
-# Screensaver
-cask "aerial"
-
 # Yubikey security
 brew "gnupg"
 brew "yubikey-personalization"
 brew "hopenpgp-tools"
 brew "ykman"
 brew "pinentry-mac"
-
-# Fun things
-cask "gifox"

@@ -48,12 +48,12 @@ brew-bundle: symlinks brew
 	brew bundle
 
 LATEST_RUBY="3.2.0"
-ruby: brew-bundle symlinks
+ruby:
 	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
 	rbenv global $(LATEST_RUBY)
 
 
-npm: brew-bundle
+npm:
 	fnm install
 	zsh -c 'npm install npm --location=global && \
 		npm install serve --location=global && \
@@ -73,21 +73,19 @@ powerline-fonts:
 	[ -d ~/.config/powerline ] || git clone https://github.com/powerline/fonts.git ~/.config/powerline
 	(cd ~/.config/powerline && git pull && ./install.sh)
 
-pinentry: brew-bundle
+pinentry:
 	$(shell brew --prefix)/bin/pinentry-touchid -fix
 
-gpg: brew-bundle symlinks pinentry
+.PHONY: gpg
+gpg:
 	gpg --import $(DIR)/gpg/pubkey.gpg
 	gpgconf --launch gpg-agent
 	gpg-agent
-	ssh-add -L | grep cardno > ~/.ssh/id_rsa_yubikey.pub
-	chmod 0700 ~/.ssh/id_rsa_yubikey.pub
-	@echo "NOTE: SSH public key is available in ~/.ssh/id_rsa_yubikey.pub!"
 
-vim: symlinks brew-bundle npm
+vim: symlinks npm
 	nvim +PlugInstall +CocInstall +qall
 
-mac-settings: brew-bundle
+mac-settings:
 	@echo 'setting up screensaver'
 	@defaults -currentHost write com.apple.screensaver idleTime 300
 	@defaults -currentHost write com.apple.screensaver moduleDict -dict \
