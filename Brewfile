@@ -29,6 +29,7 @@ brew "openssl"
 # Apps
 cask "google-chrome"
 cask "kitty"
+cask "linear"
 cask "notion"
 cask "slack"
 cask "whatsapp"
