@@ -54,4 +54,5 @@ alias ns="npm start"
 
 # assorted
 alias t="ginkgo"
+alias tf="ginkgo --fail-fast"
 alias k="kubectl"
