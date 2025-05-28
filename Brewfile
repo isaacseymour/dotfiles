@@ -3,8 +3,7 @@ brew "rbenv"
 brew "rbenv-default-gems"
 brew "reattach-to-user-namespace"
 brew "ruby-build"
-brew "go"
-brew "fnm" # faster node manager
+brew "mise"
 brew "shellcheck" # shell script linter
 brew "jsonnet"
 

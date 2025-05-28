@@ -54,10 +54,9 @@ ruby:
 
 
 npm:
-	fnm install
-	zsh -c 'npm install npm --location=global && \
-		npm install serve --location=global && \
-		npm install --location=global typescript typescript-language-server eslint eslint_d prettier'
+	zsh -c 'mise x node -- npm install npm --location=global && \
+		mise x node -- npm install serve --location=global && \
+		mise x node -- npm install --location=global typescript typescript-language-server eslint eslint_d prettier'
 
 tpm:
 	[ -d ~/.tmux/plugins/tpm ] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
