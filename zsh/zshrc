@@ -37,9 +37,6 @@ stty -ixon
 setopt auto_cd
 cdpath=($HOME/work $HOME/me)
 
-# Load mise (for managing Go, Node, etc versions)
-echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
-
 # El Capitan does weird things to $PATH, so we have to re-init rbenv here
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)"
