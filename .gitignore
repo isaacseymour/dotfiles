@@ -10,3 +10,4 @@ bundle/cache
 bundle/bin
 Brewfile.lock.json
 /tmp
+.claude

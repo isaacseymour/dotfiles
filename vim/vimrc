@@ -72,8 +72,7 @@ Plug 'airblade/vim-rooter'
 
 " Typescript autoimport magic
 Plug 'neovim/nvim-lspconfig'
-Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
-Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'nvimtools/none-ls.nvim'
 Plug 'nvim-lua/plenary.nvim'
 
 " Copilot
@@ -81,11 +80,8 @@ Plug 'github/copilot.vim'
 
 call plug#end()
 
-" Lua script for Typescript autoimporting
 " Import lua configuration for LSP
 lua require("lsp-config")
-" Add missing imports with leader + i
-nnoremap <Leader>i :TSLspImportAll <cr>
 
 syntax on
 filetype plugin indent on

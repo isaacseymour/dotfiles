@@ -1,38 +1,13 @@
 local lspconfig = require("lspconfig")
-local null_ls = require("null-ls")
 
--- Aliases for easier calling.
-local buf_map = function(bufnr, mode, lhs, rhs, opts)
-  vim.api.nvim_buf_set_keymap(bufnr, mode, lhs, rhs, opts or {
-    silent = true,
-  })
-end
-
--- Provides LSP-based auto-import
-lspconfig.tsserver.setup({
+-- Basic TypeScript/JavaScript setup
+lspconfig.ts_ls.setup({
   on_attach = function(client, bufnr)
-    local ts_utils = require("nvim-lsp-ts-utils")
-
-    ts_utils.setup({})
-    ts_utils.setup_client(client)
-
-    buf_map(bufnr, "n", "gs", ":TSLspOrganize<CR>")
-    buf_map(bufnr, "n", "gi", ":TSLspRenameFile<CR>")
-    buf_map(bufnr, "n", "go", ":TSLspImportAll<CR>")
+    -- Basic LSP keybindings
+    local opts = { buffer = bufnr, silent = true }
+    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+    vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+    vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
+    vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
   end,
-})
-
--- Apparently null-ls is a must-have with the tsserver stuff, so I've installed
--- it ¯\_(ツ)_/¯
-null_ls.setup({
-  sources = {
-    -- Note we use eslint_d as a daemonised eslint, which returns errors
-    -- faster
-
-    -- these are maybe broken
-    -- null_ls.builtins.diagnostics.eslint_d,
-    -- null_ls.builtins.code_actions.eslint_d,
-    -- null_ls.builtins.formatting.prettier
-  },
-  -- on_attach = on_attach
 })
