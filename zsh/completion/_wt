@@ -1,0 +1,72 @@
+#compdef wt
+
+_wt() {
+  local context state state_descr line
+  typeset -A opt_args
+
+  _arguments \
+    '1:repository:_wt_repos' \
+    '2:branch:_wt_branches' \
+    && return 0
+
+  return 1
+}
+
+_wt_repos() {
+  local repos
+  repos=()
+  
+  # Get all directories in ~/work that are git repositories
+  if [[ -d "$HOME/work" ]]; then
+    for dir in "$HOME/work"/*(/N); do
+      if [[ -d "$dir/.git" ]]; then
+        repos+=(${dir:t})
+      fi
+    done
+  fi
+  
+  # Get all directories in ~/me that are git repositories
+  if [[ -d "$HOME/me" ]]; then
+    for dir in "$HOME/me"/*(/N); do
+      if [[ -d "$dir/.git" ]]; then
+        repos+=(${dir:t})
+      fi
+    done
+  fi
+  
+  _describe 'repository' repos
+}
+
+_wt_branches() {
+  if (( CURRENT != 3 )); then
+    return 1
+  fi
+  
+  local repo_name="${words[2]}"
+  local repo_path=""
+  
+  # Find the repository path
+  if [[ -d "$HOME/work/$repo_name" && -d "$HOME/work/$repo_name/.git" ]]; then
+    repo_path="$HOME/work/$repo_name"
+  elif [[ -d "$HOME/me/$repo_name" && -d "$HOME/me/$repo_name/.git" ]]; then
+    repo_path="$HOME/me/$repo_name"
+  else
+    return 1
+  fi
+  
+  # Get branches without changing directory
+  local -a all_branches
+  all_branches=($(git -C "$repo_path" branch --format='%(refname:short)' 2>/dev/null))
+  all_branches+=($(git -C "$repo_path" branch -r --format='%(refname:short)' 2>/dev/null | sed 's|^origin/||' | grep -v '^HEAD$'))
+  
+  # Remove duplicates and sort
+  all_branches=(${(u)all_branches[@]})
+  
+  if (( ${#all_branches[@]} > 0 )); then
+    _describe 'branch' all_branches
+  else
+    _message 'no branches found'
+  fi
+}
+
+_wt "$@"

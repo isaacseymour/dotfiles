@@ -15,3 +15,4 @@ _site/
 .ruby-version
 secret
 *.log
+worktrees
