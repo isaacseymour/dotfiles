@@ -46,7 +46,7 @@ function wt() {
   if [[ $# -ne 2 ]]; then
     echo "Usage: wt <repo> <branch>"
     echo "  Manages git worktrees across ~/work and ~/me directories"
-    echo "  Creates worktrees in <repo>/worktrees/<branch>"
+    echo "  Creates worktrees in ~/worktrees/<repo>-<branch>"
     echo "  Opens tmux window with optional claude launch"
     return 1
   fi
@@ -74,12 +74,12 @@ function wt() {
   # Change to the repo directory
   cd "$repo_path" || return 1
 
-  # Ensure worktrees directory exists
-  local worktrees_dir="$repo_path/worktrees"
+  # Ensure global worktrees directory exists
+  local worktrees_dir="$HOME/worktrees"
   mkdir -p "$worktrees_dir"
 
-  # Path for the worktree
-  local worktree_path="$worktrees_dir/$branch_name"
+  # Path for the worktree with repo name prefix
+  local worktree_path="$worktrees_dir/${repo_name}-${branch_name}"
 
   # Check if worktree already exists
   if [[ -d "$worktree_path" ]]; then
@@ -101,6 +101,36 @@ function wt() {
       git worktree add -b "$branch_name" "$worktree_path" origin/master
     fi
   fi
+
+  # Copy all .claude folders from main repo to worktree
+  if [[ -d "$repo_path/.claude" ]]; then
+    echo "Copying .claude folder to worktree"
+    cp -r "$repo_path/.claude" "$worktree_path/"
+  fi
+  
+  # Find and copy any additional .claude folders
+  find "$repo_path" -name ".claude" -type d -maxdepth 3 | while read -r claude_dir; do
+    # Skip the main .claude folder as we already copied it
+    if [[ "$claude_dir" != "$repo_path/.claude" ]]; then
+      local relative_path="${claude_dir#$repo_path/}"
+      local target_dir="$worktree_path/$(dirname "$relative_path")"
+      mkdir -p "$target_dir"
+      echo "Copying $relative_path to worktree"
+      cp -r "$claude_dir" "$target_dir/"
+    fi
+  done
+  
+  # Run mise trust in any directory with mise.toml
+  find "$worktree_path" -name "mise.toml" -type f | while read -r mise_file; do
+    local mise_dir="$(dirname "$mise_file")"
+    local relative_dir="${mise_dir#$worktree_path/}"
+    if [[ "$mise_dir" == "$worktree_path" ]]; then
+      echo "Running mise trust in worktree root"
+    else
+      echo "Running mise trust in $relative_dir"
+    fi
+    (cd "$mise_dir" && mise trust 2>/dev/null || true)
+  done
 
   # Create or switch to tmux window
   local window_name="${repo_name}-${branch_name}"
