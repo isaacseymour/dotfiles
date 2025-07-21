@@ -37,3 +37,7 @@ export HOMEBREW_NO_ANALYTICS=1
 export KEYID=5D18EDB8080CF576089FF13271E55778F1E239EB
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+
+# Share a Go build and yarn module cache
+export YARN_CACHE_FOLDER="$HOME/.cache/yarn"
+export GOCACHE="$HOME/.cache/go-build"
