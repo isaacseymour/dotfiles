@@ -120,6 +120,32 @@ function wt() {
     fi
   done
   
+  # Symlink node_modules folders from main repo to worktree
+  find "$repo_path" -name "node_modules" -type d -not -path "*/node_modules/*" | while read -r node_modules_dir; do
+    local relative_path="${node_modules_dir#$repo_path/}"
+    local target_dir="$worktree_path/$(dirname "$relative_path")"
+    local target_link="$worktree_path/$relative_path"
+    
+    # Skip if symlink already exists
+    if [[ -L "$target_link" ]]; then
+      echo "node_modules symlink already exists at $relative_path"
+      continue
+    fi
+    
+    # Remove existing node_modules directory if it exists
+    if [[ -d "$target_link" ]]; then
+      echo "Removing existing node_modules directory at $relative_path"
+      rm -rf "$target_link"
+    fi
+    
+    # Create parent directory if needed
+    mkdir -p "$target_dir"
+    
+    # Create symlink
+    echo "Symlinking node_modules from $relative_path"
+    ln -s "$node_modules_dir" "$target_link"
+  done
+  
   # Run mise trust in any directory with mise.toml
   find "$worktree_path" -name "mise.toml" -type f | while read -r mise_file; do
     local mise_dir="$(dirname "$mise_file")"
