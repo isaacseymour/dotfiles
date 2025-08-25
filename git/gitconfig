@@ -9,7 +9,7 @@
 [alias]
   st = status
   ci = commit -v
-  co = checkout
+  co = checkout --ignore-other-worktrees
   di = diff
   amend = commit --amend
   aa = add --all
