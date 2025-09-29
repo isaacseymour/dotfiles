@@ -61,3 +61,6 @@ gpgconf --launch gpg-agent
 # Make forward-delete work
 bindkey "^[[3~" delete-char
 eval "$(mise activate zsh)"
+
+# bun completions
+[ -s "/Users/isaac/.bun/_bun" ] && source "/Users/isaac/.bun/_bun"
