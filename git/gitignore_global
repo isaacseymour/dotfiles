@@ -16,3 +16,4 @@ _site/
 secret
 *.log
 worktrees
+.claude/settings.local.json
