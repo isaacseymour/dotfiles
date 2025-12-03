@@ -16,7 +16,8 @@
   fa = fetch --all
   b = branch
   ignored = !git ls-files -v | grep "^[[:lower:]]"
-  prune-local = !git branch --merged | tr -d '*+' | grep -v master | xargs -n1 git branch -d
+  prune-local = !git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -d
+  prune-local-force = !git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D
   prune-all = !git remote prune origin && git prune-local
 
 [push]
