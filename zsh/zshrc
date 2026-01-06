@@ -64,3 +64,4 @@ eval "$(mise activate zsh)"
 
 # bun completions
 [ -s "/Users/isaac/.bun/_bun" ] && source "/Users/isaac/.bun/_bun"
+eval "$(wt config shell init zsh)"

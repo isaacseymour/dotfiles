@@ -20,6 +20,7 @@ brew "tmux"
 brew "tree"
 brew "nvim"
 brew "watch"
+brew "max-sixty/worktrunk/wt"
 brew "zsh"
 
 # Security
