@@ -22,6 +22,7 @@ brew "nvim"
 brew "watch"
 brew "max-sixty/worktrunk/wt"
 brew "zsh"
+brew "llm" # Simon Willison's LLM CLI tool
 
 # Security
 brew "openssl"

@@ -1,0 +1,48 @@
+{
+  "model": "sonnet[1m]",
+  "statusLine": {
+    "type": "command",
+    "command": "bun x ccusage statusline",
+    "padding": 0
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true,
+    "aisre@incident-io-local": true,
+    "worktrunk@worktrunk": true
+  },
+  "feedbackSurveyState": {
+    "lastShownTime": 1754001782615
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/isaac/.claude/hooks/tmux-rename-window.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/isaac/.claude/hooks/tmux-mark-attention.sh"
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/isaac/.claude/hooks/tmux-mark-permission.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
