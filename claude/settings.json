@@ -1,18 +1,5 @@
 {
   "model": "sonnet[1m]",
-  "statusLine": {
-    "type": "command",
-    "command": "bun x ccusage statusline",
-    "padding": 0
-  },
-  "enabledPlugins": {
-    "gopls-lsp@claude-plugins-official": true,
-    "aisre@incident-io-local": true,
-    "worktrunk@worktrunk": true
-  },
-  "feedbackSurveyState": {
-    "lastShownTime": 1754001782615
-  },
   "hooks": {
     "UserPromptSubmit": [
       {
@@ -53,5 +40,18 @@
         ]
       }
     ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bun x ccusage statusline",
+    "padding": 0
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true,
+    "aisre@incident-io-local": true,
+    "worktrunk@worktrunk": true
+  },
+  "feedbackSurveyState": {
+    "lastShownTime": 1754001782615
   }
 }

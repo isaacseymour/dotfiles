@@ -1,6 +1,6 @@
 #!/bin/bash
 # Mark tmux window when Claude needs user attention
-# Triggered by Notification or PermissionRequest hooks
+# Triggered by Notification hooks
 
 set -e
 
@@ -10,11 +10,10 @@ if [ -z "$TMUX" ]; then
 fi
 
 # Send a bell to mark the window
-# This matches the same triggers as the terminal-notifier notifications:
-# - permission_prompt: When Claude needs permission
-# - idle_prompt: When Claude is waiting for input (60+ seconds)
-# - elicitation_dialog: When Claude needs additional information (AskUserQuestion)
+# Can't use tmux send-keys because Claude Code is running in the pane, not a shell
+# Instead, use tmux's run-shell to execute a command that produces a bell
+# The -b flag runs it in the background so it doesn't block
 current_pane=$(tmux display-message -p '#{pane_id}')
-tmux send-keys -t "$current_pane" C-g 2>/dev/null || printf '\a'
+tmux run-shell -b -t "$current_pane" 'printf "\a"' 2>/dev/null || true
 
 exit 0
