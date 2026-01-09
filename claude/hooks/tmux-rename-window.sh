@@ -70,17 +70,21 @@ Output ONLY the hyphenated name (e.g., 'tmux-integration'):"
 
 # Generate task name using Claude Haiku (fast and cost-effective)
 # Uses the ANTHROPIC_API_KEY from Claude Code environment
+# Use jq to properly construct JSON payload (safe escaping)
 task_name=""
 if [ -n "$ANTHROPIC_API_KEY" ]; then
+  payload=$(jq -n --arg content "$llm_prompt" '{
+    model: "claude-3-5-haiku-20241022",
+    max_tokens: 50,
+    messages: [{role: "user", content: $content}]
+  }')
+
   task_name=$(timeout 3s curl -s https://api.anthropic.com/v1/messages \
     -H "Content-Type: application/json" \
     -H "x-api-key: $ANTHROPIC_API_KEY" \
     -H "anthropic-version: 2023-06-01" \
-    -d '{
-      "model": "claude-3-5-haiku-20241022",
-      "max_tokens": 50,
-      "messages": [{"role": "user", "content": "'"$(echo "$llm_prompt" | sed 's/"/\\"/g')"'"}]
-    }' 2>/dev/null | jq -r '.content[0].text // empty' 2>/dev/null || echo "")
+    -d "$payload" 2>/dev/null | \
+    jq -r '.content[0].text // empty' 2>/dev/null || echo "")
 fi
 
 # Fallback: if LLM fails or returns empty, use simple extraction
