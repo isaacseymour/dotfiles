@@ -52,16 +52,6 @@
           }
         ]
       }
-    ],
-    "PermissionRequest": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/isaac/.claude/hooks/tmux-mark-attention.sh"
-          }
-        ]
-      }
     ]
   }
 }
