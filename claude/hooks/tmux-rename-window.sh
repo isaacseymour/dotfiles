@@ -12,30 +12,36 @@ fi
 # Read the JSON input from stdin
 json_input=$(cat)
 
-# Extract the user's prompt
+# Extract the user's prompt and transcript path
 prompt=$(echo "$json_input" | jq -r '.prompt // empty')
+transcript_path=$(echo "$json_input" | jq -r '.transcript_path // empty')
 
 if [ -z "$prompt" ] || [ "$prompt" = "null" ]; then
   exit 0
 fi
 
-# Extract recent conversation context (last 3 messages for efficiency)
-context=$(echo "$json_input" | jq -r '
-  if .messages then
-    .messages[-3:] | map(
-      if .role == "user" then "User: \(.text)"
-      elif .role == "assistant" then "Assistant: \(.text)"
-      else empty
-      end
-    ) | join("\n")
-  else ""
-  end
-')
+# Read the ENTIRE conversation from the transcript for better context
+# Limit to last 100 lines (about 10-20 messages) for performance
+context=""
+if [ -n "$transcript_path" ] && [ -f "$transcript_path" ]; then
+  # Extract user and assistant messages from the JSONL transcript
+  context=$(tail -100 "$transcript_path" 2>/dev/null | \
+    jq -r 'select(.role == "user" or .role == "assistant") |
+           if .role == "user" then "User: \(.text[0:200])"
+           elif .role == "assistant" then "Assistant: \(.text[0:200])"
+           else empty end' 2>/dev/null | \
+    tail -20)
+fi
 
-# Build the LLM prompt to generate a task name
-llm_prompt="Based on this conversation, generate a short task name (1-3 words, hyphenated) that describes what the user is working on.
+# If no transcript available, use just the current prompt
+if [ -z "$context" ]; then
+  context="User: $prompt"
+fi
 
-Recent conversation:
+# Build the LLM prompt to generate a task name based on full conversation
+llm_prompt="Based on this entire conversation, generate a short task name (1-3 words, hyphenated) that describes what the user is working on overall.
+
+Conversation history:
 ${context}
 
 Current prompt: ${prompt}
@@ -45,7 +51,7 @@ Examples of good task names:
 - user-migration
 - api-refactor
 - worktrunk-config
-- add-logging
+- tmux-bell-setup
 
 Generate ONLY the hyphenated task name, nothing else:"
 
