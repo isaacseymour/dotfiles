@@ -1,6 +1,6 @@
 #!/bin/bash
 # Mark tmux window when Claude needs user attention
-# Triggered by Notification hooks
+# Changes window background color in status bar
 
 set -e
 
@@ -9,11 +9,11 @@ if [ -z "$TMUX" ]; then
   exit 0
 fi
 
-# Send a bell to mark the window
-# Can't use tmux send-keys because Claude Code is running in the pane, not a shell
-# Instead, use tmux's run-shell to execute a command that produces a bell
-# The -b flag runs it in the background so it doesn't block
-current_pane=$(tmux display-message -p '#{pane_id}')
-tmux run-shell -b -t "$current_pane" 'printf "\a"' 2>/dev/null || true
+# Get current window index
+current_window=$(tmux display-message -p '#{window_index}')
+
+# Set a user option on this window to indicate attention needed
+# This can be checked in the window-status-format
+tmux set-window-option -t ":${current_window}" @attention-needed "1" 2>/dev/null || true
 
 exit 0
