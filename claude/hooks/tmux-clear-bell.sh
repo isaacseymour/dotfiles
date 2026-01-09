@@ -1,6 +1,6 @@
 #!/bin/bash
-# Clear tmux bell indicator
-# Called when user responds or session ends
+# Clear tmux bell indicator by briefly switching windows
+# Called when session ends
 
 set -e
 
@@ -9,26 +9,22 @@ if [ -z "$TMUX" ]; then
   exit 0
 fi
 
-# Get current session, window, and pane info
-current_session=$(tmux display-message -p '#{session_name}')
+# Get current window
 current_window=$(tmux display-message -p '#{window_index}')
-original_window=$(tmux display-message -p '#{window_index}')
 
-# The ONLY reliable way to clear a bell in tmux is to make the window active
-# We'll briefly switch to it and back
-# Check if this window has a bell flag
-has_bell=$(tmux list-windows -t "$current_session" -F "#{window_index}:#{window_bell_flag}" | grep "^${current_window}:" | cut -d: -f2)
+# Get list of all windows
+window_count=$(tmux list-windows | wc -l)
 
-if [ "$has_bell" = "1" ]; then
-  # Window has bell - briefly activate it to clear
-  # Save the currently active window
-  active_window=$(tmux display-message -p '#{window_index}')
+# If there's more than one window, switch to another and back to clear bell
+if [ "$window_count" -gt 1 ]; then
+  # Find a different window to switch to temporarily
+  other_window=$(tmux list-windows -F "#{window_index}" | grep -v "^${current_window}$" | head -1)
 
-  # If we're not currently in this window, switch to it and back
-  if [ "$active_window" != "$current_window" ]; then
-    tmux select-window -t ":${current_window}"
-    sleep 0.05  # Brief pause to let tmux register the switch
-    tmux select-window -t ":${active_window}"
+  if [ -n "$other_window" ]; then
+    # Switch away and back to clear any bell flags
+    tmux select-window -t ":${other_window}" 2>/dev/null || true
+    sleep 0.1
+    tmux select-window -t ":${current_window}" 2>/dev/null || true
   fi
 fi
 
