@@ -24,6 +24,18 @@ ln -sf ~/me/dotfiles/claude/CLAUDE.md ~/.claude/CLAUDE.md
 ln -sf ~/me/dotfiles/claude/hooks ~/.claude/hooks
 ```
 
+### Optional: AI-Powered Window Naming
+
+The `tmux-rename-window.sh` hook can use AI to generate smarter task names. To enable this feature:
+
+```bash
+# Set your OpenAI API key
+llm keys set openai
+# Enter your API key when prompted
+```
+
+Without an API key, the hook will fall back to simple text extraction (still works great!).
+
 ## Hooks
 
 ### tmux Window Management

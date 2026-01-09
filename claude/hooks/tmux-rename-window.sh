@@ -50,7 +50,11 @@ Examples of good task names:
 Generate ONLY the hyphenated task name, nothing else:"
 
 # Generate task name using LLM (with timeout and fallback)
-task_name=$(echo "$llm_prompt" | timeout 3s llm -m 4o-mini --system "You generate short, hyphenated task names. Output ONLY the task name." 2>/dev/null || echo "")
+# Only try LLM if API key is configured (check for OPENAI_API_KEY or llm keys)
+task_name=""
+if [ -n "$OPENAI_API_KEY" ] || llm keys list 2>/dev/null | grep -q "openai"; then
+  task_name=$(echo "$llm_prompt" | timeout 3s llm -m 4o-mini --system "You generate short, hyphenated task names. Output ONLY the task name." 2>/dev/null || echo "")
+fi
 
 # Fallback: if LLM fails or returns empty, use simple extraction
 if [ -z "$task_name" ] || [ ${#task_name} -gt 30 ]; then
