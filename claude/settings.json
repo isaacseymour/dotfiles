@@ -62,16 +62,6 @@
           }
         ]
       }
-    ],
-    "SessionEnd": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/isaac/.claude/hooks/tmux-clear-bell.sh"
-          }
-        ]
-      }
     ]
   }
 }
