@@ -49,11 +49,19 @@ Examples of good task names:
 
 Generate ONLY the hyphenated task name, nothing else:"
 
-# Generate task name using LLM (with timeout and fallback)
-# Only try LLM if API key is configured (check for OPENAI_API_KEY or llm keys)
+# Generate task name using Claude Haiku (fast and cost-effective)
+# Uses the ANTHROPIC_API_KEY from Claude Code environment
 task_name=""
-if [ -n "$OPENAI_API_KEY" ] || llm keys list 2>/dev/null | grep -q "openai"; then
-  task_name=$(echo "$llm_prompt" | timeout 3s llm -m 4o-mini --system "You generate short, hyphenated task names. Output ONLY the task name." 2>/dev/null || echo "")
+if [ -n "$ANTHROPIC_API_KEY" ]; then
+  task_name=$(timeout 3s curl -s https://api.anthropic.com/v1/messages \
+    -H "Content-Type: application/json" \
+    -H "x-api-key: $ANTHROPIC_API_KEY" \
+    -H "anthropic-version: 2023-06-01" \
+    -d '{
+      "model": "claude-3-5-haiku-20241022",
+      "max_tokens": 50,
+      "messages": [{"role": "user", "content": "'"$(echo "$llm_prompt" | sed 's/"/\\"/g')"'"}]
+    }' 2>/dev/null | jq -r '.content[0].text // empty' 2>/dev/null || echo "")
 fi
 
 # Fallback: if LLM fails or returns empty, use simple extraction

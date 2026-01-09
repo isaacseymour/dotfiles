@@ -24,17 +24,11 @@ ln -sf ~/me/dotfiles/claude/CLAUDE.md ~/.claude/CLAUDE.md
 ln -sf ~/me/dotfiles/claude/hooks ~/.claude/hooks
 ```
 
-### Optional: AI-Powered Window Naming
+### AI-Powered Window Naming
 
-The `tmux-rename-window.sh` hook can use AI to generate smarter task names. To enable this feature:
+The `tmux-rename-window.sh` hook uses Claude Haiku to generate smart task names. It automatically reuses your Claude Code API key (from `ANTHROPIC_API_KEY` environment variable), so no additional setup is needed!
 
-```bash
-# Set your OpenAI API key
-llm keys set openai
-# Enter your API key when prompted
-```
-
-Without an API key, the hook will fall back to simple text extraction (still works great!).
+If the API call fails or times out, it falls back to simple text extraction.
 
 ## Hooks
 
