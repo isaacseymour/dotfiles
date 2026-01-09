@@ -20,6 +20,10 @@
           {
             "type": "command",
             "command": "/Users/isaac/.claude/hooks/tmux-rename-window.sh"
+          },
+          {
+            "type": "command",
+            "command": "/Users/isaac/.claude/hooks/tmux-clear-bell.sh"
           }
         ]
       }
@@ -59,6 +63,16 @@
           {
             "type": "command",
             "command": "/Users/isaac/.claude/hooks/tmux-mark-attention.sh"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/isaac/.claude/hooks/tmux-clear-bell.sh"
           }
         ]
       }
