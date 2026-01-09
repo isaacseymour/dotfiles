@@ -14,16 +14,6 @@
     "lastShownTime": 1754001782615
   },
   "hooks": {
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/isaac/.claude/hooks/tmux-rename-window.sh"
-          }
-        ]
-      }
-    ],
     "Notification": [
       {
         "matcher": "permission_prompt",
