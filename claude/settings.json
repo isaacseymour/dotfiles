@@ -20,10 +20,6 @@
           {
             "type": "command",
             "command": "/Users/isaac/.claude/hooks/tmux-rename-window.sh"
-          },
-          {
-            "type": "command",
-            "command": "/Users/isaac/.claude/hooks/tmux-clear-bell.sh"
           }
         ]
       }
