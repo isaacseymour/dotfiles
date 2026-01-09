@@ -24,8 +24,27 @@
         ]
       }
     ],
-    "Stop": [
+    "Notification": [
       {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/isaac/.claude/hooks/tmux-mark-attention.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "idle_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/isaac/.claude/hooks/tmux-mark-attention.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "elicitation_dialog",
         "hooks": [
           {
             "type": "command",
@@ -39,7 +58,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/isaac/.claude/hooks/tmux-mark-permission.sh"
+            "command": "/Users/isaac/.claude/hooks/tmux-mark-attention.sh"
           }
         ]
       }

@@ -64,8 +64,9 @@ if [ -z "$task_name" ] || [ ${#task_name} -gt 30 ]; then
     sed 's/-\+/-/g')
 fi
 
-# Clean up the task name just in case
+# Clean up the task name just in case (remove newlines, convert to lowercase, etc)
 task_name=$(echo "$task_name" | \
+  tr -d '\n\r' | \
   tr '[:upper:]' '[:lower:]' | \
   sed 's/[^a-z0-9-]//g' | \
   sed 's/^-*//' | sed 's/-*$//' | \
