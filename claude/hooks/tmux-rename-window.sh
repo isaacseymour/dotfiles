@@ -20,40 +20,53 @@ if [ -z "$prompt" ] || [ "$prompt" = "null" ]; then
   exit 0
 fi
 
-# Read the ENTIRE conversation from the transcript for better context
-# Limit to last 100 lines (about 10-20 messages) for performance
-context=""
+# Gather git context (branch name and recent commits)
+git_context=""
+if git rev-parse --git-dir >/dev/null 2>&1; then
+  branch_name=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+
+  # Get commit messages since diverging from main/master
+  main_branch=$(git symbolic-ref refs/remotes/origin/HEAD 2>/dev/null | sed 's@^refs/remotes/origin/@@' || echo "master")
+  if git rev-parse "$main_branch" >/dev/null 2>&1; then
+    commit_msgs=$(git log --oneline "$main_branch"..HEAD 2>/dev/null | head -5)
+  else
+    # Fallback to last 3 commits if no main branch
+    commit_msgs=$(git log --oneline -3 2>/dev/null)
+  fi
+
+  git_context="Branch: $branch_name"
+  if [ -n "$commit_msgs" ]; then
+    git_context="$git_context
+Recent commits:
+$commit_msgs"
+  fi
+fi
+
+# Read recent conversation for additional context (but prioritize git info)
+conversation_snippet=""
 if [ -n "$transcript_path" ] && [ -f "$transcript_path" ]; then
-  # Extract user and assistant messages from the JSONL transcript
-  context=$(tail -100 "$transcript_path" 2>/dev/null | \
-    jq -r 'select(.role == "user" or .role == "assistant") |
-           if .role == "user" then "User: \(.text[0:200])"
-           elif .role == "assistant" then "Assistant: \(.text[0:200])"
-           else empty end' 2>/dev/null | \
-    tail -20)
+  conversation_snippet=$(tail -50 "$transcript_path" 2>/dev/null | \
+    jq -r 'select(.role == "user") | .text[0:100]' 2>/dev/null | \
+    tail -3 | head -c 300)
 fi
 
-# If no transcript available, use just the current prompt
-if [ -z "$context" ]; then
-  context="User: $prompt"
-fi
+# Build the LLM prompt with git context prioritized
+llm_prompt="Generate an EXTREMELY SHORT task name (2-3 words MAX, hyphenated). Focus on the specific technical work being done.
 
-# Build the LLM prompt to generate a task name based on full conversation
-llm_prompt="Based on this entire conversation, generate a short task name (1-3 words, hyphenated) that describes what the user is working on overall.
+Git context:
+${git_context}
 
-Conversation history:
-${context}
+Current task: ${prompt}
 
-Current prompt: ${prompt}
+Recent work: ${conversation_snippet}
 
-Examples of good task names:
-- auth-bug-fix
-- user-migration
-- api-refactor
-- worktrunk-config
-- tmux-bell-setup
+RULES:
+- Maximum 2-3 words, hyphenated
+- Use technical terms, avoid generic words like 'app', 'code', 'fix', 'update'
+- Focus on WHAT is being worked on, not the action
+- Examples: 'worktrunk-hooks', 'tmux-bell', 'auth-migration', 'incident-api'
 
-Generate ONLY the hyphenated task name, nothing else:"
+Output ONLY the hyphenated name (e.g., 'tmux-integration'):"
 
 # Generate task name using Claude Haiku (fast and cost-effective)
 # Uses the ANTHROPIC_API_KEY from Claude Code environment
