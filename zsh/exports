@@ -1,6 +1,7 @@
 # vim: set filetype=sh:
 
 ### Path:
+export PATH="$HOME/.local/bin" # Claude Code default
 export PATH="/usr/local/bin:$PATH" # homebrew on Intel
 export PATH="/opt/homebrew/bin:$PATH" # homebrew on M1
 export PATH="./node_modules/.bin:$PATH" # local npm executables
