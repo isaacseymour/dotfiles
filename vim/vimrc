@@ -7,26 +7,15 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-" Syntax
-Plug 'tpope/vim-git'
+" Syntax / Treesitter (replaces many individual syntax plugins)
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-Plug 'vim-ruby/vim-ruby'
-
-Plug 'othree/html5.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
-Plug 'tpope/vim-haml' " haml also does Sass and SCSS
-
+Plug 'tpope/vim-haml'           " haml/Sass/SCSS (treesitter parser less mature)
 Plug 'chrisbra/csv.vim'
-Plug 'leshill/vim-json'
+Plug 'tpope/vim-markdown'       " Better markdown folding
 
-Plug 'tpope/vim-markdown'
-
-Plug 'andersoncustodio/vim-tmux'
-
-Plug 'fatih/vim-go'
-
-Plug 'Zaptic/elm-vim'
+Plug 'fatih/vim-go'             " Go commands, testing, debugging
+Plug 'Zaptic/elm-vim'           " Elm compiler integration
 
 " JVM things
 Plug 'tpope/vim-classpath'
@@ -35,16 +24,14 @@ Plug 'venantius/vim-cljfmt'
 
 " Config management
 Plug 'google/vim-jsonnet'
-Plug 'cespare/vim-toml'
-Plug 'ekalinin/Dockerfile.vim'
 Plug 'hashivim/vim-terraform'
 
-Plug 'neomake/neomake' " async linting
+Plug 'neomake/neomake'          " async linting
 
 " Colour
 Plug 'danielwe/base16-vim'
 Plug 'bling/vim-airline'
-Plug 'ap/vim-css-color' " show css colours in the editor
+Plug 'ap/vim-css-color'         " show css colours in the editor
 
 " Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -60,10 +47,9 @@ Plug 'tpope/vim-eunuch'                                           " Vim wrappers
 Plug 'tpope/vim-commentary'                                       " Commenting out things
 Plug 'tpope/vim-fugitive'                                         " Git things
 Plug 'tpope/vim-rhubarb'                                          " Open git things in github
-Plug 'kana/vim-textobj-user'                                      " Helps with defining custom text blocks
+Plug 'kana/vim-textobj-user'                                      " Helps with defining custom text objects
 Plug 'nelstrom/vim-textobj-rubyblock'                             " Binds 'ar' to around a Ruby block, 'ir' to inside
 Plug 'wellle/targets.vim'                                         " More text objects
-Plug 'ahw/vim-pbcopy'                                             " Sends stuff to OS X clipboard via 'cy'
 Plug 'AndrewRadev/splitjoin.vim'                                  " Split (gS) and join (gJ) blocks
 Plug 'tmux-plugins/vim-tmux-focus-events'                         " Make vim listen to tmux focus events
 Plug 'junegunn/vim-easy-align'                                    " Align things incredibly
@@ -74,17 +60,19 @@ Plug 'github/copilot.vim'
 
 call plug#end()
 
+lua require("treesitter")
+
 syntax on
 filetype plugin indent on
-set re=0 " Auto-select regexp engine (0=auto, 1=old, 2=NFA)
+set re=0                        " Auto-select regexp engine (0=auto, 1=old, 2=NFA)
 
 " status bar
-set laststatus=2                        " Always show a statusline
+set laststatus=2                " Always show a statusline
 let g:airline_powerline_fonts = 1
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
 let g:airline_section_warning = ''
 let g:airline#extensions#tabline#enabled = 0
 
@@ -106,8 +94,6 @@ set gdefault
 set autoread
 
 " fix slight delay after pressing ESC then O
-" http://ksjoberg.com/vim-esckeys.html
-" set noesckeys
 set timeout timeoutlen=500 ttimeoutlen=100
 
 " fold with space, but don't autofold when opening
@@ -118,36 +104,45 @@ nnoremap <Space> za
 " Use jj for getting out of insert mode
 inoremap jj <esc>
 
-set history=100
-
 set textwidth=80
 set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set autoindent " Copy indent from current line when starting a new one
-
+set autoindent                  " Copy indent from current line when starting a new one
 
 set spelllang=en_gb
 syntax spell toplevel
 
-" Markdown settings
-autocmd BufRead,BufNewFile *.md set ft=markdown
-autocmd FileType markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 wrap linebreak nolist wrap lbr colorcolumn=0
+" Use system clipboard
+set clipboard=unnamedplus
 
-" Ruby syntax highlighting is slower with the newer engine
-autocmd BufRead,BufNewFile Gemfile set ft=ruby
-autocmd FileType ruby setlocal regexpengine=1
+augroup filetype_detect
+  autocmd!
+  autocmd BufRead,BufNewFile *.md set ft=markdown
+  autocmd BufRead,BufNewFile Gemfile set ft=ruby
+  autocmd BufRead,BufNewFile Make.*,Makefile,makefile set ft=make
+augroup END
 
-" Don't expand tabs in Go or Make
-autocmd FileType make,go set noexpandtab
-autocmd BufRead,BufNewFile Make.*,Makefile,makefile set ft=make
+augroup filetype_settings
+  autocmd!
+  autocmd FileType markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 wrap linebreak nolist lbr colorcolumn=0
+  autocmd FileType make,go setlocal noexpandtab
+  " Don't add the comment prefix when hitting enter or o/O on a comment line
+  autocmd FileType * setlocal formatoptions-=r formatoptions-=o
+augroup END
+
+augroup cursor_restore
+  autocmd!
+  " Reset cursor to last known position, except for git commits
+  autocmd BufReadPost * if &filetype != "gitcommit" && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+augroup END
 
 set linebreak
 
-set incsearch " Show where the pattern, while typying a search command
-set hlsearch  " Highlight all matches of a search pattern
-set ignorecase smartcase " Only do case-sensitive searches when search includes an uppercase letter
+set incsearch                   " Show where the pattern matches while typing
+set hlsearch                    " Highlight all matches of a search pattern
+set ignorecase smartcase        " Only do case-sensitive searches when search includes an uppercase letter
 
 set scrolloff=10
 
@@ -155,10 +150,9 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-set backspace=indent,eol,start
-
 set wildmode=full
 set wildmenu
+set wildoptions=pum
 set wildignore+=*.o,*.obj,.git,node_modules,_site,*.class,*.zip,*.aux
 
 let mapleader=","
@@ -185,13 +179,11 @@ command! Wq wq
 set splitbelow
 set splitright
 
-autocmd BufRead * set tags=./tags,tags;$HOME " Look for tags when opening a file
-
 set lazyredraw
 
 " ~~~ MAPPINGS BELOW ~~~
 
-"gtfo ex mode
+" gtfo ex mode
 map Q <Nop>
 
 map <Leader>nf :e <C-R>=expand("%:p:h") . "/" <CR>
@@ -208,26 +200,13 @@ nnoremap <leader>s :split<CR>
 
 vnoremap . :norm.<CR>
 
-" Paste from system clipboard
-nmap <leader>P :read !pbpaste <CR>
-
-" Search using silversurfer (ag) for word under cursor
+" Search using ripgrep for word under cursor
 nnoremap <Leader>a :Ag <C-r><C-w><CR>
-
-
-" Don't add the comment prefix when I hit enter or o/O on a comment line.
-autocmd FileType * setlocal formatoptions-=r formatoptions-=o
 
 nnoremap <CR> :noh<CR><CR>
 
-" http://robots.thoughtbot.com/faster-grepping-in-vim/
-set grepprg=ag\ --nogroup\ --nocolor
+set grepprg=rg\ --vimgrep\ --smart-case
 
-" Prevent Vim from clobbering the scrollback buffer. See
-" http://www.shallowsky.com/linux/noaltscreen.html
-set t_ti= t_te=
-
-" stolen from https://bitbucket.org/sjl/dotfiles/src/tip/vim/vimrc
 " Keep search matches in the middle of the window.
 nnoremap n nzzzv
 nnoremap N Nzzzv
@@ -236,33 +215,19 @@ noremap H ^
 noremap L $
 vnoremap L g_
 
-" Uppercase word mapping.
-"
-" This mapping allows you to press <c-u> in insert mode to convert the current
-" word to uppercase.  It's handy when you're writing names of constants and
-" don't want to use Capslock.
-"
-" To use it you type the name of the constant in lowercase.  While your
-" cursor is at the end of the word, press <c-u> to uppercase it, and then
-" continue happily on your way:
+" Press <c-u> in insert mode to convert the current word to uppercase.
 inoremap <C-u> <esc>mzgUiw`za
 
-"makes fzf never use tmux
-"https://github.com/junegunn/fzf.vim/issues/66#issuecomment-169362556
+" makes fzf never use tmux
+" https://github.com/junegunn/fzf.vim/issues/66#issuecomment-169362556
 let g:fzf_layout = {}
 
-" reset cursor position on files, if it's remembered
-" but don't do it for gitcommit file types
-autocmd BufReadPost * if &filetype != "gitcommit" && line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+" --------------- Neomake Config ----------------------------------------------
 
-" --------------- Neomake (nvim Syntastic) Config -----------------------------
-
-autocmd! BufWritePost * Neomake
-
-" Disable extended unicode symbols as the error message, as this plays badly
-" with kitty
-" let g:neomake_warning_sign={'text': 'x'}
-" let g:neomake_error_sign={'text': 'x'}
+augroup neomake_on_save
+  autocmd!
+  autocmd BufWritePost * Neomake
+augroup END
 
 let g:terraform_fmt_on_save = 1
 let g:neomake_sh_enabled_makers = ['shellcheck']
@@ -276,10 +241,8 @@ let g:neomake_ruby_bundle_maker = {
     \ 'postprocess': function('neomake#makers#ft#ruby#RubocopEntryProcess')
     \ }
 
-
 " --------------- coc.nvim ----------------------------------------------------
 
-" Coc configuration, install if not there:
 let g:coc_global_extensions = [
       \'coc-eslint',
       \'coc-go',
@@ -288,28 +251,20 @@ let g:coc_global_extensions = [
       \'coc-tsserver',
       \]
 
-" Alias commands. Probably won't use this, but useful as an example:
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 command! -nargs=0 ESlint :CocCommand eslint.formatFile
-
-" ---------------coc.nvim -----------------------------------------------------
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Make enter actively confirm the autocomplete, which means coc-tsserver will do
-" the autoimport
+" Make enter confirm autocomplete (enables coc-tsserver autoimport)
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>"
 
 " --------------- Golang Preferences ------------------------------------------
 
-" This used to be goimports, but that became really slow for a save hook
-" Re-enabling now I've cleaned up my gopath. Uncomment if things get slow again.
-" let g:go_fmt_command = "goimports"
 let g:go_list_type = "quickfix"
-
 
 " --------------- Tmux Integration --------------------------------------------
 
@@ -317,20 +272,12 @@ if $TMUX != ''
 
   " Integrate movement between tmux/vim panes/windows
   function! TmuxMove(direction)
-
-    " Check if we are currently focusing on a edge window.
-    " To achieve that, move to/from the requested window and see if the window
-    " number changed
-
     let old_window = winnr()
     exe 'wincmd ' . a:direction
     let new_window = winnr()
-
-    " Change back to original window
     exe old_window . 'wincmd w'
 
     if old_window == new_window
-      " The focused window is at an edge, so ask tmux to switch panes
       if a:direction == 'j'
         call system("tmux select-pane -D")
       elseif a:direction == 'k'
