@@ -12,9 +12,7 @@
   "coc.preferences.formatOnSaveFiletypes": ["typescript", "typescriptreact"],
   "codeLens.enable": true,
   "importCost.typescriptExtensions": ["\\.tsx?$"],
-  "go.goplsOptions": {
-		"buildFlags": ["-gcflags=-G=3"]
-	},
+  "go.goplsOptions": {},
   "languageserver": {
     "terraform": {
       "command": "terraform-ls",

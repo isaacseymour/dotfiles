@@ -57,7 +57,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }               " Fuzzy findin
 Plug 'junegunn/fzf.vim'                                           " Fuzzy finding for things within vim
 Plug 'christoomey/vim-tmux-navigator'                             " Navigation across vim and tmux splits
 Plug 'tpope/vim-eunuch'                                           " Vim wrappers for file changing
-Plug 'editorconfig/editorconfig-vim'                              " Apply .editorconfig
 Plug 'tpope/vim-commentary'                                       " Commenting out things
 Plug 'tpope/vim-fugitive'                                         " Git things
 Plug 'tpope/vim-rhubarb'                                          " Open git things in github
@@ -70,22 +69,14 @@ Plug 'tmux-plugins/vim-tmux-focus-events'                         " Make vim lis
 Plug 'junegunn/vim-easy-align'                                    " Align things incredibly
 Plug 'airblade/vim-rooter'
 
-" Typescript autoimport magic
-Plug 'neovim/nvim-lspconfig'
-Plug 'nvimtools/none-ls.nvim'
-Plug 'nvim-lua/plenary.nvim'
-
 " Copilot
 Plug 'github/copilot.vim'
 
 call plug#end()
 
-" Import lua configuration for LSP
-lua require("lsp-config")
-
 syntax on
 filetype plugin indent on
-set re=1 " Use a newer regexp engine
+set re=0 " Auto-select regexp engine (0=auto, 1=old, 2=NFA)
 
 " status bar
 set laststatus=2                        " Always show a statusline
@@ -285,9 +276,6 @@ let g:neomake_ruby_bundle_maker = {
     \ 'postprocess': function('neomake#makers#ft#ruby#RubocopEntryProcess')
     \ }
 
-" Prevent save from lagging with default syntastic+vim-go combinations
-let g:syntastic_go_checkers = ['golint', 'govet']
-let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
 " --------------- coc.nvim ----------------------------------------------------
 
@@ -313,7 +301,7 @@ nmap <silent> gr <Plug>(coc-references)
 
 " Make enter actively confirm the autocomplete, which means coc-tsserver will do
 " the autoimport
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>"
 
 " --------------- Golang Preferences ------------------------------------------
 
