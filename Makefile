@@ -30,6 +30,8 @@ symlinks:
 	@ln -sf $(DIR)/gpg/gpg.conf ~/.gnupg/gpg.conf
 	@ln -sf $(DIR)/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 	@rm -rf ~/.config/kitty && ln -shf $(DIR)/kitty ~/.config/kitty
+	@mkdir -p ~/.config/cmux
+	@ln -sf $(DIR)/cmux/settings.json ~/.config/cmux/settings.json
 
 brew:
 	which brew || make install-brew
