@@ -1,11 +1,37 @@
 #!/bin/sh
-# macOS UI tweaks. No-ops on Linux.
+# macOS UI tweaks. No-op on Linux.
 {{ if eq .chezmoi.os "darwin" -}}
 set -e
 echo "→ Setting macOS defaults"
+
+# --- Trackpad / mouse / gestures ---
 defaults -currentHost write -globalDomain com.apple.trackpad.threeFingerDragGesture -int 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
+defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
+
+# --- Accessibility / animation ---
 defaults write com.apple.Accessibility ReduceMotionEnabled 1
+
+# --- Mission Control / Dock / spaces ---
 defaults write com.apple.dock showDesktopGestureEnabled -int 0
 defaults write com.apple.dock showMissionControlGestureEnabled -int 0
 defaults write com.apple.dock mru-spaces -int 0
+# Bottom-right hot corner = Quick Note (14)
+defaults write com.apple.dock wvous-br-corner -int 14
+defaults write com.apple.dock wvous-br-modifier -int 0
+
+# --- Finder / global UI ---
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write NSGlobalDomain AppleMiniaturizeOnDoubleClick -bool false
+defaults write NSGlobalDomain AppleInterfaceStyleSwitchesAutomatically -bool true
+defaults write NSGlobalDomain AppleAntiAliasingThreshold -int 4
+
+# --- Screenshots ---
+defaults write com.apple.screencapture style -string "window"
+defaults write com.apple.screencapture target -string "clipboard"
+
+# Restart affected services so the changes take effect immediately
+killall Dock 2>/dev/null || true
+killall Finder 2>/dev/null || true
+killall SystemUIServer 2>/dev/null || true
 {{- end }}

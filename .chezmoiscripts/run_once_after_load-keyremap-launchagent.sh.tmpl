@@ -1,0 +1,11 @@
+#!/bin/sh
+# Load the Caps→Esc LaunchAgent so the remap takes effect now (it'll auto-load
+# at login on subsequent boots via RunAtLoad in the plist).
+{{ if eq .chezmoi.os "darwin" -}}
+PLIST="$HOME/Library/LaunchAgents/local.KeyRemapping.plist"
+if [ -f "$PLIST" ]; then
+  launchctl unload "$PLIST" 2>/dev/null || true
+  launchctl load "$PLIST"
+  echo "→ Loaded Caps→Esc LaunchAgent"
+fi
+{{- end }}
