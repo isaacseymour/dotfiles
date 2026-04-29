@@ -1,0 +1,11 @@
+#!/bin/sh
+# macOS UI tweaks. No-ops on Linux.
+{{ if eq .chezmoi.os "darwin" -}}
+set -e
+echo "→ Setting macOS defaults"
+defaults -currentHost write -globalDomain com.apple.trackpad.threeFingerDragGesture -int 1
+defaults write com.apple.Accessibility ReduceMotionEnabled 1
+defaults write com.apple.dock showDesktopGestureEnabled -int 0
+defaults write com.apple.dock showMissionControlGestureEnabled -int 0
+defaults write com.apple.dock mru-spaces -int 0
+{{- end }}

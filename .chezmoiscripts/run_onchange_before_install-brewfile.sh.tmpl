@@ -1,0 +1,15 @@
+#!/bin/sh
+# Run `brew bundle` whenever the Brewfile content changes.
+# The Brewfile is embedded as a comment so the script's hash changes when
+# Brewfile changes, triggering a re-run.
+set -e
+
+if ! command -v brew >/dev/null 2>&1; then
+  echo "→ Skipping brew bundle — brew not on PATH"
+  exit 0
+fi
+
+# Brewfile contents (embedded so script changes when Brewfile changes):
+{{ include "Brewfile" -}}
+
+brew bundle --no-lock --file={{ joinPath .chezmoi.sourceDir "Brewfile" | quote }}

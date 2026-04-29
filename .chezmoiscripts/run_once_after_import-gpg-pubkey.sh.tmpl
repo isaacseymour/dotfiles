@@ -1,0 +1,8 @@
+#!/bin/sh
+# Import the committed GPG public key on first apply.
+set -e
+{{ $pubkey := joinPath .chezmoi.homeDir ".gnupg" "pubkey.gpg" -}}
+if command -v gpg >/dev/null 2>&1 && [ -f "{{ $pubkey }}" ]; then
+  gpg --import "{{ $pubkey }}" 2>/dev/null || true
+  echo "→ Imported GPG pubkey"
+fi
