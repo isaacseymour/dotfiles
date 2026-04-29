@@ -1,0 +1,10 @@
+{{- $privateClaude := joinPath .chezmoi.homeDir "me" "dotfiles-private" "claude" "CLAUDE.md" -}}
+{{ if stat $privateClaude -}}
+{{ include $privateClaude }}
+{{- else -}}
+# (Private CLAUDE.md not yet on disk.)
+#
+# Personal Claude defaults live in the dotfiles-private overlay. Once
+# you've cloned it (`gh auth login` → `chezmoi apply` will do the clone),
+# this file will be populated from `~/me/dotfiles-private/claude/CLAUDE.md`.
+{{- end }}

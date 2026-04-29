@@ -1,0 +1,25 @@
+sourceDir = "{{ .chezmoi.homeDir }}/me/dotfiles"
+
+# Age decryption — used for files encrypted with `chezmoi encrypt` or named
+# *.age in the source tree. The private key lives in Dashlane (secure note
+# titled "age master key"); paste it into ~/.config/chezmoi/key.txt with
+# mode 600. The recipient is the corresponding public key.
+[age]
+    identity = "{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt"
+    recipient = ""
+
+[diff]
+    # Set to "delta" or "diff-so-fancy" if you want a fancier pager.
+    pager = ""
+
+# 1Password integration is implicit — chezmoi calls `op` directly when
+# templates use {{ "{{" }} onepasswordRead "..." {{ "}}" }} or
+# {{ "{{" }} onepasswordItemFields "..." {{ "}}" }}. Make sure the
+# 1Password desktop app is running with biometric CLI integration enabled
+# (1Password → Settings → Developer → "Connect with 1Password CLI").
+
+# Dashlane has no chezmoi integration (no native template function and the
+# CLI is too brittle to depend on at apply time). Personal secrets that
+# would otherwise live in Dashlane should instead live age-encrypted in
+# the private dotfiles repo, with the master age key stored as a Dashlane
+# secure note for portability across machines.

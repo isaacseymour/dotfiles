@@ -1,0 +1,23 @@
+#!/bin/sh
+# Clone the private dotfiles overlay (dotfiles-private) into ~/me/dotfiles-private
+# if not already present. Skips silently if SSH access to GitHub isn't set up yet —
+# just re-run `chezmoi apply` after `gh auth login` + `gh ssh-key add`.
+set -e
+
+DEST="{{ .chezmoi.homeDir }}/me/dotfiles-private"
+
+if [ -d "$DEST/.git" ]; then
+  echo "→ dotfiles-private already cloned at $DEST"
+  exit 0
+fi
+
+if ! ssh -T -o BatchMode=yes -o ConnectTimeout=5 git@github.com 2>&1 | grep -q "successfully authenticated"; then
+  echo "→ Skipping dotfiles-private clone — GitHub SSH not yet set up"
+  echo "  Run:  gh auth login && gh ssh-key add ~/.ssh/id_ed25519.pub"
+  echo "  Then: chezmoi apply"
+  exit 0
+fi
+
+mkdir -p "$(dirname "$DEST")"
+git clone git@github.com:isaacseymour/dotfiles-private.git "$DEST"
+echo "→ Cloned dotfiles-private to $DEST"
