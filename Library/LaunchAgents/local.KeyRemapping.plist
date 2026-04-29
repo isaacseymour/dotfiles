@@ -6,13 +6,15 @@
     <string>local.KeyRemapping</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/bin/hidutil</string>
-        <string>property</string>
-        <string>--set</string>
-        <!-- 0x700000039 = Caps Lock; 0x700000029 = Escape -->
-        <string>{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x700000029}]}</string>
+        <string>/bin/sh</string>
+        <string>-c</string>
+        <string>$HOME/.local/bin/setup-keyboard-remap.sh</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
+    <key>StandardOutPath</key>
+    <string>/tmp/local.KeyRemapping.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/local.KeyRemapping.err</string>
 </dict>
 </plist>
