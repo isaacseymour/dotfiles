@@ -1,13 +1,6 @@
-vim/vim/bundle
-vim/vim/plugin
-vim/vim/plugged
-vim/vim/.netrwhist
-vim/zsh/cache
-vim/vim/spell
 .DS_Store
+.claude
 zsh/secret
 bundle/cache
 bundle/bin
 Brewfile.lock.json
-/tmp
-.claude
