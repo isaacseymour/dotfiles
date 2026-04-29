@@ -1,0 +1,6 @@
+# Repo-level files that should not be applied to $HOME.
+README.md
+Makefile
+Brewfile
+mise.toml
+.github/
