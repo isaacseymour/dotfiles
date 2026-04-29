@@ -5,4 +5,4 @@ ttyname $GPG_TTY
 default-cache-ttl 60
 max-cache-ttl 120
 log-file /tmp/log/gpg-agent.log
-pinentry-program /opt/homebrew/bin/pinentry-mac
+pinentry-program {{ if eq .chezmoi.arch "arm64" }}/opt/homebrew{{ else }}/usr/local{{ end }}/bin/pinentry-mac

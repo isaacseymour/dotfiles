@@ -43,7 +43,7 @@
   diff = (type diff-highlight > /dev/null 2>&1 && diff-highlight | less -r) || less -r
 
 [gpg]
-  program = /opt/homebrew/bin/gpg
+  program = {{ if eq .chezmoi.arch "arm64" }}/opt/homebrew{{ else }}/usr/local{{ end }}/bin/gpg
 
 [commit]
   gpgsign = true
