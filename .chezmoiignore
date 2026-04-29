@@ -3,4 +3,5 @@ README.md
 Makefile
 Brewfile
 mise.toml
+bootstrap.sh
 .github/
