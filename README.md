@@ -1,38 +1,37 @@
-#Isaac's Dotfiles
+# Isaac's dotfiles
 
-My dotfiles for Vim, git, and ZSH. Shamelessly stolen from @jackfranklin, who stole them from other people. 
-The theme is a modified version of @agnoster's, but with a magic asynchronous right-prompt, taken from
-http://www.anishathalye.com/2015/02/07/an-asynchronous-shell-prompt/
+Personal config for shell, editor, terminal, git, and a few macOS tweaks.
 
-`make symlink` to symlink the right stuff into `$HOME`
-
-# Installing
+## Install on a fresh Mac
 
 ```bash
-chsh -s /bin/zsh # Use zsh
-cd ~
-git clone git@github.com:isaacseymour/dotfiles
-cd dotfiles
+git clone git@github.com:isaacseymour/dotfiles ~/me/dotfiles
+cd ~/me/dotfiles
 make
 ```
 
-Then `:PlugInstall` in vim to get that stuff installed.
+`make` runs `symlinks brew-bundle vim npm tpm powerline-fonts gpg mac-settings` in turn. The `symlinks` target sets up the `~/.foo` -> `~/me/dotfiles/foo` indirection; the rest installs deps and configures plugins.
 
-Install Node from [NodeJS.org](http://nodejs.org/) before `make` if you care about node.
+## What's where
 
-# node & npm
-- Node is installed via the installer on nodejs.org.
-- packages are managed in `scripts/npm_bundles.rb`. Add a new package, and run `make node`.
+| Path | Purpose |
+|------|---------|
+| `zsh/` | shell — zshrc, profile, aliases, functions, agnoster-derived theme with async right-prompt |
+| `vim/` | Neovim — vimrc, treesitter, coc.nvim |
+| `tmux/tmux.conf` | tmux + tpm plugins (resurrect, continuum, etc.) |
+| `kitty/` | Kitty terminal config |
+| `git/` | gitconfig with signed commits + custom aliases |
+| `gpg/` | GPG/agent config (drduh-derived) |
+| `claude/` | Claude Code settings + tmux-integration hooks |
+| `bin/` | small helper scripts |
+| `Brewfile` | macOS package list — `brew bundle` reads this |
+| `mise.toml` | language version pins (Node, etc.) |
+| `Makefile` | bootstrap entry point |
 
-# gems
-- Add gem to `scripts/gems.rb`
-- `make gems`
+## Companion private repo
 
-# Updating
-You can run `make` at any time to keep things nice and tidy.
+The "private overlay" — Claude memory and other internal-flavoured config — lives in `isaacseymour/dotfiles-private` and is not referenced from this repo. Clone separately and follow the README there.
 
-# Requirements
+## Migration to chezmoi
 
-You'll need Ruby and Git installed initially, to first clone this repo and then to run `./scripts/make.sh` (which in turn calls various Ruby & Sh files. Once that's done, you'll have Ruby properly setup through `rbenv` and the latest Git installed also through homebrew, but you'll need some version of Ruby & Git to get started.
-
-I'm using these dotfiles on OS X Yosemite and Ubuntu 14.04. There's a lot of brew-specific stuff but they work reasonably well on Ubuntu - just need to run `make clone_vundle` and `make symlink` instead of just `make`, and `sudo apt-get install zsh` before installing.
+The Makefile + symlinks setup is being replaced with [chezmoi](https://www.chezmoi.io/). When that lands, `make` will be replaced by a single bootstrap script. Until then the Makefile is authoritative.
