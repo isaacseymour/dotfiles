@@ -1,6 +1,6 @@
 DIR=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-all: base16 symlinks brew-bundle vim ruby npm tpm powerline-fonts pinentry gpg mac-settings
+all: base16 symlinks brew-bundle vim npm tpm powerline-fonts gpg mac-settings
 
 symlinks:
 	@mkdir -p ~/.config
@@ -49,12 +49,6 @@ brew-bundle: symlinks brew
 	@brew tap Homebrew/bundle || echo ''
 	brew bundle
 
-LATEST_RUBY="3.2.0"
-ruby:
-	[ -d ~/.rbenv/versions/$(LATEST_RUBY) ] || rbenv install $(LATEST_RUBY)
-	rbenv global $(LATEST_RUBY)
-
-
 npm:
 	zsh -c 'mise x node -- npm install npm --location=global && \
 		mise x node -- npm install serve --location=global && \
@@ -74,9 +68,6 @@ powerline-fonts:
 	[ -d ~/.config/powerline ] || git clone https://github.com/powerline/fonts.git ~/.config/powerline
 	(cd ~/.config/powerline && git pull && ./install.sh)
 
-pinentry:
-	$(shell brew --prefix)/bin/pinentry-touchid -fix
-
 .PHONY: gpg
 gpg:
 	gpg --import $(DIR)/gpg/pubkey.gpg
@@ -87,18 +78,11 @@ vim: symlinks npm
 	nvim +PlugInstall +CocInstall +qall
 
 mac-settings:
-	@echo 'setting up screensaver'
-	@defaults -currentHost write com.apple.screensaver idleTime 300
-	@defaults -currentHost write com.apple.screensaver moduleDict -dict \
-		moduleName Aerial \
-		path '$(HOME)/Library/Screen Savers/Aerial.saver' \
-		type 0
 	@echo 'enabling three finger drag'
 	@defaults -currentHost write -globalDomain com.apple.trackpad.threeFingerDragGesture -int 1
 	@echo "reducing motion"
 	@defaults write com.apple.Accessibility ReduceMotionEnabled 1
 	@echo "configuring mission control"
 	@defaults write com.apple.dock showDesktopGestureEnabled -int 0
-	@defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 	@defaults write com.apple.dock showMissionControlGestureEnabled -int 0
 	@defaults write com.apple.dock mru-spaces -int 0
