@@ -30,7 +30,6 @@ brew "openssl"
 # Apps
 cask "google-chrome"
 cask "cmux"
-cask "kitty"
 cask "linear"
 cask "notion"
 cask "slack"
