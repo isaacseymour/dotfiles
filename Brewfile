@@ -30,7 +30,7 @@ brew "openssl"
 # Apps
 cask "google-chrome"
 cask "kitty"
-cask "linear-linear"
+cask "linear"
 cask "notion"
 cask "slack"
 cask "whatsapp"
@@ -39,7 +39,7 @@ cask "visual-studio-code"
 
 # Dev stuff
 brew "awscli"
-cask "google-cloud-sdk"
+cask "gcloud-cli"
 brew "jq"
 brew "postgresql"
 brew "pspg" # nice pager for psql
