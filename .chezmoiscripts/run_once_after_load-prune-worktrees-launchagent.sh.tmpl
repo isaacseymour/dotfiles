@@ -1,0 +1,11 @@
+#!/bin/sh
+# Load the Claude worktree-prune LaunchAgent so the hourly sweep starts now
+# (it'll auto-load at login on subsequent boots via launchd).
+{{ if eq .chezmoi.os "darwin" -}}
+PLIST="$HOME/Library/LaunchAgents/com.isaac.prune-claude-worktrees.plist"
+if [ -f "$PLIST" ]; then
+  launchctl unload "$PLIST" 2>/dev/null || true
+  launchctl load "$PLIST"
+  echo "→ Loaded Claude worktree-prune LaunchAgent"
+fi
+{{- end }}

@@ -7,9 +7,29 @@
     "defaultMode": "auto"
   },
   "model": "opus[1m]",
+  "worktree": {
+    "symlinkDirectories": [
+      ".yarn/cache"
+    ],
+    "baseRef": "fresh"
+  },
   "statusLine": {
     "type": "command",
     "command": "sh {{ .chezmoi.homeDir }}/.claude/statusline-command.sh"
+  },
+  "hooks": {
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "IDLE_MIN=60 /bin/bash {{ .chezmoi.homeDir }}/.claude/scripts/prune-idle-worktrees.sh 2>/dev/null || true",
+            "async": true
+          }
+        ]
+      }
+    ]
   },
   "enabledPlugins": {
     "gopls-lsp@claude-plugins-official": true,
