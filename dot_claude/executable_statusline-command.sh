@@ -19,27 +19,35 @@ else
   project_name=$(basename "$cwd")
 fi
 
-# Estimate session cost based on model
-# Opus: $15/M input, $75/M output | Sonnet: $3/M input, $15/M output | Haiku: $0.80/M input, $4/M output
-input_price=3.0
-output_price=15.0
-case "$model" in
-  *[Oo]pus*)   input_price=15.0; output_price=75.0 ;;
-  *[Hh]aiku*)  input_price=0.80; output_price=4.0 ;;
-esac
+# Session cost: prefer Claude Code's own cumulative figure, which accounts for
+# cache-creation and cache-read tokens (the bulk of real spend) across every turn.
+# Estimating from .context_window token counts is wrong — those are the current
+# context snapshot and exclude cache tokens, undercounting by ~10x.
+cost_val=$(echo "$input" | jq -r '.cost.total_cost_usd // empty')
 
-session_cost=""
-if [ "$total_input" -gt 0 ] 2>/dev/null || [ "$total_output" -gt 0 ] 2>/dev/null; then
-  session_cost=$(awk -v inp="$total_input" -v out="$total_output" -v ip="$input_price" -v op="$output_price" \
-    'BEGIN { cost = (inp / 1000000 * ip) + (out / 1000000 * op); printf "$%.3f", cost }')
+# Fallback: if .cost is unavailable, estimate from input/output tokens by model.
+# Opus: $15/M in, $75/M out | Sonnet: $3/M in, $15/M out | Haiku: $0.80/M in, $4/M out
+if [ -z "$cost_val" ]; then
+  input_price=3.0
+  output_price=15.0
+  case "$model" in
+    *[Oo]pus*)   input_price=15.0; output_price=75.0 ;;
+    *[Hh]aiku*)  input_price=0.80; output_price=4.0 ;;
+  esac
+  if [ "$total_input" -gt 0 ] 2>/dev/null || [ "$total_output" -gt 0 ] 2>/dev/null; then
+    cost_val=$(awk -v inp="$total_input" -v out="$total_output" -v ip="$input_price" -v op="$output_price" \
+      'BEGIN { printf "%.6f", (inp / 1000000 * ip) + (out / 1000000 * op) }')
+  fi
 fi
 
-# Today's cost: sum from a daily accumulator file
-today_cost_file="/tmp/claude_cost_today_$(date +%Y%m%d).txt"
-# Write current session cost so we can track it across sessions
-if [ -n "$session_cost" ]; then
-  cost_val=$(awk -v inp="$total_input" -v out="$total_output" -v ip="$input_price" -v op="$output_price" \
-    'BEGIN { cost = (inp / 1000000 * ip) + (out / 1000000 * op); printf "%.6f", cost }')
+session_cost=""
+if [ -n "$cost_val" ]; then
+  session_cost=$(awk -v c="$cost_val" 'BEGIN { printf "$%.3f", c }')
+fi
+
+# Today's cost: persist this session's cumulative cost keyed by session id, then
+# sum all session files touched today.
+if [ -n "$cost_val" ]; then
   session_id=$(echo "$input" | jq -r '.session_id // empty')
   if [ -n "$session_id" ]; then
     session_file="/tmp/claude_session_cost_${session_id}.txt"
