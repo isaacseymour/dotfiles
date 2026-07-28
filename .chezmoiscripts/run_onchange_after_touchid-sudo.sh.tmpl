@@ -1,0 +1,58 @@
+#!/bin/sh
+# Touch ID for sudo, working inside tmux as well as a bare terminal.
+# No-op on Linux.
+{{ if eq .chezmoi.os "darwin" -}}
+set -e
+
+SUDO_LOCAL=/etc/pam.d/sudo_local
+PAM_DIR=/usr/local/lib/pam
+REATTACH="$PAM_DIR/pam_reattach.so"
+BREW_PAM={{ if eq .chezmoi.arch "arm64" }}/opt/homebrew/lib/pam{{ else }}/usr/local/lib/pam{{ end }}
+
+# Needs root, and chezmoi apply can run non-interactively. Skip rather than
+# hang on a sudo prompt nobody can answer.
+if ! sudo -n true 2>/dev/null && [ ! -t 0 ]; then
+  echo "⚠ Skipping Touch ID sudo setup: needs sudo, no TTY to prompt on."
+  exit 0
+fi
+
+# macOS 14+ ships /etc/pam.d/sudo with `auth include sudo_local` already, which
+# is the whole point of sudo_local: it survives OS updates. If that line ever
+# goes missing our file is inert, so say so rather than pretend it worked.
+if ! grep -q '^auth[[:space:]]*include[[:space:]]*sudo_local' /etc/pam.d/sudo; then
+  echo "⚠ /etc/pam.d/sudo has no 'auth include sudo_local' line — skipping."
+  exit 0
+fi
+
+echo "→ Configuring Touch ID for sudo"
+
+# pam_tid.so on its own fails inside tmux: the process isn't attached to the GUI
+# (Aqua) session, so the Touch ID prompt can't be raised and sudo drops to
+# asking for a password. pam_reattach fixes that, but Homebrew keeps it under a
+# tree that's group-writable by `admin` — and a module in sudo's auth stack that
+# non-root can overwrite is a straight path to root. So copy it somewhere
+# root-owned and load it from there.
+if [ -f "$BREW_PAM/pam_reattach.so" ]; then
+  sudo install -d -o root -g wheel -m 755 "$PAM_DIR"
+  sudo install -o root -g wheel -m 444 "$BREW_PAM/pam_reattach.so" "$REATTACH"
+  reattach_line="auth       optional       $REATTACH"
+else
+  echo "⚠ pam_reattach missing (brew install pam-reattach) — Touch ID won't work in tmux"
+  reattach_line="# pam_reattach not installed; Touch ID sudo will not work inside tmux"
+fi
+
+# Order matters: pam_reattach has to run before pam_tid so the Touch ID prompt
+# lands in the GUI session. Both are optional/sufficient, so if either fails
+# /etc/pam.d/sudo carries on to pam_opendirectory.so and asks for a password —
+# a broken Touch ID can't lock you out of sudo.
+TMP="$(mktemp)"
+cat > "$TMP" <<EOF
+# Managed by chezmoi — see .chezmoiscripts/run_onchange_after_touchid-sudo.sh.tmpl
+$reattach_line
+auth       sufficient     pam_tid.so
+EOF
+sudo install -o root -g wheel -m 444 "$TMP" "$SUDO_LOCAL"
+rm -f "$TMP"
+
+echo "→ Wrote $SUDO_LOCAL"
+{{- end }}

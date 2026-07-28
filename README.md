@@ -90,6 +90,31 @@ sudo rm /Library/LaunchDaemons/com.isaac.ac-nosleep.plist /usr/local/sbin/ac-nos
 sudo pmset -a disablesleep 0
 ```
 
+## Touch ID for sudo
+
+`.chezmoiscripts/run_onchange_after_touchid-sudo.sh.tmpl` writes
+`/etc/pam.d/sudo_local` (the file Apple provides precisely so this survives OS
+updates — `/etc/pam.d/sudo` already includes it):
+
+```
+auth       optional       /usr/local/lib/pam/pam_reattach.so
+auth       sufficient     pam_tid.so
+```
+
+`pam_tid.so` alone doesn't work inside tmux — the process isn't attached to the
+GUI (Aqua) session, so the prompt can't be raised and sudo quietly falls back to
+a password. `pam_reattach` fixes that, and must be listed *first*.
+
+Homebrew installs `pam_reattach.so` under `/opt/homebrew/lib/pam`, which is
+group-writable by `admin`. A module in sudo's auth stack that non-root can
+overwrite is a direct path to root, so the script copies it to root-owned
+`/usr/local/lib/pam/` and loads it from there instead of from the Cellar.
+
+Both lines are `optional`/`sufficient`, so if Touch ID ever fails
+`/etc/pam.d/sudo` carries on to `pam_opendirectory.so` and asks for a password —
+a broken fingerprint reader can't lock you out of sudo. To back it out:
+`sudo rm /etc/pam.d/sudo_local`.
+
 ## Companion private repo
 
 `isaacseymour/dotfiles-private` holds Claude Code memory and any

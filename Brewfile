@@ -26,6 +26,7 @@ brew "llm" # Simon Willison's LLM CLI tool
 
 # Security
 brew "openssl"
+brew "pam-reattach" # lets Touch ID sudo work inside tmux
 
 # Apps
 cask "google-chrome"
