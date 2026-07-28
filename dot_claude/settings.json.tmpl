@@ -24,7 +24,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "IDLE_MIN=60 /bin/bash {{ .chezmoi.homeDir }}/.claude/scripts/prune-idle-worktrees.sh 2>/dev/null || true",
+            "command": "AGENT_ONLY=1 AGENT_IDLE_MIN=60 /bin/bash {{ .chezmoi.homeDir }}/.claude/scripts/prune-idle-worktrees.sh 2>/dev/null || true",
             "async": true
           }
         ]

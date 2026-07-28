@@ -8,7 +8,7 @@
     <array>
         <string>/bin/bash</string>
         <string>-c</string>
-        <string>IDLE_MIN=60 "$HOME/.claude/scripts/prune-idle-worktrees.sh"</string>
+        <string>IDLE_MIN=1440 AGENT_IDLE_MIN=60 "$HOME/.claude/scripts/prune-idle-worktrees.sh"</string>
     </array>
     <key>StartInterval</key>
     <integer>3600</integer>
