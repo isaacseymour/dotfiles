@@ -62,6 +62,34 @@ The source dir is at `~/me/dotfiles` (configured via
 | `dot_claude/` | `~/.claude/` |
 | `dot_local/bin/executable_*` | `~/.local/bin/*` (chmod +x) |
 
+## macOS sleep behaviour
+
+Remote-controlled sessions (cmux, ssh) used to die whenever the screen got
+locked or the lid closed, because macOS ships two separate behaviours:
+
+- **Idle sleep.** The system-sleep countdown only starts once the display is
+  off, and the stock AC timer is 1 minute — so locking the screen dropped the
+  network ~60s later. `pmset -c sleep 0` fixes this.
+- **Clamshell sleep.** Closing the lid sleeps immediately, ignoring the timers.
+  The only knob that stops it is `pmset disablesleep`, which is *system-wide*
+  rather than per power source.
+
+Since leaving `disablesleep` on permanently would keep a bagged laptop awake
+until the battery was flat, `com.isaac.ac-nosleep` (a root LaunchDaemon, see
+`.chezmoiscripts/run_onchange_after_macos-power.sh.tmpl`) watches
+`pmset -g pslog` and flips it with the power source: never sleep on AC, stock
+behaviour on battery. It logs transitions to `/var/log/ac-nosleep.log`.
+
+Because it writes to `/Library/LaunchDaemons` and `/usr/local/sbin`, that one
+script needs `sudo` at apply time; it skips itself if there's no TTY to prompt
+on. To back it all out:
+
+```bash
+sudo launchctl bootout system /Library/LaunchDaemons/com.isaac.ac-nosleep.plist
+sudo rm /Library/LaunchDaemons/com.isaac.ac-nosleep.plist /usr/local/sbin/ac-nosleep
+sudo pmset -a disablesleep 0
+```
+
 ## Companion private repo
 
 `isaacseymour/dotfiles-private` holds Claude Code memory and any

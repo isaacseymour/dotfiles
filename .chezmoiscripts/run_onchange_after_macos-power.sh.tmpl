@@ -1,0 +1,45 @@
+#!/bin/sh
+# macOS power settings, tuned so remote-controlled sessions survive locking the
+# screen or closing the lid — but only while on AC power. No-op on Linux.
+{{ if eq .chezmoi.os "darwin" -}}
+set -e
+
+WATCHER=/usr/local/sbin/ac-nosleep
+DAEMON=/Library/LaunchDaemons/com.isaac.ac-nosleep.plist
+
+# All of this needs root. chezmoi apply can run non-interactively, so skip
+# rather than hang forever on a sudo password prompt nobody can answer.
+if ! sudo -n true 2>/dev/null && [ ! -t 0 ]; then
+  echo "⚠ Skipping macOS power setup: needs sudo, no TTY to prompt on."
+  exit 0
+fi
+
+echo "→ Setting macOS power settings"
+
+# Never idle-sleep on AC. macOS only starts the system-sleep countdown once the
+# display has gone off, so the stock 1-minute AC timer meant locking the screen
+# took the network down ~60s later. womp/tcpkeepalive keep the machine
+# reachable across any sleep that does still happen (i.e. on battery).
+sudo pmset -c sleep 0 womp 1 tcpkeepalive 1
+
+# Closing the lid is clamshell sleep, which ignores the sleep timers; only
+# `pmset disablesleep` stops it, and that's system-wide. See the header comment
+# in ac-nosleep.sh for why that means a daemon rather than a one-off setting.
+sudo mkdir -p "$(dirname "$WATCHER")"
+
+sudo tee "$WATCHER" >/dev/null <<'WATCHER_EOF'
+{{ template "ac-nosleep.sh" . -}}
+WATCHER_EOF
+sudo chown root:wheel "$WATCHER"
+sudo chmod 755 "$WATCHER"
+
+sudo tee "$DAEMON" >/dev/null <<'DAEMON_EOF'
+{{ template "com.isaac.ac-nosleep.plist" . -}}
+DAEMON_EOF
+sudo chown root:wheel "$DAEMON"
+sudo chmod 644 "$DAEMON"
+
+sudo launchctl bootout system "$DAEMON" 2>/dev/null || true
+sudo launchctl bootstrap system "$DAEMON"
+echo "→ Loaded com.isaac.ac-nosleep (stays awake lid-shut on AC, sleeps on battery)"
+{{- end }}
