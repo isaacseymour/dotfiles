@@ -2,11 +2,13 @@
   "permissions": {
     "allow": [
       "mcp__incident_io__*",
-      "Skill(incident)"
+      "Skill(incident)",
+      "Bash(make -B recreatedb migrate PGDATABASE=test)",
+      "Bash(make -B recreatedb migrate PGDATABASE=test:*)"
     ],
     "defaultMode": "auto"
   },
-  "model": "opus[1m]",
+  "model": "opus",
   "worktree": {
     "symlinkDirectories": [
       ".yarn/cache"
@@ -45,5 +47,7 @@
       }
     }
   },
-  "skipAutoPermissionPrompt": true
+  "skipAutoPermissionPrompt": true,
+  "tui": "fullscreen",
+  "agentPushNotifEnabled": true
 }
