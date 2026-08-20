@@ -42,3 +42,10 @@ export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 # Share Go build and yarn module caches
 export YARN_CACHE_FOLDER="$HOME/.cache/yarn"
 export GOCACHE="$HOME/.cache/go-build"
+
+# Cursor cloud agents. Tools that launch them (handoff-to-cursor, catch-up-ticket-triage)
+# read the key from the environment. The key itself stays in ~/.config/cursor/api_key so it
+# is never committed to this repo.
+if [ -r "$HOME/.config/cursor/api_key" ]; then
+  export CURSOR_API_KEY="$(cat "$HOME/.config/cursor/api_key")"
+fi
