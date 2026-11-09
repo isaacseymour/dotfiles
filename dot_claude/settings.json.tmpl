@@ -1,53 +1,19 @@
-{
-  "permissions": {
-    "allow": [
-      "mcp__incident_io__*",
-      "Skill(incident)",
-      "Bash(make -B recreatedb migrate PGDATABASE=test)",
-      "Bash(make -B recreatedb migrate PGDATABASE=test:*)"
-    ],
-    "defaultMode": "auto"
-  },
-  "model": "opus",
-  "worktree": {
-    "symlinkDirectories": [
-      ".yarn/cache"
-    ],
-    "baseRef": "fresh"
-  },
-  "statusLine": {
-    "type": "command",
-    "command": "{{ .chezmoi.homeDir }}/.bun/bin/ccusage statusline"
-  },
-  "hooks": {
-    "SessionEnd": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "AGENT_ONLY=1 AGENT_IDLE_MIN=60 /bin/bash {{ .chezmoi.homeDir }}/.claude/scripts/prune-idle-worktrees.sh 2>/dev/null || true",
-            "async": true
-          }
-        ]
-      }
-    ]
-  },
-  "enabledPlugins": {
-    "gopls-lsp@claude-plugins-official": true,
-    "open-plan-annotator@open-plan-annotator": true,
-    "slack@claude-plugins-official": true,
-    "worktrunk@worktrunk": true
-  },
-  "extraKnownMarketplaces": {
-    "open-plan-annotator": {
-      "source": {
-        "source": "github",
-        "repo": "ndom91/open-plan-annotator"
-      }
-    }
-  },
-  "skipAutoPermissionPrompt": true,
-  "tui": "fullscreen",
-  "agentPushNotifEnabled": true
-}
+{{- /*
+  Public settings live in .chezmoitemplates/claude-settings.json. Work-specific
+  settings live in the dotfiles-private overlay and are merged on top when it is
+  on disk. mergeOverwrite replaces lists, so permission lists are concatenated
+  by hand.
+*/ -}}
+{{- $settings := includeTemplate "claude-settings.json" . | fromJson -}}
+{{- $privatePath := joinPath .chezmoi.homeDir "me" "dotfiles-private" "claude" "settings.json" -}}
+{{- if stat $privatePath -}}
+{{-   $private := includeTemplate $privatePath . | fromJson -}}
+{{-   $lists := dict -}}
+{{-   range $key := list "allow" "ask" "deny" -}}
+{{-     $combined := concat (dig "permissions" $key list $settings) (dig "permissions" $key list $private) -}}
+{{-     if $combined -}}{{ $_ := set $lists $key $combined }}{{ end -}}
+{{-   end -}}
+{{-   $settings = mergeOverwrite $settings $private -}}
+{{-   range $key, $combined := $lists -}}{{ $_ := set $settings.permissions $key $combined }}{{ end -}}
+{{- end -}}
+{{ toPrettyJson $settings }}

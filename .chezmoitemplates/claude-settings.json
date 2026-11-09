@@ -1,0 +1,57 @@
+{
+  "permissions": {
+    "allow": [],
+    "defaultMode": "auto"
+  },
+  "model": "opus[1m]",
+  "feedbackDrafts": "off",
+  "worktree": {
+    "symlinkDirectories": [
+      ".yarn/cache"
+    ],
+    "baseRef": "fresh"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "{{ .chezmoi.homeDir }}/.bun/bin/ccusage statusline"
+  },
+  "hooks": {
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "AGENT_ONLY=1 AGENT_IDLE_MIN=60 /bin/bash {{ .chezmoi.homeDir }}/.claude/scripts/prune-idle-worktrees.sh 2>/dev/null || true",
+            "async": true
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true,
+    "open-plan-annotator@open-plan-annotator": true,
+    "slack@claude-plugins-official": true,
+    "u@toms-claude-plugins": true,
+    "worktrunk@worktrunk": true
+  },
+  "extraKnownMarketplaces": {
+    "open-plan-annotator": {
+      "source": {
+        "source": "github",
+        "repo": "ndom91/open-plan-annotator"
+      }
+    },
+    "toms-claude-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "tgvashworth/agent-plugins"
+      },
+      "autoUpdate": true
+    }
+  },
+  "skipAutoPermissionPrompt": true,
+  "tui": "fullscreen",
+  "agentPushNotifEnabled": true
+}
