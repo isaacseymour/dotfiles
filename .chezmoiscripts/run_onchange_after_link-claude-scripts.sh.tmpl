@@ -1,0 +1,21 @@
+#!/bin/sh
+# Symlink each script in the dotfiles-private overlay's claude/scripts/ into
+# ~/.claude/scripts/, so work-specific scripts stay out of the public tree.
+# Reruns when the set of private scripts changes:
+{{- $dir := joinPath .chezmoi.homeDir "me" "dotfiles-private" "claude" "scripts" }}
+{{- range glob (joinPath $dir "*") }}
+#   {{ base . }}
+{{- end }}
+set -e
+
+PRIVATE="$HOME/me/dotfiles-private/claude/scripts"
+[ -d "$PRIVATE" ] || exit 0
+
+mkdir -p "$HOME/.claude/scripts"
+for script in "$PRIVATE"/*; do
+  [ -f "$script" ] || continue
+  target="$HOME/.claude/scripts/$(basename "$script")"
+  [ -L "$target" ] && [ "$(readlink "$target")" = "$script" ] && continue
+  ln -sfn "$script" "$target"
+  echo "→ Linked ~/.claude/scripts/$(basename "$script")"
+done
