@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub PRs → Linear Reviews",
+  "version": "1.0.0",
+  "description": "Opens GitHub pull requests in Linear Reviews (desktop app), unless you came from Linear.",
+  "permissions": ["webNavigation", "tabs", "storage"],
+  "host_permissions": ["https://github.com/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}

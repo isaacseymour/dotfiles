@@ -1,0 +1,24 @@
+#!/bin/sh
+# Point Chrome at the GitHub → Linear Reviews extension in ~/.local/share/github-to-linear.
+# Chrome no longer lets a script load an unpacked extension, so this opens the
+# extensions page and the folder: the first time, turn on Developer mode, click
+# "Load unpacked" and pick the folder. After an update, click the reload icon on it.
+#
+# Re-runs when the extension changes:
+# manifest.json {{ include "dot_local/share/github-to-linear/manifest.json" | sha256sum }}
+# background.js {{ include "dot_local/share/github-to-linear/background.js" | sha256sum }}
+# rules.js      {{ include "dot_local/share/github-to-linear/rules.js" | sha256sum }}
+{{ if eq .chezmoi.os "darwin" -}}
+EXT_DIR="$HOME/.local/share/github-to-linear"
+
+if [ ! -d "/Applications/Google Chrome.app" ]; then
+  echo "→ Skipping GitHub → Linear extension: Chrome is not installed. Re-run chezmoi apply after you install it."
+  exit 0
+fi
+
+echo "→ GitHub → Linear extension is at $EXT_DIR"
+echo "  New install: Developer mode → Load unpacked → pick that folder."
+echo "  Update: click the reload icon on the extension."
+open -a "Google Chrome" "chrome://extensions" || true
+open -R "$EXT_DIR/manifest.json" || true
+{{- end }}
