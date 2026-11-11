@@ -1,0 +1,24 @@
+#!/bin/sh
+# Install and load each LaunchAgent in the dotfiles-private overlay's launchagents/, so
+# work-specific agents stay out of the public tree. Reruns when any of them changes:
+{{- $dir := joinPath .chezmoi.homeDir "me" "dotfiles-private" "launchagents" }}
+{{- range glob (joinPath $dir "*.plist") }}
+#   {{ base . }} {{ include . | sha256sum }}
+{{- end }}
+{{ if eq .chezmoi.os "darwin" -}}
+set -e
+
+PRIVATE="$HOME/me/dotfiles-private/launchagents"
+[ -d "$PRIVATE" ] || exit 0
+
+mkdir -p "$HOME/Library/LaunchAgents"
+for plist in "$PRIVATE"/*.plist; do
+  [ -f "$plist" ] || continue
+  target="$HOME/Library/LaunchAgents/$(basename "$plist")"
+  cmp -s "$plist" "$target" && launchctl list "$(basename "$plist" .plist)" >/dev/null 2>&1 && continue
+  cp "$plist" "$target"
+  launchctl unload "$target" 2>/dev/null || true
+  launchctl load "$target"
+  echo "→ Loaded $(basename "$plist")"
+done
+{{- end }}
