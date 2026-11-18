@@ -5,6 +5,7 @@
   },
   "model": "opus[1m]",
   "feedbackDrafts": "off",
+  "remoteControlAtStartup": true,
   "worktree": {
     "symlinkDirectories": [
       ".yarn/cache"
